@@ -2,7 +2,7 @@ html{
 	position: relative; min-height: 100%;
 }
 body{
-	background: url("img/fondo1.jpg") no-repeat center center;
+	background: url("img/fondo3.jpg") no-repeat center center;
 	background-size: cover;
 	 margin: 0 auto 150px;
 }
