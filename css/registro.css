@@ -129,7 +129,7 @@ border-radius: 10px;
   filter: alpha(opacity=80);
 }
 .banner{
-   		background: url("C:/Users/carlo/Documents/Diplomado 4.0Boss/imgs/banner2.png");
+   		background: url("../img/banner2.png");
    		background-size: cover;
    		background-position: center;
    		height: 220px;
