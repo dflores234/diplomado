@@ -6,7 +6,7 @@
   margin-top: 100px;
 }
 body{
-  background:url("img/fondo4.jpg");
+  background:url("../img/fondo4.jpg");
   overflow-x: hidden;
 }
 .main-section h5 a{
