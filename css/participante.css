@@ -1,0 +1,24 @@
+.main-section{
+  background: white;
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  margin-top: 100px;
+}
+body{
+  background:url("C:/Users/carlo/Documents/Diplomado 4.0Boss/imgs/fondo4.jpg");
+  padding: 2rem 1rem;
+}
+.main-section h5 a{
+	color: #DB164C  ;
+}
+
+.foot{
+	height: 50px;
+    position: absolute; 
+    left: 0;
+     bottom: 0;
+      width: 100%;
+      color: white;
+      background-color: darkgray;
+}
