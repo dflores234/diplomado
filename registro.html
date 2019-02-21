@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Crear cuenta</title>
+	<link rel="stylesheet" type="text/css" href="css/RegistroCSS.css">
+</head>
+<body>	
+	<!--Elementos del Header-->
+	<header class="header2"> 
+		<div class="wrapper">
+			<a href="C:\Users\carlo\Documents\Diplomado 4.0 Front-end\index.html" class="logo">Diplomado 4.0</a>
+		<nav>
+			<a href="C:\Users\carlo\Documents\Diplomado 4.0 Front-end\Html\Login.html">Inicia sesión</a>
+			<a href="C:\Users\carlo\Documents\Diplomado 4.0 Front-end\Html\Formulario de registro.html">Registrate</a>
+		</nav>
+		</div>
+	</header>
+	<!--Formulario-->
+	<form action="#" method="POST" accept-charset="utf-8" class="form">
+		
+	
+        <div class="formulario">
+		<h2 class="regish2">Crea tu cuenta</h2>
+		<p type="NOMBRE(S):"><input type="text" name="nombre" placeholder="Teclee su nombre o nombres." id="txtNombre" required></p>
+		<p type="APELLIDOS:"><input type="text" name="apellidos" placeholder="Apellido paterno / Apellido materno" id="txtCorreo" required></p>
+		<p type="CORREO:"><input type="email" name="correo" placeholder="example@mail.com" required></p>
+		<p type="NUMERO DE CONTACTO:"><input type="tel" name="numerocon" placeholder="(Codigo de Area) Numero" maxlength="10" minlength="0" required></p>
+		<p type="CARRERA:"><br><select id="carreras" name="carreras"> 
+			
+			
+		</select></p>
+		<p type="SEMESTRE/CUATRIMESTRE:"><br><select id="semestre" name="semestre"> 
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+		</select></p>
+		<p type="CONTRASEÑA:"><input type="password" name="Escriba su contraseña"></p>
+		<p type="CONFIRMAR CONTRASEÑA:"><input type="password" name="vuleva a escribir su contraseña"></p>
+		<input type="button" name="REGISTRAR" value="REGISTRAR" id="btnRegistrar">
+	</form>
+
+	
+</div>
+<!--Contenido fuera del formulario 
+<div class="contenido">
+	<div class="logoc">
+		<img src="C:\Users\carlo\Documents\Diplomado 4.0 Front-end\Logo CENTRO IST-03.png">
+	</div><br>
+	<h3>¿Ya estas registrado?</h3>
+	<a href="">Inicia sesion</a><br>
+</body>
+</html> -->
+
+
+<script src="js/jquery.js"></script>
+<script>
+	
+	$(function() 
+	{
+		listarCarreras();
+		$('#btnRegistrar').click(function(event) 
+		{
+			
+		});
+	});
+
+
+	
+	function listarCarreras()
+	{
+		$.ajax({
+			url: 'php/listarCarreras.php',
+			type: 'POST',
+			dataType: 'JSON',
+			data: {param1: 'value1'},
+
+			beforeSend: function(){},
+			success: function(data)
+			{
+				console.log(data);
+
+				$.each(data, function(index, val) 
+				{
+					 $('#carreras').append("<option value="+val.id_carrera+">"+val.nombre_carrera+"</option>");
+				});
+			},
+			error: function(data){}
+		});
+
+		
+	}
+</script>

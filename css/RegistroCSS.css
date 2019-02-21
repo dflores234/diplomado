@@ -1,0 +1,162 @@
+/*Estilos para el header*/
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+	width: 100%;
+	overflow: hidden;
+	background:#fff;
+	margin-bottom: 30px;
+	box-shadow: 0 0 50px -10px #000;
+}
+.wrapper{
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+header .logo{
+	color: black;
+	font-size: 60px;
+	line-height: 200px;
+	text-decoration: none;
+	color: #D40141;
+	font-weight: bold;
+} 
+header nav{
+	float: right;
+	line-height: 200px;
+
+}
+header nav a{
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+	padding: 10px 20px;
+	line-height: normal;
+	font-size: 18px;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition: all 500ms ease;
+}
+header nav a:hover{
+	background:#D40141;
+	border-radius: 50px;
+}
+.header2{
+	height: 70px;
+}
+.header2 .logo{
+	line-height: 70px;
+	font-size: 21px;
+
+}
+.header2 nav{
+line-height: 90px;
+}
+/*stilos para el body*/
+body{
+	background:white;margin:0;
+	 background-image: url("C:/Users/carlo/Documents/Diplomado 4.0 Front-end/Imagenes de prueba/fondo2.jpg")
+}
+/*estilos para el formulario*/
+.form{
+	width:500px;
+	height:850px;
+	background:white;
+	border-radius:10px;
+	padding:20px 30px;
+	box-sizing:border-box;
+	font-family:'Montserrat',sans-serif;
+	margin-bottom: 30px;
+	margin-left: 100px;
+}
+.regish2{
+	margin:10px 0;
+	padding-bottom:20px;
+	width:450px;
+	color:#78788c;
+	border-bottom:2px solid #78788c;
+	text-align: center;
+}
+input{
+	width:100%;
+	padding:10px;
+	box-sizing:border-box;
+	background:none;
+	outline:none;
+	resize:none;
+	border:0;
+	font-family:'Montserrat',sans-serif;transition:all .3s;
+	border-bottom:2px solid #bebed2
+}
+input:focus{
+	border-bottom:2px solid #29088A;
+}
+p:before{
+	content:attr(type);
+	display:block;
+	margin:28px 0 0;
+	font-size:14px;
+	color:#5a5a5a
+}
+#REGISTRAR{
+	padding:10px 2px;
+	margin:5px 0 0;
+	font-family:'Montserrat',sans-serif;border:2px solid #78788c ;
+	background:0;
+	color:#5a5a6e;
+	cursor:pointer;
+	width: 400px;
+
+}
+#REGISTRAR:hover{
+	background:#29088A;
+	color:#fff
+}
+#semestre{
+
+margin:1px;
+width: 100px;
+border-radius: 10px;
+}
+#carreras{
+width: 300px;
+border-radius: 10px;
+}
+.formulario	{
+	height: 200px;
+	width: 200px;
+	margin: 1px;
+	display: inline-block;	
+	float: left;
+}
+
+/* Contenido */
+.contenido{
+	float: right;
+	border-bottom: 20px;
+	padding-right: 200px;
+	padding-top: 120px;
+
+}
+.contenido h3{
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+.contenido a{
+	float: center;
+	padding: 0px 200px;	
+	text-decoration: none;
+}
+.logoc{
+	padding-top: 20px;
+	display: inline-block;
+}
+img{
+	height: 100px;
+	width: 500px;
+
+}
