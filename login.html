@@ -3,58 +3,48 @@
 <head>
 	<title>Iniciar Sesión</title>
 	<meta charset="utf-8">
-	<!-- JQUERY -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
 
-<!--FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<scriptsrc="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/solid.css">
 
-<!-- Los iconos tipo Solid de Fontawesome-->
-<link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
-<scriptsrc="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-
-<link rel="stylesheet" type="text/css" href="css\login.css">
 
 </head>
 <body>
 	<!--Menu-->
     <div class="container-fluid bg-light" >
     	<nav class="navbar navbar-expand-lg navbar-light bg-light container">
-	  <a class="navbar-brand" href="index.html">
-	  <img src="img/idea.svg" width="40" height="40" class="d-inline-block align-top" alt="">
-	   Diplomado 4.0
-	  </a> 
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-
-	 
-	</nav>
+	  		<a class="navbar-brand" href="index.html"><img src="img/idea.svg" width="40" height="40" class="d-inline-block align-top" alt="">Diplomado 4.0</a> 
+	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    	<span class="navbar-toggler-icon"></span></button>
+		</nav>
     </div>  
     <!--Fin menu-->
-<div class="modal-dialog text-center">
-	<div class="col-sm-8 main-section">
-		<div class="modal-content">
-			<div class="col-12 user-img">
-				<img src="img/ico.png">
-			</div>
-			<form class="col-12">
-				<div class="form-group " id="user-group">
-					<input type="text" placeholder="Correo electronico" name="" class="form-control">
+    
+	<div class="modal-dialog text-center">
+		<div class="col-sm-8 main-section">
+			<div class="modal-content">
+				<div class="col-12 user-img">
+					<img src="img/ico.png">
 				</div>
-				<div class="form-group" id="contraseña-group">
-					<input type="password" placeholder="Contraseña" name="" class="form-control">
+				<form class="col-12">
+					<div class="form-group " id="user-group">
+						<input type="text" placeholder="Correo electronico" name="" class="form-control">
+					</div>
+					<div class="form-group" id="contraseña-group">
+						<input type="password" placeholder="Contraseña" name="" class="form-control">
+					</div>
+					<button type="submit" class="btn btn-danger"><i class="fas fa-sign-out-alt"></i> Ingresar </button>
+				</form>
+				<div class="col-12 forgot">
+					<a href="#"> Olvido la contraseña</a>
 				</div>
-				<button type="submit" class="btn btn-danger"><i class="fas fa-sign-out-alt"></i> Ingresar </button>
-			</form>
-			<div class="col-12 forgot">
-				<a href="#"> Olvido la contraseña</a>
-			</div>
 
+			</div>
 		</div>
 	</div>
-</div>
 
 <footer class="footers">
     	<p>CIST 2019</p>
@@ -62,3 +52,4 @@
     </footer>
 </body>
 </html>
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
