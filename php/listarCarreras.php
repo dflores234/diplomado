@@ -11,9 +11,4 @@
 	{
 		echo "<h1>Eror 403 Prohibido</h1><br><p>Acceso denegado. No tiene permiso para acceder.</p>";
 	}
-
-
-
-
-
  ?>
