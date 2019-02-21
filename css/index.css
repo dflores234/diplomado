@@ -3,3 +3,11 @@
 	width: 500px;
 	margin-left: 200px;
 }
+
+.banner{
+   		background: url("img/fondo1.png");
+   		background-size: cover;
+   		background-position: center;
+   		height: 400px;
+
+   	}
