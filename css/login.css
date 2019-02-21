@@ -2,7 +2,7 @@ html{
 	position: relative; min-height: 100%;
 }
 body{
-	background: url("C:/Users/carlo/Documents/Diplomado 4.0Boss/imgs/fondo3.jpg") no-repeat center center;
+	background: url("img/fondo3.jpg") no-repeat center center;
 	background-size: cover;
 	 margin: 0 auto 150px;
 }
