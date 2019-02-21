@@ -1,4 +1,4 @@
-html{
+﻿html{
 	position: relative; min-height: 100%;
 }
 body{
@@ -9,7 +9,7 @@ body{
 .main-section{
 	margin: 0 auto;
 	margin-top: 25%;
-}q
+}
 .modal-content{
 	background-color: #3b4652;
 	opacity: .90;
