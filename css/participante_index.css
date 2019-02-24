@@ -10,7 +10,7 @@ body{
   overflow-x: hidden;
 }
 .main-section h5 a{
-	color: #DB164C  ;
+	color:#138EB6;
 }
 
 .foot{
@@ -132,3 +132,10 @@ text-decoration: none;
 .chatb{
 	margin-right: 20px;
 }
+#usuarioc{
+	color: black;
+}
+#imgse{
+	margin-left: 12px;
+}
+	
