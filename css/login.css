@@ -52,11 +52,21 @@ button{
 	margin: 5px 0 25px;
 }
 .footers{
-	 height: 50px;
+	height: 50px;
     position: absolute; 
     left: 0;
-     bottom: 0;
-      width: 100%;
-      color: white;
-      background-color: darkgray;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: darkgray;
   }
+.cuenta a{
+	color: #14CCB6;
+}
+.cuenta a:hover{
+	text-decoration: none;
+	color: white;
+}
+.cuenta{
+	color:white;
+}

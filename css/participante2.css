@@ -19,7 +19,7 @@ th, td {
   margin: 20px auto;
   margin-top: 30px;
 }
-.main-section h2{
+.main-section h1{
 	text-align: center;
 }
 #wrapper{
@@ -131,4 +131,7 @@ text-decoration: none;
  }
 .chatb{
 	margin-right: 20px;
+}
+#userc{
+	color: black;
 }
