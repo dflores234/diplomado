@@ -3,8 +3,7 @@
 }
 body{
 	background: url("../img/fondo3.jpg") no-repeat center center;
-	background-size: cover;
-	 margin: 0 auto 150px;
+	
 }
 .main-section{
 	margin: 0 auto;
@@ -51,14 +50,8 @@ button{
 	width: 60%;
 	margin: 5px 0 25px;
 }
-.footers{
-	height: 50px;
-    position: absolute; 
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    background-color: darkgray;
+.logins{
+	margin-bottom: 185px;
   }
 .cuenta a{
 	color: #14CCB6;
