@@ -1,71 +1,69 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Iniciar Sesión</title>
-	<meta charset="utf-8">
+	<html>
+		<head>
+			<title>Iniciar Sesión</title>
+			<meta charset="utf-8">
+			<!--FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+			<link rel="stylesheet" href="css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="css\login.css">
+			<!-- Los iconos tipo Solid de Fontawesome-->
+			<link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+		</head>
+		<body>
+			<!--Menu-->
+    		<div class="container-fluid bg-info" >
+    			<nav class="navbar navbar-expand-lg navbar-light bg-info container">
+	  				<a class="navbar-brand" href="index.html">
+	  					<img src="img/idea.svg" width="40" height="40" class="d-inline-block align-top" alt="">
+	   					Diplomado 4.0
+	  				</a> 
+	  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    				<span class="navbar-toggler-icon">
+	    				</span>
+	  				</button>
+				</nav>
+    		</div>  
+    		<!--Fin menu-->
+    		<!--Inicio del login-->
+			<div class="modal-dialog text-center">
+				<div class="col-sm-8 main-section">
+					<div class="modal-content">
+						<div class="col-12 user-img">
+							<img src="img/ico.png">
+						</div>
+						<form class="col-12">
+							<div class="form-group " id="user-group">
+								<input type="text" placeholder="Correo electronico" name="" class="form-control">
+							</div>
+							<div class="form-group" id="contraseña-group">
+								<input type="password" placeholder="Contraseña" name="" class="form-control">
+							</div>
+							<button type="submit" class="btn btn-info"><i class="fas fa-sign-out-alt"></i> Ingresar 
+							</button>
+						</form>
+						<div class="col-12 cuenta">
+							¿No tienes cuenta?
+							<a href="registrar.html">
+								Crea una
+							</a>
+						</div>
+						<div class="col-12 cuenta">
+							<a href="#"> 
+								¿Olvido su contraseña?
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footers">
+    			<p>
+    				CIST 2019
+    			</p>
+    		</footer>
+		</body>
+	</html> 
 	
-
-
-<!--FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css\login.css">
-
-
-
-<!-- Los iconos tipo Solid de Fontawesome-->
-<link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
-
-
-
-</head>
-<body>
-	<!--Menu-->
-    <div class="container-fluid bg-info" >
-    	<nav class="navbar navbar-expand-lg navbar-light bg-info container">
-	  <a class="navbar-brand" href="index.html">
-	  <img src="img/idea.svg" width="40" height="40" class="d-inline-block align-top" alt="">
-	   Diplomado 4.0
-	  </a> 
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	</nav>
-    </div>  
-    <!--Fin menu-->
-    <!--Inicio del login-->
-<div class="modal-dialog text-center">
-	<div class="col-sm-8 main-section">
-		<div class="modal-content">
-			<div class="col-12 user-img">
-				<img src="img/ico.png">
-			</div>
-			<form class="col-12">
-				<div class="form-group " id="user-group">
-					<input type="text" placeholder="Correo electronico" name="" class="form-control">
-				</div>
-				<div class="form-group" id="contraseña-group">
-					<input type="password" placeholder="Contraseña" name="" class="form-control">
-				</div>
-				<button type="submit" class="btn btn-info"><i class="fas fa-sign-out-alt"></i> Ingresar </button>
-			</form>
-			<div class="col-12 cuenta">
-				¿No tienes cuenta?<a href="registrar.html"> Crea una</a>
-			</div>
-			<div class="col-12 cuenta">
-				<a href="#"> ¿Olvido su contraseña?</a>
-			</div>
-
-		</div>
-	</div>
-</div>
-
-<footer class="footers">
-    	<p>CIST 2019</p>
-    	
-    </footer>
-</body>
-</html> 
-<script type="text/javascript" src="js/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
