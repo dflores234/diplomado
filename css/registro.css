@@ -139,3 +139,12 @@ border-radius: 10px;
    	.footers{
    		height: 50px;
    	}
+.infod{
+ display: inline-block;
+ color: white;
+}
+.infof{
+	color: white;
+	padding-bottom: 10px;
+}
+
