@@ -6,3 +6,10 @@
 .infod{
 	display: inline-block;
 }
+#maind{
+	padding-top: 20px;
+}
+#mensaje{
+	border-radius: 20px;
+	opacity: 0.9;
+}
