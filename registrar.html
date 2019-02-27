@@ -228,21 +228,18 @@
 	    	function registrarUsuario()
 	    	{
 	    		$.ajax({
-	    			url: 'php/listarCarreras.php',
+	    			url: 'php/usuario.controller.php',
 	    			type: 'POST',
 	    			dataType: 'JSON',
+	    			data: {option: 'registrar'},
 	    			beforeSend: function(){},
 	    			success: function(data)
 	    			{
-	    				$.each(data, function(index, val) 
-	    				{
-	    					$('#carreras').append("<option value="+val.id_carrera+">"+val.nombre_carrera+"</option>"); 
-	    				});
+	    				
 	    			},
 	    		});
 	    		
 	    	}
-
 
 
 	    </script>
