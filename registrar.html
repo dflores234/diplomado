@@ -50,7 +50,7 @@
 			<!--Fin del banner-->
 			<!--Formulario-->
 			<section class="main-section">
-				<form action="#" method="post" id="form" class="form">
+				<div class="form">
 				<h2 class="regish2">
 					Crea tu cuenta
 				</h2>
@@ -65,72 +65,7 @@
 				<p type="CARRERA:">
 					<br>
 						<select id="carreras" name="carreras"> 
-							<option value="1">
-								Contador publico
-							</option>
-							<option value="2">
-								Ingenieria Industrial
-							</option>
-							<option value="3">
-								Ingenieria en administacion
-							</option>
-							<option value="4">
-								Ingenieria Electronica
-							</option>
-							<option value="5">
-								Ingenieria en Gestion Empresarial
-							</option>
-							<option value="6">
-								Ingenieria Electrica
-							</option>
-							<option value="7">
-								Ingenieria en Sistemas Computacionales
-							</option>
-							<option value="8">
-								Ingenieria Civil
-							</option>
-							<option value="9">
-								Ingenieria Mecanica
-							</option>
-							<option value="10">	
-								Arquitectura
-							</option>
-							<option value="11">
-								Ingenieria Mecatronica
-							</option>
-							<option value="12">	
-								Operaciones Comerciales
-							</option>
-							<option value="13">
-								Desarrollo de Negocios Area Mercadotecnia
-							</option>
-							<option value="14">
-								Logistica Area Cadena de sumistros
-							</option>
-							<option value="15">
-								Mecatronica Area de Automatizacion
-							</option>
-							<option value="16">
-								Mantenimiento Area Instalaciones
-							</option>
-							<option value="17">
-								Energias Renovables Area Energia Solar
-							</option>
-							<option value="18">
-								Ingenieria en Desarrollo e Inovacion Empresarial
-							</option>
-							<option value="19">
-								Ingenieria en Logistica Empresarial
-							</option>
-							<option value="20">
-								Ingenieria en Mecatronica
-							</option>
-							<option value="21">
-								Ingenieria en Mantenimiento Industrial
-							</option>
-							<option value="22">
-								Ingeniera en Energias Renovables
-							</option>
+							
 						</select>
 				</p>
 				<p type="SEMESTRE/CUATRIMESTRE:">
@@ -159,8 +94,8 @@
 				<p type="CONFIRMAR CONTRASEÑA:">
 					<input type="password" name="vuleva a escribir su contraseña">
 				</p>
-				<input type="submit" name="REGISTRAR" value="REGISTRAR" id="REGISTRAR">
-			</form>
+				<input type="button" name="REGISTRAR" value="REGISTRAR" id="REGISTRAR">
+			</div>
 			<div class="contenido">
 					<h3>
 						¿Ya estas registrado?
@@ -263,3 +198,51 @@
 	    <script src="js/jquery.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	    <script src="js/bootstrap.min.js"></script>
+	    <script  type="text/javascript">
+	    	$(function() 
+	    	{
+	    		listarCarreras();
+	    	});
+
+
+
+
+	    	function listarCarreras()
+	    	{
+	    		$.ajax({
+	    			url: 'php/listarCarreras.php',
+	    			type: 'POST',
+	    			dataType: 'JSON',
+	    			beforeSend: function(){},
+	    			success: function(data)
+	    			{
+	    				$.each(data, function(index, val) 
+	    				{
+	    					$('#carreras').append("<option value="+val.id_carrera+">"+val.nombre_carrera+"</option>"); 
+	    				});
+	    			},
+	    		});
+	    		
+	    	}
+
+	    	function registrarUsuario()
+	    	{
+	    		$.ajax({
+	    			url: 'php/listarCarreras.php',
+	    			type: 'POST',
+	    			dataType: 'JSON',
+	    			beforeSend: function(){},
+	    			success: function(data)
+	    			{
+	    				$.each(data, function(index, val) 
+	    				{
+	    					$('#carreras').append("<option value="+val.id_carrera+">"+val.nombre_carrera+"</option>"); 
+	    				});
+	    			},
+	    		});
+	    		
+	    	}
+
+
+
+	    </script>
