@@ -7,7 +7,7 @@
 			<link rel="stylesheet" href="css/bootstrap.min.css">
 			<link rel="stylesheet" type="text/css" href="css/registro.css">
 		</head>
-		<body>
+		<body onload="Otracarrera()">
 			<!--Menu-->
     		<div class="container-fluid bg-info fixed-top" >
     			<nav class="navbar navbar-expand-lg navbar-light bg-info container">
@@ -51,6 +51,7 @@
 			<!--Formulario-->
 			<section class="main-section">
 				<div class="form">
+					<form name="fregis" method="post">
 				<h2 class="regish2">
 					Crea tu cuenta
 				</h2>
@@ -64,9 +65,14 @@
 				</p>
 				<p type="CARRERA:">
 					<br>
-						<select id="carreras" name="carreras"> 
-							
+						<select id="carreras" name="carreras" onchange="Otracarrera()"> 
+							<option value="d">d</option>
+							<option value="otra carrera"> otra carrera </option>
+
 						</select>
+				</p>
+				<p>
+					<input type="text" name="otracarrera" placeholder="Escriba su carrera" id="otracarrera" style="display: none;">
 				</p>
 				<p type="SEMESTRE/CUATRIMESTRE:">
 					<br>
@@ -95,6 +101,7 @@
 					<input type="password" name="vuleva a escribir su contraseña">
 				</p>
 				<input type="button" name="REGISTRAR" value="REGISTRAR" id="REGISTRAR">
+			</form>
 			</div>
 			<div class="contenido">
 					<h3>
@@ -121,75 +128,75 @@
 			<!--Contenido fuera del formulario-->
 			
 			<!-- Footer -->
-<footer class="page-footer font-small blue pt-4 bg-dark">
+		<footer class="page-footer font-small blue pt-4 bg-dark">
 
-    <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
+		    <!-- Footer Links -->
+		    <div class="container-fluid text-center text-md-left">
 
-      <!-- Cuadricula row -->
-      <div class="row">
+		      <!-- Cuadricula row -->
+		      <div class="row">
 
-        <!-- Cuadricula column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-          <!-- Contenido -->
-          <h5 class="text-uppercase text-light">
-            Centro de Innovación Socioecónomica y Tecnológica
-          </h5>
-          <div class="infof">
-            
-              +52 (867) 712-0327 <br>
-              contacto@centroist.org
-            
-          </div>
-            
-            <div class="infod">
-                Mariano Matamoros 309 <br>
-                2do Piso Antiguo Banco Longoria <br>
-                Sector Centro <br>
-                Nuevo Laredo, Tamaulipas. México. <br>
-                CP: 88000
-              
-            </div>
-        </div>
-        <!-- Cudri column -->
+		        <!-- Cuadricula column -->
+		        <div class="col-md-6 mt-md-0 mt-3">
+		          <!-- Contenido -->
+		          <h5 class="text-uppercase text-light">
+		            Centro de Innovación Socioecónomica y Tecnológica
+		          </h5>
+		          <div class="infof">
+		            
+		              +52 (867) 712-0327 <br>
+		              contacto@centroist.org
+		            
+		          </div>
+		            
+		            <div class="infod">
+		                Mariano Matamoros 309 <br>
+		                2do Piso Antiguo Banco Longoria <br>
+		                Sector Centro <br>
+		                Nuevo Laredo, Tamaulipas. México. <br>
+		                CP: 88000
+		              
+		            </div>
+		        </div>
+		        <!-- Cudri column -->
 
-        <hr class="clearfix w-100 d-md-none pb-3">
+		        <hr class="clearfix w-100 d-md-none pb-3">
 
-        <!-- Cuadri column -->
-        <div class="" style="display: inline-block;">
+		        <!-- Cuadri column -->
+		        <div class="" style="display: inline-block;">
 
-            <!-- Links -->
-            <!--<h5 class="text-uppercase text-light">Siguenos</h5>-->
+		            <!-- Links -->
+		            <!--<h5 class="text-uppercase text-light">Siguenos</h5>-->
 
-            <ul class="list-unstyled ">
-              <li>
-                <a href="https://www.facebook.com/centroist/"><img src="img/facebook.svg" width="35"></a>
-              </li>
-              
-            </ul>
+		            <ul class="list-unstyled ">
+		              <li>
+		                <a href="https://www.facebook.com/centroist/"><img src="img/facebook.svg" width="35"></a>
+		              </li>
+		              
+		            </ul>
 
-          </div>
-          <!-- Cuadri column -->
+		          </div>
+		          <!-- Cuadri column -->
 
-          <!-- Cuadri column -->
-          <div class="col-md-3 mb-md-0 mb-3">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14156.658397526126!2d-99.510932!3d27.495256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcae3e7110b763fa8!2sCentro+de+Innovaci%C3%B3n+Socioecon%C3%B3mica+y+Tecnol%C3%B3gica!5e0!3m2!1ses-419!2smx!4v1551119743854" width="500" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-          <!-- Cuadri column -->
+		          <!-- Cuadri column -->
+		          <div class="col-md-3 mb-md-0 mb-3">
+		           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14156.658397526126!2d-99.510932!3d27.495256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcae3e7110b763fa8!2sCentro+de+Innovaci%C3%B3n+Socioecon%C3%B3mica+y+Tecnol%C3%B3gica!5e0!3m2!1ses-419!2smx!4v1551119743854" width="500" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+		          </div>
+		          <!-- Cuadri column -->
 
-      </div>
-      <!-- Cuadri row -->
+		      </div>
+		      <!-- Cuadri row -->
 
-    </div>
-    <!-- Footer Links -->
+		    </div>
+		    <!-- Footer Links -->
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3 bg-info">© 2019 Copyright:
-      <a href="#" class="muted-link"> CIST</a>
-    </div>
-    <!-- Copyright -->
+		    <!-- Copyright -->
+		    <div class="footer-copyright text-center py-3 bg-info">© 2019 Copyright:
+		      <a href="#" class="muted-link"> CIST</a>
+		    </div>
+		    <!-- Copyright -->
 
-</footer>
+		</footer>
   <!-- Footer -->       
 		</body>
 	</html>
@@ -243,3 +250,6 @@
 
 
 	    </script>
+
+	    <!--Script para habilitar y deshabilitar el campo Otra carrera-->
+	    <script type="text/javascript" src="js/otracarrera.js"></script>
