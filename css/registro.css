@@ -25,7 +25,6 @@ background: lightblue;
 	box-sizing:border-box;
 	font-family:'Montserrat',sans-serif;
 	margin-bottom: 30px;
-	
 	display: inline-block;
  	margin-top: 40px;
 }
@@ -92,6 +91,7 @@ border-radius: 10px;
 /* Contenido */
 .contenido{
 	display: inline-block;
+	position: absolute;
 	float: right;
 	margin-top: 80px;
 	border-radius: 5px;	
@@ -99,6 +99,7 @@ border-radius: 10px;
   filter: alpha(opacity=90);	
 	background:white;
 	text-align: center;
+	margin-left: 80px;
 }
 .contenido h3{
 	color: black;
