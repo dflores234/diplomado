@@ -32,8 +32,8 @@ body{
 	margin:10px 0;
 	padding-bottom:20px;
 	width:450px;
-	color:#78788c;
-	border-bottom:2px solid #78788c;
+	color:black;
+	border-bottom:2px solid #0D95C1;
 	text-align: center;
 	font-size: 25px;
 }
@@ -46,7 +46,7 @@ input{
 	resize:none;
 	border:0;
 	font-family:'Montserrat',sans-serif;transition:all .3s;
-	border-bottom:2px solid #bebed2
+	border-bottom:2px solid #DDC5EF
 }
 input:focus{
 	border-bottom:2px solid #0D95C1;
@@ -56,7 +56,7 @@ p:before{
 	display:block;
 	margin:28px 0 0;
 	font-size:14px;
-	color:#5a5a5a
+	color:black
 }
 #REGISTRAR{
 	padding:10px 2px;
