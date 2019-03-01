@@ -62,30 +62,31 @@
           <div class="form-group">
             <label class="col-lg-3 control-label">Nombre(s):</label>
             <div class="col-lg-9">
-              <input class="form-control" type="text" value="" placeholder="Teclee su nombre">
+              <input class="form-control" type="text" value="" placeholder="Teclee su nombre" id="nombre">
             </div>
           </div>
           <div class="form-group">
             <label class="col-lg-3 control-label">Apellidos</label>
             <div class="col-lg-9">
-              <input class="form-control" type="text" value="" placeholder="Apellido Paterno / Apellido Materno">
+              <input class="form-control"  id="apellido" type="text" value="" placeholder="Apellido Paterno / Apellido Materno">
             </div>
           </div>
           <div class="form-group">
             <label class="col-lg-3 control-label">Correo:</label>
             <div class="col-lg-9">
-              <input class="form-control" type="mail" placeholder="example2@mail.com">
+              <input class="form-control" type="mail" placeholder="example2@mail.com" id="correo">
             </div>
           </div>
           <div class="form-group">
             <label class="col-lg-5 control-label">Número de contacto:</label>
             <div class="col-lg-9">
-              <input class="form-control" type="tel" placeholder="(867)136754" maxlength="10">
+              <input class="form-control" id="telefono" type="tel" placeholder="(867)136754" maxlength="10">
             </div>
           </div>
            <div class="form-group">
             <label class="col-lg-3 control-label">Carreras:</label>
-            <div class="col-lg-9">
+            <div class="col-lg-9
+            ">
               <div class="ui-select">
                 <select id="carreras" name="carreras" class="form-control" onchange="Otracarrera()">
 		                 <option value="d">d</option>
@@ -126,19 +127,19 @@
           <div class="form-group">
             <label class="col-md-3 control-label">Contraseña:</label>
             <div class="col-md-9">
-              <input class="form-control" type="password" placeholder="*******">
+              <input class="form-control" id="contraseña" type="password" placeholder="*******">
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-5 control-label">Confirmar contraseña:</label>
             <div class="col-md-9">
-              <input class="form-control" type="password" placeholder="*******">
+              <input class="form-control" id="ccontraseña" type="password" placeholder="*******">
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-2 control-label"></label>
             <div class="col-md-9">
-              <input type="button" class="btn btn-primary" value="Registrar">
+              <input type="button" class="btn btn-primary" value="Registrar" id="registrar">
               <span></span>
               
             </div>
@@ -155,13 +156,17 @@
 						Inicia sesión <img src="img/users.svg" width="20" align="center">
 					</a>	
 						<br>
-					<p id="tipst"> 
-						Bienvenido al Diplomado 4.0<br><br>
-						Al registrarte en el diplomado tendras acceso a los
-						distintos modulos, tales como: Ciberseguridad, Big
-						Data, IoT, Visión Artificial Inteligente, Sistemas int
-						eractivos basados en visión para ayuda al operador
-						(VR Y AR)<br><br>
+					<p align="left"> 
+						<h6>Bienvenido al Diplomado 4.0</h6>
+						Al registrarte en el diplomado tendras acceso a los distintos modulos, tales como: 
+						<ul>
+							<li>Ciberseguirdad</li>
+							<li>Big Data</li>
+							<li>IoT</li>
+							<li>Visión Artificial Inteligente</li>
+							<li>Sistemas interactivos basados en visión para ayuda al operador (VR Y AR)</li>
+						</ul>
+						
 						Consejos para el registro <img src="img/tips.svg" width="20"><br>
 					</p>
 					
@@ -299,3 +304,5 @@
 
 	    <!--Script para habilitar y deshabilitar el campo Otra carrera-->
 	    <script type="text/javascript" src="js/otracarrera.js"></script>
+	    <!--Validar campos-->
+	    <script type="text/javascript" src="js/validar_registro.js"></script>

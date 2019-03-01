@@ -1,3 +1,4 @@
+/*diseno para la parte que contiene el formulario y los tips*/
 .main-section{
   background:white;
   width: 90%;
@@ -6,71 +7,17 @@
   margin-top: 30px;
   border-radius: 20px;
 }
-.regis{
- padding-top: 75px;
- padding-bottom: 75px;
-}
 body{
-	/*background: url("../img/fondo2.jpg") ;*/
+/*background: url("../img/fondo2.jpg") ;*/
 background:white;
 
-}
-/*estilos para el formulario*/
-.form{
-	width:500px;
-	height:1025px;
-	background:white;
-	border-radius:20px;
-	padding:20px 30px;
-	box-sizing:border-box;
-	font-family:'Montserrat',sans-serif;
-	margin-bottom: 30px;
-	display: inline-block;
- 	margin-top: 40px;
-}
-.regish2{
-	margin:10px 0;
-	padding-bottom:20px;
-	width:450px;
-	color:black;
-	border-bottom:2px solid #0D95C1;
-	text-align: center;
-	font-size: 25px;
-}
-input{
-	width:100%;
-	padding:10px;
-	box-sizing:border-box;
-	background:none;
-	outline:none;
-	resize:none;
-	border:0;
-	font-family:'Montserrat',sans-serif;transition:all .3s;
-	border-bottom:2px solid #DDC5EF
-}
-input:focus{
-	border-bottom:2px solid #0D95C1;
 }
 p:before{
 	content:attr(type);
 	display:block;
-	margin:28px 0 0;
+	margin:18px 0 0;
 	font-size:14px;
 	color:black
-}
-#REGISTRAR{
-	padding:10px 2px;
-	margin:5px 0 0;
-	font-family:'Montserrat',sans-serif;border:2px solid #0D95C1; ;
-	background:0;
-	color:#5a5a6e;
-	cursor:pointer;
-	width: 440px;
-
-}
-#REGISTRAR:hover{
-	background:#0D95C1;
-	color:#fff
 }
 #semestre{
 margin:1px;
@@ -81,47 +28,7 @@ border-radius: 10px;
 width: 300px;
 border-radius: 10px;
 }
-.formulario	{
-	height: 200px;
-	width: 200px;
-	margin: 1px;
-	display: inline-block;	
-	float: left;
-}
-/* Contenido */
-.contenido{
-	display: inline-block;
-	position: absolute;
-	float: right;
-	margin-top: 80px;
-	border-radius: 5px;	
-	opacity: 0.9;
-  filter: alpha(opacity=90);	
-	background:white;
-	text-align: center;
-	margin-left: 80px;
-}
-.contenido h3{
-	color: black;
-	display: inline-block;
 
-}
-.contenido a{
-	color: darkblue;
-	text-decoration: none;
-	background-color:;
-}
-.contenido a:hover{
-	text-decoration: none;
-	color: purple;
-
-}
-.contenido p{
-	color: black;	
-	font-size: 13px;
-	font-weight: bold;
-	width: 402px;
-}
 .banner{
    		background: url("../img/banner2.png");
    		background-size: cover;
@@ -135,14 +42,12 @@ border-radius: 10px;
    		height: 50px;
    	}
 .infod{
- display: inline-block;
- color: white;
+	display: inline-block;
+	color: white;
 }
 .infof{
+	
 	color: white;
 	padding-bottom: 10px;
 }
 
-#tipst{
-	font-size: 15px;
-}
