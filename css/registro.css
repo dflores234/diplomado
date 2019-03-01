@@ -1,5 +1,5 @@
 .main-section{
-  background: transparent;
+  background:white;
   width: 90%;
   max-width: 1000px;
   margin: 20px auto;
@@ -12,7 +12,7 @@
 }
 body{
 	/*background: url("../img/fondo2.jpg") ;*/
-background: lightblue;
+background:white;
 
 }
 /*estilos para el formulario*/
