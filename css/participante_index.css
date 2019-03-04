@@ -31,7 +31,7 @@ body{
 
 }
 #wrapper .toggled{
-	padding-left: 250px;
+	padding-left: 240px;
 }
 #sidebar-wrapper{
 	z-index: 1000;
@@ -107,7 +107,7 @@ text-decoration: none;
 	padding-left: 20px;
 }
  
- @media(min-width: 768px){
+ @media(min-width: 368px){
 #wrapper{
 	padding-left: 250px;
  }
