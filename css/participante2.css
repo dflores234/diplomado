@@ -108,7 +108,7 @@ text-decoration: none;
 	padding-left: 20px;
 }
  
- @media(min-width: 768px){
+ @media(min-width: 368px){
 #wrapper{
 	padding-left: 250px;
  }
