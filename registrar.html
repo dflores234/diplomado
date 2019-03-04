@@ -255,67 +255,14 @@
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	    <script src="js/bootstrap.min.js"></script>
 	    <script  type="text/javascript">
-	    	$(function() 
-	    	{
-	    		listarCarreras();
+	    $(function() 
+	    {
+	    	listarCarreras();
 
-	    		$('#carreras').change(function(event) 
-	    		{
-	    			var carrera = $('#carreras option:selected').text();
-	    			
-						if (carrera == 'Otro')
-						{
-							$('#otracarrera').fadeIn('fast');
-						}
-						else
-						{
-							$('#otracarrera').fadeOut('fast');
-						}
-					
-	    		});
-	    	});
-
-
-
-
-	    	function listarCarreras()
-	    	{
-	    		$.ajax({
-	    			url: 'php/listarCarreras.php',
-	    			type: 'POST',
-	    			dataType: 'JSON',
-	    			beforeSend: function(){},
-	    			success: function(data)
-	    			{
-	    				$.each(data, function(index, val) 
-	    				{
-	    					$('#carreras').append("<option value="+val.id_carrera+">"+val.nombre_carrera+"</option>"); 
-	    				});
-	    			},
-	    		});
-	    		
-	    	}
-
-	    	function registrarUsuario()
-	    	{
-	    		$.ajax({
-	    			url: 'php/usuario.controller.php',
-	    			type: 'POST',
-	    			dataType: 'JSON',
-	    			data: {option: 'registrar'},
-	    			beforeSend: function(){},
-	    			success: function(data)
-	    			{
-	    				
-	    			},
-	    		});
-	    		
-	    	}
-
-
-
-
+	    });
 	    </script>
 	    <!--Validar campos-->
 	    <script type="text/javascript" src="js/validar_registro.js"></script>
+
+	    <script src="js/misscripst.js"></script>
 
