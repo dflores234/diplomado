@@ -17,10 +17,10 @@
 		{
 			if (!$this->existeUsuario($correo)) 
 			{
-				# code...
+				//Insertar usuario
 			}else
 			{
-
+				//usuario ya existe
 			}
 		}
 
