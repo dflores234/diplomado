@@ -7,6 +7,7 @@
 	class Usuario
 	{
 		private $conectar;
+		$response = array('status' => null, 'msg' => null );
 		function __construct(argument)
 		{
 			$this->conectar = $pdo;

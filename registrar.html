@@ -7,7 +7,7 @@
 			<link rel="stylesheet" href="css/bootstrap.min.css">
 			<link rel="stylesheet" type="text/css" href="css/registro.css">
 		</head>
-		<body onload="Otracarrera()">
+		<body>
 			<!--Menu-->
     		<div class="container-fluid bg-info fixed-top text-center" >
     			<nav class="navbar navbar-expand-lg navbar-light bg-info container">
@@ -58,7 +58,7 @@
                 <h3>
                   Crea tu cuenta <img src="img/regis.svg" width="30" height="30">
                 </h3>
-        <form class="form-horizontal" role="form" style="width: 500px;">
+        <div class="form-horizontal" role="form" style="width: 500px;">
           <div class="form-group">
             <label class="col-lg-3 control-label">Nombre(s):</label>
             <div class="col-lg-9">
@@ -88,9 +88,7 @@
             <div class="col-lg-9
             ">
               <div class="ui-select">
-                <select id="carreras" name="carreras" class="form-control" onchange="Otracarrera()">
-		                 <option value="d">d</option>
-						<option value="otra carrera"> otra carrera </option>
+                <select id="carreras" class="form-control">
                 </select>
               </div>
             </div>
@@ -140,11 +138,9 @@
             <label class="col-md-2 control-label"></label>
             <div class="col-md-9">
               <input type="button" class="btn btn-primary" value="Registrar" id="registrar">
-              <span></span>
-              
             </div>
           </div>
-        </form>
+        </div>
       </div>
       <div class="col-md-5">
                 <div class="text-center">
@@ -257,52 +253,14 @@
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	    <script src="js/bootstrap.min.js"></script>
 	    <script  type="text/javascript">
-	    	$(function() 
-	    	{
-	    		listarCarreras();
-	    	});
+	    $(function() 
+	    {
+	    	listarCarreras();
 
-
-
-
-	    	function listarCarreras()
-	    	{
-	    		$.ajax({
-	    			url: 'php/listarCarreras.php',
-	    			type: 'POST',
-	    			dataType: 'JSON',
-	    			beforeSend: function(){},
-	    			success: function(data)
-	    			{
-	    				$.each(data, function(index, val) 
-	    				{
-	    					$('#carreras').append("<option value="+val.id_carrera+">"+val.nombre_carrera+"</option>"); 
-	    				});
-	    			},
-	    		});
-	    		
-	    	}
-
-	    	function registrarUsuario()
-	    	{
-	    		$.ajax({
-	    			url: 'php/usuario.controller.php',
-	    			type: 'POST',
-	    			dataType: 'JSON',
-	    			data: {option: 'registrar'},
-	    			beforeSend: function(){},
-	    			success: function(data)
-	    			{
-	    				
-	    			},
-	    		});
-	    		
-	    	}
-
-
+	    });
 	    </script>
-
-	    <!--Script para habilitar y deshabilitar el campo Otra carrera-->
-	    <script type="text/javascript" src="js/otracarrera.js"></script>
 	    <!--Validar campos-->
 	    <script type="text/javascript" src="js/validar_registro.js"></script>
+
+	    <script src="js/misscripst.js"></script>
+
