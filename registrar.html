@@ -7,7 +7,7 @@
 			<link rel="stylesheet" href="css/bootstrap.min.css">
 			<link rel="stylesheet" type="text/css" href="css/registro.css">
 		</head>
-		<body onload="Otracarrera()">
+		<body>
 			<!--Menu-->
     		<div class="container-fluid bg-info fixed-top text-center" >
     			<nav class="navbar navbar-expand-lg navbar-light bg-info container">
@@ -88,9 +88,7 @@
             <div class="col-lg-9
             ">
               <div class="ui-select">
-                <select id="carreras" name="carreras" class="form-control" onchange="Otracarrera()">
-		                 <option value="d">d</option>
-						<option value="otra carrera"> otra carrera </option>
+                <select id="carreras" class="form-control">
                 </select>
               </div>
             </div>
@@ -260,6 +258,21 @@
 	    	$(function() 
 	    	{
 	    		listarCarreras();
+
+	    		$('#carreras').change(function(event) 
+	    		{
+	    			var carrera = $('#carreras option:selected').text();
+	    			
+						if (carrera == 'Otro')
+						{
+							$('#otracarrera').fadeIn('fast');
+						}
+						else
+						{
+							$('#otracarrera').fadeOut('fast');
+						}
+					
+	    		});
 	    	});
 
 
@@ -300,9 +313,9 @@
 	    	}
 
 
-	    </script>
 
-	    <!--Script para habilitar y deshabilitar el campo Otra carrera-->
-	    <script type="text/javascript" src="js/otracarrera.js"></script>
+
+	    </script>
 	    <!--Validar campos-->
 	    <script type="text/javascript" src="js/validar_registro.js"></script>
+
