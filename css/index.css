@@ -14,14 +14,24 @@
 #mensaje{
 	border-radius: 20px;
 	opacity: 0.9;
+	background: #F7F8F8	;
+}
+#mensaje h5{
+	color:black;
+}
+#mensaje p{
+	margin-bottom: 0px;
 }
 #pcon{
 	font-size: 18px;
 }
 #colors h6{
 	font-size: 18px;
-	color:blue;
+	color:#DF762D;
 }
 #colors{
 	font-size: 18px;
+}
+#logo{
+	margin-right: 80px;
 }
