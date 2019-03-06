@@ -21,8 +21,10 @@
 				//Insertar usuario
 			}else
 			{
-				//usuario ya existe
+				//
 			}
+
+			return $response;
 		}
 
 

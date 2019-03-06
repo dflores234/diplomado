@@ -5,31 +5,52 @@ $('#registrar').click(function(){
 	var ocar=$('#otracarrera').val().trim();
 	var contra=$('#contraseña').val().trim();
 	var ccontra=$('#ccontraseña').val().trim();
+	var mail=$('#correo').val().trim();
+
 	if (nom=='') {
-		alert('Por favor, introduzca su nombre');
+		/*alert('Por favor, introduzca su nombre');*/
+		$(nombre).css("border","1px solid red");
+		$(nombre).attr("placeholder","Por favor, Introduzca su nombre");
 	}
 	if (ape=='') {
-		alert('Por favor, no omita sus apellidos');
+		/*alert('');*/
+		$(apellido).css("border","1px solid red");
+		$(apellido).attr("placeholder","Por favor, no omita sus apellidos");
 	}
 	if (tel=='') {
-		alert('No deje el campo del numero de telefono vacio');
+		/*alert('');*/
+		$(telefono).css("border","1px solid red");
+		$(telefono).attr("placeholder","Por favor ingrese su número");
 	}
 	else if(isNaN($("#telefono").val())) {  
-        alert("El teléfono solo debe contener números");  
+        /*alert(""); */
+        $(telefono).css("border","1px solid red");
+        $(telefono).val("");
+		$(telefono).attr("placeholder","El teléfono solo debe contener números");
         return false;  
     } 
-	if($("#correo").val().indexOf('@', 0) == -1 || $("#correo").val().indexOf('.', 0) == -1) {  
+    if (mail=='') {
+    	$(correo).css("border","1px solid red");
+		$(correo).attr("placeholder","Por favor ingrese su correo");
+    }
+	else if($("#correo").val().indexOf('@', 0) == -1 || $("#correo").val().indexOf('.', 0) == -1) {  
             alert("La dirección parece incorrecta");  
             return false;  
         }  
     if (ocar=='') {
-    	alert('no deje el campo de la carrera en blanco');
+    	/*alert(');*/
+    	$(otracarrera).css("border","1px solid red");
+		$(otracarrera).attr("no deje el campo de la carrera en blanco");
     } 
     if (contra=='') {
-    	alert('Escriba su contraseña');
+    	/*alert('');*/
+    	$(contraseña).css("border","1px solid red");
+		$(contraseña).attr("placeholder","Escriba su contraseña");
     }
      if (ccontra=='') {
-    	alert('Escriba su contraseña');
+    	/*alert('Escriba su contraseña');*/
+    	$(ccontraseña).css("border","1px solid red");
+		$(ccontraseña).attr("placeholder","Escriba su contraseña");
     }
 	
 });
