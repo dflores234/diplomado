@@ -8,14 +8,21 @@ $('#registrar').click(function(){
 	var mail=$('#correo').val().trim();
 
 	if (nom=='') {
-		/*alert('Por favor, introduzca su nombre');*/
+		
 		$(nombre).css("border","1px solid red");
 		$(nombre).attr("placeholder","Por favor, Introduzca su nombre");
+	}
+	else{
+		$(nombre).css("border","1px solid lightgray");
 	}
 	if (ape=='') {
 		/*alert('');*/
 		$(apellido).css("border","1px solid red");
 		$(apellido).attr("placeholder","Por favor, no omita sus apellidos");
+
+	}
+	else{
+		$(apellido).css("border","1px solid lightgray");
 	}
 	if (tel=='') {
 		/*alert('');*/
@@ -27,8 +34,12 @@ $('#registrar').click(function(){
         $(telefono).css("border","1px solid red");
         $(telefono).val("");
 		$(telefono).attr("placeholder","El teléfono solo debe contener números");
-        return false;  
+        return false; 
+
     } 
+    else{
+    	$(telefono).css("border","1px solid lightgray");
+    }
     if (mail=='') {
     	$(correo).css("border","1px solid red");
 		$(correo).attr("placeholder","Por favor ingrese su correo");
@@ -36,7 +47,10 @@ $('#registrar').click(function(){
 	else if($("#correo").val().indexOf('@', 0) == -1 || $("#correo").val().indexOf('.', 0) == -1) {  
             alert("La dirección parece incorrecta");  
             return false;  
-        }  
+    } 
+    else{
+    	$(mail).css("border","1px solid lightgray");
+    } 
     if (ocar=='') {
     	/*alert(');*/
     	$(otracarrera).css("border","1px solid red");

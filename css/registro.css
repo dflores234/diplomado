@@ -28,8 +28,9 @@ border-radius: 10px;
    		background-position: center;
    		height: 220px;
    		width: 1000px;
-   		padding-top: 50px;
-   		opacity: 0.8;
+   		margin-top: 50px;
+      border-radius: 6px;
+   		/*opacity: 0.8;*/
    	}
    	.footers{
    		height: 50px;
