@@ -6,10 +6,4 @@
 		define('DEFAULT_CHARSET', 'utf8');
 		define('USERDB', 'administradorDB');
 		define('PASSWORD', '@Sefuerte365!');
-
-
-
-
-
-
  ?>
