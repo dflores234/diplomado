@@ -1,11 +1,7 @@
 <?php 
 	require 'db_conection.php';
-	include 'password.class.php';
+	require 'password.class.php';
 
-
-	/**
-	 * 
-	 */
 	class Usuario
 	{
 		private $conectar;
@@ -23,9 +19,6 @@
 		{
 			if (!$this->existeUsuario($correo)) 
 			{
-				
-
-				/*Generamos la contraseña y la encriptamos*/
 				$stmt = $this->connX->prepare("INSERT INTO alumno(	nombre,
 																	apellido_paterno,
 																	apellido_materno,
@@ -85,17 +78,5 @@
 			return $stmt->rowCount() > 0;
 	    }
 
-
-	    public function registrarCarrera()
-	    {
-	    	$stmt = $this->connX->prepare();
-	    }
 	}
-
-
-
-
-
-
-
  ?>
