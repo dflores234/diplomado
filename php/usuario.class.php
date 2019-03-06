@@ -7,7 +7,8 @@
 	class Usuario
 	{
 		private $conectar;
-		$response = array('status' => null, 'msg' => null );
+		private $response = array('status' => null, 'msg' => null );
+		
 		function __construct(argument)
 		{
 			$this->conectar = $pdo;
@@ -18,10 +19,28 @@
 		{
 			if (!$this->existeUsuario($correo)) 
 			{
-				//Insertar usuario
+				
+				$stmt = $this->connX->prepare("INSERT INTO alumno(	nombre,
+																	apellido_paterno,
+																	apellido_materno,
+																	correo_electronico,
+																	numero_contacto,
+																	contrasena,
+																	semestre,
+																	status,
+																	id_carrera
+																) VALUES
+																(
+																	
+																)");
+				$stmt->bindParam
+
+
+
 			}else
 			{
-				//
+				$this->response['status'] = 'error';
+				$this->response['msg'] = 'El correo electrónico ingresado ya existe';
 			}
 
 			return $response;

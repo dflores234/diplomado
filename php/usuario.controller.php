@@ -1,17 +1,13 @@
 <?php 
 	require 'usuario.class.php';
+	$response = array();
 
-	switch ($_POST['option']) 
-	{
-		$usuario = new Usuario();
-		case 'registrar':
-			$usuario->CrearUsuario();
-			break;
-		
-		default:
-			# code...
-			break;
-	}
+	
 
+
+
+
+
+	echo json_encode($response);
 
  ?>
