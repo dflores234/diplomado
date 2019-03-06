@@ -14,7 +14,7 @@
 		}
 
 
-		public function CrearUsuario($nombre,$apP,$apM,$correo,$numero_contacto,$contrasena,$semestre,$status,$id_carrera)
+		public function registrarUsuario($nombre,$apP,$apM,$correo,$numero_contacto,$contrasena,$semestre,$status,$id_carrera)
 		{
 			if (!$this->existeUsuario($correo)) 
 			{
@@ -35,6 +35,12 @@
 	    	$stmt->bindParam(':email',$email);
 	    	$stmt->execute();
 			return $stmt->rowCount() > 0;
+	    }
+
+
+	    public function registrarCarrera()
+	    {
+	    	$stmt = $this->connX->prepare();
 	    }
 	}
 
