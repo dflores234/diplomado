@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 	<html lang="es">
 		<head>
 			<meta charset="utf-8">
@@ -63,24 +63,26 @@
             <label class="col-lg-3 control-label">Nombre(s):</label>
             <div class="col-lg-9">
               <input class="form-control" type="text" value="" placeholder="Teclee su nombre" id="nombre"required="required">
+
+              <input class="form-control" type="text" value="" placeholder="Teclee su nombre" id="txtnombre">
             </div>
           </div>
           <div class="form-group">
             <label class="col-lg-3 control-label">Apellidos</label>
             <div class="col-lg-9">
-              <input class="form-control"  id="apellido" type="text" value="" placeholder="Apellido Paterno / Apellido Materno">
+              <input class="form-control"  id="txtapellido" type="text" value="" placeholder="Apellido Paterno / Apellido Materno">
             </div>
           </div>
           <div class="form-group">
             <label class="col-lg-3 control-label">Correo:</label>
             <div class="col-lg-9">
-              <input class="form-control" type="mail" placeholder="example2@mail.com" id="correo">
+              <input class="form-control" type="mail" placeholder="example2@mail.com" id="txtcorreo">
             </div>
           </div>
           <div class="form-group">
             <label class="col-lg-5 control-label">Número de contacto:</label>
             <div class="col-lg-9">
-              <input class="form-control" id="telefono" type="tel" placeholder="(867)136754" maxlength="10">
+              <input class="form-control" id="txttelefono" type="tel" placeholder="(867)136754" maxlength="10">
             </div>
           </div>
            <div class="form-group">
@@ -103,21 +105,21 @@
             <div class="col-lg-10">
               <div class="ui-select">
                 <select id="semestre" name="semestre" class="form-control">
-		                 <option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-							<option value="11">11</option>
-							<option value="12">12</option>
-							<option value="13">13</option>
-							<option value="14">14</option>
-							<option value="15">15</option>
+		            <option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
                 </select>
               </div>
             </div>
@@ -125,13 +127,13 @@
           <div class="form-group">
             <label class="col-md-3 control-label">Contraseña:</label>
             <div class="col-md-9">
-              <input class="form-control" id="contraseña" type="password" placeholder="*******">
+              <input class="form-control" id="txtcontraseña" type="password" placeholder="*******">
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-5 control-label">Confirmar contraseña:</label>
             <div class="col-md-9">
-              <input class="form-control" id="ccontraseña" type="password" placeholder="*******">
+              <input class="form-control" id="txtccontraseña" type="password" placeholder="*******">
             </div>
           </div>
           <div class="form-group">
@@ -299,6 +301,16 @@
 	    $(function() 
 	    {
 	    	listarCarreras();
+
+
+
+	    	$('#registrar').click(function(event) 
+	    	{
+	    		/* Act on the event */
+	    		registrarUsuario();
+	    	});
+
+
 	    });
 	    </script>
 	    <!--Validar campos-->
