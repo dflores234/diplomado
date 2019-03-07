@@ -75,7 +75,6 @@
 
 		public function iniciarSesion($email,$contrasena)
 		{
-
 			if ($this->existeUsuario($email)) 
 			{
 				
@@ -88,6 +87,7 @@
 	    			if($res['status'] == 1)
 	    			{
 	    				$status = 0; //Email y contrasena correctos. Cuenta Activa
+
 	    			}else
 	    			{
 	    				$status = 1; //Email y contrasena correctos. Cuenta inactiva
@@ -108,7 +108,10 @@
 
 		public function obtenerDatosUsuario($email)
 		{
-			
+			$stmt = $this->conexion->prepare("SELECT  id_alumno, nombre_completo FROM alumno WHERE correo_electronico = :correo");
+			$stmt->bindParam(':correo', $email);
+	    	$stmt->execute();
+	    	$res = $stmt->fetch();
 		}
 
 		/*
@@ -121,6 +124,5 @@
 	    	$stmt->execute();
 			return $stmt->rowCount() > 0;
 	    }
-
 	}
  ?>

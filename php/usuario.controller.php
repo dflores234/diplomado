@@ -43,9 +43,8 @@
 						switch ($resultado) 
 						{
 							case 0:
-								
-								//GUARDAR DATOS DE SESSION
 								$response['status'] = 'ok';
+								
 								break;
 							case 1:
 								$response['status'] = 'error';
