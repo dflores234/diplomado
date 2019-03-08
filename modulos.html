@@ -10,19 +10,30 @@
     </head>
     <body>
       <div id="wrapper" class="toggled">
-        <div id="sidebar-wrapper" class="bg-light">
-            <ul class="sidebar-nav">
-              <li class="sidebar-brand">
-                <table class="table" style="border:1px solid black; height: 500px; margin-top: 20px;">
-                <tr>
-                  <th>Aqui va el chat</th>
-                  
-                </tr>
-              </table>
-              <input type="textarea" name="" style="margin-left: 7px;"><br>
-              <input type="button" name="" value="chat" style="width: 80px; margin-top: 5px; margin-left : 150px;">
-              </li>
-            </ul>
+        <div id="sidebar-wrapper" class="">
+            <div class="col-sm-12 col-sm-offset-4 frame">
+            <ol id="chat">
+                <li style="width:90%">
+                    <div class="msj macro">
+                            <div class="text text-l">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <p><small>2019-01-28 16:26:07</small></p>
+                            </div>
+                        </div>
+                    </li>
+            </ol>
+            <div>
+                <div class="msj-rta macro">                        
+                    <div class="text text-r" style="background:whitesmoke !important">
+                        <input class="mytext" placeholder="Escribe un mensaje..." id="txtMsg" />
+                    </div> 
+                </div>
+                <div style="padding:10px;">
+                    <span class="glyphicon glyphicon-share-alt" id="enviar"></span>
+                </div>              
+            </div>
+        </div>  
         </div>
         <div id="page-content-wrapper">
             <div class="">
@@ -153,3 +164,36 @@
 
     <!--Script para el sidebar-->
      <script type="text/javascript" src="js/Chat.js"></script>
+      <!--chat de jona-->
+    <script type="text/javascript">
+    $(function() 
+    {
+        $('#enviar').click(function(event)
+        {
+            if(!$('#txtMsg').val() == '')
+            {
+                insertarChat($('#txtMsg').val())
+            }
+        });
+
+        $('#txtMsg').keydown(function(event) {
+            /* Act on the event */
+            if(event.which == 13)
+            {
+                if(!$('#txtMsg').val() == '')
+                {
+                    insertarChat($('#txtMsg').val())
+                }    
+            }
+        });
+    });
+
+    function insertarChat(texto)
+    {
+        var date = '2019-01-28 16:26:07'
+        var control = '<li style="width:100%;">'+'<div class="msj-rta macro">'+'<div class="text text-r">'+'<p>'+texto+'</p>'+'<p><small>'+date+'</small></p>'+'</div>' +'</li>';
+
+        $('ol').append(control).scrollTop($('ol').prop('scrollHeight'));
+        $('#txtMsg').val('');
+    }
+</script>

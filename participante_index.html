@@ -12,10 +12,10 @@
     </head>
     <body>  
       <div id="wrapper" class="toggled">
-        <div id="sidebar-wrapper" class="sidebarc">
+        <div id="sidebar-wrapper">
             
              <div class="col-sm-12 col-sm-offset-4 frame">
-            <ul>
+            <ol id="chat">
                 <li style="width:90%">
                     <div class="msj macro">
                             <div class="text text-l">
@@ -25,7 +25,7 @@
                             </div>
                         </div>
                     </li>
-            </ul>
+            </ol>
             <div>
                 <div class="msj-rta macro">                        
                     <div class="text text-r" style="background:whitesmoke !important">
@@ -312,7 +312,7 @@
     <script type="text/javascript" src="js/Chat.js">
     </script>
 
-    <!--dsadsad-->
+    <!--chat de jona-->
     <script type="text/javascript">
     $(function() 
     {
@@ -341,7 +341,7 @@
         var date = '2019-01-28 16:26:07'
         var control = '<li style="width:100%;">'+'<div class="msj-rta macro">'+'<div class="text text-r">'+'<p>'+texto+'</p>'+'<p><small>'+date+'</small></p>'+'</div>' +'</li>';
 
-        $('ul').append(control).scrollTop($("ul").prop('scrollHeight'));
+        $('ol').append(control).scrollTop($('ol').prop('scrollHeight'));
         $('#txtMsg').val('');
     }
 </script>
