@@ -3,6 +3,13 @@
 	
 class Session 
 {
+
+    function __construct()
+    {
+        session_start();
+    }
+
+
 	//Verifica si una clase está seteada por su nombre.
     public static function check($key) 
     {
