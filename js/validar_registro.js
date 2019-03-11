@@ -54,7 +54,7 @@ $('#registrar').click(function(){
     if (ocar=='') {
     	/*alert(');*/
     	$(txtotracarrera).css("border","1px solid red");
-		$(otracarrera).attr("no deje el campo de la carrera en blanco");
+		$(txtotracarrera).attr("no deje el campo de la carrera en blanco");
     } 
     if (contra=='') {
     	/*alert('');*/
