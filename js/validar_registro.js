@@ -44,7 +44,7 @@ $('#registrar').click(function(){
     	$(txtcorreo).css("border","1px solid red");
 		$(txtcorreo).attr("placeholder","Por favor ingrese su correo");
     }
-	else if($("#correo").val().indexOf('@', 0) == -1 || $("#correo").val().indexOf('.', 0) == -1) {  
+	else if($("#txtcorreo").val().indexOf('@', 0) == -1 || $("#correo").val().indexOf('.', 0) == -1) {  
             alert("La dirección parece incorrecta");  
             return false;  
     } 
