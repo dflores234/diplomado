@@ -29,20 +29,8 @@
 
 	function registrarUsuario()
 	{
-	   	$.ajax
-	   	({
-	    	url: 'php/usuario.controller.php',
-	    			type: 'POST',
-	    			dataType: 'JSON',
-	    			data: {option: 'registrar'},
-	    			beforeSend: function(){},
-	    			success: function(data)
-	    			{
-	    				
-	    			},
-	    		});
-	    		
-	    	}
+	   	alert('Hola');		
+	}
 
 
 /*
