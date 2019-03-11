@@ -1,11 +1,11 @@
 $('#registrar').click(function(){
-	var nom=$('#nombre').val().trim();
-	var ape=$('#apellido').val().trim();
-	var tel=$('#telefono').val().trim();
+	var nom=$('#txtnombre').val().trim();
+	var ape=$('#txtapellido').val().trim();
+	var tel=$('#txttelefono').val().trim();
 	var ocar=$('#otracarrera').val().trim();
-	var contra=$('#contraseña').val().trim();
-	var ccontra=$('#ccontraseña').val().trim();
-	var mail=$('#correo').val().trim();
+	var contra=$('#txtcontraseña').val().trim();
+	var ccontra=$('#txtccontraseña').val().trim();
+	var mail=$('#txtcorreo').val().trim();
 
 	if (nom=='') {
 		
