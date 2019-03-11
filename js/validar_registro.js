@@ -2,7 +2,7 @@ $('#registrar').click(function(){
 	var nom=$('#txtnombre').val().trim();
 	var ape=$('#txtapellido').val().trim();
 	var tel=$('#txttelefono').val().trim();
-	var ocar=$('#otracarrera').val().trim();
+	var ocar=$('#txtotracarrera').val().trim();
 	var contra=$('#txtcontraseña').val().trim();
 	var ccontra=$('#txtccontraseña').val().trim();
 	var mail=$('#txtcorreo').val().trim();
