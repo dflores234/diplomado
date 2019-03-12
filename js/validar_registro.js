@@ -2,7 +2,7 @@ $('#registrar').click(function(){
 	var nom=$('#txtnombre').val().trim();
 	var ape=$('#txtapellido').val().trim();
 	var tel=$('#txttelefono').val().trim();
-	var ocar=$('#otracarrera').val().trim();
+	var ocar=$('#txtotracarrera').val().trim();
 	var contra=$('#txtcontraseña').val().trim();
 	var ccontra=$('#txtccontraseña').val().trim();
 	var mail=$('#txtcorreo').val().trim();
@@ -44,13 +44,26 @@ $('#registrar').click(function(){
     	$(txtcorreo).css("border","1px solid red");
 		$(txtcorreo).attr("placeholder","Por favor ingrese su correo");
     }
+<<<<<<< HEAD
 	else{ 
 		$(mail).css("border","1px solid lightgray");
+=======
+	else if($(mail).val().indexOf('@', 0) == -1 || $("#correo").val().indexOf('.', 0) == -1) {  
+            alert("La dirección parece incorrecta");  
+            return false;  
+    } 
+    else{
+    	$(mail).css("border","1px solid lightgray");
+>>>>>>> 77662f5fedf5321af6586b8fa1f4d274f0b6b926
     } 
     if (ocar=='') {
     	/*alert(');*/
     	$(txtotracarrera).css("border","1px solid red");
+<<<<<<< HEAD
 		$(otracarrera).attr("placeholder,no deje el campo de la carrera en blanco");
+=======
+		$(txtotracarrera).attr("no deje el campo de la carrera en blanco");
+>>>>>>> 77662f5fedf5321af6586b8fa1f4d274f0b6b926
     } 
     if ($('#txtcontraseña').val()=='') {
     	/*alert('');*/
