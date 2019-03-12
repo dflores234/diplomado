@@ -80,7 +80,7 @@
           <div class="form-group">
             <label class="col-lg-5 control-label">Número de contacto:</label>
             <div class="col-lg-9">
-              <input class="form-control" id="txttelefono" type="tel" placeholder="(867)136754" maxlength="10" required="">
+              <input class="form-control" id="txttelefono" type="tel" placeholder="(867)136754" maxlength="10" minlength="10" required="">
             </div>
           </div>
            <div class="form-group">
