@@ -61,15 +61,15 @@
                       <thead>
                         <tr>
                           <th scope="col" style="padding:8px;"><button type="button" style="width: 80px; padding: 0px;border:0px;"><img src="img/avatar1.png" width="80"></button></th>
-                          <th scope="col" style="padding:8px;><button type="button" style="width: 80px; padding: 0px;border:0px;"><img src="img/avatar2.png" width="80"></button></th>
-                          <th scope="col" style="padding:8px;><button type="button" style="width: 80px; padding: 0px;border:0px;"><img src="img/avatar3.png" width="80"></button></th>
+                          <th scope="col" style="padding:8px;"><button type="button" style="width: 80px; padding: 0px;border:0px;"><img src="img/avatar2.png" width="80"></button></th>
+                          <th scope="col" style="padding:8px;"><button type="button" style="width: 80px; padding: 0px;border:0px;"><img src="img/avatar3.png" width="80"></button></th>
                         </tr>
                       </thead>
                        <thead>
                         <tr>
                           <th scope="col" style="padding:8px;"><button type="button" style="width: 80px; padding: 0px;border:0px;"><img src="img/avatar4.png" width="80"></button></th>
-                          <th scope="col" style="padding:8px;><button type="button" style="width: 80px; padding: 0px;border:0px;"><img src="img/avatar6.png" width="80"></button></th>
-                          <th scope="col" style="padding:8px;><button type="button" style="width: 80px; padding: 0px;border:0px;"><img src="img/avatar5.png" width="80"></button></th>
+                          <th scope="col" style="padding:8px;"><button type="button" style="width: 80px; padding: 0px;border:0px;"><img src="img/avatar6.png" width="80"></button></th>
+                          <th scope="col" style="padding:8px;"><button type="button" style="width: 80px; padding: 0px;border:0px;"><img src="img/avatar5.png" width="80"></button></th>
                         </tr>
                       </thead>
                   </table>
