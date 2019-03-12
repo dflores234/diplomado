@@ -7,7 +7,7 @@ $('#registrar').click(function(){
 	var ccontra=$('#txtccontraseña').val().trim();
 	var mail=$('#txtcorreo').val().trim();
 
-	if (nom=='') {
+		if ($('#txtnombre').val()=='') {
 		
 		$(txtnombre).css("border","1px solid red");
 		$(txtnombre).attr("placeholder","Por favor, Introduzca su nombre");
@@ -29,7 +29,8 @@ $('#registrar').click(function(){
 		$(txttelefono).css("border","1px solid red");
 		$(txttelefono).attr("placeholder","Por favor ingrese su número");
 	}
-	else if(isNaN($("#txttelefono").val())) {  
+	else {
+		if(isNaN($("#txttelefono").val())) {  
         /*alert(""); */
         $(txttelefono).css("border","1px solid red");
         $(txttelefono).val("");
@@ -40,40 +41,28 @@ $('#registrar').click(function(){
     else{
     	$(txttelefono).css("border","1px solid lightgray");
     }
+	}
     if (mail=='') {
     	$(txtcorreo).css("border","1px solid red");
 		$(txtcorreo).attr("placeholder","Por favor ingrese su correo");
     }
-<<<<<<< HEAD
-	else{ 
-		$(mail).css("border","1px solid lightgray");
-=======
-	else if($(mail).val().indexOf('@', 0) == -1 || $("#correo").val().indexOf('.', 0) == -1) {  
-            alert("La dirección parece incorrecta");  
-            return false;  
-    } 
     else{
-    	$(mail).css("border","1px solid lightgray");
->>>>>>> 77662f5fedf5321af6586b8fa1f4d274f0b6b926
-    } 
-    if (ocar=='') {
-    	/*alert(');*/
-    	$(txtotracarrera).css("border","1px solid red");
-<<<<<<< HEAD
-		$(otracarrera).attr("placeholder,no deje el campo de la carrera en blanco");
-=======
-		$(txtotracarrera).attr("no deje el campo de la carrera en blanco");
->>>>>>> 77662f5fedf5321af6586b8fa1f4d274f0b6b926
-    } 
+    	$(txtcorreo).css("border","1px solid lightgray");
+    }
     if ($('#txtcontraseña').val()=='') {
     	/*alert('');*/
     	$(txtcontraseña).css("border","1px solid red");
 		$(txtcontraseña).attr("placeholder","Escriba su contraseña");
     }
-     if (ccontra=='') {
+     if ($('#txtccontraseña').val()=='') {
     	/*alert('Escriba su contraseña');*/
     	$(txtccontraseña).css("border","1px solid red");
 		$(txtccontraseña).attr("placeholder","Escriba su contraseña");
     }
+    if (ocar=='') {
+    	/*alert(');*/
+    	$(txtotracarrera).css("border","1px solid red");
+		$(txtotracarrera).attr("no deje el campo de la carrera en blanco");
+    } 
 	
 });
