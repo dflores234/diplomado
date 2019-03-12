@@ -1,5 +1,5 @@
 $('#registrar').click(function(){
-	var nom=$('#txtnombre').val().trim()
+	var nom=$('#txtnombre').val().trim();
 	var ape=$('#txtapellido').val().trim();
 	var tel=$('#txttelefono').val().trim();
 	var ocar=$('#otracarrera').val().trim();
@@ -44,19 +44,15 @@ $('#registrar').click(function(){
     	$(txtcorreo).css("border","1px solid red");
 		$(txtcorreo).attr("placeholder","Por favor ingrese su correo");
     }
-	else if($("#correo").val().indexOf('@', 0) == -1 || $("#correo").val().indexOf('.', 0) == -1) {  
-            alert("La dirección parece incorrecta");  
-            return false;  
-    } 
-    else{
-    	$(mail).css("border","1px solid lightgray");
+	else{ 
+		$(mail).css("border","1px solid lightgray");
     } 
     if (ocar=='') {
     	/*alert(');*/
     	$(txtotracarrera).css("border","1px solid red");
-		$(otracarrera).attr("no deje el campo de la carrera en blanco");
+		$(otracarrera).attr("placeholder,no deje el campo de la carrera en blanco");
     } 
-    if (contra=='') {
+    if ($('#txtcontraseña').val()=='') {
     	/*alert('');*/
     	$(txtcontraseña).css("border","1px solid red");
 		$(txtcontraseña).attr("placeholder","Escriba su contraseña");
