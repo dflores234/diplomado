@@ -5,7 +5,7 @@ class Session
 {
 
     //Inicia una session sino existe
-    public function __construct()
+    function __construct()
     {
         if(!isset($_SESSION))
         {
@@ -43,7 +43,7 @@ class Session
         return $result;
     }
 
-    public function __destruct()
+    public function destructSession()
     {
         if(isset($_SESSION))
         { 
