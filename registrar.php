@@ -68,19 +68,19 @@
           <div class="form-group">
             <label class="col-lg-3 control-label">Apellidos</label>
             <div class="col-lg-9">
-              <input class="form-control"  id="txtapellido" type="text" value="" placeholder="Apellido Paterno / Apellido Materno">
+              <input class="form-control"  id="txtapellido" type="text" value="" placeholder="Apellido Paterno / Apellido Materno" required="">
             </div>
           </div>
           <div class="form-group">
             <label class="col-lg-3 control-label">Correo:</label>
             <div class="col-lg-9">
-              <input class="form-control" type="mail" placeholder="example2@mail.com" id="txtcorreo">
+              <input class="form-control" type="email" placeholder="example2@mail.com" id="txtcorreo" required="">
             </div>
           </div>
           <div class="form-group">
             <label class="col-lg-5 control-label">Número de contacto:</label>
             <div class="col-lg-9">
-              <input class="form-control" id="txttelefono" type="tel" placeholder="(867)136754" maxlength="10">
+              <input class="form-control" id="txttelefono" type="tel" placeholder="(867)136754" maxlength="10" required="">
             </div>
           </div>
            <div class="form-group">
@@ -125,19 +125,19 @@
           <div class="form-group">
             <label class="col-md-3 control-label">Contraseña:</label>
             <div class="col-md-9">
-              <input class="form-control" id="txtcontraseña" type="password" placeholder="*******">
+              <input class="form-control" id="txtcontraseña" type="password" placeholder="*******" required="">
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-5 control-label">Confirmar contraseña:</label>
             <div class="col-md-9">
-              <input class="form-control" id="txtccontraseña" type="password" placeholder="*******">
+              <input class="form-control" id="txtccontraseña" type="password" placeholder="*******" required="">
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-2 control-label"></label>
             <div class="col-md-9">
-              <input type="button" class="btn btn-primary" value="Registrar" id="registrar">
+              <button type="submit" class="btn btn-primary" value="Registrar" id="registrar">Registrar</button>
             </div>
           </div>
         </div>

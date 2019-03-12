@@ -54,10 +54,16 @@ $('#registrar').click(function(){
     	$(txtcontraseña).css("border","1px solid red");
 		$(txtcontraseña).attr("placeholder","Escriba su contraseña");
     }
+    else{
+    	$(txtcontraseña).css("border","1px solid lightgray");
+    }
      if ($('#txtccontraseña').val()=='') {
     	/*alert('Escriba su contraseña');*/
     	$(txtccontraseña).css("border","1px solid red");
 		$(txtccontraseña).attr("placeholder","Escriba su contraseña");
+    }
+    else{
+    	$(txtccontraseña).css("border","1px solid lightgray");
     }
     if (ocar=='') {
     	/*alert(');*/
