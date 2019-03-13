@@ -1,5 +1,17 @@
 <?php 
+  include 'php/sesion.class.php';
 
+  $session = new Session();
+
+  if ($session->getSession('id')) 
+  {
+    $avatar = $session->getSession('avatar');
+    $nombre = $session->getSession('nombre');
+  }
+  else 
+  {
+    header("Location: index.html");
+  }
 
  ?>
  <!DOCTYPE html>
@@ -61,9 +73,9 @@
                                 </div>
                                 <div class="dropdown pmd-dropdown pmd-user-info ml-auto">
                                     <a href="javascript:void(0);" class="btn-user dropdown-toggle media align-items-center" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">
-                                        <img class="mr-2" src="https://pro.propeller.in/assets/images/avatar-icon-40x40.png" width="40" height="40" alt="avatar">
+                                        <img class="mr-2 rounded-circle" src='<?php echo $avatar; ?>' width="40" height="40" alt="avatar">
                                         <div class="media-body" id="userc">
-                                          Usuario
+                                          <?php echo $nombre; ?>
                                         </div>
                                         <i class="material-icons md-light ml-2 pmd-sm"></i>
                                     </a>
@@ -71,7 +83,7 @@
                                         <a class="dropdown-item" href="editar_perfil.php">
                                             Editar Perfil
                                         </a>
-                                        <a class="dropdown-item" href="index.php">
+                                        <a class="dropdown-item" href="php/destroysession.php">
                                             Cerrar sesión
                                         </a>
                                     </ul>

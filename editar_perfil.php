@@ -1,5 +1,23 @@
-<?php 
- ?>
+<?php
+
+  include 'php/sesion.class.php';
+
+  $session = new Session();
+
+  if ($session->getSession('id')) 
+  {
+    $avatar = $session->getSession('avatar');
+    $nombre = $session->getSession('nombre');
+  }
+  else 
+  {
+    header("Location: index.html");
+  }
+  
+
+
+
+?>
 
  <!DOCTYPE html>
 <html>
@@ -25,9 +43,9 @@
               <div class="navbar-nav ml-auto">
                 <div class="dropdown pmd-dropdown pmd-user-info ml-auto">
                     <a href="javascript:void(0);" class="btn-user dropdown-toggle media align-items-center" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">
-                        <img class="mr-2" src="https://pro.propeller.in/assets/images/avatar-icon-40x40.png" width="40" height="40" alt="avatar">
+                        <img class="mr-2 rounded-circle" src='<?php echo $avatar; ?>' width="40" height="40" alt="avatar">
                         <div class="media-body" style="color: black">
-                          Usuario
+                          <?php echo $nombre; ?>
                         </div>
                         <i class="material-icons md-light ml-2 pmd-sm"></i>
                     </a>
@@ -45,14 +63,14 @@
     <!--Fin menu-->
     <div>
 	     <div class="container">
-          <h1>
+          <h1 class="text-center">
             Editar Perfil
           </h1><hr>
 	         <div class="row">
             <!-- columna izquierda -->
               <div class="col-md-3">
                 <div class="text-center">
-                  <img src="img/avatar.jpg" width="100" height="100" class="avatar img-circle" alt="avatar" id="imgPerfil">
+                  <img src='<?php echo $avatar; ?>'width="100" height="100" class="avatar rounded-circle" alt="avatar" id="imgPerfil">
                 </div>
                 <div>
                    <table class="table">
@@ -60,10 +78,12 @@
                       <thead>
                         <tr>
                           <th scope="col" style="padding:8px;">
-                            <button type="button" style="width: 80px; padding: 0px;border:0px;"><img src="img/avatar1.png" width="80" id="avatar1"></button>
+                            <button type="button" style="width: 80px; padding: 0px;border:0px;">
+                              <img src="img/avatar1.png" width="80" id="avatar1"></button>
                           </th>
                           <th scope="col" style="padding:8px;">
-                            <button type="button" style="width: 80px; padding: 0px;border:0px;"><img src="img/avatar2.png" width="80" id="avatar2">
+                            <button type="button" style="width: 80px; padding: 0px;border:0px;">
+                              <img src="img/avatar2.png" width="80" id="avatar2">
                             </button>
                           </th>
                           <th scope="col" style="padding:8px;">
