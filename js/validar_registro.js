@@ -1,5 +1,5 @@
 $('#registrar').click(function(){
-	var mail=$('#txtcorreo').val().trim();
+	/*var mail=.trim();*/
 
 	if ($('#txtnombre').val()=='') {
 		
@@ -29,14 +29,14 @@ $('#registrar').click(function(){
         $(txttelefono).css("border","1px solid red");
         $(txttelefono).val("");
 		$(txttelefono).attr("placeholder","El teléfono solo debe contener números");
-        return false; 
+        e.preventDefault();
 
     } 
     else{
     	$(txttelefono).css("border","1px solid lightgray");
     }
 	}
-    if (mail=='') {
+    if ($('#txtcorreo').val()=='') {
     	$(txtcorreo).css("border","1px solid red");
 		$(txtcorreo).attr("placeholder","Por favor ingrese su correo");
     }
@@ -59,9 +59,7 @@ $('#registrar').click(function(){
     else{
     	$(txtccontraseña).css("border","1px solid lightgray");
     }
-    if ($('#txtcontraseña').val()!=$('#txtccontraseña').val()) {
-    	alert("contrase;a no coninciden");
-    }
+
     if ($('#txtotracarrera').val()=='') {
     	/*alert(');*/
     	$(txtotracarrera).css("border","1px solid red");
