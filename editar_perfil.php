@@ -117,19 +117,12 @@
               </div>
             <!-- columna para formulario de editar -->
               <div class="col-md-7 personal-info">
-                <div class="alert alert-info alert-dismissable">
-                  <a class="panel-close close" data-dismiss="alert">
-                    ×
-                  </a> 
-                  <i class="fa fa-coffee"></i>
-                  <strong></strong>Prueba
-                </div>
                 <h3>
                   Informacion personal
                 </h3>
         <form class="form-horizontal" role="form">
           <div class="form-group">
-            <label class="col-lg-3 control-label">Numero de contacto:</label>
+            <label class="col-lg-4 control-label">Numero de contacto:</label>
             <div class="col-lg-8">
               <input class="form-control" type="text" value="" placeholder="Celular o Fijo">
             </div>
@@ -147,7 +140,7 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-3 control-label">Confirmar contraseña:</label>
+            <label class="col-md-4 control-label">Confirmar contraseña:</label>
             <div class="col-md-8">
               <input class="form-control" type="password" placeholder="*******">
             </div>
