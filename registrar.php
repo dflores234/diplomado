@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 	<html lang="es">
 		<head>
+			<!--Modales para los mensajes-->
+			<link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.8.0/sweetalert2.min.css" rel="stylesheet"/>
+
 			<meta charset="utf-8">
 		    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 			<title>Registrate</title>
@@ -54,15 +57,16 @@
 	     <div class="container">
 	     	<div class="row">
             <!-- columna para formulario de editar -->
-              <div class="col-md-6 personal-info">
-                <h3>
-                  Crea tu cuenta <img src="img/regis.svg" width="30" height="30">
-                </h3>
-        <div class="form-horizontal" role="form" >
-          <div class="form-group">
+              	<div class="col-md-6 personal-info">
+                	<h3>
+                  		Crea tu cuenta <img src="img/regis.svg" width="30" height="30">
+                	</h3>
+        		<div class="form-horizontal" role="form" >
+        			<form method="POST" id="form-registrar">
+        				<div class="form-group">
             <label class="col-lg-3 control-label">Nombre(s):</label>
             <div class="col-lg-9">
-              <input class="form-control" type="text" value="" placeholder="Teclee su nombre" id="txtnombre"required="required">
+              <input class="form-control" type="text" placeholder="Teclee su nombre" id="txtnombre" required="required">
             </div>
           </div>
           <div class="form-group">
@@ -140,8 +144,10 @@
               <button type="submit" class="btn btn-primary" value="Registrar" id="registrar">Registrar</button>
             </div>
           </div>
-        </div>
-      </div>
+        			</form>
+          
+        		</div>
+      			</div>
       <div class="col-md-5">
                 <div class="text-center">
                 	<h3>
@@ -303,6 +309,9 @@
 	    </script>
 	    <!--Validar campos-->
 	    <script type="text/javascript" src="js/validar_registro.js"></script>
+	     <script type="text/javascript" src="js/validar.js"></script>
+	     <!--Script para los modales-->
+	     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.8.0/sweetalert2.min.js"></script>
 
 	    <script src="js/misscripst.js"></script>
 
