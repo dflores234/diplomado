@@ -163,7 +163,8 @@
                       console.log(data);
                       if(data.status == 'ok')
                       {
-                         window.location.href = 'participante_index.php';
+                         var url = 'participante_index.php';
+                         $(location).attr('href',url);
                       }
                     },
                   });
