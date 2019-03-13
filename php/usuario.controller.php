@@ -1,5 +1,7 @@
 <?php 
 	include_once 'usuario.class.php';
+	include_once 'sesion.class.php';
+
 	$response = array();
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') 
@@ -44,7 +46,12 @@
 						{
 							case 0:
 								$response['status'] = 'ok';
+								$usr = $usuario->obtenerDatosUsuario($_REQUEST['correo']);
 								
+								$session = new Session();
+								$session->setSession('id',$usr['id_alumno']);
+								$session->setSession('nombre',$usr['nombre_completo']);
+								$session->setSession('avatar',$usr['avatar']);	
 								break;
 							case 1:
 								$response['status'] = 'error';

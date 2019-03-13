@@ -23,15 +23,6 @@
 	}
 
 
-/*
-* Funcion que permite dar de alta los alumnos del diplomado
-*/
-
-	function registrarUsuario()
-	{
-	   	alert('Hola');		
-	}
-
 
 /*
 * Permite ocultar o mostrar para dar de alta otra carrera

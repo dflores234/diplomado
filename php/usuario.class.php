@@ -6,6 +6,7 @@
 		private $conexion;
 		private $password;
 		private $defaultStatus = '0';
+		private $avatarDefault = 'img/avatar.jpg';
 		
 		function __construct()
 		{
@@ -29,7 +30,8 @@
 																	contrasena,
 																	semestre,
 																	status,
-																	id_carrera
+																	id_carrera,
+																	avatar
 																) VALUES
 																(
 																	:nombre,
@@ -40,7 +42,8 @@
 																	:contrasena,
 																	:semestre,
 																	:status,
-																	:carrera
+																	:carrera,
+																	:avatar
 																)");
 
 				$contraseña = $this->password->encriptar($contrasena);
@@ -54,6 +57,8 @@
 				$stmt->bindParam(':semestre',$semestre);
 				$stmt->bindParam(':status', $this->defaultStatus);
 				$stmt->bindParam(':carrera',$id_carrera);
+				$stmt->bindParam(':avatar', $this->avatarDefault);
+
 
 				if ($stmt->execute()) 
 				{
@@ -108,10 +113,11 @@
 
 		public function obtenerDatosUsuario($email)
 		{
-			$stmt = $this->conexion->prepare("SELECT  id_alumno, nombre_completo FROM alumno WHERE correo_electronico = :correo");
+			$stmt = $this->conexion->prepare("SELECT id_alumno, nombre_completo,avatar FROM alumno WHERE correo_electronico = :correo");
 			$stmt->bindParam(':correo', $email);
 	    	$stmt->execute();
-	    	$res = $stmt->fetch();
+	    	$res = $stmt->fetch(PDO::FETCH_ASSOC);
+	    	return $res;
 		}
 
 		/*

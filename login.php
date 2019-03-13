@@ -34,17 +34,17 @@
 						<div class="col-12 user-img">
 							<img src="img/ico.png">
 						</div>
-						<form class="col-12" action="participante_index.html">
+						<div class="col-12" action="participante_index.php">
 							<div class="form-group " id="user-group">
 								<input type="text" placeholder="Correo electronico" name="" class="form-control" id="correo">
 							</div>
 							<div class="form-group" id="contraseña-group">
 								<input type="password" placeholder="Contraseña" name="" class="form-control" id="contraseña">
 							</div>
-							<button type="submit" class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Ingresar 
+							<button type="button" class="btn btn-primary" id="btnLogin"><i class="fas fa-sign-out-alt"></i> Ingresar 
 							</button>
 
-						</form>
+						</div>
 						<div class="col-12 cuenta">
 							¿No tienes cuenta?
 							<a href="registrar.php">
@@ -144,4 +144,32 @@
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script type="text/javascript" src="js/validar_registro.js"></script>
+    <script  type="text/javascript" src="js/misscripst.js"></script>
+    <script type="text/javascript">
+      $(function() 
+      {
+          
+        $('#btnLogin').click(function()
+          {
+            $.ajax
+                  ({
+                    url: 'php/usuario.controller.php',
+                    type: 'POST',
+                    dataType: 'JSON',
+                    data: {opcion: 'iniciar',correo: 'dflores234@gmail.com',contrasena: '@Sefuerte365!'},
+                    beforeSend: function(){},
+                    success: function(data)
+                    {
+                      console.log(data);
+                      if(data.status == 'ok')
+                      {
+                         window.location.href = 'participante_index.php';
+                      }
+                    },
+                  });
+          });
+
+      });
+
+    </script>
 

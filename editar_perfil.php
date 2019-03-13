@@ -33,7 +33,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-right bg-info" role="menu">
                       <a class="dropdown-item bg-info" href="javascript:void(0);">
-                          Cerra sesión
+                          Cerrar sesión
                       </a>
                     </ul>
                 </div>
@@ -53,11 +53,10 @@
               <div class="col-md-3">
                 <div class="text-center">
                   <img src="img/avatar.jpg" width="100" height="100" class="avatar img-circle" alt="avatar">
-                  <h6></h6>
-                  <input type="file" class="form-control">
                 </div>
                 <div>
                    <table class="table">
+                    <br>
                       <thead>
                         <tr>
                           <th scope="col" style="padding:8px;"><button type="button" style="width: 80px; padding: 0px;border:0px;"><img src="img/avatar1.png" width="80"></button></th>
