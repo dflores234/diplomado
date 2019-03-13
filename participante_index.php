@@ -76,7 +76,7 @@
                               <a class="dropdown-item" href="editar_perfil.php">
                                 Editar Perfil
                               </a>
-                              <a class="dropdown-item" href="index.php">
+                              <a class="dropdown-item" href="index.html">
                                 Cerrar sesión
                               </a>
                             </ul>

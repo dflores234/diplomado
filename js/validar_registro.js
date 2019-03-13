@@ -2,12 +2,12 @@ $('#registrar').click(function(){
 	var nom=$('#txtnombre').val().trim();
 	var ape=$('#txtapellido').val().trim();
 	var tel=$('#txttelefono').val().trim();
-	var ocar=$('#txtotracarrera').val().trim();
+	/* ocar=$('#txtotracarrera').val().trim();*/
 	var contra=$('#txtcontraseña').val().trim();
 	var ccontra=$('#txtccontraseña').val().trim();
 	var mail=$('#txtcorreo').val().trim();
 
-		if ($('#txtnombre').val()=='') {
+	if ($('#txtnombre').val()=='') {
 		
 		$(txtnombre).css("border","1px solid red");
 		$(txtnombre).attr("placeholder","Por favor, Introduzca su nombre");
