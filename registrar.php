@@ -53,16 +53,18 @@
     	<div>
 	     <div class="container">
 	     	<div class="row">
+	     		
             <!-- columna para formulario de editar -->
-              <div class="col-md-6 personal-info">
-                <h3>
-                  Crea tu cuenta <img src="img/regis.svg" width="30" height="30">
-                </h3>
-        <div class="form-horizontal" role="form" >
-          <div class="form-group">
+              	<div class="col-md-6 personal-info">
+                	<h3>
+                  		Crea tu cuenta <img src="img/regis.svg" width="30" height="30">
+                	</h3>
+        		<div class="form-horizontal" role="form" >
+        			<form>
+        				<div class="form-group">
             <label class="col-lg-3 control-label">Nombre(s):</label>
             <div class="col-lg-9">
-              <input class="form-control" type="text" value="" placeholder="Teclee su nombre" id="txtnombre"required="required">
+              <input class="form-control" type="text" placeholder="Teclee su nombre" id="txtnombre" required="required">
             </div>
           </div>
           <div class="form-group">
@@ -140,8 +142,10 @@
               <button type="submit" class="btn btn-primary" value="Registrar" id="registrar">Registrar</button>
             </div>
           </div>
-        </div>
-      </div>
+        			</form>
+          
+        		</div>
+      			</div>
       <div class="col-md-5">
                 <div class="text-center">
                 	<h3>

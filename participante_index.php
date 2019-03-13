@@ -106,7 +106,6 @@
                             </h5>
                             <p style="color:white">
                                El módulo de iniciación a industria 4.0 tiene un enfoque de concepto, global y generalista, su objetivo es aportar una visión de referencia sobre las tecnologías y tendencias a nivel mundial que definen las fábricas de mañana, la industria 4.0 y el concepto de internet de las cosas (IoT, internet of things).
-
                             </p>
                             <a href="#">
                               <img src="img/ir.svg" width="30" >

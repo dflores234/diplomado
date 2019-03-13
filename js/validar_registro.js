@@ -1,10 +1,4 @@
 $('#registrar').click(function(){
-	var nom=$('#txtnombre').val().trim();
-	var ape=$('#txtapellido').val().trim();
-	var tel=$('#txttelefono').val().trim();
-	/* ocar=$('#txtotracarrera').val().trim();*/
-	var contra=$('#txtcontraseña').val().trim();
-	var ccontra=$('#txtccontraseña').val().trim();
 	var mail=$('#txtcorreo').val().trim();
 
 	if ($('#txtnombre').val()=='') {
@@ -15,7 +9,7 @@ $('#registrar').click(function(){
 	else{
 		$(txtnombre).css("border","1px solid lightgray");
 	}
-	if (ape=='') {
+	if ($('#txtapellido').val()=='') {
 		/*alert('');*/
 		$(txtapellido).css("border","1px solid red");
 		$(txtapellido).attr("placeholder","Por favor, no omita sus apellidos");
@@ -24,7 +18,7 @@ $('#registrar').click(function(){
 	else{
 		$(txtapellido).css("border","1px solid lightgray");
 	}
-	if (tel=='') {
+	if ($('#txttelefono').val()=='') {
 		/*alert('');*/
 		$(txttelefono).css("border","1px solid red");
 		$(txttelefono).attr("placeholder","Por favor ingrese su número");
@@ -65,7 +59,10 @@ $('#registrar').click(function(){
     else{
     	$(txtccontraseña).css("border","1px solid lightgray");
     }
-    if (ocar=='') {
+    if ($('#txtcontraseña').val()!=$('#txtccontraseña').val()) {
+    	alert("contrase;a no coninciden");
+    }
+    if ($('#txtotracarrera').val()=='') {
     	/*alert(');*/
     	$(txtotracarrera).css("border","1px solid red");
 		$(txtotracarrera).attr("no deje el campo de la carrera en blanco");
