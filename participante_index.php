@@ -88,11 +88,8 @@
                               <a class="dropdown-item" href="editar_perfil.php">
                                 Editar Perfil
                               </a>
-<<<<<<< HEAD
+
                               <a class="dropdown-item" href="php/destroysession.php">
-=======
-                              <a class="dropdown-item" href="index.html">
->>>>>>> 3dcefad31476a513d7ec9658649cf2e961cd7815
                                 Cerrar sesión
                               </a>
                             </ul>
