@@ -63,12 +63,12 @@
     <!--Fin menu-->
     <div>
 	     <div class="container">
-          <h1 class="text-center">
+          <h1 class="text-left">
             Editar Perfil
           </h1><hr>
 	         <div class="row">
             <!-- columna izquierda -->
-              <div class="col-md-3">
+              <div class="col-md-5">
                 <div class="text-center">
                   <img src='<?php echo $avatar; ?>'width="100" height="100" class="avatar rounded-circle" alt="avatar" id="imgPerfil">
                 </div>
@@ -116,7 +116,7 @@
                 </div>
               </div>
             <!-- columna para formulario de editar -->
-              <div class="col-md-9 personal-info">
+              <div class="col-md-7 personal-info">
                 <div class="alert alert-info alert-dismissable">
                   <a class="panel-close close" data-dismiss="alert">
                     ×
