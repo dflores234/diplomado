@@ -88,7 +88,6 @@
                               <a class="dropdown-item" href="editar_perfil.php">
                                 Editar Perfil
                               </a>
-
                               <a class="dropdown-item" href="php/destroysession.php">
                                 Cerrar sesión
                               </a>
