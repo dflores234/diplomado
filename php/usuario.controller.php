@@ -62,10 +62,25 @@
 								$response['msg'] = 'Usuario y/o contraseña incorrectos.';
 							break;
 						}
+			break;
 
-
-
-			
+			case 'actualizar': 
+								$resultado = $usuario->actualizaPerfil(
+									$_REQUEST['id'],
+									$_REQUEST['correo'],
+									$_REQUEST['contacto'],
+									$_REQUEST['avatar'],
+									$_REQUEST['contrasena']);
+								if($resultado == true)
+								{
+									$response['status'] = 'ok';
+									$response['msg'] = 'Los datos se han actualizado correctamente'; 
+								}else
+								{
+									$response['status'] = 'error';
+									$response['msg'] = 'Ha ocurrido un error al actualizar los datos. Intente nuevamente mas tarde.'; 
+								}
+			break;	
 		}
 	} else 
 	{

@@ -130,5 +130,29 @@
 	    	$stmt->execute();
 			return $stmt->rowCount() > 0;
 	    }
+
+
+	    public function actualizaPerfil($id,$correo,$contacto,$avatar,$contrasena)
+	    {
+	    	$stmt = $this->conexion->prepare("UPDATE alumno SET correo_electronico = :correo, numero_contacto = :contacto,avatar = :avatar, contrasena = :contrasena  WHERE id = :id");
+
+	    	$contraseña = $this->password->encriptar($contrasena);
+
+			$stmt->bindParam(':correo', $email);
+			$stmt->bindParam(':contacto', $contacto);
+	    	$stmt->bindParam(':avatar',$avatar);
+	    	$stmt->bindParam(':contrasena', $contraseña);
+	    	$stmt->bindParam(':id',$id);
+
+	    	if($stmt->execute())
+	    	{
+	    		$this->conexion->commit();
+	    		return true;
+	    	}else
+	    	{
+	    		$this->conexion->rollBack();
+	    		return false;
+	    	}
+	    }
 	}
  ?>
