@@ -34,17 +34,20 @@
 						<div class="col-12 user-img">
 							<img src="img/ico.png">
 						</div>
-						<div class="col-12" action="participante_index.php">
-							<div class="form-group " id="user-group">
-								<input type="text" placeholder="Correo electronico" name="" class="form-control" id="correo">
-							</div>
-							<div class="form-group" id="contraseña-group">
-								<input type="password" placeholder="Contraseña" name="" class="form-control" id="contraseña">
-							</div>
-							<button type="button" class="btn btn-primary" id="btnLogin"><i class="fas fa-sign-out-alt"></i> Ingresar 
-							</button>
+            <form>
+                <div class="col-12" action="participante_index.php">
+              <div class="form-group " id="user-group">
+                <input type="text" placeholder="Correo electronico" name="" class="form-control" id="correo" required="">
+              </div>
+              <div class="form-group" id="contraseña-group">
+                <input type="password" placeholder="Contraseña" name="" class="form-control" id="contraseña" required="">
+              </div>
+              <button type="submit" class="btn btn-primary" id="btnLogin"><i class="fas fa-sign-out-alt"></i> Ingresar 
+              </button>
 
-						</div>
+            </div>
+            </form>
+					
 						<div class="col-12 cuenta">
 							¿No tienes cuenta?
 							<a href="registrar.php">

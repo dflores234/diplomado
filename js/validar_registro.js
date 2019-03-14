@@ -67,3 +67,12 @@ $('#registrar').click(function(){
     } 
 	
 });
+
+$('#btnlogin').click(function(){
+
+    if ($('#correo').val()=='') {
+        $('correo').css("border", "1px solid red");
+        $('correo').attr("no deje el campo del correo vacio");
+
+    }
+});
