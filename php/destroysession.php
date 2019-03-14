@@ -1,11 +1,9 @@
 <?php 
-
 	include 'sesion.class.php';
+	
 	$session = new Session();
-
-	$session->destructSession();
-
-	header("Location: ../index.html");
+	$session->destroySession()
+	header('Refresh:2; URL=index.html');
 
 
  ?>
