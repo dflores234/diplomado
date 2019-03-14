@@ -43,7 +43,7 @@ class Session
         return $result;
     }
 
-    public function destructSession()
+    public function destroySession()
     {
         if(isset($_SESSION))
         { 
