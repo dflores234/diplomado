@@ -19,4 +19,7 @@ $(function() {
       $('#form-registrar').submit(function(e) {
         validar(e);
       });
+      $('#form-cambios').submit(function(e) {
+        validar(e);
+      });
     });

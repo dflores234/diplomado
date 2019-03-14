@@ -43,6 +43,11 @@ $('#registrar').click(function(){
     else{
     	$(txtcorreo).css("border","1px solid lightgray");
     }
+    if ($('#txtotracarrera').val()=='') {
+        /*alert(');*/
+        $(txtotracarrera).css("border","1px solid red");
+        $(txtotracarrera).attr("placeholder","no deje el campo de la carrera en blanco");
+    } 
     if ($('#txtcontraseña').val()=='') {
     	/*alert('');*/
     	$(txtcontraseña).css("border","1px solid red");
@@ -60,19 +65,45 @@ $('#registrar').click(function(){
     	$(txtccontraseña).css("border","1px solid lightgray");
     }
 
-    if ($('#txtotracarrera').val()=='') {
-    	/*alert(');*/
-    	$(txtotracarrera).css("border","1px solid red");
-		$(txtotracarrera).attr("no deje el campo de la carrera en blanco");
-    } 
+    
 	
 });
 
-$('#btnlogin').click(function(){
+$('#btnLogin').click(function(){
 
     if ($('#correo').val()=='') {
-        $('correo').css("border", "1px solid red");
-        $('correo').attr("no deje el campo del correo vacio");
+        $(correo).css("border", "1px solid red");
+        $(correo).attr("placeholder","no deje vacio");
 
     }
+    else{
+        $(correo).css("border", "1px solid lightgray");
+    }
+    if ($('#contraseña').val()=='') {
+        $(contraseña).css("border", "1px solid red");
+        $(contraseña).attr("placeholder","no deje vacio");
+    }
+    else{
+        $(contraseña).css("border", "1px solid lightgray");
+    }
+});
+
+$('#cambios').click(function(){
+    if ($('#contraseña').val()=='') {
+        /*alert('');*/
+        $(contraseña).css("border","1px solid red");
+        $(contraseña).attr("placeholder","Escriba su contraseña");
+    }
+    else{
+        $(contraseña).css("border","1px solid lightgray");
+    }
+     if ($('#ccontraseña').val()=='') {
+        /*alert('Escriba su contraseña');*/
+        $(ccontraseña).css("border","1px solid red");
+        $(ccontraseña).attr("placeholder","Escriba su contraseña");
+    }
+    else{
+        $(ccontraseña).css("border","1px solid lightgray");
+    }
+
 });
