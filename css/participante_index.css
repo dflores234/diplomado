@@ -245,3 +245,18 @@ input:focus{
 :-moz-placeholder { /* Firefox 18- */
     color: #d4d4d4;
 }  
+
+.infod{
+    display: inline-block;
+    color: white;
+}
+.infof{
+    color: white;
+    padding-bottom: 10px;
+}
+p{
+    margin-bottom: 5px;
+}
+#logo{
+  margin-right: 80px;
+} 
