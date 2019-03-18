@@ -116,7 +116,7 @@
                 <h3>
                   Informacion personal
                 </h3>
-        <form class="form-horizontal" role="form">
+        <form class="form-horizontal" role="form" id="form-cambios">
           <div class="form-group">
             <label class="col-lg-4 control-label">Numero de contacto:</label>
             <div class="col-lg-8">
@@ -132,19 +132,19 @@
           <div class="form-group">
             <label class="col-md-3 control-label">Contraseña:</label>
             <div class="col-md-8">
-              <input class="form-control" type="password" placeholder="*******">
+              <input class="form-control" type="password" placeholder="*******" required="" id="contraseña">
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-4 control-label">Confirmar contraseña:</label>
             <div class="col-md-8">
-              <input class="form-control" type="password" placeholder="*******">
+              <input class="form-control" type="password" placeholder="*******" required="" id="ccontraseña">
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-3 control-label"></label>
             <div class="col-md-8">
-              <input type="button" class="btn btn-primary" value="Guardar cambios">
+              <input type="submit" class="btn btn-primary"  id="cambios" value="Guardar cambios">
               <span></span>
             </div>
           </div>
@@ -160,6 +160,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/validar_registro.js"></script>
+    <script type="text/javascript" src="js/validar.js"></script>
 </body>
 
 <script type="text/javascript">

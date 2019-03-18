@@ -142,6 +142,7 @@
             <label class="col-md-2 control-label"></label>
             <div class="col-md-9">
               <button type="submit" class="btn btn-primary" value="Registrar" id="registrar">Registrar</button>
+              
             </div>
           </div>
         			</form>
