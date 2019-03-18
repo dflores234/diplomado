@@ -13,10 +13,6 @@
   {
     header("Location: index.html");
   }
-  
-
-
-
 ?>
 
  <!DOCTYPE html>
