@@ -154,5 +154,54 @@
 	    		return false;
 	    	}
 	    }
+
+	    function enviarCorreo($email,$tpl)
+	    {
+			include 'PHPMailer/class.phpmailer.php';
+			include 'class.TemplatePower.inc.php';
+		
+			$tpl = new TemplatePower($tpl);
+			$tpl->prepare();
+			$tpl->assign('nombre', $nombre);
+
+			//Creamos la instancia de la clase PHPMAiler
+
+			$mail = new phpmailer();
+
+			//El método que usaremos es por SMTP
+
+			$mail->Mailer = "smtp";
+
+			// Los datos necesarios para enviar mediante SMTP
+			$mail->Host = "smtp.nuestrohost.com";
+			$mail->SMTPAuth = true;
+			$mail->Username = "cuenta@nuestrohost.com";
+			$mail->Password = "password";
+
+			// Asignamos el From y el FromName para que el destinatario sepa quien envía el correo
+			$mail->From = "cuenta@nuestrohost.com";
+			$mail->FromName = "Manuel Carrascosa de la Blanca";
+			
+			//Añadimos la dirección del destinatario
+			$mail->AddAddress($email);
+
+			//Asignamos el subject, el cuerpo del mensaje y el correo alternativo
+			$mail->Subject = "Ejemplo de PHPMailer";
+			$mail->Body = $tpl->getOutputContent();
+
+			//Si al enviar el correo devuelve true es que todo ha ido bien.
+			if($mail->Send())
+			{
+			    //Sacamos un mensaje de que todo ha ido correctamente.
+			    echo "Mensaje enviado correctamente.";
+			}
+			else
+			{
+			    //Sacamos un mensaje con el error.
+			    echo "Ocurrió un error al enviar el correo electrónico.";
+			    echo "<br/><strong>Información:</strong><br/>".$mail->ErrorInfo;
+			}
+
+	    }
 	}
  ?>
