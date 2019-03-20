@@ -44,7 +44,7 @@
               </div>
               <button type="submit" class="btn btn-primary" id="btnLogin"><i class="fas fa-sign-out-alt"></i> Ingresar 
               </button>
-              <div class="lds-hourglass"></div>
+              <!--div class="lds-hourglass"></div-->
 
             </div>
             </form>
