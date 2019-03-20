@@ -1,5 +1,6 @@
 <?php 
-	
+		use PHPMailer\PHPMailer\PHPMailer;
+		use PHPMailer\PHPMailer\Exception;
 
 	class Usuario
 	{
@@ -155,52 +156,54 @@
 	    	}
 	    }
 
-	    function enviarCorreo($email,$tpl,$subject)
+	    function enviarCorreo($email,$tpl,$subject='Holi')
 	    {
-			include 'PHPMailer/class.phpmailer.php';
+			
+			require 'PHPMailer/PHPMailer.php';
+			require 'PHPMailer/Exception.php';
+			require 'PHPMailer/SMTP.php';
+
 			include 'class.TemplatePower.inc.php';
-			include 'constantes.php';
-		
+
 			$tpl = new TemplatePower($tpl);
 			$tpl->prepare();
-			$tpl->assign('nombre', $nombre);
+			$tpl->assign('usuario', 'JDF');
 
 			//Creamos la instancia de la clase PHPMAiler
-				$mail = new phpmailer();
+				$mail = new PHPMailer(TRUE);
 			
-			//El método que usaremos es por SMTP
-				$mail->Mailer = "smtp";
+			try{
 
+			//El método que usaremos es por SMTP
+				$mail->SMTPDebug = 2;
+				$mail->isSMTP();
 			// Los datos necesarios para enviar mediante SMTP
-				$mail->Host = EMAILHOST;
+				$mail->Host = 'smtp.gmail.com';
 				$mail->SMTPAuth = true;
-				$mail->Username = EMAILUSER;
-				$mail->Password = EMAILPASSWORD;
+				$mail->Username = 'codecampapp@gmail.com';
+				$mail->Password = '@Sefuerte365';
+				$mail->SMTPSecure = 'tls';
+				$mail->Port = 587;
+
 
 			// Asignamos el From y el FromName para que el destinatario sepa quien envía el correo
-				$mail->From = "cuenta@nuestrohost.com";
-				$mail->FromName = "Manuel Carrascosa de la Blanca";
 			
-			//Añadimos la dirección del destinatario
-				$mail->AddAddress($email);
+				$mail->setFrom('contacto@centroist.org', 'Centro IST');
+    			$mail->addAddress($email, 'Joe User');     // Add a recipient
+    			//$mail->addAddress('ellen@example.com');
 
 			//Asignamos el subject, el cuerpo del mensaje y el correo alternativo
+    			$mail->isHTML(true);
 				$mail->Subject = $subject;
 				$mail->Body = $tpl->getOutputContent();
-
-			//Si al enviar el correo devuelve true es que todo ha ido bien.
-			if($mail->Send())
+				$mail->send();
+				return "El mensaje ha sido enviado";
+			}catch(Exception $e)
 			{
-			    //Sacamos un mensaje de que todo ha ido correctamente.
-			    echo "Mensaje enviado correctamente.";
-			}
-			else
-			{
-			    //Sacamos un mensaje con el error.
-			    echo "Ocurrió un error al enviar el correo electrónico.";
-			    echo "<br/><strong>Información:</strong><br/>".$mail->ErrorInfo;
-			}
 
+				return "El mensaje no ha sido enviado. Codigo de error: {$mail->ErrorInfo}";
+			}
+			
 	    }
 	}
  ?>
