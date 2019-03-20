@@ -195,6 +195,14 @@
 			//Asignamos el subject, el cuerpo del mensaje y el correo alternativo
     			$mail->isHTML(true);
 				$mail->Subject = $subject;
+				$mail->addEmbeddedImage('../img/Diplomado3 - copia.png','logoDiplomado');
+				$mail->addEmbeddedImage('../img/curso5.jpg','banner');
+				$mail->addEmbeddedImage('../img/Logo CENTRO IST BLANCO-05[1393].png','centro');
+				$mail->addEmbeddedImage('../img/logo1.png','logo1');
+				$mail->addEmbeddedImage('../img/logo2.png','logo2');
+				$mail->addEmbeddedImage('../img/logo3.png','logo3');
+				$mail->addEmbeddedImage('../img/logo4.png','logo4');
+				$mail->addEmbeddedImage('../img/itnl.gif','tec');
 				$mail->Body = $tpl->getOutputContent();
 				$mail->send();
 				return "El mensaje ha sido enviado";
