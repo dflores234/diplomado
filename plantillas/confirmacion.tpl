@@ -9,7 +9,7 @@
 	<tr>
 		<td style="background-color:#3255B2; text-align: left; padding: 0">
 			<a href="#">
-				<img width="20%" style="display:block; margin: 1.5% 3%" src="\cid:logoDiplomado\">
+				<img width="20%" style="display:block; margin: 1.5% 3%" src="{logo}">
 			</a>
 		</td>
 	</tr>
