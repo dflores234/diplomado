@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Confirmación</title>
-	<meta charset="utf-8">
-</head>
-<body style="margin:0px;">
-	<!--Copia desde aquí-->
+<!--Copia desde aquí-->
 <table style="max-width: 600px; padding: 10px; margin:0 auto; border-collapse: collapse;">
 	<tr>
 		<td style="background-color:#3255B2; text-align: left; padding: 0">
@@ -47,6 +40,3 @@
 		</td>
 	</tr>
 </table>
-<!--hasta aquí-->
-</body>
-</html>
