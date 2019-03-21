@@ -124,7 +124,7 @@
                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
-                            <a href="#">
+                            <a href="modulo_python.php">
                               <img src="img/ir.svg" width="30" >
                             </a>
                           </div>
@@ -147,7 +147,7 @@
                             <p style="background: lightblue; display: inline-block;">
                                El módulo de iniciación a industria 4.0 tiene un enfoque de concepto, global y generalista, su objetivo es aportar una visión de referencia sobre las tecnologías y tendencias a nivel mundial que definen las fábricas de mañana, la industria 4.0 y el concepto de internet de las cosas (IoT, internet of things).
                             </p>
-                            <a href="#">
+                            <a href="modulo_sensibilizacion.php">
                               <img src="img/ir.svg" width="30" >
                             </a>
                           </div>
@@ -187,16 +187,16 @@
                       </div>
                       <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
                         <div class="card-body bg-info" style="background:url(img/fondo5.jpg); background-size: cover; background-position: center;">
-                          <h5 style="background-color: #0AC6E7;display: inline-block;">
+                          <h5 style="background-color: lightcoral;display: inline-block;">
                             Objetivo del curso:
                           </h5>
-                          <p style="background-color: #0AC6E7;">
+                          <p style="background-color: lightcoral;">
                             Permitir que cuenten con conocimientos en soluciones Big Data, con el fin de identificar su potencial, sus impactos, y entender cómo implementarlo.
                           </p>
-                          <h5 style="background-color: #0AC6E7;display: inline-block;">
+                          <h5 style="background-color: lightcoral;display: inline-block;">
                             Competencias que se esperan adquirir:
                           </h5>
-                          <ul style="background-color: #0AC6E7;">
+                          <ul style="background-color: lightcoral;">
                             <li>
                               Dominio conceptual de la digitalización de las cosas, almacenamiento de datos, uso y aplicaciones
                             </li>
@@ -204,7 +204,7 @@
                               Capacidad de digitalizar diferentes productos/sistemas/servicios, dentro de la empresa particular del asistente
                             </li>
                           </ul>
-                          <a href="#">
+                          <a href="modulo_bigdata.php">
                             <img src="img/ir.svg" width="30" >
                           </a>
                         </div>
@@ -234,7 +234,7 @@
                               <li>Capacidad técnica de diseño, desarrollo, e implementación de sistemas capaces de interpretar el entorno que los rodea en tiempo real</li>
                               <li>Experiencia práctica en talleres de ensayo para implementación real de un prototipo</li>
                           </ul>
-                          <a href="#">
+                          <a href="modulo_vision.php">
                             <img src="img/ir.svg" width="30" >
                           </a>
                         </div>
@@ -264,7 +264,7 @@
                           <ul style="color: white;background-color: #F10D63">
                               <li>Conocimientos y detalles técnicos de diseño, desarrollo, e implementación de sistemas de realidad aumentada, para identificar necesidades, plantear posibles soluciones, interactuar con proveedores</li>
                           </ul>
-                          <a href="#">
+                          <a href="modulo_vryar.php">
                             <img src="img/ir.svg" width="30" >
                           </a>
                         </div>
@@ -281,7 +281,7 @@
                       </div>
                       <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion">
                         <div class="card-body  bg-info" style="background:url(img/fondo7.jpg); background-size: cover; background-position: center;">
-                          <p style="background-color: white">
+                          <p style="background-color: lightyellow">
                              Lograr dar un enfoque industrial a los participantes mediante la utilización de la celda de manufactura y el análisis de las áreas de oportunidad en I4.0.
 
                           </p>

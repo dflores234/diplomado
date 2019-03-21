@@ -17,7 +17,7 @@
  <!DOCTYPE html>
   <html>
     <head>
-	     <title>Ciberseguridad</title>
+	     <title>Sistemas interactivos basados en visión para ayuda al operador (VR Y AR)</title>
 	       <meta charset="utf-8">
          <link rel="shortcut icon" href="img/istblanco.png">
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -95,10 +95,10 @@
                 </div>  
                 <!--Fin menu-->
                 <section class="main-section">
-    	             <div style="width: 500px;margin: 0 auto;">
-    		              <h1>CIBERSEGURIDAD <img src="img/hacker_cyber_crime-512.png" width="70"></h1>
+    	             <div style="width: 850px;margin: 0 auto;">
+    		              <h1>Sistemas interactivos basados en visión para ayuda al operador (VR Y AR)<img src="img/AR.svg" width="70"></h1>
     	             </div>
-                   <section style="background-color: #078BB9">
+                   <section style="background-color: #FF0655">
                     <div class="contanier">
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
@@ -106,8 +106,8 @@
                       <iframe style="margin-left: 10px;" src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21114&amp;authkey=ANf9dKLLcz7iRg8&amp;em=2&amp;wdAr=1.3333333333333333" width="500" height="400" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                          <h3>Principios básicos de la ciberseguridad</h3><hr>
-                              <ul align="left" style="font-size: 14px;">
+                          <h3 style="color: white">Principios básicos de la ciberseguridad</h3><hr style="background-color: white">
+                              <ul align="left" style="font-size: 14px;color: white">
                                  <li>Introducción</li>
                                 <li>Breve perspectiva histórica </li>
                                 <li>Ciberseguridad en el mundo actual</li>
@@ -121,8 +121,8 @@
                       </div>
                     </div> 
                    </section>
-                    <hr style="margin:0px; background-color: gray">
-    	             <section style="background-color: #078BB9">
+                    <hr style="margin:0px; background-color: white">
+    	             <section style="background-color: #FF0655">
                     <div class="contanier">
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br>
@@ -131,8 +131,8 @@
                           </video>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                          <h3>Aplicaciones de la criptografía</h3><hr>
-                              <ul align="left" style="font-size: 14px;">
+                          <h3 style="color: white">Aplicaciones de la criptografía</h3><hr style="background-color: white">
+                              <ul align="left" style="font-size: 14px;color: white">
                                 <li>Firma Digital</li>
                                 <li>Tipos de Firma Digital </li>
                                 <li>Firma digital con RSA</li>
@@ -146,8 +146,8 @@
                       </div>
                     </div> 
                    </section>
-                    <hr style="margin:0px; background-color: gray">
-                   <section style="background-color: #078BB9">
+                    <hr style="margin:0px; background-color: white">
+                   <section style="background-color: #FF0655">
                     <div class="contanier">
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br>
@@ -156,8 +156,8 @@
                           </video-->
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                          <h3>IP Tables</h3><hr>
-                              <ul align="left" style="font-size: 15px;">
+                          <h3 style="color: white">IP Tables</h3><hr style="background-color: white">
+                              <ul align="left" style="font-size: 15px;color: white">
                                   <li>Conceptos Básicos min (0:34)</li>
                                   <li>Tipos de tablas</li>
                                   <li>Diagrama de las capas de IP tables</li>

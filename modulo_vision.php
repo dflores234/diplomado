@@ -17,7 +17,7 @@
  <!DOCTYPE html>
   <html>
     <head>
-	     <title>Ciberseguridad</title>
+	     <title>Visión Artificial Inteligente</title>
 	       <meta charset="utf-8">
          <link rel="shortcut icon" href="img/istblanco.png">
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -95,10 +95,10 @@
                 </div>  
                 <!--Fin menu-->
                 <section class="main-section">
-    	             <div style="width: 500px;margin: 0 auto;">
-    		              <h1>CIBERSEGURIDAD <img src="img/hacker_cyber_crime-512.png" width="70"></h1>
+    	             <div style="width: 850px;margin: 0 auto;">
+    		              <h1>Visión Artificial Inteligente<img src="img/vision.png" width="70"></h1>
     	             </div>
-                   <section style="background-color: #078BB9">
+                   <section style="background-color: #D8D8D8">
                     <div class="contanier">
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
@@ -122,7 +122,7 @@
                     </div> 
                    </section>
                     <hr style="margin:0px; background-color: gray">
-    	             <section style="background-color: #078BB9">
+    	             <section style="background-color: #D8D8D8">
                     <div class="contanier">
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br>
@@ -147,7 +147,7 @@
                     </div> 
                    </section>
                     <hr style="margin:0px; background-color: gray">
-                   <section style="background-color: #078BB9">
+                   <section style="background-color: #D8D8D8">
                     <div class="contanier">
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br>
