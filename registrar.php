@@ -285,7 +285,7 @@
 		    <!-- Copyright -->
 		    <div class="footer-copyright text-center py-3 bg-light">
 		    	<img src="img/logo4.png" width="110" id="logo">
-			    <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="180" height="50" id="logo" style="background: lightblue; border-radius: 6px;">
+			    <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="180" height="50" id="logo" style="background: #A0A0A0; border-radius: 6px;">
 			    <img src="img/logo3.png" width="180" id="logo">
 			    <img src="img/itnl.gif" width="70" id="logo" style="">
 			    <img src="img/logo2.png" width="150" id="logo" style="margin-left: ">
@@ -315,4 +315,45 @@
 	     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.8.0/sweetalert2.min.js"></script>
 
 	    <script src="js/misscripst.js"></script>
+
+	    <!--Enviar datos del registro-->
+	    <script type="text/javascript">
+	    	$function(){
+	    		$('#registrar').click(function(){
+	    			var nombre=$('#txtnombre').val();
+	    			var apellido=$('#txtapellido').val();
+	    			var correo=$('#txtcorreo').val();
+	    			var numero=$('#txtnumero').val();
+	    			var carrera=$('#carreras').val();
+	    			var semestre=$('#semestre').val();
+	    			var ccontraseña=$('#txtccontraseña').val();
+
+	    			proceso_registrar(nombre,apellido,correo,numero,carrera,semestre,ccontraseña);
+	    		});
+
+	    	};
+			
+			function proceso_registrar(nombrejs,apellidojs,correojs,numerojs,carrerajs,semestrejs,ccontraseñajs){
+				var parametros={
+					"nombre":nombrejs,
+					"apellido":apellidojs,
+					"correo":correojs,
+					"numero":numerojs,
+					"carrera":carrerajs,
+					"semestre":semestrejs,
+					"ccontraseña":ccontraseñajs
+				};
+				$.ajax({
+						data:{parametros, opcion:'registrar'},
+						url:'usuario.controller.php',
+						type: 'post',
+						beforeSend: function(){
+
+						},
+						sucess:function(){
+							
+						}
+				});
+			}
+	    </script>
 

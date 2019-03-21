@@ -1,16 +1,23 @@
-l<!--Copia desde aquí-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Confirmación</title>
+</head>
+<body style="margin:0px;">
+>>>>>>> a7cfaedc240e070bd174b9c7d342e5cb894b218b
 <table style="max-width: 600px; padding: 10px; margin:0 auto; border-collapse: collapse;">
 	<tr>
 		<td style="background-color:#3255B2; text-align: left; padding: 0">
 			<a href="#">
-				<img width="20%" style="display:block; margin: 1.5% 3%" src="img/Diplomado3 - copia.png">
+				<img width="20%" style="display:block; margin: 1.5% 3%" src="{logo}">
 			</a>
 		</td>
 	</tr>
 
 	<tr>
 		<td style="padding: 0">
-			<img style="padding: 0; display: block" src="img/curso5.jpg" width="100%">
+			<img style="padding: 0; display: block" src="\cid:banner\" width="100%">
 		</td>
 	</tr>
 	
@@ -26,11 +33,11 @@ l<!--Copia desde aquí-->
 					<h4>¿Tienes dudas? ¿Preguntas?</h4>
 					<h5>Escríbenos a contacto@centroist.org y estaremos encantados de ayudarte</h5>
 				<div style="width: 100%;margin:20px 0; display: inline-block;text-align: center">
-					<img style="padding: 0; width: 200px; margin: 5px; background: #A0A0A0" src="img/Logo CENTRO IST BLANCO-05[1393].png">
-					<img style="padding: 0; width: 200px; margin: 5px" src="img/logo2.png">
-					<img style="padding: 0; width: 180px; margin: 5px" src="img/logo3.png">
-					<img style="padding: 0; width: 150px; margin: 5px" src="img/logo4.png">
-					<img style="padding: 0; width: 100px; margin: 5px" src="img/itnl.gif">
+					<img style="padding: 0; width: 200px; margin: 5px; background: #A0A0A0" src="\cid:centro\">
+					<img style="padding: 0; width: 200px; margin: 5px" src="\cid:logo2\">
+					<img style="padding: 0; width: 180px; margin: 5px" src="\cid:logo3\">
+					<img style="padding: 0; width: 150px; margin: 5px" src="\cid:logo4\">
+					<img style="padding: 0; width: 100px; margin: 5px" src="\cid:tec\">
 				</div>
 				<!--div style="width: 100%; text-align: center">
 					<a style="text-decoration: none; border-radius: 5px; padding: 11px 23px; color: white; background-color: #3498db" href="#">Ir a la página</a>	
@@ -40,3 +47,5 @@ l<!--Copia desde aquí-->
 		</td>
 	</tr>
 </table>
+</body>
+</html>
