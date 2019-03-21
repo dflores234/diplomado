@@ -22,7 +22,7 @@
          <link rel="shortcut icon" href="img/istblanco.png">
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
           <link rel="stylesheet" type="text/css" href="css/participante2.css">
-          <link rel="stylesheet" href="css/bootstrap.min.css"">
+          <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
     <body>
       <div id="wrapper" class="toggled">
@@ -95,76 +95,79 @@
                 </div>  
                 <!--Fin menu-->
                 <section class="main-section">
-    	             <div>
-    		              <h1>CIBERSEGURIDAD <img src="img\segu.svg" width="70"></h1>
+    	             <div style="width: 500px;margin: 0 auto;">
+    		              <h1>CIBERSEGURIDAD <img src="img/hacker_cyber_crime-512.png" width="70"></h1>
     	             </div>
-    	             <div>
-    		              <table class="table table-responsive-md">
-                        <tr>
-                          <td>
-                            <img src="img/video.svg" width="30" height="30">
-                          </td>
-                          <td>
-                            Titulo
-                          </td> 
-                        </tr>
-                        <tr>
-                          <td>
-                            <video width="320" height="180" controls>
-        	                     <source src="src/video1ejemplo.mp4" type="video/mp4">
-                            </video>
-                          </td>
-                          <td>
-                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <video width="320" height="180" controls>
-        	                     <source src="src/video2ejemplo.mp4" type="video/mp4">
-                            </video>
-                          </td>
-                          <td>
-                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <iframe src="https://onedrive.live.com/embed?cid=176C8F7B61C21458&amp;resid=176C8F7B61C21458%2193531&amp;authkey=AMU93QdL8cYLxwY&amp;em=2&amp;wdStartOn=1" width="476px" height="288px" frameborder="0">Esto es un documento de 
-                                <a target="_blank" href="https://office.com">
-                                  Microsoft Office
-                                </a> 
-                                  incrustado con tecnología de 
-                                  <a target="_blank" href="https://office.com/webapps">
-                                    Office Online
-                                  </a>.
-                            </iframe>
-                          </td>
-                          <td>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                          </td>
-                        </tr>
-                      </table>
-    	             </div>
+                   <section style="background-color: #078BB9">
+                    <div class="contanier">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br>
+                          
+                      <embed style="margin-left: 5px;" src="Presentaciones/M1.1.1 Principios Basicos de ciberseguridad.pdf" width="500" height="450" href="Presentaciones/M1.1.1 Principios Basicos de ciberseguridad.pdf"></embed>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                          <h3>Principios básicos de la ciberseguridad</h3><hr>
+                              <ul align="left" style="font-size: 14px;">
+                                 <li>Introducción</li>
+                                <li>Breve perspectiva histórica </li>
+                                <li>Ciberseguridad en el mundo actual</li>
+                                <li>¿Qué es la ciberseguridad?</li>
+                                <li>Definiciones básicas</li>
+                                <li>Importancia de la ciberseguridad</li>
+                                <li>Objetos principales</li>
+                                <li>Entidades implicadas</li>                              
+                              </ul>
+                        </div>
+                      </div>
+                    </div> 
+                   </section>
+                    <hr style="margin:0px; background-color: gray">
+    	             <section style="background-color: #078BB9">
+                    <div class="contanier">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br>
+                          <!--video controls class="img-responsive" width="450" height="auto" style="margin-left: 30px;">
+                            <source src="src/3_aplicaciones.mp4" type="video/mp4">
+                          </video-->
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                          <h3>Aplicaciones de la criptografía</h3><hr>
+                              <ul align="left" style="font-size: 14px;">
+                                <li>Firma Digital</li>
+                                <li>Tipos de Firma Digital </li>
+                                <li>Firma digital con RSA</li>
+                                <li>Ejemplo de Firma digital RSA (I,II,II,IV,V,VI,VII,VIII Y IX)</li>
+                                <li>Certificados digitales</li>
+                                <li>Autoridades de Certificación</li>
+                                <li>Almacenamiento de certificados</li>
+                                <li>Custodia y distribucion de datos</li>
+                              </ul>
+                        </div>
+                      </div>
+                    </div> 
+                   </section>
+                    <hr style="margin:0px; background-color: gray">
+                   <section style="background-color: #078BB9">
+                    <div class="contanier">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br>
+                          <!--video controls class="img-responsive" width="450" height="auto" style="margin-left: 30px;">
+                            <source src="src/7_ip_tablesok.mp4" type="video/mp4">
+                          </video-->
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                          <h3>IP Tables</h3><hr>
+                              <ul align="left" style="font-size: 15px;">
+                                  <li>Conceptos Básicos min (0:34)</li>
+                                  <li>Tipos de tablas</li>
+                                  <li>Diagrama de las capas de IP tables</li>
+                                  <li>Tipos de cadenas</li>
+                                  <li>Sintaxis</li>
+                                </ul>
+                        </div>
+                      </div>
+                    </div> 
+                   </section>
                 </section>
      </div>
        </div>

@@ -1,16 +1,6 @@
 body{
 	overflow-x: hidden;
 }
-table{
-    table-layout: fixed;
-    width: 150px;
-}
-
-th, td {
-    text-align: center;
-    width: 100px;
-    word-wrap: break-word;
-}
 
 .main-section{
   background: white;
