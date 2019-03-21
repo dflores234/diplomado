@@ -156,7 +156,7 @@
 	    	}
 	    }
 
-	    function enviarCorreo($email,$tpl,$subject='Holi')
+	    function enviarCorreo($email,$tpl,$subject)
 	    {
 			
 			require 'PHPMailer/PHPMailer.php';
