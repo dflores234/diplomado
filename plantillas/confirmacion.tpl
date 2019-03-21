@@ -1,4 +1,4 @@
-<!--Copia desde aquí-->
+l<!--Copia desde aquí-->
 <table style="max-width: 600px; padding: 10px; margin:0 auto; border-collapse: collapse;">
 	<tr>
 		<td style="background-color:#3255B2; text-align: left; padding: 0">
