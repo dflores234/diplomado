@@ -117,7 +117,12 @@
                               Objetivo del curso:
                             </h5>
                             <p style="color:white">
-                               El módulo de iniciación a industria 4.0 tiene un enfoque de concepto, global y generalista, su objetivo es aportar una visión de referencia sobre las tecnologías y tendencias a nivel mundial que definen las fábricas de mañana, la industria 4.0 y el concepto de internet de las cosas (IoT, internet of things).
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                             <a href="#">
                               <img src="img/ir.svg" width="30" >
@@ -136,10 +141,10 @@
                         </div>
                         <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                           <div class="card-body bg-info" style="background:url(img/fondo4.png); background-size: cover; background-position: center;">
-                            <h5>
+                            <h5 style="background: lightblue; display: inline-block;">
                               Objetivo del curso:
                             </h5>
-                            <p>
+                            <p style="background: lightblue; display: inline-block;">
                                El módulo de iniciación a industria 4.0 tiene un enfoque de concepto, global y generalista, su objetivo es aportar una visión de referencia sobre las tecnologías y tendencias a nivel mundial que definen las fábricas de mañana, la industria 4.0 y el concepto de internet de las cosas (IoT, internet of things).
                             </p>
                             <a href="#">
@@ -159,32 +164,12 @@
                         </div>
                         <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                           <div class="card-body bg-info" style="background:url(img/fondo6.jpg); background-size: cover; background-position: center;">
-                            <h2 style="color: white">
-                              ¿Qué es la ciberseguridad?
-                            </h2>
-                            <ul style="color: white">
-                              <li>Comunicacíon</li>
-                              <li>Manejo</li>
-                              <li>Almacenamiento</li>
-                              <li>y uso de datos</li>
-                            </ul>
-                            <h6 style="color: white">
-                              De forma segura, confidencial y protegida.
-                            </h6> 
-                            <h5 style="color: white">
+                            <h5 style="color: white;background-color: black;display: inline-block;">
                               Objetivo del curso:
-                            </h5>
-                            <p style="color: white">
-                              Es transferir conocimientos de las normativas y estándares, generalidades sobre la ciberseguridad en la industria, hasta hacking ético.
-                            </p>
-                            <h5 style="color: white">
-                              Competencias que se esperan adquirir:
-                            </h5>
-                            <ul style="color: white">
-                              <li>Concienciación y dominio conceptual de lo que abarca un sistema de ciberseguridad</li>
-                              <li>Conocimiento de las técnicas y metodologías de identificación y recolección de evidencia digital</li>
-                              <li>Experiencia práctica en el manejo de las herramientas que ofrece la ciberseguridad</li>
-                            </ul>
+                            </h5><br>
+                            <p style="color: white;background-color: black;display: inline-block;">
+                              Trabajar sobre cómo asegurar comunicación, manejo, almacenamiento <br> y uso de los datos de forma segura, confidencial y protegida.
+                            </p><br>
                             <a href="modulos.php">
                               <img src="img/ir.svg" width="30" >
                             </a>
@@ -202,22 +187,16 @@
                       </div>
                       <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
                         <div class="card-body bg-info" style="background:url(img/fondo5.jpg); background-size: cover; background-position: center;">
-                          <h4>
-                            ¿Cómo optimizar los sistemas y servicios provistos en mi empresa...en tiempo real,y que prediga patrones o comportamientos?
-                          </h4>
-                          <p>
-                            Utilizando técnicas de IoT, Big Data y Data Analysis.
-                          </p>
-                          <h5>
+                          <h5 style="background-color: #0AC6E7;display: inline-block;">
                             Objetivo del curso:
                           </h5>
-                          <p>
-                            Permitir que las empresas cuenten con conocimientos en soluciones Big Data, con el fin de identificar su potencial, sus impactos, y entender cómo implementarlo.
+                          <p style="background-color: #0AC6E7;">
+                            Permitir que cuenten con conocimientos en soluciones Big Data, con el fin de identificar su potencial, sus impactos, y entender cómo implementarlo.
                           </p>
-                          <h5>
+                          <h5 style="background-color: #0AC6E7;display: inline-block;">
                             Competencias que se esperan adquirir:
                           </h5>
-                          <ul>
+                          <ul style="background-color: #0AC6E7;">
                             <li>
                               Dominio conceptual de la digitalización de las cosas, almacenamiento de datos, uso y aplicaciones
                             </li>
@@ -242,16 +221,16 @@
                       </div>
                       <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
                         <div class="card-body bg-info" style="background:url(img/fondo8.jpg); background-size: cover; background-position: center;">
-                          <h5 style="background: white; display: inline-block;opacity: 0.8">
+                          <h5 style="background: white; display: inline-block;">
                           Objetivo del curso:
                           </h5>
-                          <p style="background: white;opacity: 0.8" >
+                          <p style="background: white;" >
                             Mejorar el control y garantía de calidad de las inspecciones, asegurar continuidad y constancia, eliminar el factor humano, permitir la interactividad y adaptación automática de un sistema, y mejorar la trazabilidad.
                           </p>
-                          <h5 style="background: white; display: inline-block;opacity: 0.8">
+                          <h5 style="background: white; display: inline-block;">
                             Competencias que se esperan adquirir:
                           </h5>
-                          <ul style="background: white;opacity: 0.8">
+                          <ul style="background: white;">
                               <li>Capacidad técnica de diseño, desarrollo, e implementación de sistemas capaces de interpretar el entorno que los rodea en tiempo real</li>
                               <li>Experiencia práctica en talleres de ensayo para implementación real de un prototipo</li>
                           </ul>
@@ -272,16 +251,17 @@
                       </div>
                       <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
                         <div class="card-body bg-info" style="background:url(img/fondo1.jpeg); background-size: cover; background-position: center;">
+                          <p style="color: white;background-color: #F10D63;">Se refiere a tecnología de soporte y ayuda a la capacitación y operación de operarios en línea. Con soluciones basadas en visión artificial inteligente con capacidad de interacción con el operador.</p>
                           <h5 style="color:white">
                             Objetivo del curso:
                           </h5>
-                          <p style="color: white">
+                          <p style="color: white;background-color: #F10D63">
                             Transferir conocimientos en la capacitación de recursos técnicos a través del uso de visión artificial inteligente con realidad aumentada.
                           </p>
                           <h5 style="color: white">  
                             Competencias que se esperan adquirir:
                           </h5>
-                          <ul style="color: white">
+                          <ul style="color: white;background-color: #F10D63">
                               <li>Conocimientos y detalles técnicos de diseño, desarrollo, e implementación de sistemas de realidad aumentada, para identificar necesidades, plantear posibles soluciones, interactuar con proveedores</li>
                           </ul>
                           <a href="#">
@@ -301,7 +281,7 @@
                       </div>
                       <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion">
                         <div class="card-body  bg-info" style="background:url(img/fondo7.jpg); background-size: cover; background-position: center;">
-                          <p>
+                          <p style="background-color: white">
                              Lograr dar un enfoque industrial a los participantes mediante la utilización de la celda de manufactura y el análisis de las áreas de oportunidad en I4.0.
 
                           </p>
