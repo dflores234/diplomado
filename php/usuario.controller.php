@@ -26,7 +26,7 @@
 								case 0: 
 									$response['status'] = 'ok';
 									$response['msg'] = 'El usuario ha sido registrado correctamente.';
-									$response['otro'] = $usuario->enviarCorreo($_REQUEST['correo'],'../plantillas/confirmacion.tpl','Registro realizado con éxito');
+									$response['otro'] = $usuario->enviarCorreo($_REQUEST['correo'],'../plantillas/confirmacion.tpl',$response['msg']);
 
 									break;
 								
