@@ -125,7 +125,7 @@
                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                             <a href="modulo_python.php">
-                              <img src="img/ir.svg" width="30" >
+                              <img src="img/ir.png" width="50" >
                             </a>
                           </div>
                         </div>
@@ -148,7 +148,7 @@
                                El módulo de iniciación a industria 4.0 tiene un enfoque de concepto, global y generalista, su objetivo es aportar una visión de referencia sobre las tecnologías y tendencias a nivel mundial que definen las fábricas de mañana, la industria 4.0 y el concepto de internet de las cosas (IoT, internet of things).
                             </p>
                             <a href="modulo_sensibilizacion.php">
-                              <img src="img/ir.svg" width="30" >
+                              <img src="img/ir.png" width="50" >
                             </a>
                           </div>
                         </div>
@@ -171,7 +171,7 @@
                               Trabajar sobre cómo asegurar comunicación, manejo, almacenamiento <br> y uso de los datos de forma segura, confidencial y protegida.
                             </p><br>
                             <a href="modulos.php">
-                              <img src="img/ir.svg" width="30" >
+                              <img src="img/ir.png" width="50" >
                             </a>
                           </div>
                         </div>
@@ -205,7 +205,7 @@
                             </li>
                           </ul>
                           <a href="modulo_bigdata.php">
-                            <img src="img/ir.svg" width="30" >
+                            <img src="img/ir.png" width="50" >
                           </a>
                         </div>
                       </div>
@@ -235,7 +235,7 @@
                               <li>Experiencia práctica en talleres de ensayo para implementación real de un prototipo</li>
                           </ul>
                           <a href="modulo_vision.php">
-                            <img src="img/ir.svg" width="30" >
+                            <img src="img/ir.png" width="50" >
                           </a>
                         </div>
                       </div>
@@ -265,7 +265,7 @@
                               <li>Conocimientos y detalles técnicos de diseño, desarrollo, e implementación de sistemas de realidad aumentada, para identificar necesidades, plantear posibles soluciones, interactuar con proveedores</li>
                           </ul>
                           <a href="modulo_vryar.php">
-                            <img src="img/ir.svg" width="30" >
+                            <img src="img/ir.png" width="50" >
                           </a>
                         </div>
                       </div>
@@ -286,7 +286,7 @@
 
                           </p>
                           <a href="#">
-                            <img src="img/ir.svg" width="30" >
+                            <img src="img/ir.png" width="50" >
                           </a>
                         </div>
                       </div>
