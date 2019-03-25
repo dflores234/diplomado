@@ -105,7 +105,7 @@
                      <iframe style="margin-left: 10px" src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21116&amp;authkey=ADddGjuHiXXNY8w&amp;em=2&amp;wdAr=1.3333333333333333" width="500" height="400" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                          <h3>Introducción a Python</h3><hr>
+                          <h3>Introducción a Python</h3><hr style="background-color: black">
                               <ul align="left" style="font-size: 14px;">
                                  <li>¿Qué es Python?</li>
                                 <li>Ventajas de python </li>
@@ -120,7 +120,7 @@
                       </div>
                     </div> 
                    </section>
-                    <hr style="margin:0px; background-color: gray">
+                    <hr style="margin:0px; background-color: black">
     	             <section style="background-color: #0560A0">
                     <div class="contanier">
                       <div class="row">
@@ -128,7 +128,7 @@
                          <iframe style="margin-left: 10px" src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21117&amp;authkey=AMEzBstc55hAcco&amp;em=2&amp;wdAr=1.7777777777777777" width="500" height="320" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                          <h3>Sentecias en Python</h3><hr>
+                          <h3>Sentecias en Python</h3><hr style="background-color: black">
                               <ul align="left" style="font-size: 14px;">
                                 <li>Sentencia 'if'</li>
                                 <li>Operadores condicionales </li>
@@ -142,6 +142,21 @@
                                 <li>Máximos y mínimos</li>
                                 <li>Comentarios</li>
                               </ul>
+                        </div>
+                      </div>
+                    </div> 
+                   </section>
+                   <hr style="margin:0px; background-color: black">
+                   <section style="background-color: #0560A0">
+                    <div class="contanier">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <img src="img/descargar.png" width="150" style="margin-left: 100px; margin-top: 5px" >
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                           <h3>Descarga de material</h3><hr>
+                           <li><a href="https://www.python.org/downloads/" style="color:white">Python</a></li>
+
                         </div>
                       </div>
                     </div> 

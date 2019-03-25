@@ -147,6 +147,13 @@
                             <p style="background: lightblue; display: inline-block;">
                                El módulo de iniciación a industria 4.0 tiene un enfoque de concepto, global y generalista, su objetivo es aportar una visión de referencia sobre las tecnologías y tendencias a nivel mundial que definen las fábricas de mañana, la industria 4.0 y el concepto de internet de las cosas (IoT, internet of things).
                             </p>
+                            <h5 style="background-color: lightblue;display: inline-block;">
+                              Competencias a adquirir:
+                            </h5><br>
+                            <p style="background-color: lightblue;display: inline-block;">
+                             •Capacidad de sensibilización, visión de referencia de lo que es Industria 4.0, ámbitos de la misma y de las tecnologías involucradas <br>
+                             •Capacidad de identificación de las áreas de mejora en la empresa particular del asistente 
+                            </p><br>
                             <a href="modulo_sensibilizacion.php">
                               <img src="img/ir.png" width="50" >
                             </a>
@@ -168,7 +175,14 @@
                               Objetivo del curso:
                             </h5><br>
                             <p style="color: white;background-color: black;display: inline-block;">
-                              Trabajar sobre cómo asegurar comunicación, manejo, almacenamiento <br> y uso de los datos de forma segura, confidencial y protegida.
+                              Transferencia de conocimientos desde las normativas y estándares, generalidades sobre la ciberseguridad en la industria, hasta hacking ético
+                            </p><br>
+                            <h5 style="color: white;background-color: black;display: inline-block;">
+                              Competencias a adquirir:
+                            </h5><br>
+                            <p style="color: white;background-color: black;display: inline-block;">
+                             •Concienciación y dominio conceptual de lo que abarca un sistema de ciberseguridad <br>•Conocimiento de las técnicas y metodologías de identificación y recolección de evidencia digital <br>
+                             •Experiencia práctica en el manejo de las herramientas que ofrece la ciberseguridad
                             </p><br>
                             <a href="modulos.php">
                               <img src="img/ir.png" width="50" >
@@ -252,13 +266,13 @@
                       <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
                         <div class="card-body bg-info" style="background:url(img/fondo1.jpeg); background-size: cover; background-position: center;">
                           <p style="color: white;background-color: #F10D63;">Se refiere a tecnología de soporte y ayuda a la capacitación y operación de operarios en línea. Con soluciones basadas en visión artificial inteligente con capacidad de interacción con el operador.</p>
-                          <h5 style="color:white">
+                          <h5 style="color:white;background-color: #F10D63;display: inline-block;">
                             Objetivo del curso:
                           </h5>
                           <p style="color: white;background-color: #F10D63">
                             Transferir conocimientos en la capacitación de recursos técnicos a través del uso de visión artificial inteligente con realidad aumentada.
                           </p>
-                          <h5 style="color: white">  
+                          <h5 style="color: white;background-color: #F10D63;display: inline-block;">  
                             Competencias que se esperan adquirir:
                           </h5>
                           <ul style="color: white;background-color: #F10D63">
