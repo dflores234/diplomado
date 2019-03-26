@@ -56,8 +56,8 @@
               <div class="row">
                 <div class="col-lg-12">
                   <!--Menu-->
-                    <div class="container-fluid bg-primary text-right" >
-                      <nav class="navbar navbar-expand-lg navbar-light bg-primary container">
+                    <div class="container-fluid  text-right" style="background-color: #23AAE1" >
+                      <nav class="navbar navbar-expand-lg navbar-light  container" style="background-color: #23AAE1">
                         <a class="navbar-brand" href="participante_index.php">
                             <img src="img/Diplomado3 - copia.png" width="160" height="63" class="d-inline-block align-top" alt="">
                         </a> 
@@ -96,7 +96,7 @@
                 <!--Fin menu-->
                 <section class="main-section">
     	             <div style="width: 850px;margin: 0 auto;">
-    		              <h1>Sistemas interactivos basados en visión para ayuda al operador (VR Y AR)<img src="img/AR.svg" width="70"></h1>
+    		              <h1><img src="img/AR.svg" width="70">Sistemas interactivos basados en visión para ayuda al operador (VR Y AR)</h1>
     	             </div>
                    <section style="background-color: #FF0655">
                     <div class="contanier">
@@ -243,7 +243,7 @@
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3 bg-light">
           <img src="img/logo4.png" width="110" id="logo">
-          <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="180" height="50" id="logo" style="background: #A0A0A0; border-radius: 6px;">
+          <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="180" height="50" id="logo">
           <img src="img/logo3.png" width="180" id="logo">
           <img src="img/itnl.gif" width="70" id="logo" style="">
           <img src="img/logo2.png" width="150" id="logo" style="margin-left: ">
