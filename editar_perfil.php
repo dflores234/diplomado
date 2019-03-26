@@ -27,8 +27,8 @@
   </head>
   <body>
     <!--Menu-->
-    <div class="container-fluid bg-primary" >
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary container">
+    <div class="container-fluid " style="background-color: #23AAE1" >
+      <nav class="navbar navbar-expand-lg navbar-light container" style="background-color: #23AAE1">
           <a class="navbar-brand" href="participante_index.php">
             <img src="img/Diplomado3 - copia.png" width="160" height="63" class="d-inline-block align-top" alt="">
           </a> 

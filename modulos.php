@@ -127,7 +127,7 @@
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br>
                           <video controls width="450" height="auto" style="margin-left: 30px;">
-                            <source src="#" type="video/mp4"></source>
+                            <source src="src/3_aplicaciones.mp4" type="video/mp4"></source>
                           </video>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -151,9 +151,9 @@
                     <div class="contanier">
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br>
-                          <!--video controls class="img-responsive" width="450" height="auto" style="margin-left: 30px;">
+                          <video controls class="img-responsive" width="450" height="auto" style="margin-left: 30px;">
                             <source src="src/7_ip_tablesok.mp4" type="video/mp4">
-                          </video-->
+                          </video>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                           <h3>IP Tables</h3><hr>

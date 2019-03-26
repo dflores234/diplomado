@@ -15,8 +15,8 @@
 		</head>
 		<body>
 			<!--Menu-->
-    		<div class="container-fluid bg-primary" >
-    			<nav class="navbar navbar-expand-lg navbar-light bg-primary container">
+    		<div class="container-fluid" style="background-color: #23AAE1" >
+    			<nav class="navbar navbar-expand-lg navbar-light container" style="background-color: #23AAE1">
 	  				<a class="navbar-brand" href="index.html">
 	  					<img src="img/Diplomado3 - copia.png" width="160" height="63" class="d-inline-block align-top" alt="">
 	  				</a> 
@@ -42,7 +42,7 @@
               <div class="form-group" id="contraseña-group">
                 <input type="password" placeholder="Contraseña" name="" class="form-control" id="contraseña" required="">
               </div>
-              <button type="submit" class="btn btn-primary" id="btnLogin"><i class="fas fa-sign-out-alt"></i> Ingresar 
+              <button type="submit" class="btn btn-info" id="btnLogin"><i class="fas fa-sign-out-alt"></i> Ingresar 
               </button>
               <!--div class="lds-hourglass"></div-->
 

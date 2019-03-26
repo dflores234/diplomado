@@ -13,8 +13,8 @@
 		</head>
 		<body>
 			<!--Menu-->
-    		<div class="container-fluid bg-primary fixed-top text-center" >
-    			<nav class="navbar navbar-expand-lg navbar-light bg-primary container">
+    		<div class="container-fluid fixed-top text-center"  style="background-color: #23AAE1">
+    			<nav class="navbar navbar-expand-lg navbar-light container" style="background-color: #23AAE1">
 	  				<a class="navbar-brand" href="index.html">
 	  					<img src="img/Diplomado3 - copia.png" width="160" height="63" class="d-inline-block align-top" alt="">
 	  				</a> 
@@ -41,7 +41,7 @@
     		<!--Fin menu-->
     		<!--Banner-->
     		<div class="container-fluid banner d-flex justify-content-right item align-items-center banner">
-    			<div class="text-left text-primary">
+    			<div class="text-left " style="color: #23AAE1">
     				<h3>
     					¡Bienvenido!
     				</h3>
@@ -141,14 +141,14 @@
           <div class="form-group">
             <label class="col-md-2 control-label"></label>
             <div class="col-md-9">
-              <button type="submit" class="btn btn-primary" value="Registrar" id="registrar">Registrar</button>
+              <button type="submit" class="btn btn-info" value="Registrar" id="registrar">Registrar</button>
               
             </div>
           </div>
-        			</form>
+       </form>
           
-        		</div>
-      			</div>
+       </div>
+     </div>
       <div class="col-md-5">
                 <div class="text-center">
                 	<h3>
