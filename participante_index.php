@@ -174,13 +174,13 @@
                           <div class="card-body bg-info" style="background:url(img/fondo6.jpg); background-size: cover; background-position: center;">
                             <h5 style="color: white;">
                               Objetivo del curso:
-                            </h5><br>
+                            </h5>
                             <p style="color: white;">
                               Transferencia de conocimientos desde las normativas y estándares, generalidades sobre la ciberseguridad en la industria, hasta hacking ético
-                            </p><br>
+                            </p>
                             <h5 style="color: white">
                               Competencias a adquirir:
-                            </h5><br>
+                            </h5>
                             <p style="color: white;">
                              •Concienciación y dominio conceptual de lo que abarca un sistema de ciberseguridad <br>•Conocimiento de las técnicas y metodologías de identificación y recolección de evidencia digital <br>
                              •Experiencia práctica en el manejo de las herramientas que ofrece la ciberseguridad
