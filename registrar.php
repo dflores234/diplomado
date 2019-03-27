@@ -13,8 +13,8 @@
 		</head>
 		<body>
 			<!--Menu-->
-    		<div class="container-fluid bg-primary fixed-top text-center" >
-    			<nav class="navbar navbar-expand-lg navbar-light bg-primary container">
+    		<div class="container-fluid fixed-top text-center"  style="background-color: #23AAE1">
+    			<nav class="navbar navbar-expand-lg navbar-light container" style="background-color: #23AAE1">
 	  				<a class="navbar-brand" href="index.html">
 	  					<img src="img/Diplomado3 - copia.png" width="160" height="63" class="d-inline-block align-top" alt="">
 	  				</a> 
@@ -41,7 +41,7 @@
     		<!--Fin menu-->
     		<!--Banner-->
     		<div class="container-fluid banner d-flex justify-content-right item align-items-center banner">
-    			<div class="text-left text-primary">
+    			<div class="text-left " style="color: #23AAE1">
     				<h3>
     					¡Bienvenido!
     				</h3>
@@ -141,14 +141,14 @@
           <div class="form-group">
             <label class="col-md-2 control-label"></label>
             <div class="col-md-9">
-              <button type="submit" class="btn btn-primary" value="Registrar" id="registrar">Registrar</button>
+              <button type="submit" class="btn btn-info" value="Registrar" id="registrar">Registrar</button>
               
             </div>
           </div>
-        			</form>
+       </form>
           
-        		</div>
-      			</div>
+       </div>
+     </div>
       <div class="col-md-5">
                 <div class="text-center">
                 	<h3>
@@ -162,7 +162,7 @@
 						<h6>Bienvenido al Diplomado 4.0 </h6>
 					<p align="left"> 
 						Al registrarte en el diplomado tendras acceso a los distintos modulos, tales como: 
-						<ul align="left">
+						<ul style="text-align: left;">
 							<li>Ciberseguirdad</li>
 							<li>Big Data</li>
 							<li>IoT</li>
@@ -172,7 +172,7 @@
 						
 						Requisitos para registrarte <img src="img/tips.svg" width="20"><br>
 						<img src="img/checked.svg" width="20"> Ser egresado de últimos semestres de las carreras:
-						<ul align="left">
+						<ul style="text-align: left;">
 							<li>
 								Sistemas computacionales
 							</li>
@@ -192,10 +192,10 @@
 								Mantenimiento industrial
 							</li>
 						</ul>
-						<img src="img/checked.svg" width="20"> Disponibilidad de horario viernes y sábados en  <br>horarios de 9AM a 6PM <br>
+						<img src="img/checked.svg" width="20"> Disponibilidad de horario viernes y sábados en horarios de 9AM a 6PM <br>
 						<img src="img/checked.svg" width="20"> Tener conocimientos básicos de programción en alguno
 						de los siguientes lenguajes:
-						<ul align="left">
+						<ul style="text-align: left;">
 							<li>
 								C++
 							</li>
@@ -285,7 +285,7 @@
 		    <!-- Copyright -->
 		    <div class="footer-copyright text-center py-3 bg-light">
 		    	<img src="img/logo4.png" width="110" id="logo">
-			    <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="180" height="50" id="logo" style="background: #A0A0A0; border-radius: 6px;">
+			    <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="180" height="50" id="logo">
 			    <img src="img/logo3.png" width="180" id="logo">
 			    <img src="img/itnl.gif" width="70" id="logo" style="">
 			    <img src="img/logo2.png" width="150" id="logo" style="margin-left: ">

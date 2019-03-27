@@ -56,8 +56,8 @@
               <div class="row">
                 <div class="col-lg-12">
                   <!--Menu-->
-                    <div class="container-fluid bg-primary text-right" >
-                      <nav class="navbar navbar-expand-lg navbar-light bg-primary container">
+                    <div class="container-fluid text-right" style="background-color: #23AAE1">
+                      <nav class="navbar navbar-expand-lg navbar-light container" style="background-color: #23AAE1">
                         <a class="navbar-brand" href="participante_index.php">
                             <img src="img/Diplomado3 - copia.png" width="160" height="63" class="d-inline-block align-top" alt="">
                         </a> 
@@ -96,40 +96,61 @@
                 <!--Fin menu-->
                 <section class="main-section">
     	             <div style="width: 500px;margin: 0 auto;">
-    		              <h1>PYTHON <img src="img/code.svg" width="70"></h1>
+    		               <h1> <img src="img/code.svg" width="70" >PYTHON </h1>
     	             </div>
-                   <section style="background-color: #0560A0">
-                    <div class="contanier">
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                     <iframe style="margin-left: 10px" src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21116&amp;authkey=ADddGjuHiXXNY8w&amp;em=2&amp;wdAr=1.3333333333333333" width="500" height="400" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                   <div id="accordion" role="tablist">
+                      <div class="card">
+                        <div class="card-header bg-white" role="tab" id="headingOne">
+                          <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Introducción a python
+                            </a>
+                          </h5>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                          <h3>Introducción a Python</h3><hr style="background-color: black">
-                              <ul align="left" style="font-size: 14px;">
-                                 <li>¿Qué es Python?</li>
-                                <li>Ventajas de python </li>
-                                <li>Entorno de python</li>
-                                <li>Declaracíon de variables</li>
-                                <li>Imprimir mensajes</li>
-                                <li>Ingresar datos</li>
-                                <li>Operaciones matematicas y funciones matematicas</li>
-                                <li>Importar librerias</li>                              
-                              </ul>
+                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
+                          <div class="card-body bg-light">
+                              <div class="contanier">
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
+                                    <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21116&amp;authkey=ADddGjuHiXXNY8w&amp;em=2&amp;wdAr=1.3333333333333333" width="500" height="400" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <h3>Introducción a Python</h3><hr style="background-color: black">
+                                          <ul align="left" style="font-size: 14px;">
+                                             <li>¿Qué es Python?</li>
+                                            <li>Ventajas de python </li>
+                                            <li>Entorno de python</li>
+                                            <li>Declaracíon de variables</li>
+                                            <li>Imprimir mensajes</li>
+                                            <li>Ingresar datos</li>
+                                            <li>Operaciones matematicas y funciones matematicas</li>
+                                            <li>Importar librerias</li>                              
+                                          </ul>
+                                  </div>
+                                </div>
+                              </div> 
+                          </div>
                         </div>
-                      </div>
-                    </div> 
-                   </section>
-                    <hr style="margin:0px; background-color: black">
-    	             <section style="background-color: #0560A0">
-                    <div class="contanier">
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br>
-                         <iframe style="margin-left: 10px" src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21117&amp;authkey=AMEzBstc55hAcco&amp;em=2&amp;wdAr=1.7777777777777777" width="500" height="320" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                    </div>
+                   
+                      <div class="card">
+                        <div class="card-header bg-white" role="tab" id="headingTwo">
+                          <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                              Sentencias en python
+                            </a>
+                          </h5>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                          <h3>Sentecias en Python</h3><hr style="background-color: black">
-                              <ul align="left" style="font-size: 14px;">
+                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" >
+                          <div class="card-body bg-light">
+                              <div class="contanier">
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
+                                    <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21117&amp;authkey=AMEzBstc55hAcco&amp;em=2&amp;wdAr=1.7777777777777777" width="500" height="320" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <h3>Sentencias en python</h3><hr style="background-color: black">
+                                          <ul align="left" style="font-size: 14px;">
                                 <li>Sentencia 'if'</li>
                                 <li>Operadores condicionales </li>
                                 <li>Errores comunes</li>
@@ -142,25 +163,34 @@
                                 <li>Máximos y mínimos</li>
                                 <li>Comentarios</li>
                               </ul>
+                                  </div>
+                                </div>
+                              </div> 
+                          </div>
                         </div>
-                      </div>
-                    </div> 
-                   </section>
-                   <hr style="margin:0px; background-color: black">
-                   <section style="background-color: #0560A0">
-                    <div class="contanier">
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <img src="img/descargar.png" width="150" style="margin-left: 100px; margin-top: 5px" >
+                    </div>
+                      <div class="card">
+                        <div class="card-header bg-white" role="tab" id="headingThree">
+                          <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                              Material descargable
+                            </a>
+                          </h5>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                           <h3>Descarga de material</h3><hr>
-                           <li><a href="https://www.python.org/downloads/" style="color:white">Python</a></li>
-
+                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" >
+                          <div class="card-body bg-light">
+                              <div class="contanier">
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <a href="https://www.python.org/downloads/"  target="_blank" style="color:blue">Descarga python</a>
+                                  </div>
+                               
+                                </div>
+                              </div> 
+                          </div>
                         </div>
-                      </div>
-                    </div> 
-                   </section>
+                    </div>
+                    </div>
                 </section>
      </div>
        </div>
@@ -236,7 +266,7 @@
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3 bg-light">
           <img src="img/logo4.png" width="110" id="logo">
-          <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="180" height="50" id="logo" style="background: #A0A0A0; border-radius: 6px;">
+          <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="180" height="50" id="logo" >
           <img src="img/logo3.png" width="180" id="logo">
           <img src="img/itnl.gif" width="70" id="logo" style="">
           <img src="img/logo2.png" width="150" id="logo" style="margin-left: ">

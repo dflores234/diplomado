@@ -15,8 +15,8 @@
 		</head>
 		<body>
 			<!--Menu-->
-    		<div class="container-fluid bg-primary" >
-    			<nav class="navbar navbar-expand-lg navbar-light bg-primary container">
+    		<div class="container-fluid" style="background-color: #23AAE1" >
+    			<nav class="navbar navbar-expand-lg navbar-light container" style="background-color: #23AAE1">
 	  				<a class="navbar-brand" href="index.html">
 	  					<img src="img/Diplomado3 - copia.png" width="160" height="63" class="d-inline-block align-top" alt="">
 	  				</a> 
@@ -32,7 +32,7 @@
 				<div class="col-sm-8 main-section">
 					<div class="modal-content">
 						<div class="col-12 user-img">
-							<img src="img/ico.png">
+							<img src="img/Avatar.png">
 						</div>
             <form>
                 <div class="col-12" action="participante_index.php">
@@ -42,7 +42,7 @@
               <div class="form-group" id="contraseña-group">
                 <input type="password" placeholder="Contraseña" name="" class="form-control" id="contraseña" required="">
               </div>
-              <button type="submit" class="btn btn-primary" id="btnLogin"><i class="fas fa-sign-out-alt"></i> Ingresar 
+              <button type="submit" class="btn btn-info" id="btnLogin"><i class="fas fa-sign-out-alt"></i> Ingresar 
               </button>
               <!--div class="lds-hourglass"></div-->
 
@@ -131,7 +131,7 @@
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3 bg-light">
     	<img src="img/logo4.png" width="110" id="logo">
-      <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="180" height="50" id="logo" style="background: #A0A0A0; border-radius: 6px;">
+      <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="180" height="50" id="logo">
       <img src="img/logo3.png" width="180" id="logo">
       <img src="img/itnl.gif" width="70" id="logo" style="">
       <img src="img/logo2.png" width="150" id="logo" style="margin-left: ">
