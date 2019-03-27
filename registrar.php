@@ -345,7 +345,7 @@
 				};
 				$.ajax({
 						data:{parametros, opcion:'registrar'},
-						url:'usuario.controller.php',
+						url:'php/usuario.controller.php',
 						type: 'post',
 						beforeSend: function(){
 
