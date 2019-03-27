@@ -132,6 +132,41 @@
                           </div>
                         </div>
                       </div>
+                      <div class="card">
+                        <div class="card-header bg-white" role="tab" id="headingTwo">
+                          <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                              Aplicaciones de la criptografía (video)
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" >
+                          <div class="card-body bg-info">
+                              <div class="contanier">
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
+                                    <video controls width="450" height="auto" style="margin-left: 30px;">
+                                      <source src="src/3_aplicaciones.mp4" type="video/mp4"></source>
+                                    </video>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <h3>Aplicaciones de la criptografía</h3><hr style="background-color: black">
+                                        <ul align="left" style="font-size: 14px;">
+                                          <li>Firma Digital</li>
+                                          <li>Tipos de Firma Digital </li>
+                                          <li>Firma digital con RSA</li>
+                                          <li>Ejemplo de Firma digital RSA (I,II,II,IV,V,VI,VII,VIII Y IX)</li>
+                                          <li>Certificados digitales</li>
+                                          <li>Autoridades de Certificación</li>
+                                          <li>Almacenamiento de certificados</li>
+                                          <li>Custodia y distribucion de datos</li>
+                                        </ul>
+                                  </div>
+                                </div>
+                              </div> 
+                          </div>
+                        </div>
+                    </div>
 
                     </div>
                   

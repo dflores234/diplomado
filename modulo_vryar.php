@@ -96,78 +96,72 @@
                 <!--Fin menu-->
                 <section class="main-section">
     	             <div style="width: 850px;margin: 0 auto;">
-    		              <h1><img src="img/AR.svg" width="70">Sistemas interactivos basados en visión para ayuda al operador (VR Y AR)</h1>
-    	             </div>
-                   <section style="background-color: #FF0655">
-                    <div class="contanier">
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                      <!--embed style="margin-left: 5px;" src="Presentaciones/M1.1.1 Principios Basicos de ciberseguridad.pdf" width="500" height="450" href="Presentaciones/M1.1.1 Principios Basicos de ciberseguridad.pdf"></embed-->
-                      <iframe style="margin-left: 10px;" src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21114&amp;authkey=ANf9dKLLcz7iRg8&amp;em=2&amp;wdAr=1.3333333333333333" width="500" height="400" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+    		              <h1><img src="img/AR.svg" width="50">Sistemas interactivos basados en visión para ayuda al operador (VR Y AR)</h1>
+    	             </div>  
+                    <div id="accordion" role="tablist">
+                        <div class="card">
+                        <div class="card-header bg-white" role="tab" id="headingOne">
+                          <h5 class="mb-0" >
+                            <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:#FF0655 ">
+                              Realidad Virtual
+                            </a>
+                          </h5>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                          <h3 style="color: white">Principios básicos de la ciberseguridad</h3><hr style="background-color: white">
-                              <ul align="left" style="font-size: 14px;color: white">
-                                 <li>Introducción</li>
-                                <li>Breve perspectiva histórica </li>
-                                <li>Ciberseguridad en el mundo actual</li>
-                                <li>¿Qué es la ciberseguridad?</li>
-                                <li>Definiciones básicas</li>
-                                <li>Importancia de la ciberseguridad</li>
-                                <li>Objetos principales</li>
-                                <li>Entidades implicadas</li>                              
-                              </ul>
-                        </div>
-                      </div>
-                    </div> 
-                   </section>
-                    <hr style="margin:0px; background-color: white">
-    	             <section style="background-color: #FF0655">
-                    <div class="contanier">
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br>
-                          <video controls width="450" height="auto" style="margin-left: 30px;">
-                            <source src="#" type="video/mp4"></source>
-                          </video>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                          <h3 style="color: white">Aplicaciones de la criptografía</h3><hr style="background-color: white">
-                              <ul align="left" style="font-size: 14px;color: white">
-                                <li>Firma Digital</li>
-                                <li>Tipos de Firma Digital </li>
-                                <li>Firma digital con RSA</li>
-                                <li>Ejemplo de Firma digital RSA (I,II,II,IV,V,VI,VII,VIII Y IX)</li>
-                                <li>Certificados digitales</li>
-                                <li>Autoridades de Certificación</li>
-                                <li>Almacenamiento de certificados</li>
-                                <li>Custodia y distribucion de datos</li>
-                              </ul>
+                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
+                          <div class="card-body" style="background-color: #FF0655">
+                              <div class="contanier">
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
+                                    <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21122&amp;authkey=AP8C-ZRzNBeDLzs&amp;em=2&amp;wdAr=1.3333333333333333" width="500" height="400" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <h3 style="margin-left:5px;color: white"> Realidad virtual</h3><hr style="background-color: white">
+                                          <ul align="left" style="font-size: 14px;color: white">
+                                             <li>Introducción a la realidad virtual</li>
+                                            <li>Tipos de realidad virtual (inmersiva, no inmersiva, etc.) </li>
+                                            <li>Análisis de dispositivos (comerciales actuales)</li>
+                                            <li>Ejemplos de apliación</li>
+                                            <li>Grado de madurez y retos</li>
+                                            <li>Cómo desarrollar activos/productos de RV, intro básica</li>        
+                                          </ul>
+                                  </div>
+                                </div>
+                              </div> 
+                          </div>
                         </div>
                       </div>
-                    </div> 
-                   </section>
-                    <hr style="margin:0px; background-color: white">
-                   <section style="background-color: #FF0655">
-                    <div class="contanier">
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br>
-                          <!--video controls class="img-responsive" width="450" height="auto" style="margin-left: 30px;">
-                            <source src="src/7_ip_tablesok.mp4" type="video/mp4">
-                          </video-->
+                      <div class="card">
+                        <div class="card-header bg-white" role="tab" id="headingTwo">
+                          <h5 class="mb-0" >
+                            <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="color:#FF0655 ">
+                              Realidad Aumentada
+                            </a>
+                          </h5>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                          <h3 style="color: white">IP Tables</h3><hr style="background-color: white">
-                              <ul align="left" style="font-size: 15px;color: white">
-                                  <li>Conceptos Básicos min (0:34)</li>
-                                  <li>Tipos de tablas</li>
-                                  <li>Diagrama de las capas de IP tables</li>
-                                  <li>Tipos de cadenas</li>
-                                  <li>Sintaxis</li>
-                                </ul>
+                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" >
+                          <div class="card-body" style="background-color: #FF0655">
+                              <div class="contanier">
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
+                                    <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21122&amp;authkey=AP8C-ZRzNBeDLzs&amp;em=2&amp;wdAr=1.3333333333333333" width="500" height="400" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <h3 style="margin-left:5px;color: white"> Realidad Aumentada</h3><hr style="background-color: white">
+                                          <ul align="left" style="font-size: 14px;color: white">
+                                             <li>Introducción a la realidad virtual</li>
+                                            <li>Tipos de realidad virtual (inmersiva, no inmersiva, etc.) </li>
+                                            <li>Análisis de dispositivos (comerciales actuales)</li>
+                                            <li>Ejemplos de apliación</li>
+                                            <li>Grado de madurez y retos</li>
+                                            <li>Cómo desarrollar activos/productos de RV, intro básica</li>        
+                                          </ul>
+                                  </div>
+                                </div>
+                              </div> 
+                          </div>
                         </div>
                       </div>
-                    </div> 
-                   </section>
+                    </div>
                 </section>
      </div>
        </div>
