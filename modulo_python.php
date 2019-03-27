@@ -108,7 +108,7 @@
                           </h5>
                         </div>
                         <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
-                          <div class="card-body bg-info">
+                          <div class="card-body bg-light">
                               <div class="contanier">
                                 <div class="row">
                                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
@@ -142,7 +142,7 @@
                           </h5>
                         </div>
                         <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" >
-                          <div class="card-body bg-info">
+                          <div class="card-body bg-light">
                               <div class="contanier">
                                 <div class="row">
                                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
@@ -178,11 +178,11 @@
                           </h5>
                         </div>
                         <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" >
-                          <div class="card-body bg-info">
+                          <div class="card-body bg-light">
                               <div class="contanier">
                                 <div class="row">
                                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                    <a href="https://www.python.org/downloads/"  target="_blank" style="color:white">Descarga python</a>
+                                    <a href="https://www.python.org/downloads/"  target="_blank" style="color:blue">Descarga python</a>
                                   </div>
                                
                                 </div>

@@ -18,7 +18,7 @@ function validar(s){
   if ($('#contraseña').val()!=$('#ccontraseña').val()) {
       swal({
         title: "La contraseñas no coinciden",
-          text: "por favor vuleva a introducir las contraseñas",
+          text: "por favor vuelva a introducir las contraseñas",
           type: "warning",
           /*showCancelButton: true,*/
           confirmButtonColor: '#3085d6',
@@ -26,7 +26,7 @@ function validar(s){
           confirmButtonText: 'Regresar',
           /*cancelButtonText: "Cancelar"*/
         });
-      e.preventDefault();
+      s.preventDefault();
       return false;
     }
 }

@@ -145,8 +145,8 @@
                               <div class="contanier">
                                 <div class="row">
                                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                    <video controls width="450" height="auto" style="margin-left: 30px;">
-                                      <source src="src/3_aplicaciones.mp4" type="video/mp4"></source>
+                                    <video controls controlsList="nodownload" width="450" height="auto" style="margin-left: 30px;">
+                                      <source src="src/video1ejemplo.mp4" type="video/mp4"></source>
                                     </video>
                                   </div>
                                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
