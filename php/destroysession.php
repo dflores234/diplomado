@@ -3,7 +3,6 @@
 	
 	$session = new Session();
 	$session->destroySession()
-	header('Refresh:2; URL=index.html');
-
+	//header('Refresh:2; URL=index.html');
 
  ?>

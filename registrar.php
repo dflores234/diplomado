@@ -62,7 +62,7 @@
                   		Crea tu cuenta <img src="img/regis.svg" width="30" height="30">
                 	</h3>
         		<div class="form-horizontal" role="form" >
-        			<form method="POST" id="form-registrar">
+        			<div id="form-registrar">
         				<div class="form-group">
             <label class="col-lg-3 control-label">Nombre(s):</label>
             <div class="col-lg-9">
@@ -145,8 +145,7 @@
               
             </div>
           </div>
-       </form>
-          
+       </div>
        </div>
      </div>
       <div class="col-md-5">
@@ -318,8 +317,11 @@
 
 	    <!--Enviar datos del registro-->
 	    <script type="text/javascript">
-	    	$function(){
-	    		$('#registrar').click(function(){
+	    	$(function() 
+	    	{
+	    		
+	    		$('#registrar').click(function()
+	    		{
 	    			var nombre=$('#txtnombre').val();
 	    			var apellido=$('#txtapellido').val();
 	    			var correo=$('#txtcorreo').val();
@@ -330,30 +332,39 @@
 
 	    			proceso_registrar(nombre,apellido,correo,numero,carrera,semestre,ccontraseña);
 	    		});
-
-	    	};
+	    	});
+	    		
 			
 			function proceso_registrar(nombrejs,apellidojs,correojs,numerojs,carrerajs,semestrejs,ccontraseñajs){
-				var parametros={
+				var parametros =
+				{
 					"nombre":nombrejs,
 					"apellido":apellidojs,
 					"correo":correojs,
 					"numero":numerojs,
 					"carrera":carrerajs,
 					"semestre":semestrejs,
-					"ccontraseña":ccontraseñajs
+					"ccontrasena":ccontraseñajs
 				};
-				$.ajax({
-						data:{parametros, opcion:'registrar'},
-						url:'usuario.controller.php',
-						type: 'post',
-						beforeSend: function(){
 
+				$.ajax({
+						url:'php/usuario.controller.php',
+						type: 'post',
+						dataType: 'json',
+						data:{parametros, opcion:'registrar'},
+						beforeSend: function(data)
+						{
+							//Loader de registro
 						},
-						sucess:function(){
-							
+						success:function(data){
+							//Alerta de retroalimentacion
+						},
+						error:function(error)
+						{
+							//Alerta de error
 						}
 				});
+				
 			}
 	    </script>
 

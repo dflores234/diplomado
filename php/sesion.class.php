@@ -51,6 +51,4 @@ class Session
         }
     }
 }
-    //https://phpocean.com/tutorials/back-end/learn-how-to-use-php-sessions/56`
-    //https://www.tutorialspoint.com/php/index.htm
 ?>

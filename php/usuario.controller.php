@@ -10,7 +10,9 @@
 		switch ($_REQUEST['opcion']) 
 		{
 			case 'registrar':
-							$resultado = $usuario->registrarUsuario(
+							$response['parametros'] = ($_REQUEST['parametros']);
+
+							/*$resultado = $usuario->registrarUsuario(
 									$_REQUEST['nombre'],
 									$_REQUEST['apellidop'],
 									$_REQUEST['apellidom'],
@@ -40,6 +42,7 @@
 									$response['msg'] = 'El correo electrónico ya se encuentra registrado.';
 									break;
 							}
+			break;*/
 			break;
 
 			case 'iniciar':
