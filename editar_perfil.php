@@ -66,7 +66,8 @@
             <!-- columna izquierda -->
               <div class="col-md-5">
                 <div class="text-center">
-                  <img src='<?php echo $avatar; ?>'width="100" height="100" class="avatar rounded-circle" alt="avatar" id="imgPerfil">
+                  <img src='<?php echo $avatar; ?>'width="100" height="100" class="avatar rounded-circle" alt="avatar" id="imgPerfil"><br><br>
+                  <input type="file" name="" accept="image/jpeg">
                 </div>
                 <div>
                    <table class="table">

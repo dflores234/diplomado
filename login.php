@@ -32,7 +32,7 @@
 				<div class="col-sm-8 main-section">
 					<div class="modal-content">
 						<div class="col-12 user-img">
-							<img src="img/ico.png">
+							<img src="img/Avatar.png">
 						</div>
             <form>
                 <div class="col-12" action="participante_index.php">

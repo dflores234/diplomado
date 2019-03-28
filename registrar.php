@@ -161,7 +161,7 @@
 						<h6>Bienvenido al Diplomado 4.0 </h6>
 					<p align="left"> 
 						Al registrarte en el diplomado tendras acceso a los distintos modulos, tales como: 
-						<ul align="left">
+						<ul style="text-align: left;">
 							<li>Ciberseguirdad</li>
 							<li>Big Data</li>
 							<li>IoT</li>
@@ -171,7 +171,7 @@
 						
 						Requisitos para registrarte <img src="img/tips.svg" width="20"><br>
 						<img src="img/checked.svg" width="20"> Ser egresado de últimos semestres de las carreras:
-						<ul align="left">
+						<ul style="text-align: left;">
 							<li>
 								Sistemas computacionales
 							</li>
@@ -191,10 +191,10 @@
 								Mantenimiento industrial
 							</li>
 						</ul>
-						<img src="img/checked.svg" width="20"> Disponibilidad de horario viernes y sábados en  <br>horarios de 9AM a 6PM <br>
+						<img src="img/checked.svg" width="20"> Disponibilidad de horario viernes y sábados en horarios de 9AM a 6PM <br>
 						<img src="img/checked.svg" width="20"> Tener conocimientos básicos de programción en alguno
 						de los siguientes lenguajes:
-						<ul align="left">
+						<ul style="text-align: left;">
 							<li>
 								C++
 							</li>
@@ -348,6 +348,10 @@
 				};
 
 				$.ajax({
+<<<<<<< HEAD
+=======
+						data:{parametros, opcion:'registrar'},
+>>>>>>> 557b366fb425fb2dc9142dbeddd159d33a6c9015
 						url:'php/usuario.controller.php',
 						type: 'post',
 						dataType: 'json',
