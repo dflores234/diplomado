@@ -34,20 +34,18 @@
 						<div class="col-12 user-img">
 							<img src="img/Avatar.png">
 						</div>
-            <form>
-                <div class="col-12" action="participante_index.php">
-              <div class="form-group " id="user-group">
-                <input type="text" placeholder="Correo electronico" name="" class="form-control" id="correo" required="">
-              </div>
-              <div class="form-group" id="contraseña-group">
-                <input type="password" placeholder="Contraseña" name="" class="form-control" id="contraseña" required="">
-              </div>
-              <button type="submit" class="btn btn-info" id="btnLogin"><i class="fas fa-sign-out-alt"></i> Ingresar 
-              </button>
+            <div>
+                <div class="col-12">
+                  <div class="form-group " id="user-group">
+                    <input type="text" placeholder="Correo electronico" name="" class="form-control" id="correo" required="">
+                  </div>
+                  <div class="form-group" id="contraseña-group">
+                    <input type="password" placeholder="Contraseña" name="" class="form-control" id="contrasena" required="">
+                  </div>
+                  <button type="submit" class="btn btn-info" id="btnLogin"><i class="fas fa-sign-out-alt"></i>Ingresar</button>
               <!--div class="lds-hourglass"></div-->
-
+                </div>
             </div>
-            </form>
 					
 						<div class="col-12 cuenta">
 							¿No tienes cuenta?
@@ -93,7 +91,6 @@
         			 Nuevo Laredo, Tamaulipas. México. <br>
         			 CP: 88000 <br>
                 © 2019 Copyright | Centro de Innovación Socioecónomica y Tecnológica
-
               </p>
             </div>
         </div>
@@ -160,8 +157,11 @@
                     url: 'php/usuario.controller.php',
                     type: 'POST',
                     dataType: 'JSON',
-                    data: {opcion: 'iniciar',correo: 'dflores234@gmail.com',contrasena: '@Sefuerte365!'},
-                    beforeSend: function(){},
+                    data: {opcion: 'iniciar',correo: $('#correo').val(),contrasena: $('#contrasena').val()},
+                    beforeSend: function()
+                    {
+                      //LOADER
+                    },
                     success: function(data)
                     {
                       console.log(data);
@@ -169,8 +169,15 @@
                       {
                          var url = 'participante_index.php';
                          $(location).attr('href',url);
+                      }else
+                      {
+                        //ALERTA CON MSG
                       }
                     },
+                    error: function(error)
+                    {
+                      
+                    }
                   });
           });
 
