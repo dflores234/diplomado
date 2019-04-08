@@ -348,10 +348,8 @@
 				};
 
 				$.ajax({
-<<<<<<< HEAD
-=======
+
 						data:{parametros, opcion:'registrar'},
->>>>>>> 557b366fb425fb2dc9142dbeddd159d33a6c9015
 						url:'php/usuario.controller.php',
 						type: 'post',
 						dataType: 'json',
