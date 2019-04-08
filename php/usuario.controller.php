@@ -13,7 +13,7 @@
 							$datos_registro = json_decode($_REQUEST['parametros']);
 
 							/*$resultado = $usuario->registrarUsuario(
-									$_REQUEST['nombre'],
+									$datos_registro->nombre,
 									$_REQUEST['apellidop'],
 									$_REQUEST['apellidom'],
 									$_REQUEST['correo'],
