@@ -139,6 +139,9 @@
 
 </footer>
   <!-- Footer -->
+
+
+
 		</body>
 	</html> 
 	
@@ -185,11 +188,18 @@
                     },
                     error: function(error)
                     {
-                      
+                      console.log(error);
                     }
 
                   });
+
+                  setTimeout(function() 
+                  { 
+                      $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
+                  }, 1000);
           });
+
+
 
       });
 

@@ -156,7 +156,7 @@
 	    	}
 	    }
 
-	    function enviarCorreo($email,$tpl,$subject)
+	    function enviarCorreo($email,$tpl,$subject,$nombre_usuario)
 	    {
 			
 			require 'PHPMailer/PHPMailer.php';
@@ -167,7 +167,7 @@
 
 			$tpl = new TemplatePower($tpl);
 			$tpl->prepare();
-			$tpl->assign('usuario', 'JDF');
+			$tpl->assign('usuario', $nombre_usuario);
 
 			//Creamos la instancia de la clase PHPMAiler
 				$mail = new PHPMailer(TRUE);
