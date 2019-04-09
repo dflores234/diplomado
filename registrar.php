@@ -303,79 +303,16 @@
 	    <script src="js/jquery.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	    <script src="js/bootstrap.min.js"></script>
-	    <script  type="text/javascript">
-	    $(function() 
-	    {
-	    	listarCarreras();
-
-	    });
-	    </script>
 	    <!--Validar campos-->
 	    <script type="text/javascript" src="js/validar_registro.js"></script>
 	     <script type="text/javascript" src="js/validar.js"></script>
 	     <!--Script para los modales-->
 	     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.8.0/sweetalert2.min.js"></script>
-
 	    <script src="js/misscripst.js"></script>
-
-	    <!--Enviar datos del registro-->
-	    <script type="text/javascript">
-	    	$(function() 
-	    	{
-	    		
-	    		$('#registrar').click(function()
-	    		{
-	    			var nombre=$('#txtnombre').val();
-	    			var apellido=$('#txtapellido').val();
-	    			var correo=$('#txtcorreo').val();
-	    			var numero=$('#txtnumero').val();
-	    			var carrera=$('#carreras').val();
-	    			var semestre=$('#semestre').val();
-	    			var ccontraseña=$('#txtccontraseña').val();
-
-	    			proceso_registrar(nombre,apellido,correo,numero,carrera,semestre,ccontraseña);
-	    		});
-	    	});
-	    		
-			
-			function proceso_registrar(nombrejs,apellidojs,correojs,numerojs,carrerajs,semestrejs,ccontraseñajs)
-			{
-				var datos_registro =
-				{
-					nombre:nombrejs,
-					apellido:apellidojs,
-					correo:correojs,
-					numero:numerojs,
-					carrera:carrerajs,
-					semestre:semestrejs,
-					ccontrasena:ccontraseñajs
-				};
-
-				$.ajax({
-						type: 'POST',
-						data:{ datos:JSON.stringify(datos_registro), opcion:'registrar'},
-						url:'php/usuario.controller.php',
-						dataType: 'json',
-						beforeSend: function(data)
-						{
-							//Loader de registro
-							$('#registrar').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
-							
-						},
-						success:function(data){
-							//Alerta de retroalimentacion
-							console.log(data);
-						},
-						error:function(error)
-						{
-							//Alerta de error
-							console.log(error);
-						}
-				});
-				setTimeout(function() 
-                  { 
-                      $('#registrar').html('').append('Registrar');
-                  }, 1000);
-			}
+	    <script  type="text/javascript">
+		    $(function() 
+		    {
+		    	listarCarreras();
+		    });
 	    </script>
 
