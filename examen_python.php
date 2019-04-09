@@ -28,6 +28,7 @@
     	 </nav>
       </div>
       <div class="main-section">
+      	<h3 align="center" style="font-size: 35px">EVALUACIÓN</h3><br>
       	<form class="form-horizontal" method="post">
   		<!--INICIO DE LA PREGUNTAS-->
   		<div class="pregunta">
@@ -215,7 +216,7 @@
   			</li>
   			<li>
   				<label>
-  					<input type="radio" name="respuesta6" value="V">
+  					<input type="radio" name="respuesta7" value="F">
   					<p style="display: inline-block;margin-left: 10px">
   						for(int x=0;x>-10;x--)
   							<p style="margin-left: 50px;">
@@ -228,7 +229,7 @@
   			</li>
   			<li>
   				<label>
-  					<input type="radio" name="respuesta6" value="F">
+  					<input type="radio" name="respuesta7" value="V">
   					<p style="display: inline-block;margin-left: 10px">
   						for x in range (80):
   							<p style="margin-left: 50px;">print ('hola mundo')</p>
@@ -236,8 +237,71 @@
   				</label>
   			</li>
   		</ul>
+  		<div class="pregunta">
+  			<span class="numero-pregunta">8.</span>
+  			Eliga un error común en la sentecia if
+  		</div>
+  		<ul class="alternativas">
+  			<li>
+  				<label>
+  					<input type="radio" name="respuesta8" value="V">
+  					if=1:
+  				</label>
+  			</li>
+  			<li>
+  				<label>
+  					<input type="radio" name="respuesta8" value="F">
+  					if==1:
+  				</label>
+  			</li>
+  			<li>
+  				<label>
+  					<input type="radio" name="respuesta8" value="F">
+  					if x >=80 and x<90:
+  				</label>
+  			</li>
+  			<li>
+  				<label>
+  					<input type="radio" name="respuesta8" value="F">
+  					if 80<=x<90:
+  				</label>
+  			</li>
+  		</ul>
+  		<div class="pregunta">
+  			<span class="numero-pregunta">9.</span>
+  			Eliga la forma correcta de importa una libreria:
+  		</div>
+  		<ul class="alternativas">
+  			<li>
+  				<label>
+  					<input type="radio" name="respuesta9" value="F">
+  					from random export randint
+  				</label>
+  			</li>
+  			<li>
+  				<label>
+  					<input type="radio" name="respuesta9" value="F">
+  					import pi from math
+  				</label>
+  			</li>
+  			<li>
+  				<label>
+  					<input type="radio" name="respuesta9" value="F">
+  					from math this sqrt
+  				</label>
+  			</li>
+  			<li>
+  				<label>
+  					<input type="radio" name="respuesta9" value="V">
+  					from random import randint
+  				</label>
+  			</li>
+  		</ul>
 
 
+  		<div class="col-md-12">
+              <button type="submit" class="btn btn-info" value="Evaluar" id="evaluar" style="float: right;width: 200px;height: 50px;margin-bottom: 20px;font-size: 25px;border-radius: 10px;">Evaluar</button> 
+        </div>
   	</form>
       </div>
 
