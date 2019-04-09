@@ -297,6 +297,36 @@
   				</label>
   			</li>
   		</ul>
+  		<div class="pregunta">
+  			<span class="numero-pregunta">10.</span>
+  			Como se ponen los comentarios en python?
+  		</div>
+  		<ul class="alternativas">
+  			<li>
+  				<label>
+  					<input type="radio" name="respuesta9" value="F">
+  					""" Comentario"""
+  				</label>
+  			</li>
+  			<li>
+  				<label>
+  					<input type="radio" name="respuesta9" value="F">
+  					/*Comentario*/
+  				</label>
+  			</li>
+  			<li>
+  				<label>
+  					<input type="radio" name="respuesta9" value="F">
+  					//Comentario//
+  				</label>
+  			</li>
+  			<li>
+  				<label>
+  					<input type="radio" name="respuesta9" value="V">
+  					'comentario'
+  				</label>
+  			</li>
+  		</ul>
 
 
   		<div class="col-md-12">
