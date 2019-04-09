@@ -42,7 +42,8 @@
 									$response['msg'] = 'El correo electrónico ya se encuentra registrado.';
 									break;
 							}
-			break;*/https://diego.com.es/seguridad-web-en-php
+			break;https://diego.com.es/seguridad-web-en-php*/
+			$response['msg'] = $datos_registro;
 			break;
 
 			case 'iniciar':
