@@ -12,21 +12,24 @@
 			case 'registrar':
 							$datos_registro = json_decode($_REQUEST['datos']);
 
-							if(!empty($datos_registro->nombre) && !empty($datos_registro->apellido) && !empty($datos_registro->correo) 
-								&& !empty($datos_registro->numero) && !empty($datos_registro->ccontrasena))
-							{
+							$nombre = $apellido = $correo = $contrasena = $semestre = $carrera = "";
 
-								/*$nombre_usuario = $datos_registro->nombre.' '.$datos_registro->apellido;
+							/**/
+							$nombre = filtrar_entrada($datos_registro->nombre,FILTER_SANITIZE_STRING);
+							$apellido = filtrar_entrada($datos_registro->apellido,FILTER_SANITIZE_STRING);
+							$correo = filtrar_entrada($datos_registro->correo,FILTER_SANITIZE_EMAIL);
+							$semestre = filtrar_entrada($datos_registro->semestre,FILTER_VALIDATE_INT);
+							$carrera = filtrar_entrada($datos_registro->carrera,FILTER_VALIDATE_INT);
 
-								$resultado = $usuario->registrarUsuario(
-																		$datos_registro->nombre,
-																		$datos_registro->apellido,
+							$resultado = $usuario->registrarUsuario(
+																		$nombre,
+																		$apellido,
 																		'',
-																		$datos_registro->correo,
+																		$correo,
 																		$datos_registro->numero,
 																		$datos_registro->ccontrasena,
-																		$datos_registro->semestre,
-																		$datos_registroregistro->carrera
+																		$semestre,
+																		$carrera
 																	);
 
 								switch ($resultado) 
@@ -47,12 +50,6 @@
 										$response['msg'] = 'El correo electrónico ya se encuentra registrado.';
 										break;
 								}*/
-							}else
-							{
-								$response['status'] = 'error';
-								$response['msg'] = 'Verifique los campos en blanco e intente nuevamente';
-							}
-
 			//https://diego.com.es/seguridad-web-en-php*/
 			break;
 
@@ -108,9 +105,16 @@
 		}
 	} else 
 	{
+		$response['status'] = "error";
 		$response['msg'] = 'Solicitud no permitida';	
 	}
 	
+
+	/**/
+	function filtrar_entrada($dato,$filtro) 
+	{
+	 	return filter_var($dato,$filtro);
+	}
 
 	echo json_encode($response);
 
