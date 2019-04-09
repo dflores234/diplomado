@@ -5,9 +5,10 @@
   <!DOCTYPE html>
   <html>
   <head>
-  	<title></title>
+  	<title>Evaluación de python</title>
   	<link rel="stylesheet" href="css/bootstrap.min.css">
   	<link rel="stylesheet" type="text/css" href="css/preguntas.css">
+  	<link rel="shortcut icon" href="img/istblanco.png">
   </head>
   <body>
   		<!--Menu-->
@@ -33,7 +34,7 @@
   		<!--INICIO DE LA PREGUNTAS-->
   		<div class="pregunta">
   			<span class="numero-pregunta">1.</span>
-  			Cual de estas son caracteristicas de python?
+  			¿Cuál de estas son caracteristicas de python?
   		</div>
   		<ul class="alternativas">
   			<li>
@@ -111,7 +112,7 @@
   		</ul>
   		<div class="pregunta">
   			<span class="numero-pregunta">4.</span>
-  			Se puede realizar operaciones matematicas en la instrucción "print" ?
+  			¿Se puede realizar operaciones matemáticas en la instrucción "print" ?
   		</div>
   		<ul class="alternativas">
   			<li>
@@ -129,7 +130,7 @@
   		</ul>
   		<div class="pregunta">
   			<span class="numero-pregunta">5.</span>
-  			Cual de las siguientes instrucciones es incorrecta?
+  			¿Cuál de las siguientes instrucciones es incorrecta?
   		</div>
   		<ul class="alternativas">
   			<li>
@@ -299,30 +300,30 @@
   		</ul>
   		<div class="pregunta">
   			<span class="numero-pregunta">10.</span>
-  			Como se ponen los comentarios en python?
+  			¿Como se ponen los comentarios en python?
   		</div>
   		<ul class="alternativas">
   			<li>
   				<label>
-  					<input type="radio" name="respuesta9" value="F">
+  					<input type="radio" name="respuesta10" value="V">
   					""" Comentario"""
   				</label>
   			</li>
   			<li>
   				<label>
-  					<input type="radio" name="respuesta9" value="F">
+  					<input type="radio" name="respuesta10" value="F">
   					/*Comentario*/
   				</label>
   			</li>
   			<li>
   				<label>
-  					<input type="radio" name="respuesta9" value="F">
+  					<input type="radio" name="respuesta10" value="F">
   					//Comentario//
   				</label>
   			</li>
   			<li>
   				<label>
-  					<input type="radio" name="respuesta9" value="V">
+  					<input type="radio" name="respuesta10" value="F">
   					'comentario'
   				</label>
   			</li>

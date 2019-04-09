@@ -190,6 +190,27 @@
                           </div>
                         </div>
                     </div>
+                    <div class="card">
+                        <div class="card-header bg-white" role="tab" id="headingFour">
+                          <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                              Evaluación de python
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion" >
+                          <div class="card-body bg-light">
+                              <div class="contanier">
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <a href="examen_python.php" target="_blank">Evaluación</a>
+                                  </div>
+                               
+                                </div>
+                              </div> 
+                          </div>
+                        </div>
+                    </div>
                     </div>
                 </section>
      </div>
