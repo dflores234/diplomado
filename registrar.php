@@ -336,26 +336,22 @@
 	    		
 			
 			function proceso_registrar(nombrejs,apellidojs,correojs,numerojs,carrerajs,semestrejs,ccontraseñajs){
-				var parametros =
+				var datos_registro =
 				{
-					"nombre":nombrejs,
-					"apellido":apellidojs,
-					"correo":correojs,
-					"numero":numerojs,
-					"carrera":carrerajs,
-					"semestre":semestrejs,
-					"ccontrasena":ccontraseñajs
+					nombre:nombrejs,
+					apellido:apellidojs,
+					correo:correojs,
+					numero:numerojs,
+					carrera:carrerajs,
+					semestre:semestrejs,
+					ccontrasena:ccontraseñajs
 				};
 
 				$.ajax({
-<<<<<<< HEAD
-=======
-						data:{parametros, opcion:'registrar'},
->>>>>>> 557b366fb425fb2dc9142dbeddd159d33a6c9015
+						type: 'POST',
+						data:{parametros:JSON.stringify(datos_registro), opcion:'registrar'},
 						url:'php/usuario.controller.php',
-						type: 'post',
 						dataType: 'json',
-						data:{parametros, opcion:'registrar'},
 						beforeSend: function(data)
 						{
 							//Loader de registro

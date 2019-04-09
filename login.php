@@ -40,10 +40,12 @@
                     <input type="text" placeholder="Correo electronico" name="" class="form-control" id="correo" required="">
                   </div>
                   <div class="form-group" id="contraseña-group">
-                    <input type="password" placeholder="Contraseña" name="" class="form-control" id="contrasena" required="">
+                    <input type="password" placeholder="Contraseña" name="" class="form-control" id="contraseña" required="">
                   </div>
-                  <button type="submit" class="btn btn-info" id="btnLogin"><i class="fas fa-sign-out-alt"></i>Ingresar</button>
-              <!--div class="lds-hourglass"></div-->
+                  <button type="button" class="btn btn-info" id="btnLogin">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Ingresar
+                  </button>
                 </div>
             </div>
 					
@@ -157,10 +159,16 @@
                     url: 'php/usuario.controller.php',
                     type: 'POST',
                     dataType: 'JSON',
-                    data: {opcion: 'iniciar',correo: $('#correo').val(),contrasena: $('#contrasena').val()},
+                    data: {opcion: 'iniciar',correo: $('#correo').val(),contrasena: $('#contraseña').val()},
                     beforeSend: function()
                     {
                       //LOADER
+                      /*<button type="button" class="btn btn-info" id="btnLogin">
+                        <i class="fas fa-sign-out-alt"></i>
+                          Ingresar
+                        </button>*/
+                        $('#btnLogin').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
+
                     },
                     success: function(data)
                     {
@@ -171,13 +179,15 @@
                          $(location).attr('href',url);
                       }else
                       {
-                        //ALERTA CON MSG
+                        alert(data.msg);
+                        $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
                       }
                     },
                     error: function(error)
                     {
                       
                     }
+
                   });
           });
 

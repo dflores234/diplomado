@@ -10,10 +10,10 @@
 		switch ($_REQUEST['opcion']) 
 		{
 			case 'registrar':
-							$response['parametros'] = ($_REQUEST['parametros']);
+							$datos_registro = json_decode($_REQUEST['parametros']);
 
 							/*$resultado = $usuario->registrarUsuario(
-									$_REQUEST['nombre'],
+									$datos_registro->nombre,
 									$_REQUEST['apellidop'],
 									$_REQUEST['apellidom'],
 									$_REQUEST['correo'],
@@ -42,7 +42,7 @@
 									$response['msg'] = 'El correo electrónico ya se encuentra registrado.';
 									break;
 							}
-			break;*/
+			break;*/https://diego.com.es/seguridad-web-en-php
 			break;
 
 			case 'iniciar':
