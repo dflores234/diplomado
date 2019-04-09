@@ -25,9 +25,10 @@
 			<div style="color: #34495e; margin: 4% 10% 2%; text-align: justify;font-family: sans-serif">
 				<h2 style="color: #e67e22; margin: 0 0 7px">Hola, {usuario},</h2>
 				<p style="margin: 2px; font-size: 15px">
-					Bienvenido y gracias por registrarte en el Diplomado 4.0 Nuevo Laredo!<br>
+					Bienvenido y gracias por registrarte en el Diplomado 4.0 Nuevo Laredo<br>
 					Tu registro fue realizado con éxito.<br>
-					Espere el correo de activación para poder acceder a la plataforma
+					Actualmente tu cuenta se encuentra inactiva, por lo tanto no podrás acceder. 
+					Espera el correo de activación para poder acceder a la plataforma.
 					</p>
 					<h4>¿Tienes dudas? ¿Preguntas?</h4>
 					<h5>Escríbenos a contacto@centroist.org y estaremos encantados de ayudarte</h5>
@@ -39,7 +40,7 @@
 					<img style="padding: 0; width: 100px; margin: 5px" src="https://burlier-mistakes.000webhostapp.com/img/itnl.gif">
 				</div>
 				<!--div style="width: 100%; text-align: center">
-					<a style="text-decoration: none; border-radius: 5px; padding: 11px 23px; color: white; background-color: #3498db" href="#">Ir a la página</a>	
+					<a style="text-decoration: none; border-radius: 5px; padding: 11px 23px; color: white; background-color: #3498db" href="#">Ir a la página</a
 				</div-->
 				<p style="color: #b3b3b3; font-size: 12px; text-align: center;margin: 30px 0 0">CentroIST 2019</p>
 			</div>
