@@ -10,43 +10,56 @@
 		switch ($_REQUEST['opcion']) 
 		{
 			case 'registrar':
-							$datos_registro = json_decode($_REQUEST['parametros']);
+							$datos_registro = json_decode($_REQUEST['datos']);
 
-							/*$resultado = $usuario->registrarUsuario(
-									$datos_registro->nombre,
-									$_REQUEST['apellidop'],
-									$_REQUEST['apellidom'],
-									$_REQUEST['correo'],
-									$_REQUEST['contacto'],
-									$_REQUEST['contrasena'],
-									$_REQUEST['semestre'],
-									$_REQUEST['carrera']
-								);
-
-							switch ($resultado) 
+							if(!empty($datos_registro->nombre) && !empty($datos_registro->apellido) && !empty($datos_registro->correo) 
+								&& !empty($datos_registro->numero) && !empty($datos_registro->ccontrasena))
 							{
-								case 0: 
-									$response['status'] = 'ok';
-									$response['msg'] = 'El usuario ha sido registrado correctamente.';
-									$response['otro'] = $usuario->enviarCorreo($_REQUEST['correo'],'../plantillas/confirmacion.tpl',$response['msg']);
 
-									break;
-								
-								case 1:
-									$response['status'] = 'error';
-									$response['msg'] = 'Ha ocurrido un error al registrar al usuario.';
-									break;
+								/*$nombre_usuario = $datos_registro->nombre.' '.$datos_registro->apellido;
 
-								case 2:
-									$response['status'] = 'error';
-									$response['msg'] = 'El correo electrónico ya se encuentra registrado.';
-									break;
+								$resultado = $usuario->registrarUsuario(
+																		$datos_registro->nombre,
+																		$datos_registro->apellido,
+																		'',
+																		$datos_registro->correo,
+																		$datos_registro->numero,
+																		$datos_registro->ccontrasena,
+																		$datos_registro->semestre,
+																		$datos_registroregistro->carrera
+																	);
+
+								switch ($resultado) 
+								{
+									case 0: 
+										$response['status'] = 'ok';
+										$response['msg'] = 'El usuario ha sido registrado correctamente.';
+										$response['otro'] = $usuario->enviarCorreo($_REQUEST['correo'],'../plantillas/confirmacion.tpl',$response['msg'],$nombre_usuario);
+										break;
+									
+									case 1:
+										$response['status'] = 'error';
+										$response['msg'] = 'Ha ocurrido un error al registrar al usuario.';
+										break;
+
+									case 2:
+										$response['status'] = 'error';
+										$response['msg'] = 'El correo electrónico ya se encuentra registrado.';
+										break;
+								}*/
+							}else
+							{
+								$response['status'] = 'error';
+								$response['msg'] = 'Verifique los campos en blanco e intente nuevamente';
 							}
-			break;https://diego.com.es/seguridad-web-en-php*/
-			$response['msg'] = $datos_registro;
+
+			//https://diego.com.es/seguridad-web-en-php*/
 			break;
 
 			case 'iniciar':
+
+					if(!empty($_REQUEST['correo']) && !empty($_REQUEST['contrasena']))
+					{
 						$resultado = $usuario->iniciarSesion($_REQUEST['correo'],$_REQUEST['contrasena']);
 						switch ($resultado) 
 						{
@@ -68,6 +81,11 @@
 								$response['msg'] = 'Usuario y/o contraseña incorrectos.';
 							break;
 						}
+					}else
+					{
+						$response['status'] = 'error';
+						$response['msg'] = 'No ha escrito nada en Usuario y/o contraseña.'; 
+					}
 			break;
 
 			case 'actualizar': 

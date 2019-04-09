@@ -9,6 +9,7 @@
 			<title>Registrate</title>
 			<link rel="stylesheet" href="css/bootstrap.min.css">
 			<link rel="stylesheet" type="text/css" href="css/registro.css">
+			<link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
 			<link rel="shortcut icon" href="img/istblanco.png">
 		</head>
 		<body>
@@ -141,8 +142,10 @@
           <div class="form-group">
             <label class="col-md-2 control-label"></label>
             <div class="col-md-9">
-              <button type="submit" class="btn btn-info" value="Registrar" id="registrar">Registrar</button>
-              
+             	<button type="button" class="btn btn-info" id="registrar"> 
+              		<i class="fa fa-check-circle"></i>
+              		Registrar
+          		</button>
             </div>
           </div>
        </div>
@@ -335,7 +338,8 @@
 	    	});
 	    		
 			
-			function proceso_registrar(nombrejs,apellidojs,correojs,numerojs,carrerajs,semestrejs,ccontraseñajs){
+			function proceso_registrar(nombrejs,apellidojs,correojs,numerojs,carrerajs,semestrejs,ccontraseñajs)
+			{
 				var datos_registro =
 				{
 					nombre:nombrejs,
@@ -349,22 +353,29 @@
 
 				$.ajax({
 						type: 'POST',
-						data:{parametros:JSON.stringify(datos_registro), opcion:'registrar'},
+						data:{ datos:JSON.stringify(datos_registro), opcion:'registrar'},
 						url:'php/usuario.controller.php',
 						dataType: 'json',
 						beforeSend: function(data)
 						{
 							//Loader de registro
+							$('#registrar').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
+							
 						},
 						success:function(data){
 							//Alerta de retroalimentacion
+							console.log(data);
 						},
 						error:function(error)
 						{
 							//Alerta de error
+							console.log(error);
 						}
 				});
-				
+				setTimeout(function() 
+                  { 
+                      $('#registrar').html('').append('Registrar');
+                  }, 1000);
 			}
 	    </script>
 
