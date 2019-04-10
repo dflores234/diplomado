@@ -161,7 +161,7 @@
 						Inicia sesión <img src="img/users.svg" width="20" align="center">
 					</a>	
 						<br><br>
-						<h6>Bienvenido al Diplomado 4.0 </h6>
+						<h6>Bienvenido al Diplomado Nuevo Laredo 4.0 </h6>
 					<p align="left"> 
 						Al registrarte en el diplomado tendras acceso a los distintos modulos, tales como: 
 						<ul style="text-align: left;">
