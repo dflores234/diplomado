@@ -201,4 +201,46 @@
 		<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script type="text/javascript" src="js/validar_registro.js"></script>
     <script  type="text/javascript" src="js/misscripst.js"></script>
+    <script type="text/javascript">
+      $(function() 
+      {
+          
+        $('#btnLogin').click(function()
+          {
+            $.ajax
+                  ({
+                    url: 'php/usuario.controller.php',
+                    type: 'POST',
+                    dataType: 'JSON',
+                    data: {opcion: 'iniciar',correo: $('#correo').val(),contrasena: $('#contraseña').val()},
+                    beforeSend: function()
+                    {
+                        $('#btnLogin').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
+                    },
+                    success: function(data)
+                    {
+                      if(data.status == 'ok')
+                      {
+                         var url = 'participante_index.php';
+                         $(location).attr('href',url);
+                      }else
+                      {
+                        $('#modalTitle').append('ADVERTENCIA!');
+                        $('.modal-body').append(data.msg);
+                        $('#modalRetro').modal({show: true});
+                        $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
+                      }
+                    },
+                    error: function(error)
+                    {
+                      console.log(error);
+                      $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
+                    }
+
+                  });
+          });
+
+      });
+
+    </script>
 
