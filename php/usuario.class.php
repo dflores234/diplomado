@@ -172,39 +172,44 @@
 			//Creamos la instancia de la clase PHPMAiler
 				$mail = new PHPMailer(TRUE);
 			
-			try{
-
-			//El método que usaremos es por SMTP
-				$mail->SMTPDebug = 2;
-				$mail->isSMTP();
-			// Los datos necesarios para enviar mediante SMTP
-				$mail->Host = 'smtp.gmail.com';
-				$mail->SMTPAuth = true;
-				$mail->Username = 'codecampapp@gmail.com';
-				$mail->Password = '@Sefuerte365';
-				$mail->SMTPSecure = 'tls';
-				$mail->Port = 587;
-
-
-			// Asignamos el From y el FromName para que el destinatario sepa quien envía el correo
-			
-				$mail->setFrom('contacto@centroist.org', 'Centro IST');
-    			$mail->addAddress($email, $nombre_usuario);     // Add a recipient
-    			//$mail->addAddress('ellen@example.com');
-
-			//Asignamos el subject, el cuerpo del mensaje y el correo alternativo
-    			$mail->isHTML(true);
-    			$mail->CharSet = 'UTF-8';
-				$mail->Subject = $subject;
-				$mail->Body = $tpl->getOutputContent();
-				$mail->send();
-				return "El mensaje ha sido enviado";
-			}catch(Exception $e)
+			try
 			{
 
+				//El método que usaremos es por SMTP
+					$mail->SMTPDebug = 2;
+					$mail->isSMTP();
+				// Los datos necesarios para enviar mediante SMTP
+					$mail->Host = 'smtp.gmail.com';
+					$mail->SMTPAuth = true;
+					$mail->Username = 'codecampapp@gmail.com';
+					$mail->Password = '@Sefuerte365';
+					$mail->SMTPSecure = 'tls';
+					$mail->Port = 587;
+
+
+				// Asignamos el From y el FromName para que el destinatario sepa quien envía el correo
+				
+					$mail->setFrom('contacto@centroist.org', 'Centro IST');
+	    			$mail->addAddress($email, $nombre_usuario);     // Add a recipient
+	    			//$mail->addAddress('ellen@example.com');
+
+				//Asignamos el subject, el cuerpo del mensaje y el correo alternativo
+	    			$mail->isHTML(true);
+	    			$mail->CharSet = 'UTF-8';
+					$mail->Subject = $subject;
+					$mail->Body = $tpl->getOutputContent();
+					$mail->send();
+					return "El mensaje ha sido enviado";
+			}catch(Exception $e)
+			{
 				return "El mensaje no ha sido enviado. Codigo de error: {$mail->ErrorInfo}";
 			}
 			
 	    }
+
+		public function filtrar_entrada($dato,$filtro) 
+		{
+		 	return filter_var($dato,$filtro);
+		}
 	}
  ?>
