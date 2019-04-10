@@ -146,23 +146,66 @@ $('#registrar').click(function(){
         }
 });
 
-$('#btnLogin').click(function(){
+$('#btnLogin').click(function()
+{
+   var cuenta_errores = 0;
+        if ($('#correo').val()=='') 
+        {
+            $(correo).css("border", "1px solid red");
+            $(correo).attr("placeholder","no deje vacio");
+            $cuenta_errores++;
+        }
+        else
+        {
+            $(correo).css("border", "1px solid lightgray");
+            $cuenta_errores--;
+        }
+        if ($('#contraseña').val()=='')
+        {
+            $(contraseña).css("border", "1px solid red");
+            $(contraseña).attr("placeholder","no deje vacio");
+            $cuenta_errores++;
+        }
+        else
+        {
+            $(contraseña).css("border", "1px solid lightgray");
+            $cuenta_errores--;
+        }
 
-    if ($('#correo').val()=='') {
-        $(correo).css("border", "1px solid red");
-        $(correo).attr("placeholder","no deje vacio");
+        if($cuenta_errores > 0)
+        {
+             $.ajax
+                  ({
+                    url: 'php/usuario.controller.php',
+                    type: 'POST',
+                    dataType: 'JSON',
+                    data: {opcion: 'iniciar',correo: $('#correo').val(),contrasena: $('#contraseña').val()},
+                    beforeSend: function()
+                    {
+                        $('#btnLogin').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
+                    },
+                    success: function(data)
+                    {
+                      if(data.status == 'ok')
+                      {
+                         var url = 'participante_index.php';
+                         $(location).attr('href',url);
+                      }else
+                      {
+                        $('#modalTitle').append('ADVERTENCIA!');
+                        $('.modal-body').append(data.msg);
+                        $('#modalRetro').modal({show: true});
+                        $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
+                      }
+                    },
+                    error: function(error)
+                    {
+                      console.log(error);
+                      $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
+                    }
 
-    }
-    else{
-        $(correo).css("border", "1px solid lightgray");
-    }
-    if ($('#contraseña').val()=='') {
-        $(contraseña).css("border", "1px solid red");
-        $(contraseña).attr("placeholder","no deje vacio");
-    }
-    else{
-        $(contraseña).css("border", "1px solid lightgray");
-    }
+                  });
+        }
 });
 
 $('#cambios').click(function()
