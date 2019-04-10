@@ -161,6 +161,26 @@
                           </div>
                         </div>
                       </div>
+                      <div class="card">
+                        <div class="card-header bg-white" role="tab" id="headingTen">
+                          <h5 class="mb-0" >
+                            <a data-toggle="collapse" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen" style="color:#FF0655 ">
+                              Evaluación
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="collapseTen" class="collapse" role="tabpanel" aria-labelledby="headingTen" data-parent="#accordion" >
+                          <div class="card-body" style="background-color: #FF0655">
+                              <div class="contanier">
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+                                    <a href="examen_vryar.php" target="blank" style="color: white">Evaluación</a>
+                                  </div>
+                                </div>
+                              </div> 
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </section>
      </div>
