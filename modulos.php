@@ -167,6 +167,26 @@
                           </div>
                         </div>
                     </div>
+                      <div class="card">
+                        <div class="card-header bg-white" role="tab" id="headingEleven">
+                          <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                              Evaluación de ciberseguridad
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="collapseEleven" class="collapse" role="tabpanel" aria-labelledby="headingEleven" data-parent="#accordion" >
+                          <div class="card-body bg-info">
+                              <div class="contanier">
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <a href="examen_ciberseguridad.php" target="blank" style="color: white">Evaluación</a>
+                                  </div>
+                                </div>
+                              </div> 
+                          </div>
+                        </div>
+                    </div>
 
                     </div>
                   
