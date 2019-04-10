@@ -140,6 +140,22 @@
 </footer>
   <!-- Footer -->
 
+  <!-- Modal -->
+  <div class="modal fade" id="modalRetro" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 		</body>
@@ -165,41 +181,30 @@
                     data: {opcion: 'iniciar',correo: $('#correo').val(),contrasena: $('#contraseña').val()},
                     beforeSend: function()
                     {
-                      //LOADER
-                      /*<button type="button" class="btn btn-info" id="btnLogin">
-                        <i class="fas fa-sign-out-alt"></i>
-                          Ingresar
-                        </button>*/
                         $('#btnLogin').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
-
                     },
                     success: function(data)
                     {
-                      console.log(data);
                       if(data.status == 'ok')
                       {
                          var url = 'participante_index.php';
                          $(location).attr('href',url);
                       }else
                       {
-                        alert(data.msg);
+                        $('#modalTitle').append('ADVERTENCIA!');
+                        $('.modal-body').append(data.msg);
+                        $('#modalRetro').modal({show: true});
                         $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
                       }
                     },
                     error: function(error)
                     {
                       console.log(error);
+                      $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
                     }
 
                   });
-
-                  setTimeout(function() 
-                  { 
-                      $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
-                  }, 1000);
           });
-
-
 
       });
 

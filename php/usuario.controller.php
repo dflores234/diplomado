@@ -12,21 +12,26 @@
 			case 'registrar':
 							$datos_registro = json_decode($_REQUEST['datos']);
 
-							if(!empty($datos_registro->nombre) && !empty($datos_registro->apellido) && !empty($datos_registro->correo) 
-								&& !empty($datos_registro->numero) && !empty($datos_registro->ccontrasena))
-							{
+							$nombre = $apellido = $correo = $contrasena = $semestre = $carrera = "";
 
-								/*$nombre_usuario = $datos_registro->nombre.' '.$datos_registro->apellido;
 
-								$resultado = $usuario->registrarUsuario(
-																		$datos_registro->nombre,
-																		$datos_registro->apellido,
+							/**/
+							$nombre = filtrar_entrada($datos_registro->nombre,FILTER_SANITIZE_STRING);
+							$apellido = filtrar_entrada($datos_registro->apellido,FILTER_SANITIZE_STRING);
+							$correo = filtrar_entrada($datos_registro->correo,FILTER_SANITIZE_EMAIL);
+							$semestre = filtrar_entrada($datos_registro->semestre,FILTER_VALIDATE_INT);
+							$carrera = filtrar_entrada($datos_registro->carrera,FILTER_VALIDATE_INT);
+							$nombre_usuario = $nombre.' '.$apellido;
+
+							$resultado = $usuario->registrarUsuario(
+																		$nombre,
+																		$apellido,
 																		'',
-																		$datos_registro->correo,
-																		$datos_registro->numero,
+																		$correo,
+																		$datos_registro->contacto,
 																		$datos_registro->ccontrasena,
-																		$datos_registro->semestre,
-																		$datos_registroregistro->carrera
+																		$semestre,
+																		$carrera
 																	);
 
 								switch ($resultado) 
@@ -34,7 +39,7 @@
 									case 0: 
 										$response['status'] = 'ok';
 										$response['msg'] = 'El usuario ha sido registrado correctamente.';
-										$response['otro'] = $usuario->enviarCorreo($_REQUEST['correo'],'../plantillas/confirmacion.tpl',$response['msg'],$nombre_usuario);
+										$response['otro'] = $usuario->enviarCorreo($correo,'../plantillas/confirmacion.tpl',$response['msg'],$nombre_usuario);
 										break;
 									
 									case 1:
@@ -46,13 +51,7 @@
 										$response['status'] = 'error';
 										$response['msg'] = 'El correo electrónico ya se encuentra registrado.';
 										break;
-								}*/
-							}else
-							{
-								$response['status'] = 'error';
-								$response['msg'] = 'Verifique los campos en blanco e intente nuevamente';
-							}
-
+								}
 			//https://diego.com.es/seguridad-web-en-php*/
 			break;
 
@@ -108,9 +107,16 @@
 		}
 	} else 
 	{
+		$response['status'] = "error";
 		$response['msg'] = 'Solicitud no permitida';	
 	}
 	
+
+	/**/
+	function filtrar_entrada($dato,$filtro) 
+	{
+	 	return filter_var($dato,$filtro);
+	}
 
 	echo json_encode($response);
 
