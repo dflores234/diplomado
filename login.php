@@ -225,15 +225,14 @@
                          $(location).attr('href',url);
                       }else
                       {
-                        $('#modalTitle').append('ADVERTENCIA!');
-                        $('.modal-body').append(data.msg);
+                        $('#modalTitle').append('ATENCION!').css('color','white');
+                        $('.modal-body').append(data.msg)..css('color','white');
                         $('#modalRetro').modal({show: true});
                         $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
                       }
                     },
                     error: function(error)
                     {
-                      console.log(error);
                       $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
                     }
 
