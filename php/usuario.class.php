@@ -189,11 +189,12 @@
 			// Asignamos el From y el FromName para que el destinatario sepa quien envía el correo
 			
 				$mail->setFrom('contacto@centroist.org', 'Centro IST');
-    			$mail->addAddress($email, 'Joe User');     // Add a recipient
+    			$mail->addAddress($email, $nombre_usuario);     // Add a recipient
     			//$mail->addAddress('ellen@example.com');
 
 			//Asignamos el subject, el cuerpo del mensaje y el correo alternativo
     			$mail->isHTML(true);
+    			$mail->CharSet = 'UTF-8';
 				$mail->Subject = $subject;
 				$mail->Body = $tpl->getOutputContent();
 				$mail->send();

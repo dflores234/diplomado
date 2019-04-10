@@ -46,7 +46,7 @@
                         <i class="material-icons md-light ml-2 pmd-sm"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-right bg-info" role="menu">
-                      <a class="dropdown-item bg-info" href="javascript:void(0);">
+                      <a class="dropdown-item bg-info" href="../php/destroysession.php">
                           Cerrar sesión
                       </a>
                     </ul>

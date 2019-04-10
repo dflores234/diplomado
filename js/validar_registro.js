@@ -99,21 +99,19 @@ $('#registrar').click(function(){
             cuenta_errores--;
         }
 
-        if(cuenta_errores > 0)
+        if(cuenta_errores <= 0)
         {
             var datos_registro =
             {
                 nombre: $('#txtnombre').val(),
                 apellido: $('#txtapellido').val(),
                 correo: $('#txtcorreo').val(),
-                numero: $('#txtnumero').val(),
+                contacto: $('#txttelefono').val(),
                 carrera: $('#carreras').val(),
                 semestre: $('#semestre').val(),
-                ccontraseña: $('#txtccontraseña').val()
+                ccontrasena: $('#txtccontraseña').val()
             };
-
-            console.log('Entra en hacer proceso');
-            /*$.ajax({
+            $.ajax({
                         type: 'POST',
                         data:{ datos:JSON.stringify(datos_registro), opcion:'registrar'},
                         url:'php/usuario.controller.php',
@@ -122,19 +120,20 @@ $('#registrar').click(function(){
                         {
                             //Loader de registro
                             $('#registrar').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
-                            
                         },
                         success:function(data)
                         {
                             //Alerta de retroalimentacion
-                            console.log(data);
+                            alert(data.msg);
+                            alert(data.otro);
+
                         },
                         error:function(error)
                         {
                             //Alerta de error
-                            console.log(error);
+                            alert(error);
                         }
-                });*/
+                });
                 
         setTimeout(function() 
         { 
@@ -143,7 +142,7 @@ $('#registrar').click(function(){
 
         }else
         {
-            alert('Verifique los campos en blanco e intente nuevamente'+ cuenta_errores);
+            alert('Verifique los campos en blanco e intente nuevamente');
         }
 });
 
@@ -166,21 +165,25 @@ $('#btnLogin').click(function(){
     }
 });
 
-$('#cambios').click(function(){
-    if ($('#contraseña').val()=='') {
-        /*alert('');*/
+$('#cambios').click(function()
+{
+    if ($('#contraseña').val()=='')
+    {
         $(contraseña).css("border","1px solid red");
         $(contraseña).attr("placeholder","Escriba su contraseña");
     }
-    else{
+    else
+    {
         $(contraseña).css("border","1px solid lightgray");
     }
-     if ($('#ccontraseña').val()=='') {
-        /*alert('Escriba su contraseña');*/
+     
+    if ($('#ccontraseña').val()=='')
+    {
         $(ccontraseña).css("border","1px solid red");
         $(ccontraseña).attr("placeholder","Escriba su contraseña");
     }
-    else{
+    else
+    {
         $(ccontraseña).css("border","1px solid lightgray");
     }
 

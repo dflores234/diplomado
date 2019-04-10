@@ -14,19 +14,21 @@
 
 							$nombre = $apellido = $correo = $contrasena = $semestre = $carrera = "";
 
+
 							/**/
 							$nombre = filtrar_entrada($datos_registro->nombre,FILTER_SANITIZE_STRING);
 							$apellido = filtrar_entrada($datos_registro->apellido,FILTER_SANITIZE_STRING);
 							$correo = filtrar_entrada($datos_registro->correo,FILTER_SANITIZE_EMAIL);
 							$semestre = filtrar_entrada($datos_registro->semestre,FILTER_VALIDATE_INT);
 							$carrera = filtrar_entrada($datos_registro->carrera,FILTER_VALIDATE_INT);
+							$nombre_usuario = $nombre.' '.$apellido;
 
 							$resultado = $usuario->registrarUsuario(
 																		$nombre,
 																		$apellido,
 																		'',
 																		$correo,
-																		$datos_registro->numero,
+																		$datos_registro->contacto,
 																		$datos_registro->ccontrasena,
 																		$semestre,
 																		$carrera
@@ -37,7 +39,7 @@
 									case 0: 
 										$response['status'] = 'ok';
 										$response['msg'] = 'El usuario ha sido registrado correctamente.';
-										$response['otro'] = $usuario->enviarCorreo($_REQUEST['correo'],'../plantillas/confirmacion.tpl',$response['msg'],$nombre_usuario);
+										$response['otro'] = $usuario->enviarCorreo($correo,'../plantillas/confirmacion.tpl',$response['msg'],$nombre_usuario);
 										break;
 									
 									case 1:
@@ -49,7 +51,7 @@
 										$response['status'] = 'error';
 										$response['msg'] = 'El correo electrónico ya se encuentra registrado.';
 										break;
-								}*/
+								}
 			//https://diego.com.es/seguridad-web-en-php*/
 			break;
 
