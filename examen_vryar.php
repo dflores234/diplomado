@@ -101,224 +101,232 @@
   		<ul class="alternativas">
   			<li>
   				<label>
-  					<input type="radio" name="respuesta3" value="V">
-  					Verdadero
+  					<input type="radio" name="respuesta3" value="F">
+  					Híbridas,activas y parcialeVerdadero
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta3" value="F">
-  					Falso
+  					Activas,pasivas y semipasivas
   				</label>
   			</li>
+        <li>
+          <label>
+            <input type="radio" name="respuesta3" value="V">
+            Pasivas,activas y híbridas
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="respuesta3" value="F">
+            Totales,parciales y mixtas
+          </label>
+        </li>
   		</ul>
   		<div class="pregunta">
   			<span class="numero-pregunta">4.</span>
-  			Es la debilidad o fallo en un sistema de información que pone en riesgo la seguridad de la información pudiendo permitir que un atacante comprometa la integridad de la misma:
+  			¿Cuales son las 3 coordenadas para localizar el sonido?
   		</div>
   		<ul class="alternativas">
   			<li>
   				<label>
-  					<input type="radio" name="respuesta4" value="V">
-  					Vulnelabilidad
+  					<input type="radio" name="respuesta4" value="F">
+  					Norte, este y oeste
   				</label>
   			</li>
   			<li>
   				<label>
-  					<input type="radio" name="respuesta4" value="F">
-  					Malware
+  					<input type="radio" name="respuesta4" value="V">
+  					Elevación, distancia y azimuth
   				</label>
   			</li>
         <li>
           <label>
             <input type="radio" name="respuesta4" value="F">
-            Ataque DDoS
+            Altura, elevación y distancia
           </label>
         </li>
         <li>
           <label>
             <input type="radio" name="respuesta4" value="F">
-            Ciberataque
+            Profundidad,rotación y azimuth
           </label>
         </li>
   		</ul>
   		<div class="pregunta">
   			<span class="numero-pregunta">5.</span>
-  			¿Cuales son las tacticas del malware?
+  			Los 2 tipos de feedback que exiten son:
   		</div>
   		<ul class="alternativas">
   			<li>
   				<label>
   					<input type="radio" name="respuesta5" value="F">
-  					Robo de credenciales,establecer conexión y mantenerla
+  					Temperature feedback y force feedback
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta5" value="F">
-  					Acceso a las datos,ocultacion y destrucción
+  					Full feedback y touch feedback
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta5" value="V">
-  				Escalada de privilegios, acceso a las credenciales, ocultación y ofuscación
+  				Force feedback y touch feedback
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta5" value="F">
-  					Obtener acceso, mantenerlo y atacar
+  					Weight feedback y force feedback
   				</label>
   			</li>
   		</ul>
   		<div class="pregunta">
   			<span class="numero-pregunta">6.</span>
-  			Se enmascaran tras un servicio legítimo para crear una puerta trasera que permita el control y robo de informacion:
+  			¿Cuales son los tipos de RV?
   		</div>
   		<ul class="alternativas">
   			<li>
   				<label>
   					<input type="radio" name="respuesta6" value="F">
-  					Worms
+  					Sistemas totales, parciales y nulos
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta6" value="F">
-  					Virus
+  					Sistemas no imersivos,inmersivos y nulos
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta6" value="V">
-  					Troyanos
+  					Sistemas no inmersivos, inmersivos y semi-inmersivos
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta6" value="F">
-  					Spyware
+  					Sistemas inmersivos, temporales y no inmersivos
   				</label>
   			</li>
   		</ul>
   		<div class="pregunta">
   			<span class="numero-pregunta">7.</span>
-  			Restringe el acceso al dispositivo a los datos hasta que no se realice un pago :
+  			¿Qué es la realidad aumentada?
   		</div>
   		<ul class="alternativas">
   			<li>
   				<label>
-  					<input type="radio" name="respuesta7" value="F">
-  					Worms
-  				</label>
-  			</li>
-  			<li>
-  				<label>
-  					<input type="radio" name="respuesta7" value="F">
-  					Virus
-  				</label>
-  			</li>
-  			<li>
-  				<label>
-  					<input type="radio" name="respuesta7" value="F">
-  				  Spyware
-  				</label>
-  			</li>
-  			<li>
-  				<label>
   					<input type="radio" name="respuesta7" value="V">
-  					Ransomware
+  					Es aquella que añade elementos generados por computador a la imformacion capturada en el mundo real
+  				</label>
+  			</li>
+  			<li>
+  				<label>
+  					<input type="radio" name="respuesta7" value="F">
+  					Permite añadir objetos reales a un entorno generado por computador
+  				</label>
+  			</li>
+  			<li>
+  				<label>
+  					<input type="radio" name="respuesta7" value="F">
+  				  Se encarga de construir entornos totalmente virtuales donde el usuario interactua
   				</label>
   			</li>
   		</ul>
   		<div class="pregunta">
   			<span class="numero-pregunta">8.</span>
-  			Se instala en un sistema ya comprometido para garantizar el acceso  al sistema en un futuro
+  			¿Qué es la experiencia de usuario?
   		</div>
   		<ul class="alternativas">
   			<li>
   				<label>
   					<input type="radio" name="respuesta8" value="V">
-  					Backdoors
+  					Es aquella que busca medir el nivel de satisfacción total de usuarios cuando utiliza un producto o sistema.
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta8" value="F">
-  				Rootkit
+  				Es el medio con que el usuario puede comunicarse con una máquina, equipo, computadora o dispositivo, 
+          y comprende todos los puntos de contacto entre el usuario y el equipo.
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta8" value="F">
-  					Virus
+  					Diseño que tiene por objeto la creación de productos que resuelvan necesidades concretas de sus usuarios finales.
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta8" value="F">
-  					Bomba lógica
+  					Es la calidad que muestra el producto ante el usuario
   				</label>
   			</li>
   		</ul>
   		<div class="pregunta">
   			<span class="numero-pregunta">9.</span>
-  			Es la practica de obtener información confidencial a través de la manipulación de usuario legítimos:
+  			¿Cuál de estos no es un atributo de la usabilidad?
   		</div>
   		<ul class="alternativas">
   			<li>
   				<label>
   					<input type="radio" name="respuesta9" value="F">
-  					Phising
+  					Durabilidad
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta9" value="F">
-  					Hoax
+  					Adaptable
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta9" value="F">
-  					Spam
+  					Comodidad
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta9" value="V">
-  					Ingeniría social
+  					Eficencia
   				</label>
   			</li>
   		</ul>
   		<div class="pregunta">
   			<span class="numero-pregunta">10.</span>
-  			Programas que se disparan en base a un evento(ex: determinada fecha realizar una operación o ejecutar un determinado código):
+  			Es el empleo de mecanicas de juego en entornos y aplicaciones no lúdicas con el fin de potenciar la motivacion
+        la concentración, el esfuerzo y otros valores positivos comunes a todos los juegos:
   		</div>
   		<ul class="alternativas">
   			<li>
   				<label>
   					<input type="radio" name="respuesta10" value="V">
-  					Bomba lógica
+  					Gamificación
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta10" value="F">
-  					Ransomware
+  					Gaming
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta10" value="F">
-  					Rootkit
+  					Challenge
   				</label>
   			</li>
   			<li>
   				<label>
   					<input type="radio" name="respuesta10" value="F">
-  					Spyware
+  					Engagement
   				</label>
   			</li>
   		</ul>
