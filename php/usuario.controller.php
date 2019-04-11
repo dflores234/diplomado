@@ -16,11 +16,11 @@
 
 
 							/**/
-							$nombre = filtrar_entrada($datos_registro->nombre,FILTER_SANITIZE_STRING);
-							$apellido = filtrar_entrada($datos_registro->apellido,FILTER_SANITIZE_STRING);
-							$correo = filtrar_entrada($datos_registro->correo,FILTER_SANITIZE_EMAIL);
-							$semestre = filtrar_entrada($datos_registro->semestre,FILTER_VALIDATE_INT);
-							$carrera = filtrar_entrada($datos_registro->carrera,FILTER_VALIDATE_INT);
+							$nombre = $usuario->filtrar_entrada($datos_registro->nombre,FILTER_SANITIZE_STRING);
+							$apellido = $usuario->filtrar_entrada($datos_registro->apellido,FILTER_SANITIZE_STRING);
+							$correo = $usuario->filtrar_entrada($datos_registro->correo,FILTER_SANITIZE_EMAIL);
+							$semestre = $usuario->filtrar_entrada($datos_registro->semestre,FILTER_VALIDATE_INT);
+							$carrera = $usuario->filtrar_entrada($datos_registro->carrera,FILTER_VALIDATE_INT);
 							$nombre_usuario = $nombre.' '.$apellido;
 
 							$resultado = $usuario->registrarUsuario(
@@ -110,13 +110,7 @@
 		$response['status'] = "error";
 		$response['msg'] = 'Solicitud no permitida';	
 	}
-	
 
-	/**/
-	function filtrar_entrada($dato,$filtro) 
-	{
-	 	return filter_var($dato,$filtro);
-	}
 
 	echo json_encode($response);
 

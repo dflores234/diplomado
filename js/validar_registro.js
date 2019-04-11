@@ -146,12 +146,13 @@ $('#registrar').click(function(){
         }
 });
 
-$('#btnLogin').click(function(){
+$('#btnLogin').click(function()
+{
 
-    if ($('#correo').val()=='') {
+    if ($('#correo').val()=='') 
+    {
         $(correo).css("border", "1px solid red");
         $(correo).attr("placeholder","no deje vacio");
-
     }
     else{
         $(correo).css("border", "1px solid lightgray");

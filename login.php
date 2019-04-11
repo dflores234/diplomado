@@ -56,7 +56,7 @@
 							</a>
 						</div>
 						<div class="col-12 cuenta">
-							<a href="#"> 
+							<a href="#" data-target="#pwdModal" data-toggle="modal"> 
 								¿Olvido su contraseña?
 							</a>
 						</div>
@@ -81,8 +81,8 @@
           </h5>
           <div class="">
             <p class="text-light">
-              <img src="img/phone.svg" width="20"> +52 (867) 712-0327 <br>
-              <img src="img/pin.svg" width="20"> contacto@centroist.org
+              <i class="fas fa-phone"></i> +52 (867) 712-0327 <br>
+              <i class="fas fa-envelope-open"></i> contacto@centroist.org
             </p>
           </div>
             
@@ -140,7 +140,7 @@
 </footer>
   <!-- Footer -->
 
-  <!-- Modal -->
+  <!-- Modal Retroalimentación-->
   <div class="modal fade" id="modalRetro" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -155,6 +155,40 @@
     </div>
   </div>
 </div>
+
+<!--modal recueprar contraseña-->
+  <div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-body">
+              <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                              <p style="color: white;">Si olvidaste tu contraseña, puedes restablecerla aquí.</p>
+                                <div class="panel-body">
+                                        <div class="form-group">
+                                            <label for="rpemail" style="color: white;">Ingrese correo electrónico:</label>
+                                            <div class="input-group mb-2">
+                                               <div class="input-group-prepend">
+                                                  <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                                                </div>
+                                            <input class="form-control" placeholder="example@example.com" id="rpemail" type="email">
+                                          </div>
+                                        </div>
+                                        <input class="btn btn-primary pull-right btn-sm" value="Recuperar contraseña" type="button">
+                                </div>
+                        </div>
+                    </div> 
+                </div>
+          </div>
+          <div class="modal-footer">
+              <button class="btn btn-danger pull-left btn-sm" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
 
 
 
@@ -191,15 +225,14 @@
                          $(location).attr('href',url);
                       }else
                       {
-                        $('#modalTitle').append('ADVERTENCIA!');
-                        $('.modal-body').append(data.msg);
+                        $('#modalTitle').append('ATENCION!').css('color','white');
+                        $('.modal-body').append(data.msg)..css('color','white');
                         $('#modalRetro').modal({show: true});
                         $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
                       }
                     },
                     error: function(error)
                     {
-                      console.log(error);
                       $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
                     }
 
