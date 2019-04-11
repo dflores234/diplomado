@@ -191,8 +191,8 @@
               </h5>
               <div class="infof">
                 
-                  <img src="img/phone.svg" width="20"> +52 (867) 712-0327 <br>
-                  <img src="img/pin.svg" width="20"> contacto@centroist.org
+                  <i class="fas fa-phone"></i> +52 (867) 712-0327 <br>
+              <i class="fas fa-envelope-open"></i> contacto@centroist.org
                 
               </div>
                 
