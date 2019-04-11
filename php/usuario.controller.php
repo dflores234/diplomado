@@ -56,9 +56,6 @@
 			break;
 
 			case 'iniciar':
-
-					if(!empty($_REQUEST['correo']) && !empty($_REQUEST['contrasena']))
-					{
 						$resultado = $usuario->iniciarSesion($_REQUEST['correo'],$_REQUEST['contrasena']);
 						switch ($resultado) 
 						{
@@ -80,11 +77,6 @@
 								$response['msg'] = 'Usuario y/o contraseña incorrectos.';
 							break;
 						}
-					}else
-					{
-						$response['status'] = 'error';
-						$response['msg'] = 'No ha escrito nada en Usuario y/o contraseña.'; 
-					}
 			break;
 
 			case 'actualizar': 
@@ -103,6 +95,18 @@
 									$response['status'] = 'error';
 									$response['msg'] = 'Ha ocurrido un error al actualizar los datos. Intente nuevamente mas tarde.'; 
 								}
+			break;
+
+			case 'enviar':
+				if($usuario->existeUsuario($_REQUEST['correo']))
+				{
+					$response['status']='ok';
+					$response['msg'] = $usuario->enviarCorreo($_REQUEST['correo'],'../plantillas/recuperarcontrasena.tpl','Recuperación de contraseña','JUAN PEREZ');
+				}else
+				{
+					$response['status'] = 'error';
+					$response['msg'] = 'El correo electrónico ingresado no se encuentra registrado y/o esta mal escrito.';
+				}
 			break;	
 		}
 	} else 

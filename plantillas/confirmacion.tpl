@@ -7,7 +7,7 @@
 <body style="margin:0px;">
 <table style="max-width: 600px; padding: 10px; margin:0 auto; border-collapse: collapse;">
 	<tr>
-		<td style="background-color:#3255B2; text-align: left; padding: 0">
+		<td style="background-color:#23AAE1; text-align: left; padding: 0">
 			<a href="#">
 				<img width="20%" style="display:block; margin: 1.5% 3%" src="https://burlier-mistakes.000webhostapp.com/img/Diplomado3%20-%20copia.png">
 			</a>

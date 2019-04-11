@@ -172,10 +172,12 @@
                                                <div class="input-group-prepend">
                                                   <div class="input-group-text"><i class="far fa-envelope"></i></div>
                                                 </div>
-                                            <input class="form-control" placeholder="example@example.com" id="rpemail" type="email">
+                                                <input class="form-control" placeholder="example@example.com" id="rpemail" type="email">
                                           </div>
                                         </div>
-                                        <input class="btn btn-primary pull-right btn-sm" value="Recuperar contraseña" type="button">
+                                        <button class="btn btn-primary pull-right btn-sm"type="button" id="btnRecuperarContrasena">
+                                          Recuperar contraseña
+                                        </button>
                                 </div>
                         </div>
                     </div> 
@@ -205,8 +207,8 @@
       $(function() 
       {
           
-        $('#btnLogin').click(function()
-          {
+        /*$('#btnLogin').click(function()
+        {
             $.ajax
                   ({
                     url: 'php/usuario.controller.php',
@@ -235,9 +237,21 @@
                     {
                       $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
                     }
-
                   });
-          });
+        });*/
+
+        $('#btnRecuperarContrasena').click(function()
+        {
+            if($('#rpemail').val() == "")
+            {
+                $('#rpemail').addClass('border border-danger');
+                $('#repemail').attr('placeholder', 'Escriba su correo electrónico...');
+            }else
+            {
+              $('#rpemail').removeClass('border border-danger');
+              //AJAX
+            }
+        });
 
       });
 

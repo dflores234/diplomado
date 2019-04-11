@@ -211,5 +211,23 @@
 		{
 		 	return filter_var($dato,$filtro);
 		}
+
+		public function cambiarContrasena($user_id,$contrasena)
+		{
+			
+			$contraseña = $this->password->encriptar($contrasena);
+			$this->conexion->beginTransaction();
+			$stmt = $this->conexion->prepare('UPDATE alumno SET contrasena = :contrasena FROM alumno WHERE id_alumno = :id');
+			$stmt = bindParam(':contrasena',$contraseña);
+			$stmt->bindParam(':id', $user_id);
+	    	
+		    	if($stmt->execute())
+		    	{
+		    		return true;
+		    	}else
+		    	{
+		    		return false;
+		    	}
+		}
 	}
  ?>
