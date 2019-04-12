@@ -1,5 +1,5 @@
 <?php 
-
+  //http://velozityweb.com/blog/php/como-subir-imagenes-o-fotos-al-servidor-con-php/#sthash.Dwe6S2jE.dpbs
 ?>
 <!DOCTYPE html>
 	<html>
