@@ -107,6 +107,10 @@
 					$response['status'] = 'error';
 					$response['msg'] = 'El correo electrónico ingresado no se encuentra registrado y/o esta mal escrito.';
 				}
+			break;
+
+			case 'recuperar':
+				$usuario->cambiarContrasena($_REQUEST['id'],$_REQUEST['contrasena']);
 			break;	
 		}
 	} else 

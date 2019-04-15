@@ -1,6 +1,8 @@
 <?php 
   //http://velozityweb.com/blog/php/como-subir-imagenes-o-fotos-al-servidor-con-php/#sthash.Dwe6S2jE.dpbs
 //https://www.w3schools.com/php/php_file_upload.asp
+//https://codigosdeprogramacion.com/2017/03/02/curso-de-php-y-mysql-21-recuperar-contrasena-por-email/
+//https://www.todoexpertos.com/preguntas/6bdxo3eh7n6q5ky6/como-puedo-subir-una-imagen-al-servidor-y-guardar-la-ruta-en-la-base-de-datos-con-php-y-mysql-he-probado-con-mas-de-5-videos
 ?>
 <!DOCTYPE html>
 	<html>
