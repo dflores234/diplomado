@@ -222,13 +222,13 @@
 			$stmt = bindParam(':contrasena',$contraseña);
 			$stmt->bindParam(':id', $user_id);
 	    	
-		    	if($stmt->execute())
-		    	{
-		    		return true;
-		    	}else
-		    	{
-		    		return false;
-		    	}
+		    if($stmt->execute())
+		    {
+		    	return true;
+		    }else
+		    {
+		    	return false;
+		    }
 		}
 	}
  ?>

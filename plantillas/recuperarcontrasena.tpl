@@ -21,7 +21,7 @@
 					Se ha solicitado la recuperación de tu contraseña<br>
 					Para restaurarla, haz clic en el siguiente vínculo.<br>
 					<div style="width: 100%; text-align: center">
-						<a style="text-decoration: none; border-radius: 5px; padding: 11px 23px; color: white; background-color: #3498db" href="{url}">Ir a la página</a>
+						<a style="text-decoration: none; border-radius: 5px; padding: 11px 23px; color: white; background-color: #3498db" href="#">Ir a la página</a>
 					</div>
 					</p>
 					<h4>¿Tienes dudas? ¿Preguntas?</h4>

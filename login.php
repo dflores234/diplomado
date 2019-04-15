@@ -246,7 +246,31 @@
             }else
             {
               $('#rpemail').removeClass('border border-danger');
-              //AJAX
+               $.ajax
+                  ({
+                    url: 'php/usuario.controller.php',
+                    type: 'POST',
+                    dataType: 'JSON',
+                    data: {opcion: 'enviar',correo: $('#correo').val()},
+                    beforeSend: function()
+                    {
+                        $('#btnRecuperarContrasena').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
+                    },
+                    success: function(data)
+                    {
+                      if(data.status == 'ok')
+                      {
+                        console.log(data);
+                      }else
+                      {
+                        console.log(data);
+                      }
+                    },
+                    error: function(error)
+                    {
+                      $('#btnRecuperarContrasena').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
+                    }
+                  });
             }
         });
 
