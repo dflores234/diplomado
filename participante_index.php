@@ -1,17 +1,17 @@
 <?php 
   include 'php/sesion.class.php';
 
-  $session = new Session();
+    $session = new Session();
 
-  if ($session->getSession('id')) 
-  {
-    $avatar = $session->getSession('avatar');
-    $nombre = $session->getSession('nombre');
-  }
-  else 
-  {
-    header("Location: index.html");
-  }
+    if ($session->getSession('id')) 
+    {
+        $avatar = $session->getSession('avatar');
+        $nombre = $session->getSession('nombre');
+    }
+    else 
+    {
+      header("Location: index.html");
+    }
  ?>
 
  <!DOCTYPE html>
