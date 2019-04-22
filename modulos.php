@@ -1,7 +1,7 @@
 <?php 
   include 'php/sesion.class.php';
 
-  $session = new Session();
+  /*$session = new Session();
 
   if ($session->getSession('id')) 
   {
@@ -11,7 +11,7 @@
   else 
   {
     header("Location: index.html");
-  }
+  }*/
 
  ?>
  <!DOCTYPE html>
