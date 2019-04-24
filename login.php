@@ -207,11 +207,8 @@
       {
           
         $('#btnLogin').click(function()
-<<<<<<< HEAD
         {
-=======
-        {/*
->>>>>>> e9c34541b9c034964337e91a10ccf35291dc7614
+
             $.ajax
                   ({
                     url: 'php/usuario.controller.php',
@@ -240,11 +237,11 @@
                     {
                       $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
                     }
-<<<<<<< HEAD
+
                   });
-=======
-                  });*/
->>>>>>> e9c34541b9c034964337e91a10ccf35291dc7614
+
+                  });
+
         });
 
         $('#btnRecuperarContrasena').click(function()
