@@ -209,6 +209,7 @@
 
 		public function filtrar_entrada($dato,$filtro) 
 		{
+			$dato = strip_tags($dato);
 		 	return filter_var($dato,$filtro);
 		}
 
@@ -221,13 +222,13 @@
 			$stmt = bindParam(':contrasena',$contraseña);
 			$stmt->bindParam(':id', $user_id);
 	    	
-		    	if($stmt->execute())
-		    	{
-		    		return true;
-		    	}else
-		    	{
-		    		return false;
-		    	}
+		    if($stmt->execute())
+		    {
+		    	return true;
+		    }else
+		    {
+		    	return false;
+		    }
 		}
 	}
  ?>
