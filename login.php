@@ -37,10 +37,10 @@
             <div>
                 <div class="col-12">
                   <div class="form-group " id="user-group">
-                    <input type="text" placeholder="Correo electronico" name="" class="form-control" id="correo" required="">
+                    <input type="text" placeholder="Correo electrónico" class="form-control" id="correo" required="">
                   </div>
                   <div class="form-group" id="contraseña-group">
-                    <input type="password" placeholder="Contraseña" name="" class="form-control" id="contraseña" required="">
+                    <input type="password" placeholder="Contraseña" class="form-control" id="contraseña" required="">
                   </div>
                   <button type="button" class="btn btn-info" id="btnLogin">
                     <i class="fas fa-sign-out-alt"></i>
@@ -205,45 +205,7 @@
     <script type="text/javascript">
       $(function() 
       {
-          
-        $('#btnLogin').click(function()
-        {
-
-            $.ajax
-                  ({
-                    url: 'php/usuario.controller.php',
-                    type: 'POST',
-                    dataType: 'JSON',
-                    data: {opcion: 'iniciar',correo: $('#correo').val(),contrasena: $('#contraseña').val()},
-                    beforeSend: function()
-                    {
-                        $('#btnLogin').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
-                    },
-                    success: function(data)
-                    {
-                      if(data.status == 'ok')
-                      {
-                         var url = 'participante_index.php';
-                         $(location).attr('href',url);
-                      }else
-                      {
-                        $('#modalTitle').append('ATENCION!').css('color','white');
-                        $('.modal-body').append(data.msg).css('color','white');
-                        $('#modalRetro').modal({show: true});
-                        $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
-                      }
-                    },
-                    error: function(error)
-                    {
-                      $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
-                    }
-
-                  });
-
-                  });
-
-       
-
+           
         $('#btnRecuperarContrasena').click(function()
         {
             if($('#rpemail').val() == "")
@@ -282,6 +244,5 @@
         });
 
       });
-
     </script>
 

@@ -1,7 +1,10 @@
 <?php 
   include 'php/sesion.class.php';
+  include 'php/funcs.php';
+  date_default_timezone_set('America/Mexico_City');
+  $fecha_actual = date('Y-m-d h:i:s', time());
 
-    $session = new Session();
+    /*$session = new Session();
 
     if ($session->getSession('id')) 
     {
@@ -11,7 +14,14 @@
     else 
     {
       header("Location: index.html");
-    }
+    }*/
+    $fecha_inicio = '2019-04-24 02:00:00';
+    $fecha_fin = '2019-04-25 01:00:00';
+    if(check_in_range($fecha_inicio,$fecha_fin,$fecha_actual))
+    {
+
+    };
+
  ?>
 
  <!DOCTYPE html>
@@ -80,7 +90,8 @@
                             <a href="javascript:void(0);" class="btn-user dropdown-toggle media align-items-center" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">
                               <img class="mr-2 rounded-circle" src='<?php echo $avatar; ?>' width="40" height="40" alt="avatar">
                               <div class="media-body" id="usuarioc">
-                              <?php echo $nombre; ?>
+                              
+
                               </div>
                               <i class="material-icons md-light ml-2 pmd-sm"></i>
                             </a>
@@ -176,7 +187,7 @@
                               Objetivo del curso:
                             </h5>
                             <p style="color: white;">
-                              Transferencia de conocimientos desde las normativas y estándares, generalidades sobre la ciberseguridad en la industria, hasta hacking ético
+                              Transferencia de conocimientos desde las normativas y estándares, generalidades sobre la ciberseguridad en la industria, hasta hacking ético.
                             </p>
                             <h5 style="color: white">
                               Competencias a adquirir:
@@ -185,7 +196,7 @@
                              •Concienciación y dominio conceptual de lo que abarca un sistema de ciberseguridad <br>•Conocimiento de las técnicas y metodologías de identificación y recolección de evidencia digital <br>
                              •Experiencia práctica en el manejo de las herramientas que ofrece la ciberseguridad
                             </p><br>
-                            <a href="modulos.php">
+                            <a href="modulos.php" class="btn disabled" id="3">
                               <img src="img/ir.png" width="50" >
                             </a>
                           </div>
@@ -436,5 +447,11 @@
 
         $('ol').append(control).scrollTop($('ol').prop('scrollHeight'));
         $('#txtMsg').val('');
+    }
+
+
+    function habilitarCursos()
+    {
+      //Aqui iran los modulos activos segun la fecha
     }
 </script>
