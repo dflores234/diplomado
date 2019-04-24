@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Este directorio está protegido"
+AuthUserFile  /public_html/admin/c/.htpasswd
+Require valid-user
