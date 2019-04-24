@@ -148,21 +148,60 @@ $('#registrar').click(function(){
 
 $('#btnLogin').click(function()
 {
-
+    var cuenta_errores = 0;
     if ($('#correo').val()=='') 
     {
         $(correo).css("border", "1px solid red");
-        $(correo).attr("placeholder","no deje vacio");
+        $(correo).attr("placeholder","No dejar vacío");
+        cuenta_errores++;
     }
     else{
         $(correo).css("border", "1px solid lightgray");
+        cuenta_errores--;
     }
-    if ($('#contraseña').val()=='') {
+    if ($('#contraseña').val()=='') 
+    {
         $(contraseña).css("border", "1px solid red");
-        $(contraseña).attr("placeholder","no deje vacio");
+        $(contraseña).attr("placeholder","No dejar vacío");
+        cuenta_errores++;
     }
     else{
         $(contraseña).css("border", "1px solid lightgray");
+        cuenta_errores--;
+    }
+
+    if(!cuenta_errores < 0)
+    {
+        $.ajax
+        ({
+            url: 'php/usuario.controller.php',
+            type: 'POST',
+            dataType: 'JSON',
+            data: {opcion: 'iniciar',correo: $('#correo').val(),contrasena: $('#contraseña').val()},
+            beforeSend: function()
+            {
+                $('#btnLogin').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
+            },
+            success: function(data)
+            {
+                if(data.status == 'ok')
+                {
+                    var url = 'participante_index.php';
+                    $(location).attr('href',url);
+                }else
+                {
+                    $('#modalTitle').append('ATENCION!').css('color','white');
+                    $('.modal-body').append(data.msg).css('color','white');
+                    $('#modalRetro').modal({show: true});
+                    $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
+                }
+            },
+            error: function(error)
+            {
+                $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
+            }
+
+        });
     }
 });
 
