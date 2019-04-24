@@ -207,7 +207,7 @@
       $(function() 
       {
           
-        /*$('#btnLogin').click(function()
+        $('#btnLogin').click(function()
         {
             $.ajax
                   ({
@@ -228,7 +228,7 @@
                       }else
                       {
                         $('#modalTitle').append('ATENCION!').css('color','white');
-                        $('.modal-body').append(data.msg)..css('color','white');
+                        $('.modal-body').append(data.msg).css('color','white');
                         $('#modalRetro').modal({show: true});
                         $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
                       }
@@ -238,7 +238,7 @@
                       $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
                     }
                   });
-        });*/
+        });
 
         $('#btnRecuperarContrasena').click(function()
         {
