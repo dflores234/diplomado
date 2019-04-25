@@ -283,13 +283,14 @@
                   </div>
                 </section>
                 <!--Fin del acordion--> 
+                 <!-- Footer -->
+   <?php include "footer.php" ?>
          </div>
        </div>
      </div>
    </div>
   </div>
-  <!-- Footer -->
-   <?php include "footer.php" ?>
+ 
     </body>
   </html>
 <!--  JavaScript -->
