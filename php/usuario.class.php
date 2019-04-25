@@ -200,6 +200,7 @@
 					$mail->Body = $tpl->getOutputContent();
 					$mail->send();
 					return "El mensaje ha sido enviado";
+					
 			}catch(Exception $e)
 			{
 				return "El mensaje no ha sido enviado. Codigo de error: {$mail->ErrorInfo}";

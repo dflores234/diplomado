@@ -100,8 +100,10 @@
 			case 'enviar':
 				if($usuario->existeUsuario($_REQUEST['correo']))
 				{
+					
 					$response['status']='ok';
-					$response['msg'] = $usuario->enviarCorreo($_REQUEST['correo'],'../plantillas/recuperarcontrasena.tpl','Recuperación de contraseña','JUAN PEREZ');
+					$response['msg'] = 'Se ha enviado un correo electrónico con los pasos para recuperar tu contraseña';
+					$response['otro'] = $usuario->enviarCorreo($_REQUEST['correo'],'../plantillas/recuperarcontrasena.tpl','Recuperación de contraseña',$_REQUEST['correo']);
 				}else
 				{
 					$response['status'] = 'error';
