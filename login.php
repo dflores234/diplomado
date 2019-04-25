@@ -100,8 +100,8 @@
                                                 <input class="form-control" placeholder="example@example.com" id="rpemail" type="email">
                                           </div>
                                         </div>
-                                        <button class="btn btn-primary pull-right btn-sm"type="button" id="btnRecuperarContrasena">
-                                          Recuperar contraseña
+                                        <button class="btn btn-primary pull-right"type="button" id="btnRecuperarContrasena">
+                                          <i class="fa fa-paper-plane"></i> Recuperar contraseña
                                         </button>
                                 </div>
                         </div>
@@ -150,14 +150,13 @@
                     data: {opcion: 'enviar',correo: $('#rpemail').val()},
                     beforeSend: function(data)
                     {
-                        console.log(data);
                         $('#btnRecuperarContrasena').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
                     },
                     success: function(data)
                     {
                       if(data.status == 'ok')
                       {
-                        console.log(data);
+                        console.log(data.msg);
                       }else
                       {
                         console.log(data);
@@ -165,7 +164,8 @@
                     },
                     error: function(error)
                     {
-                      $('#btnRecuperarContrasena').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
+                      console.log(error);
+                      $('#btnRecuperarContrasena').html('').append('<i class="fa fa-paper-plane"></i> Recuperar contraseña');
                     }
                   });
             }

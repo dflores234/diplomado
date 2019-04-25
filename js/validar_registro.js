@@ -124,6 +124,7 @@ $('#registrar').click(function(){
                         success:function(data)
                         {
                             //Alerta de retroalimentacion
+                            console.log(data);
                             alert(data.msg);
                             alert(data.otro);
 
