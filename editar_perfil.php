@@ -22,10 +22,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
+      
         <link rel="shortcut icon" href="img/istblanco.png">
   	     <title>Editar perfil</title>
   </head>
   <body>
+
+
     <!--Menu-->
     
       <?php include 'header2.php'; ?>
