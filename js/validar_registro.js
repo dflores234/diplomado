@@ -170,7 +170,8 @@ $('#btnLogin').click(function()
         cuenta_errores--;
     }
 
-    if(!cuenta_errores < 0)
+    console.log(cuenta_errores);
+    if(cuenta_errores < 0)
     {
         $.ajax
         ({
@@ -191,7 +192,7 @@ $('#btnLogin').click(function()
                 }else
                 {
                     $('#modalTitle').append('ATENCION!').css('color','white');
-                    $('.modal-body').append(data.msg).css('color','white');
+                    $('#mdlBody').append(data.msg).css('color','white');
                     $('#modalRetro').modal({show: true});
                     $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
                 }

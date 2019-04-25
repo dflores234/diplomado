@@ -4,7 +4,7 @@
   date_default_timezone_set('America/Mexico_City');
   $fecha_actual = date('Y-m-d h:i:s', time());
 
-    /*$session = new Session();
+    $session = new Session();
 
     if ($session->getSession('id')) 
     {
@@ -14,13 +14,13 @@
     else 
     {
       header("Location: index.html");
-    }*/
-    $fecha_inicio = '2019-04-24 02:00:00';
+    }
+    /*$fecha_inicio = '2019-04-24 02:00:00';
     $fecha_fin = '2019-04-25 01:00:00';
     if(check_in_range($fecha_inicio,$fecha_fin,$fecha_actual))
     {
 
-    };
+    };*/
 
  ?>
 

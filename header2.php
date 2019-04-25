@@ -1,7 +1,7 @@
  <!--Menu-->
                   <div class="container-fluid text-right" style="background-color: #23AAE1" >
                     <nav class="navbar navbar-expand-lg navbar-light container" style="background-color: #23AAE1">
-                      <a class="navbar-brand" href="#">
+                      <a class="navbar-brand" href="index.php">
                         <img src="img/Diplomado3 - copia.png" width="160" height="63" class="d-inline-block align-top" alt="">
                       </a> 
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,12 +19,14 @@
                             <a href="javascript:void(0);" class="btn-user dropdown-toggle media align-items-center" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">
                               <img class="mr-2 rounded-circle" src='<?php echo $avatar; ?>' width="40" height="40" alt="avatar">
                               <div class="media-body" id="usuarioc">
-                              
-
+                              <?php echo $nombre ?>
                               </div>
                               <i class="material-icons md-light ml-2 pmd-sm"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                              <a class="dropdown-item" href="participante_index.php">
+                                Modulos
+                              </a>
                               <a class="dropdown-item" href="editar_perfil.php">
                                 Editar Perfil
                               </a>

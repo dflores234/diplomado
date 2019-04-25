@@ -1,3 +1,4 @@
+
 <!doctype html>
   <html lang="es">
     <head>
@@ -14,7 +15,22 @@
     </head>
     <body>
       <!--Menu-->
-      <?php include 'header.php'; ?>
+      <?php 
+            include 'php/sesion.class.php';
+
+             $session = new Session();
+
+            if ($session->getSession('id')) 
+            {
+                $avatar = $session->getSession('avatar');
+                $nombre = $session->getSession('nombre');
+                include 'header2.php';
+            }
+            else 
+            {
+              include 'header.php';  
+            }
+      ?>
       <!--Fin menu-->
       <!--CARRUSEL-->
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

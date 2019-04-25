@@ -75,7 +75,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" id="mdlBody">
       </div>
     </div>
   </div>
@@ -147,9 +147,10 @@
                     url: 'php/usuario.controller.php',
                     type: 'POST',
                     dataType: 'JSON',
-                    data: {opcion: 'enviar',correo: $('#correo').val()},
-                    beforeSend: function()
+                    data: {opcion: 'enviar',correo: $('#rpemail').val()},
+                    beforeSend: function(data)
                     {
+                        console.log(data);
                         $('#btnRecuperarContrasena').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
                     },
                     success: function(data)
