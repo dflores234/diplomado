@@ -1,4 +1,5 @@
-$('#registrar').click(function(){
+$('#registrar').click(function()
+{
 	/*var mail=.trim();*/
     var cuenta_errores = 0;
 
