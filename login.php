@@ -89,7 +89,7 @@
               <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                              <p style="color: white;">Si olvidaste tu contraseña, puedes restablecerla aquí.</p>
+                              <p style="color: white;" id="msg">Si olvidaste tu contraseña, puedes restablecerla aquí.</p>
                                 <div class="panel-body">
                                         <div class="form-group">
                                             <label for="rpemail" style="color: white;">Ingrese correo electrónico:</label>
@@ -156,10 +156,11 @@
                     {
                       if(data.status == 'ok')
                       {
-                        console.log(data.msg);
+                        $('#msg').html('').append(data.msg);
                       }else
                       {
-                        console.log(data);
+                        $('#msg').html('').append(data.msg);
+                        $('#btnRecuperarContrasena').html('').append('<i class="fa fa-paper-plane"></i> Recuperar contraseña');
                       }
                     },
                     error: function(error)
@@ -169,6 +170,16 @@
                     }
                   });
             }
+
+
+            setTimeout(function()
+            {
+              $('#msg').html('').append('Si olvidaste tu contraseña, puedes restablecerla aquí.');
+            }, 4000);
+
+
+
+
         });
 
       });
