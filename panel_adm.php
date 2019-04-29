@@ -33,7 +33,10 @@
 </ul>
 
 <div class="tab-content">
-  <div class="tab-pane active" id="home" role="tabpanel">Bienvenido administrador</div>
+  <div class="tab-pane active" id="home" role="tabpanel">
+  <br>
+  Bienvenido administrador
+</div>
   <div class="tab-pane" id="profile" role="tabpanel">
       <table class="table table-bordered">
                         <thead>
@@ -112,7 +115,36 @@
                                 </div>
                       </div>
   </div>
-  <div class="tab-pane" id="settings" role="tabpanel">.4..</div>
+  <div class="tab-pane" id="settings" role="tabpanel">
+    <br>
+                <div class="form-group" style="display: inline-block;width: 200px">
+                  <label class="col-lg-3 control-label">Modulos:</label>
+                  <div class="col-lg-10">
+                    <div class="ui-select">
+                      <select id="modulos" name="modulos" class="form-control">
+                      <option value="1">Python</option>
+                      <option value="2">Sensibilización y capacitación en I4.0 e IoT </option>
+                      <option value="3"> Ciberseguridad </option>
+                      <option value="4">Sistemas interactivos basados en visión para ayuda al operador (VR Y AR) </option>
+                      <option value="5">Visión Artificial Inteligente </option>
+                      <option value="6"> Big Data, IoT </option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+               <div class="form-group" style="display: inline-block;">
+                  <label class="col-lg-12 control-label">Fecha de inicio:</label>
+                  <div class="col-lg-12">
+                    <input class="form-control" id="txttelefono" type="date">
+                  </div>
+                </div>
+                 <div class="form-group" style="display: inline-block;">
+                  <label class="col-lg-12 control-label">Fecha de terminación:</label>
+                  <div class="col-lg-12">
+                    <input class="form-control" id="txttelefono" type="date">
+                  </div>
+                </div>
+  </div>
 </div>
 
 <script>
