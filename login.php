@@ -4,6 +4,7 @@
 //https://codigosdeprogramacion.com/2017/03/02/curso-de-php-y-mysql-21-recuperar-contrasena-por-email/
 //https://www.todoexpertos.com/preguntas/6bdxo3eh7n6q5ky6/como-puedo-subir-una-imagen-al-servidor-y-guardar-la-ruta-en-la-base-de-datos-con-php-y-mysql-he-probado-con-mas-de-5-videos
 //https://manuais.iessanclemente.net/index.php/Almacenamiento_de_imágenes_en_bases_de_datos_con_PHP
+//https://www.jose-aguilar.com/blog/como-subir-una-imagen-con-jquery-ajax-php/
 ?>
 <!DOCTYPE html>
 	<html>
