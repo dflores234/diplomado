@@ -39,93 +39,94 @@
                   		Crea tu cuenta <img src="img/regis.svg" width="30" height="30">
                 	</h3>
         		<div class="form-horizontal" role="form" >
-        			<div id="form-registrar">
-        				<div class="form-group">
-            <label class="col-lg-3 control-label">Nombre(s):</label>
-            <div class="col-lg-9">
-              <input class="form-control" type="text" placeholder="Teclee su nombre" id="txtnombre" required="required">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-lg-3 control-label">Apellidos</label>
-            <div class="col-lg-9">
-              <input class="form-control"  id="txtapellido" type="text" value="" placeholder="Apellido Paterno / Apellido Materno" required="">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-lg-3 control-label">Correo:</label>
-            <div class="col-lg-9">
-              <input class="form-control" type="email" placeholder="example2@mail.com" id="txtcorreo" required="">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-lg-5 control-label">Número de contacto:</label>
-            <div class="col-lg-9">
-              <input class="form-control" id="txttelefono" type="tel" placeholder="(867)136754" maxlength="10" minlength="10" required="">
-            </div>
-          </div>
-           <div class="form-group">
-            <label class="col-lg-3 control-label">Carreras:</label>
-            <div class="col-lg-9
-            ">
-              <div class="ui-select">
-                <select id="carreras" class="form-control">
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-lg-9">
-              <input class="form-control" id="otracarrera" type="text" placeholder="Escriba su carrera" style="display: none;">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-lg-3 control-label">Semestre/Cuatrimestre:</label>
-            <div class="col-lg-10">
-              <div class="ui-select">
-                <select id="semestre" name="semestre" class="form-control">
-		            <option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-					<option value="11">11</option>
-					<option value="12">12</option>
-					<option value="13">13</option>
-					<option value="14">14</option>
-					<option value="15">15</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-md-3 control-label">Contraseña:</label>
-            <div class="col-md-9">
-              <input class="form-control" id="txtcontraseña" type="password" placeholder="*******" required="">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-md-5 control-label">Confirmar contraseña:</label>
-            <div class="col-md-9">
-              <input class="form-control" id="txtccontraseña" type="password" placeholder="*******" required="">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-md-2 control-label"></label>
-            <div class="col-md-9">
-             	<button type="button" class="btn btn-info" id="registrar"> 
-              		<i class="fa fa-check-circle"></i>
-              		Registrar
-          		</button>
-            </div>
-          </div>
-       </div>
-       </div>
+        			<form id="form-registrar">
+			        				<div class="form-group">
+			            <label class="col-lg-3 control-label">Nombre(s):</label>
+			            <div class="col-lg-9">
+			              <input class="form-control" type="text" placeholder="Teclee su nombre" id="txtnombre" required="required">
+			            </div>
+			          </div>
+			          <div class="form-group">
+			            <label class="col-lg-3 control-label">Apellidos</label>
+			            <div class="col-lg-9">
+			              <input class="form-control"  id="txtapellido" type="text" value="" placeholder="Apellido Paterno / Apellido Materno" required="">
+			            </div>
+			          </div>
+			          <div class="form-group">
+			            <label class="col-lg-3 control-label">Correo:</label>
+			            <div class="col-lg-9">
+			              <input class="form-control" type="email" placeholder="example2@mail.com" id="txtcorreo" required="">
+			            </div>
+			          </div>
+			          <div class="form-group">
+			            <label class="col-lg-5 control-label">Número de contacto:</label>
+			            <div class="col-lg-9">
+			              <input class="form-control" id="txttelefono" type="tel" placeholder="(867)136754" maxlength="10" minlength="10" required="">
+			            </div>
+			          </div>
+			           <div class="form-group">
+			            <label class="col-lg-3 control-label">Carreras:</label>
+			            <div class="col-lg-9
+			            ">
+			              <div class="ui-select">
+			                <select id="carreras" class="form-control">
+			                </select>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="form-group">
+			            <div class="col-lg-9">
+			              <input class="form-control" id="otracarrera" type="text" placeholder="Escriba su carrera" style="display: none;">
+			            </div>
+			          </div>
+			          <div class="form-group">
+			            <label class="col-lg-3 control-label">Semestre/Cuatrimestre:</label>
+			            <div class="col-lg-10">
+			              <div class="ui-select">
+			                <select id="semestre" name="semestre" class="form-control">
+					            <option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+			                </select>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="form-group">
+			            <label class="col-md-3 control-label">Contraseña:</label>
+			            <div class="col-md-9">
+			              <input class="form-control" id="txtcontraseña" type="password" placeholder="*******" required="">
+			            </div>
+			          </div>
+			          <div class="form-group">
+			            <label class="col-md-5 control-label">Confirmar contraseña:</label>
+			            <div class="col-md-9">
+			              <input class="form-control" id="txtccontraseña" type="password" placeholder="*******" required="">
+			            </div>
+			          </div>
+			          <div class="form-group">
+			            <label class="col-md-2 control-label"></label>
+			            <div class="col-md-9">
+			             	<button type="submit" class="btn btn-info" id="registrar"> 
+			              		<i class="fa fa-check-circle"></i>
+			              		Registrar
+			          		</button>
+			            </div>
+			          </div>
+        				
+       				</form>
+       			</div>
      </div>
       <div class="col-md-5">
                 <div class="text-center">

@@ -193,8 +193,8 @@ $('#btnLogin').click(function()
                     $(location).attr('href',url);
                 }else
                 {
-                    $('#modalTitle').append('ATENCION!').css('color','white');
-                    $('#mdlBody').append(data.msg).css('color','white');
+                    $('#modalTitle').html('').append('ATENCION!').css('color','white');
+                    $('#mdlBody').html('').append(data.msg).css('color','white');
                     $('#modalRetro').modal({show: true});
                     $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
                 }

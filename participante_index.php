@@ -284,7 +284,7 @@
                 </section>
                 <!--Fin del acordion--> 
                  <!-- Footer -->
-   <?php include "footer.php" ?>
+              <?php include "footer.php" ?>
          </div>
        </div>
      </div>
