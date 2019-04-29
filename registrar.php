@@ -9,10 +9,6 @@
 			<title>Registrate</title>
 			<link rel="stylesheet" href="css/bootstrap.min.css">
 			<link rel="stylesheet" type="text/css" href="css/registro.css">
-<<<<<<< HEAD
-			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-=======
->>>>>>> b29c13471832e9d3ad7385a3b12d1f1c79227def
 			<link rel="shortcut icon" href="img/istblanco.png">
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		</head>
