@@ -3,20 +3,32 @@
 <head>
       		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../css/panel.css">
         <link rel="shortcut icon" href="../img/istblanco.png">
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/panel.css">
+        <link rel="shortcut icon" href="img/istblanco.png">
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         
 	<title>Panel de Administrador</title>
 </head>
 <body>
 	<!--Navbar-->
+
 	<?php include '../header.php' ?>
 
 	<!---SASASA-->
 <br><br>
 <br>
+
+	<?php include 'header2.php' ?>
+
+	<!---SASASA-->
+
 <br>
 <div class="container">
   <h2>Administrador</h2>
@@ -126,10 +138,17 @@
                     <div class="ui-select">
                       <select id="modulos" name="modulos" class="form-control">
                       <option value="1">Python</option>
+
                       <option value="2">Sensibilizaci贸n y capacitaci贸n en I4.0 e IoT </option>
                       <option value="3"> Ciberseguridad </option>
                       <option value="4">Sistemas interactivos basados en visi贸n para ayuda al operador (VR Y AR) </option>
                       <option value="5">Visi贸n Artificial Inteligente </option>
+
+                      <option value="2">Sensibilizaci髇 y capacitaci髇 en I4.0 e IoT </option>
+                      <option value="3"> Ciberseguridad </option>
+                      <option value="4">Sistemas interactivos basados en visi髇 para ayuda al operador (VR Y AR) </option>
+                      <option value="5">Visi髇 Artificial Inteligente </option>
+
                       <option value="6"> Big Data, IoT </option>
                       </select>
                     </div>
@@ -142,7 +161,11 @@
                   </div>
                 </div>
                  <div class="form-group" style="display: inline-block;">
+
                   <label class="col-lg-12 control-label">Fecha de terminaci贸n:</label>
+
+                  <label class="col-lg-12 control-label">Fecha de terminaci髇:</label>
+
                   <div class="col-lg-12">
                     <input class="form-control" id="txttelefono" type="date">
                   </div>
@@ -156,11 +179,19 @@
 </div><br><br>
     
  
+
   <?php include "../footer.php" ?>
 
 </body>
 </html>
 <script type="text/javascript" src="../js/jquery.js"></script>
+
+  <?php include "footer.php" ?>
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.js"></script>
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
