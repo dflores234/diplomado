@@ -1,0 +1,4 @@
+﻿AuthType Basic
+AuthName "Este directorio está protegido"
+AuthUserFile  C:/wamp64/www/diplomado/admin/_logout/.htpasswd
+Require valid-user
