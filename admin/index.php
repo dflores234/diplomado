@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-          <meta charset="utf-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../css/panel.css">
@@ -22,10 +22,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <div class="navbar-nav ml-auto">
-                <div>Bienvenido administrador</div>
-                  <div>
-                    <a href="http://fakeuser:fakepassword@localhost/diplomado/admin/_logout/" class="btn btn-light">Salir</a>
-                  </div>
+                <div>
+                  <p class="font-weight-bold text-light">Bienvenido administrador</p>
+                </div>
+                <div>
+                  <a href="http://fakeuser:fakepassword@localhost/diplomado/admin/_logout/" class="btn btn-light">Salir</a>
+                </div>
               </div>
             </div>
         </nav>
