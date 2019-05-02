@@ -26,7 +26,7 @@
                   <p class="font-weight-bold text-light">Bienvenido administrador</p>
                 </div>
                 <div>
-                  <a href="http://fakeuser:fakepassword@localhost/diplomado/admin/_logout/" class="btn btn-light">Salir</a>
+                  <a href="http://fakeuser:fakepassword@localhost:8080/diplomado/admin/_logout/" class="btn btn-light">Salir</a>
                 </div>
               </div>
             </div>
@@ -60,36 +60,21 @@
 
 </div>
   <div class="tab-pane" id="profile" role="tabpanel">
-      <table class="table table-bordered">
+      <table class="table table-bordered text-center">
                         <thead>
                           <tr>
-                            <th >Nombre</th>
-                            <th >Apellido</th>
-                            <th >Correo</th>
-                            <th >Activar <input type="checkbox" name="" style="margin-left: 5px"></th>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Contacto</th>
+                            <th>Carrera</th>
+                            <th>Activar</th>
                           </tr>
                         </thead>
-                        <tbody>
-                          <tr>
-                            <td>John</td>
-                            <td>Doe</td>
-                            <td>john@example.com</td>
-                            <td><input type="checkbox" name=""></td>
-                          </tr>
-                          <tr>
-                            <td>Mary</td>
-                            <td>Moe</td>
-                            <td>mary@example.com</td>
-                            <td><input type="checkbox" name=""></td>
-                          </tr>
-                          <tr>
-                            <td>July</td>
-                            <td>Dooley</td>
-                            <td>july@example.com</td>
-                            <td><input type="checkbox" name=""></td>
-                          </tr>
+                        <tbody id="cuentas">
+                          
+                          
                         </tbody>
-                      </table>
+        </table>
                       <div class="form-group">
                                 <label class="col-md control-label"></label>
                                 <div class="col-md-2" >
@@ -108,25 +93,8 @@
                             <th style="width: 5px">Asistencia</th>
                           </tr>
                         </thead>
-                        <tbody>
-                          <tr>
-                            <td>John</td>
-                            <td>Doe</td>
-                            <td>john@example.com</td>
-                            <td><input type="checkbox" name=""></td>
-                          </tr>
-                          <tr>
-                            <td>Mary</td>
-                            <td>Moe</td>
-                            <td>mary@example.com</td>
-                            <td><input type="checkbox" name=""></td>
-                          </tr>
-                          <tr>
-                            <td>July</td>
-                            <td>Dooley</td>
-                            <td>july@example.com</td>
-                            <td><input type="checkbox" name=""></td>
-                          </tr>
+                        <tbody id="cuentas">
+                          
                         </tbody>
                       </table>
                       <div class="form-group">
@@ -144,12 +112,7 @@
                   <div class="col-lg-10">
                     <div class="ui-select">
                       <select id="modulos" name="modulos" class="form-control">
-                      <option value="1">Python</option>
-                      <option value="2">Sensibilización y capacitación en I4.0 e IoT </option>
-                      <option value="3"> Ciberseguridad </option>
-                      <option value="4">Sistemas interactivos basados en visión para ayuda al operador (VR Y AR) </option>
-                      <option value="5">Visión Artificial Inteligente </option>
-                      <option value="6"> Big Data, IoT </option>
+                      
                       </select>
                     </div>
                   </div>
@@ -185,7 +148,22 @@
 </body>
 </html>
 <script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/metodos_panel_administrador.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script>
+  $(function()
+  {
+      listarCuentas();
+
+      listarModulos();
+    
+    
+  });
+
+</script>               
+<tr>
+          
