@@ -1,7 +1,7 @@
 <?php 
   include 'php/sesion.class.php';
 
-  /*$session = new Session();
+  $session = new Session();
 
   if ($session->getSession('id')) 
   {
@@ -11,7 +11,7 @@
   else 
   {
     header("Location: index.html");
-  }*/
+  }
 
  ?>
  <!DOCTYPE html>
@@ -23,6 +23,8 @@
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
           <link rel="stylesheet" type="text/css" href="css/participante2.css">
           <link rel="stylesheet" href="css/bootstrap.min.css">
+          <!-- Los iconos tipo Solid de Fontawesome-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body>
       <div id="wrapper" class="toggled">

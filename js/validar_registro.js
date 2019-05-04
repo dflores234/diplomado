@@ -121,6 +121,9 @@ $('#registrar').click(function()
                         {
                             //Loader de registro
                             $('#registrar').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
+
+                            console.log(data);
+
                         },
                         success:function(data)
                         {

@@ -9,8 +9,8 @@
 			<title>Registrate</title>
 			<link rel="stylesheet" href="css/bootstrap.min.css">
 			<link rel="stylesheet" type="text/css" href="css/registro.css">
-			<link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
 			<link rel="shortcut icon" href="img/istblanco.png">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		</head>
 		<body>
 			<!--Menu-->
@@ -39,7 +39,7 @@
                   		Crea tu cuenta <img src="img/regis.svg" width="30" height="30">
                 	</h3>
         		<div class="form-horizontal" role="form" >
-        			<form id="form-registrar">
+        			<div id="form-registrar">
 			        				<div class="form-group">
 			            <label class="col-lg-3 control-label">Nombre(s):</label>
 			            <div class="col-lg-9">
@@ -118,14 +118,14 @@
 			          <div class="form-group">
 			            <label class="col-md-2 control-label"></label>
 			            <div class="col-md-9">
-			             	<button type="submit" class="btn btn-info" id="registrar"> 
+			             	<button type="button" class="btn btn-info float-right" id="registrar"> 
 			              		<i class="fa fa-check-circle"></i>
 			              		Registrar
 			          		</button>
 			            </div>
 			          </div>
         				
-       				</form>
+       				</div>
        			</div>
      </div>
       <div class="col-md-5">
