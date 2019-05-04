@@ -59,9 +59,10 @@
   <br>
 
 </div>
+<br>
   <div class="tab-pane" id="profile" role="tabpanel">
-      <table class="table table-bordered text-center">
-                        <thead>
+      <table class="table table-striped text-center">
+                        <thead class="bg-info">
                           <tr>
                             <th>Nombre</th>
                             <th>Correo</th>
@@ -120,20 +121,37 @@
                <div class="form-group" style="display: inline-block;">
                   <label class="col-lg-12 control-label">Fecha de inicio:</label>
                   <div class="col-lg-12">
-                    <input class="form-control" id="txttelefono" type="date">
+                    <input class="form-control" id="txtFechaInicio" type="date">
                   </div>
                 </div>
                  <div class="form-group" style="display: inline-block;">
                   <label class="col-lg-12 control-label">Fecha de terminación:</label>
                   <div class="col-lg-12">
-                    <input class="form-control" id="txttelefono" type="date">
+                    <input class="form-control" id="txtFechaFin" type="date">
                   </div>
                 </div>
                  <div class="form-group" style="display: inline-block;">
                   <div class="col-lg-12">
-                    <input class="btn btn-success" id="btnModificarFecha" type="button" value="Cambiar fecha">
+                    <button type="button" class="btn btn-success" id="btnModificarFecha">Cambiar fecha</button>
                   </div>
                 </div>
+
+
+          <table class="table table-striped">
+                        <thead class="bg-info">
+                          <tr class="text-center">
+                            <th style="width: 50px">Módulo</th>
+                            <th style="width: 50px">Fecha de inicio</th>
+                            <th style="width: 50px">Fecha de terminación</th>
+                          </tr>
+                        </thead>
+                        <tbody id="tblModulos">
+                          
+                        </tbody>
+                      </table>
+
+
+
   </div>
 </div>
 
@@ -152,7 +170,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 <script>
   $(function()
@@ -161,6 +178,13 @@
 
       listarModulos();
     
+
+
+      $('#btnModificarFecha').click(function(event) 
+      {
+        
+          modificarFechasModulos();
+      });
     
   });
 
