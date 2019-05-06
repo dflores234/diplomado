@@ -1,10 +1,9 @@
 function listarCuentas()
 {
 	$.getJSON("../php/listarcuentas.php", function(result)
-    {
+  {
       $.each(result, function(i, field) 
       {
-
         $('#cuentas').append('<tr><td>'+field.nombre_completo+'</td><td>'+field.correo_electronico+'</td><td>'+field.numero_contacto+'</td><td>'+field.nombre_carrera+'</td><td><input type="checkbox" name="" style="margin-left: 5px"></td></tr>');
       });
   });
@@ -14,6 +13,10 @@ function listarCuentas()
 
 function listarModulos()
 {
+
+  $('#modulos').html('');
+  $('#tblModulos').html('');
+
 	$.getJSON("../php/listarModulos.php", function(result)
     {
       $.each(result, function(i, field) 
@@ -74,8 +77,6 @@ function modificarFechasModulos()
             {
               alert(data.msg);
               $('#btnModificarFecha').html('').append('Cambiar fecha');
-              $('#tblModulos').html('');
-              $('#modulos').html('');
               listarModulos();
             }
                        
