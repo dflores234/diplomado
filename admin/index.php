@@ -59,11 +59,13 @@
   <br>
 
 </div>
-<br>
-  <div class="tab-pane" id="profile" role="tabpanel">
+  <br>
+    <div class="tab-pane" id="profile" role="tabpanel">
+        
       <table class="table table-striped text-center">
                         <thead class="bg-info">
                           <tr>
+                            <th>#</th>
                             <th>Nombre</th>
                             <th>Correo</th>
                             <th>Contacto</th>
@@ -76,21 +78,23 @@
                           
                         </tbody>
         </table>
-                      <div class="form-group">
-                                <label class="col-md control-label"></label>
-                                <div class="col-md-2" >
-                                  <input type="submit" class="btn btn-primary"  id="activar" value="Activar">
-                                  <span></span>
-                                </div>
-                      </div>
+                      
+        <div class="form-group">
+          <label class="col-md control-label"></label>
+            
+              <input type="submit" class="btn btn-success float-right"  id="btnActivar" value="Activar"><span></span>
+            
+        </div>
   </div>
+
+
+
   <div class="tab-pane" id="messages" role="tabpanel">
-      <table class="table table-bordered">
+      <table class="table table-striped text-center">
                         <thead>
-                          <tr>
-                            <th style="width: 50px">Nombre</th>
-                            <th style="width: 50px">Apellido</th>
-                            <th style="width: 50px">Correo</th>
+                          <tr class="bg-info">
+                            <th style="width: 50px">Alumno</th>
+                            <th style="width: 50px">Fecha</th>
                             <th style="width: 5px">Asistencia</th>
                           </tr>
                         </thead>
@@ -98,13 +102,7 @@
                           
                         </tbody>
                       </table>
-                      <div class="form-group">
-                                <label class="col-md control-label"></label>
-                                <div class="col-md-2" >
-                                  <input type="submit" class="btn btn-primary"  id="asistencia" value="Asistencia">
-                                  <span></span>
-                                </div>
-                      </div>
+                    
   </div>
   <div class="tab-pane" id="settings" role="tabpanel">
     <br>
@@ -178,6 +176,18 @@
 
       listarModulos();
     
+
+      $('#btnActivar').click(function(event) 
+      {
+        $("input[type=checkbox]:checked").each(function()
+        {
+          //cada elemento seleccionado
+          alert($(this).val());
+        });
+         
+      });
+
+
 
 
       $('#btnModificarFecha').click(function(event) 

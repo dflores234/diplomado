@@ -220,7 +220,7 @@
 			$contraseña = $this->password->encriptar($contrasena);
 			$this->conexion->beginTransaction();
 			$stmt = $this->conexion->prepare('UPDATE alumno SET contrasena = :contrasena FROM alumno WHERE id_alumno = :id');
-			$stmt = bindParam(':contrasena',$contraseña);
+			$stmt->bindParam(':contrasena',$contraseña);
 			$stmt->bindParam(':id', $user_id);
 	    	
 		    if($stmt->execute())
@@ -229,7 +229,38 @@
 		    }else
 		    {
 		    	return false;
+		    	$conexion->rollBack();
 		    }
+		}
+
+
+		public function cambiarStatus($usuario)
+		{
+			$status = '1';
+			$this->conexion->beginTransaction();
+
+			$stmt = $this->conexion->prepare("UPDATE alumno SET status = :status WHERE id_alumno = :id_alumno");
+			$stmt->bindParam(':status',$status);
+			$stmt->bindParam(':id_alumno',$usuario);
+			$stmt->execute();
+			
+			if($stmt->rowCount() > 1)
+			{
+				return true;
+			} else 
+			{
+				return false;
+				$this->conexion->rollBack();
+			}
+			
+
+		}
+
+		public function insertarAlumnoClase()
+		{
+			//Obtener fechas segun modulo
+			//instructores
+			
 		}
 	}
  ?>

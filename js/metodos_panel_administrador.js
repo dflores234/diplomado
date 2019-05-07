@@ -4,7 +4,7 @@ function listarCuentas()
   {
       $.each(result, function(i, field) 
       {
-        $('#cuentas').append('<tr><td>'+field.nombre_completo+'</td><td>'+field.correo_electronico+'</td><td>'+field.numero_contacto+'</td><td>'+field.nombre_carrera+'</td><td><input type="checkbox" name="" style="margin-left: 5px"></td></tr>');
+        $('#cuentas').append('<tr><td>'+field.id_alumno+'</td><td>'+field.nombre_completo+'</td><td>'+field.correo_electronico+'</td><td>'+field.numero_contacto+'</td><td>'+field.nombre_carrera+'</td><td><input type="checkbox" name="" style="margin-left: 5px"></td></tr>');
       });
   });
 }
