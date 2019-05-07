@@ -117,18 +117,16 @@
 
 			case 'cambiar_status':
 
-				$resultado = $usuario->cambiarStatus($_REQUEST['id_usuario']);
+				$resultado = $usuario->cambiarStatus($_REQUEST['id_alumno']);
 				if ($resultado) 
 				{
 					$response['status'] = 'ok';
-					$response['msg'] = 'Se ha actualizado el estatus correctamente';
 					//Enviar correo de cuenta activa
 				} else 
 				{
 					$response['status'] = 'error';
-					$response['msg'] = 'Ha ocurrido un error al actualizar el status';
+					$response['msg'] = 'Ha ocurrido un error al activar la cuenta';
 				}
-				
 			break;	
 		}
 	} else 

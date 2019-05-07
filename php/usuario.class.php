@@ -234,14 +234,14 @@
 		}
 
 
-		public function cambiarStatus($usuario)
+		public function cambiarStatus($id_usuario)
 		{
 			$status = '1';
 			$this->conexion->beginTransaction();
 
 			$stmt = $this->conexion->prepare("UPDATE alumno SET status = :status WHERE id_alumno = :id_alumno");
 			$stmt->bindParam(':status',$status);
-			$stmt->bindParam(':id_alumno',$usuario);
+			$stmt->bindParam(':id_alumno',$id_usuario);
 			$stmt->execute();
 			
 			if($stmt->rowCount() > 1)

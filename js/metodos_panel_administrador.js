@@ -1,10 +1,11 @@
 function listarCuentas()
 {
+  $('#cuentas').html('');
 	$.getJSON("../php/listarcuentas.php", function(result)
   {
       $.each(result, function(i, field) 
       {
-        $('#cuentas').append('<tr><td>'+field.id_alumno+'</td><td>'+field.nombre_completo+'</td><td>'+field.correo_electronico+'</td><td>'+field.numero_contacto+'</td><td>'+field.nombre_carrera+'</td><td><input type="checkbox" name="" style="margin-left: 5px"></td></tr>');
+        $('#cuentas').append('<tr><td>'+(i+1)+'</td><td>'+field.nombre_completo+'</td><td>'+field.correo_electronico+'</td><td>'+field.numero_contacto+'</td><td>'+field.nombre_carrera+'</td><td><input type="checkbox" name="cuenta_'+i+'" style="margin-left: 5px;" data-id="'+field.id_alumno+'"></td></tr>');
       });
   });
 }
@@ -93,5 +94,20 @@ function modificarFechasModulos()
 
   }
 
+}
+
+
+function mostrarFechaActual()
+{
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //January is 0!
+    var yyyy = today.getFullYear();
+
+    if (dd < 10){dd = '0' + dd;} 
+    if (mm < 10){mm = '0' + mm;} 
+
+    var today = dd + '/' + mm + '/' + yyyy;
+    $('#fechaActual').append(today);
 }
 
