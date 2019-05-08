@@ -267,9 +267,9 @@
 
 </body>
 </html>
-<script type="text/javascript">
+<!--<script type="text/javascript">
   document.getElementById('#fecha').value = new Date().toDateInputValue();
-</script>
+</script>-->
 <script type="text/javascript" src="../js/jquery.js"></script>
 <script type="text/javascript" src="../js/metodos_panel_administrador.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

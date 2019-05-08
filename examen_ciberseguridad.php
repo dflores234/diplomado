@@ -5,7 +5,7 @@
   <!DOCTYPE html>
   <html>
   <head>
-  	<title>Evaluación de python</title>
+  	<title>Evaluación de Ciberseguridad</title>
   	<link rel="stylesheet" href="css/bootstrap.min.css">
   	<link rel="stylesheet" type="text/css" href="css/preguntas.css">
   	<link rel="shortcut icon" href="img/istblanco.png">
@@ -34,8 +34,7 @@
   		<!--INICIO DE LA PREGUNTAS-->
   		<div class="pregunta">
   			<span class="numero-pregunta">1.</span>
-  			Es el conjunto de acciones de carácter preventivo que tiene como objeto el asegurar el uso de las redes propias
-        y negarlo a teceros:
+  			Es el conjunto de acciones de carácter preventivo que tiene como objeto el asegurar el uso de las redes propias y negarlo a terceros:
   		</div>
   		<ul class="alternativas">
   			<li>
