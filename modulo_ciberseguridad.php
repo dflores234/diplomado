@@ -151,7 +151,7 @@
                               <div class="contanier">
                                 <div class="row">
                                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                    <a href="examen_ciberseguridad.php" target="blank" style="color: white">Evaluación</a>
+                                    <a href="examen_ciberseguridad.php" target="_blank" style="color: white">Evaluación</a>
                                   </div>
                                 </div>
                               </div> 
