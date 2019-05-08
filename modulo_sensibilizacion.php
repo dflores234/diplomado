@@ -1,5 +1,6 @@
 <?php 
   include 'php/sesion.class.php';
+  $id = '2';
 
   $session = new Session();
 
@@ -7,6 +8,11 @@
   {
     $avatar = $session->getSession('avatar');
     $nombre = $session->getSession('nombre');
+
+    if($session->getSession('id_modulo') !== $id)
+    {
+     header("Location: participante_index.php"); 
+    }
   }
   else 
   {

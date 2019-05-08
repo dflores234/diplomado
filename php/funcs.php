@@ -1,5 +1,5 @@
 <?php 
-
+		
 	/* Función */
 	function check_in_range($fecha_inicio, $fecha_fin, $fecha)
 	{
@@ -16,9 +16,5 @@
 	         return false;
 	    }
  	}
-
-
-
-
 
  ?>

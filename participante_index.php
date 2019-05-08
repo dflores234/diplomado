@@ -1,9 +1,7 @@
 <?php 
   include 'php/sesion.class.php';
   include 'php/funcs.php';
-  date_default_timezone_set('America/Mexico_City');
-  $fecha_actual = date('Y-m-d h:i:s', time());
-
+  
     $session = new Session();
 
     if ($session->getSession('id')) 
@@ -15,13 +13,6 @@
     {
       header("Location: index.html");
     }
-    /*$fecha_inicio = '2019-04-24 02:00:00';
-    $fecha_fin = '2019-04-25 01:00:00';
-    if(check_in_range($fecha_inicio,$fecha_fin,$fecha_actual))
-    {
-
-    };*/
-
  ?>
 
  <!DOCTYPE html>
@@ -96,7 +87,7 @@
                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
-                            <a href="modulo_python.php">
+                            <a href="modulo_python.php" class="btn disabled" data-id="1">
                               <img src="img/ir.png" width="50" >
                             </a>
                           </div>
@@ -127,7 +118,7 @@
                              •Capacidad de sensibilización, visión de referencia de lo que es Industria 4.0, ámbitos de la misma y de las tecnologías involucradas <br>
                              •Capacidad de identificación de las áreas de mejora en la empresa particular del asistente 
                             </p><br>
-                            <a href="modulo_sensibilizacion.php">
+                            <a href="modulo_sensibilizacion.php" class="btn disabled" data-id="2">
                               <img src="img/ir.png" width="50" >
                             </a>
                           </div>
@@ -157,7 +148,7 @@
                              •Concienciación y dominio conceptual de lo que abarca un sistema de ciberseguridad <br>•Conocimiento de las técnicas y metodologías de identificación y recolección de evidencia digital <br>
                              •Experiencia práctica en el manejo de las herramientas que ofrece la ciberseguridad
                             </p><br>
-                            <a href="modulos.php" class="btn disabled" id="3">
+                            <a href="modulos.php" class="btn disabled" data-id="3">
                               <img src="img/ir.png" width="50" >
                             </a>
                           </div>
@@ -192,7 +183,7 @@
                               Capacidad de digitalizar diferentes productos/sistemas/servicios, dentro de la empresa particular del asistente
                             </li>
                           </ul>
-                          <a href="modulo_bigdata.php">
+                          <a href="modulo_bigdata.php" class="btn disabled" data-id ="6">
                             <img src="img/ir.png" width="50" >
                           </a>
                         </div>
@@ -204,7 +195,6 @@
                           <img src="img/vision.png" width="40" id="imgse">
                           <a class="collapsed text-primary" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                              Visión Artificial Inteligente 
-                             
                           </a>
                         </h5>
                       </div>
@@ -223,7 +213,7 @@
                               <li>Capacidad técnica de diseño, desarrollo, e implementación de sistemas capaces de interpretar el entorno que los rodea en tiempo real</li>
                               <li>Experiencia práctica en talleres de ensayo para implementación real de un prototipo</li>
                           </ul>
-                          <a href="modulo_vision.php">
+                          <a href="modulo_vision.php" class="btn disabled" data-id="5">
                             <img src="img/ir.png" width="50" >
                           </a>
                         </div>
@@ -254,7 +244,7 @@
                           <ul style="color: white;">
                               <li>Conocimientos y detalles técnicos de diseño, desarrollo, e implementación de sistemas de realidad aumentada, para identificar necesidades, plantear posibles soluciones, interactuar con proveedores</li>
                           </ul>
-                          <a href="modulo_vryar.php">
+                          <a href="modulo_vryar.php" class="btn disabled" data-id="4">
                             <img src="img/ir.png" width="50" >
                           </a>
                         </div>
@@ -276,7 +266,7 @@
                              Lograr dar un enfoque industrial a los participantes mediante la utilización de la celda de manufactura y el análisis de las áreas de oportunidad en I4.0.
 
                           </p>
-                          <a href="#">
+                          <a href="#" class="btn disabled" data-id="7">
                             <img src="img/ir.png" width="50" >
                           </a>
                         </div>
@@ -307,7 +297,45 @@
     <script type="text/javascript">
     $(function() 
     {
-        $('#enviar').click(function(event)
+
+      habilitarCursos();
+
+
+        
+        
+       
+    });
+
+    
+
+
+    function habilitarCursos()
+    {
+      $.ajax
+      ({
+          url: 'php/verificarModuloActivo.php',
+          type: 'POST',
+          dataType: 'JSON',
+          success: function(data)
+          {
+              $('.btn.disabled').each(function() 
+              {
+                if($(this).data('id') == data.ids)
+                {
+                  $(this).removeClass('btn disabled');
+                }
+              });
+          },
+          error: function(error)
+          {
+            console.log(error);
+          }            
+      });
+    }
+</script>
+
+<!-- 
+   $('#enviar').click(function(event)
         {
             if(!$('#txtMsg').val() == '')
             {
@@ -325,7 +353,6 @@
                 }    
             }
         });
-    });
 
     function insertarChat(texto)
     {
@@ -335,10 +362,4 @@
         $('ol').append(control).scrollTop($('ol').prop('scrollHeight'));
         $('#txtMsg').val('');
     }
-
-
-    function habilitarCursos()
-    {
-      //Aqui iran los modulos activos segun la fecha
-    }
-</script>
+  --->
