@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../css/panel.css">
         <link rel="shortcut icon" href="../img/istblanco.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         
   <title>Panel de Administrador</title>
 </head>
@@ -68,11 +69,13 @@
   <br>
 
 </div>
-<br>
-  <div class="tab-pane" id="profile" role="tabpanel">
-      <table class="table table-striped text-center">
+  <br>
+    <div class="tab-pane" id="profile" role="tabpanel">
+        
+      <table class="table table-striped text-center" id="tblCuentas">
                         <thead class="bg-info">
                           <tr>
+                            <th>#</th>
                             <th>Nombre</th>
                             <th>Correo</th>
                             <th>Contacto</th>
@@ -81,39 +84,53 @@
                           </tr>
                         </thead>
                         <tbody id="cuentas">
-                          
-                          
                         </tbody>
         </table>
-                      <div class="form-group">
-                                <label class="col-md control-label"></label>
-                                <div class="col-md-2" >
-                                  <input type="submit" class="btn btn-primary"  id="activar" value="Activar">
-                                  <span></span>
-                                </div>
-                      </div>
+                      
+        <div class="form-group">
+              <input type="button" class="btn btn-success float-right"  id="btnActivar" value="Activar"><span></span>
+        </div>
   </div>
+
+
+
   <div class="tab-pane" id="messages" role="tabpanel">
-      <table class="table table-bordered">
+    <br>
+      <table class="table table-striped text-center">
                         <thead>
-                          <tr>
-                            <th style="width: 50px">Nombre</th>
-                            <th style="width: 50px">Apellido</th>
-                            <th style="width: 50px">Correo</th>
-                            <th style="width: 5px">Asistencia</th>
+                          <tr class="bg-info">
+                            <th style="width: 50px">#</th>
+                            <th style="width: 50px">Alumno</th>
+                            <th style="width: 50px" id="fechaActual"></th>
                           </tr>
                         </thead>
-                        <tbody id="cuentas">
+                        <tbody id="lista">
                           
                         </tbody>
                       </table>
-                      <div class="form-group">
-                                <label class="col-md control-label"></label>
-                                <div class="col-md-2" >
-                                  <input type="submit" class="btn btn-primary"  id="asistencia" value="Asistencia">
-                                  <span></span>
-                                </div>
-                      </div>
+<div class="form-group">
+    <input type="button" class="btn btn-success float-right"  id="" value="Guardar asistencia"><span></span>
+</div>
+
+
+<div class="table-responsive">
+  <br>
+  <br>
+  <br>
+      <table class="table table-striped text-center table-sm ">
+                        <thead>
+                          <tr class="bg-info">
+                            <th style="width: 50px">#</th>
+                            <th style="width: 50px;">Alumno</th>
+                            <th style="width: 50px">Fecha</th>
+                          </tr>
+                        </thead>
+                        <tbody id="lista2">
+                          
+                        </tbody>
+      </table>
+</div>
+                    
   </div>
   <div class="tab-pane" id="settings" role="tabpanel">
     <br>
@@ -149,30 +166,24 @@
 
 
           <table class="table table-striped">
-                        <thead class="bg-info">
-                          <tr class="text-center">
-                            <th style="width: 50px">Módulo</th>
-                            <th style="width: 50px">Fecha de inicio</th>
-                            <th style="width: 50px">Fecha de terminación</th>
-                          </tr>
-                        </thead>
-                        <tbody id="tblModulos">
-                          
-                        </tbody>
-                      </table>
-
-
-
+            <thead class="bg-info">
+                <tr class="text-center">
+                  <th style="width: 50px">Módulo</th>
+                  <th style="width: 50px">Fecha de inicio</th>
+                  <th style="width: 50px">Fecha de terminación</th>
+                </tr>
+            </thead>
+            <tbody id="tblModulos"></tbody>
+          </table>
   </div>
 </div>
 
 <script>
  
 </script>
-</div>
-    
- 
-  <!-- Footer -->
+
+    <!-- Footer -->
+
 <footer class="page-footer font-small blue pt-4 bg-dark">
 
     <!-- Footer Links -->
@@ -269,20 +280,60 @@
 <script>
   $(function()
   {
+      mostrarFechaActual()
       listarCuentas();
-
       listarModulos();
     
 
+      $('#btnActivar').click(function(event) 
+      {
+        if (confirm("¿Seguro que desea activar las cuentas seleccionadas?")) 
+        {
+            $("#tblCuentas input[type=checkbox]:checked").each(function() 
+            {      
+                $.ajax
+                ({
+                  url: '../php/usuario.controller.php',
+                  type: 'POST',
+                  dataType: 'JSON',
+                  data: {opcion: 'cambiar_status', id_alumno:$(this).data('id')},
+                  beforeSend: function(data)
+                  {
+                    $('#btnActivar').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
+                  },
+                  success: function(data)
+                  {
+                    if(data.status == 'ok')
+                    {
+                      console.log(data.msg);
+                    }else
+                    {
+                      console.log(data.msg);
+                    }       
+                  },
+                  error: function(error)
+                  {
+                    console.log(error);
+                  }
+                });
+            });
+        }
+      });
 
       $('#btnModificarFecha').click(function(event) 
       {
-        
           modificarFechasModulos();
       });
-    
-  });
 
+
+
+
+
+
+
+    });
+
+    
 </script>               
-<tr>
+
           
