@@ -287,6 +287,7 @@
   </html>
 <!--  JavaScript -->
     <script src="js/jquery.js"></script>
+    <script src="js/metodos_participante.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
 <!--Script para deslisar el chat-->
@@ -298,41 +299,9 @@
     $(function() 
     {
 
-      habilitarCursos();
-
-
-        
-        
-       
+      verificarCursosHabilitados();
     });
-
-    
-
-
-    function habilitarCursos()
-    {
-      $.ajax
-      ({
-          url: 'php/verificarModuloActivo.php',
-          type: 'POST',
-          dataType: 'JSON',
-          success: function(data)
-          {
-              $('.btn.disabled').each(function() 
-              {
-                if($(this).data('id') == data.ids)
-                {
-                  $(this).removeClass('btn disabled');
-                }
-              });
-          },
-          error: function(error)
-          {
-            console.log(error);
-          }            
-      });
-    }
-</script>
+    </script>
 
 <!-- 
    $('#enviar').click(function(event)
