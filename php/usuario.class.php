@@ -176,7 +176,7 @@
 			{
 
 				//El método que usaremos es por SMTP
-					$mail->SMTPDebug = 2;
+					//$mail->SMTPDebug = 2;
 					$mail->isSMTP();
 				// Los datos necesarios para enviar mediante SMTP
 					$mail->Host = 'smtp.gmail.com';
@@ -198,9 +198,13 @@
 	    			$mail->CharSet = 'UTF-8';
 					$mail->Subject = $subject;
 					$mail->Body = $tpl->getOutputContent();
-					$mail->send();
-					return "El mensaje ha sido enviado";
-					
+					if($mail->send())
+					{
+						return "El mensaje ha sido enviado";
+					}else
+					{
+						return "El mensaje no fue enviado";
+					}
 			}catch(Exception $e)
 			{
 				return "El mensaje no ha sido enviado. Codigo de error: {$mail->ErrorInfo}";
@@ -219,14 +223,23 @@
 			
 			$contraseña = $this->password->encriptar($contrasena);
 			$this->conexion->beginTransaction();
-			$stmt = $this->conexion->prepare('UPDATE alumno SET contrasena = :contrasena FROM alumno WHERE id_alumno = :id');
-			$stmt->bindParam(':contrasena',$contraseña);
-			$stmt->bindParam(':id', $user_id);
-	    	
-		    if($stmt->execute())
-		    {
-		    	return true;
-		    }else
+			try
+			{
+				$stmt = $this->conexion->prepare('UPDATE alumno SET contrasena = :contrasena FROM alumno WHERE id_alumno = :id');
+				$stmt->bindParam(':contrasena',$contraseña);
+				$stmt->bindParam(':id', $user_id);
+		    	
+			    if($stmt->execute())
+			    {
+			    	return true;
+			    	$conexion->commit();
+			    }else
+			    {
+			    	return false;
+			    	$conexion->rollBack();
+			    }
+			}
+		    catch(Exception $e)
 		    {
 		    	return false;
 		    	$conexion->rollBack();
@@ -238,21 +251,27 @@
 		{
 			$status = '1';
 			$this->conexion->beginTransaction();
-
-			$stmt = $this->conexion->prepare("UPDATE alumno SET status = :status WHERE id_alumno = :id_alumno");
-			$stmt->bindParam(':status',$status);
-			$stmt->bindParam(':id_alumno',$id_usuario);
-			$stmt->execute();
-			
-			if($stmt->rowCount() > 1)
+			try
 			{
-				return true;
-			} else 
+				$stmt = $this->conexion->prepare("UPDATE alumno SET status = :status WHERE id_alumno = :id_alumno");
+				$stmt->bindParam(':status',$status);
+				$stmt->bindParam(':id_alumno',$id_usuario);
+				$stmt->execute();
+
+				if($stmt->rowCount() > 1)
+				{
+					return true;
+					$conexion->commit();
+				} else 
+				{
+					return false;
+					$conexion->rollBack();
+				}
+			}catch(Exception $e)
 			{
 				return false;
-				$this->conexion->rollBack();
+				$conexion->rollBack();
 			}
-			
 
 		}
 

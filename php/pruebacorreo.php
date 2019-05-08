@@ -18,7 +18,7 @@
 			try{
 
 			//El método que usaremos es por SMTP
-				$mail->SMTPDebug = 2;
+				//$mail->SMTPDebug = 2;
 				$mail->isSMTP();
 			// Los datos necesarios para enviar mediante SMTP
 				$mail->Host = 'smtp.gmail.com';

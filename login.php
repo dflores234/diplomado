@@ -136,51 +136,7 @@
            
         $('#btnRecuperarContrasena').click(function()
         {
-            if($('#rpemail').val() == "")
-            {
-                $('#rpemail').addClass('border border-danger');
-                $('#repemail').attr('placeholder', 'Escriba su correo electrónico...');
-            }else
-            {
-              $('#rpemail').removeClass('border border-danger');
-               $.ajax
-                  ({
-                    url: 'php/usuario.controller.php',
-                    type: 'POST',
-                    dataType: 'JSON',
-                    data: {opcion: 'enviar',correo: $('#rpemail').val()},
-                    beforeSend: function(data)
-                    {
-                        $('#btnRecuperarContrasena').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
-                    },
-                    success: function(data)
-                    {
-                      if(data.status == 'ok')
-                      {
-                        $('#msg').html('').append(data.msg);
-                      }else
-                      {
-                        $('#msg').html('').append(data.msg);
-                        $('#btnRecuperarContrasena').html('').append('<i class="fa fa-paper-plane"></i> Recuperar contraseña');
-                      }
-                    },
-                    error: function(error)
-                    {
-                      console.log(error);
-                      $('#btnRecuperarContrasena').html('').append('<i class="fa fa-paper-plane"></i> Recuperar contraseña');
-                    }
-                  });
-            }
-
-
-            setTimeout(function()
-            {
-              $('#msg').html('').append('Si olvidaste tu contraseña, puedes restablecerla aquí.');
-            }, 4000);
-
-
-
-
+          recuperarContrasena();
         });
 
       });
