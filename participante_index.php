@@ -148,7 +148,7 @@
                              •Concienciación y dominio conceptual de lo que abarca un sistema de ciberseguridad <br>•Conocimiento de las técnicas y metodologías de identificación y recolección de evidencia digital <br>
                              •Experiencia práctica en el manejo de las herramientas que ofrece la ciberseguridad
                             </p><br>
-                            <a href="modulos.php" class="btn disabled" data-id="3">
+                            <a href="modulo_ciberseguridad.php" class="btn disabled" data-id="3">
                               <img src="img/ir.png" width="50" >
                             </a>
                           </div>
