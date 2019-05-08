@@ -176,11 +176,8 @@
             <tbody id="tblModulos"></tbody>
           </table>
   </div>
+</div><br>
 </div>
-
-<script>
- 
-</script>
 
     <!-- Footer -->
 
@@ -265,6 +262,8 @@
 
 </footer>
   <!-- Footer -->
+
+
 
 </body>
 </html>
