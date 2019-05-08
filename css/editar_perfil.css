@@ -1,6 +1,10 @@
 body{
     overflow-x: hidden;
 }
+#logo{
+    margin-right: 80px;
+}
+
 #wrapper{
 	padding-left: 0;
 	-webkit-transition: all 0.5s ease;

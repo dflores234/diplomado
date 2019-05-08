@@ -102,7 +102,7 @@
   			<li>
   				<label>
   					<input type="radio" name="respuesta3" value="F">
-  					Híbridas,activas y parcialeVerdadero
+  					Híbridas,activas y parciales
   				</label>
   			</li>
   			<li>
