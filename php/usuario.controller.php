@@ -116,11 +116,11 @@
 			break;
 
 			case 'cambiar_status':
-
 				$resultado = $usuario->cambiarStatus($_REQUEST['id_alumno']);
 				if ($resultado) 
 				{
 					$response['status'] = 'ok';
+					$response['msg'] = "Se ha activado la cuenta";
 					//Enviar correo de cuenta activa
 				} else 
 				{
