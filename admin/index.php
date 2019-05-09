@@ -48,10 +48,10 @@
 <br>
 <br>
 <br>
-<div class="container" style="margin-bottom: 250px;">
+<div class="container" style="margin-bottom:100px;">
   <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home">Home</a>
+    <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home">Altas Maestros</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Cuentas</a>
@@ -66,9 +66,78 @@
 
 <div class="tab-content">
   <div class="tab-pane active" id="home" role="tabpanel">
-  <br>
-
-</div>
+    <br>
+    <form class="form-horizontal" role="form" id="form-cambios">
+      <div class="contanier">
+        <div class="row">
+          <div class="col-md-5 personal-info">
+            <div class="form-group">
+              <label class="col-lg-3 control-label">Nombre(s):</label>
+              <div class="col-lg-9">
+              <input class="form-control" type="text" placeholder="Teclee su nombre" id="txtnombre" required="required">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-3 control-label">Apellidos</label>
+              <div class="col-lg-9">
+              <input class="form-control"  id="txtapellido" type="text" value="" placeholder="Apellido Paterno / Apellido Materno" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-3 control-label">Correo:</label>
+              <div class="col-lg-9">
+              <input class="form-control" type="email" placeholder="example2@mail.com" id="txtcorreo" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-5 control-label">Número de contacto:</label>
+              <div class="col-lg-9">
+              <input class="form-control" id="txttelefono" type="tel" placeholder="(867)136754" maxlength="10" minlength="10" required="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">
+              <label class="col-lg-5 control-label">Modulo a impartir:</label>
+              <div class="col-lg-9">
+                <div class="ui-select">
+                    <select id="semestre" name="modulos" class="form-control">
+                        <option value="1">Python</option>
+                        <option value="2">Sensibilización y capacitación en I4.0 e IoT</option>
+                        <option value="3">Ciberseguridad</option>
+                        <option value="4">Sistemas interactivos basados en visión para ayuda al operador (VR Y AR)</option>
+                        <option value="5"> Visión Artificial Inteligente</option>
+                        <option value="6"> Big Data, IoT</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Contraseña:</label>
+                <div class="col-md-9">
+                  <input class="form-control" id="txtcontraseña" type="password" placeholder="*******" required="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-5 control-label">Confirmar contraseña:</label>
+                <div class="col-md-9">
+                  <input class="form-control" id="txtccontraseña" type="password" placeholder="*******" required="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label"></label>
+                <div class="col-md-9">
+                  <button type="button" class="btn btn-info float-right" id="registrar"> 
+                    <i class="fa fa-check-circle"></i>
+                      Registrar
+                  </button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
   <br>
     <div class="tab-pane" id="profile" role="tabpanel">
         

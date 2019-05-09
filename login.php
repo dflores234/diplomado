@@ -47,6 +47,10 @@
                     <i class="fas fa-sign-out-alt"></i>
                     Ingresar
                   </button>
+                  <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitches">
+                    <label class="custom-control-label" for="customSwitches">Alumno/Maestro</label>
+                  </div>
                 </div>
             </div>
 					
