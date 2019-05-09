@@ -53,8 +53,11 @@
   <li class="nav-item">
     <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home">Altas Maestros</a>
   </li>
+  <li>
+    <a class="nav-link " data-toggle="tab" href="#maestrolis" role="tab" aria-controls="home">Maestro inscritos</a>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Cuentas</a>
+    <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Cuentas inactivas</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" data-toggle="tab" href="#messages" role="tab" aria-controls="messages">Alumnos</a>
@@ -139,8 +142,23 @@
     </form>
   </div>
   <br>
+    <div class="tab-pane" id="maestrolis" role="tabpanel">
+        <table class="table table-striped text-center" id="tblmaestro">
+                        <thead class="bg-info">
+                          <tr>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Contacto</th>
+                            <th>Modulo a impartir</th>
+                          </tr>
+                        </thead>
+                        <tbody id="maestro">
+                        </tbody>
+        </table>
+      
+    </div>
     <div class="tab-pane" id="profile" role="tabpanel">
-        
+
       <table class="table table-striped text-center" id="tblCuentas">
                         <thead class="bg-info">
                           <tr>
@@ -159,7 +177,7 @@
         <div class="form-group">
               <input type="button" class="btn btn-success float-right"  id="btnActivar" value="Activar"><span></span>
         </div>
-  </div>
+    </div>
 
 
 
