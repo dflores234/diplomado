@@ -48,8 +48,8 @@
                     Ingresar
                   </button>
                   <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="customSwitches">
-                    <label class="custom-control-label" for="customSwitches">Alumno/Maestro</label>
+                    <input type="checkbox" class="custom-control-input" id="customSwitches" checked>
+                    <label class="custom-control-label" for="customSwitches" style="color: white;">Alumno/Maestro</label>
                   </div>
                 </div>
             </div>
@@ -143,6 +143,10 @@
           recuperarContrasena();
         });
 
-      });
+          
+        $('#customSwitches').change(function(event) 
+        {
+          $('#customSwitches').prop('checked'); 
+        });
     </script>
 
