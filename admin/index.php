@@ -70,7 +70,7 @@
 <div class="tab-content">
   <div class="tab-pane active" id="home" role="tabpanel">
     <br>
-    <form class="form-horizontal" role="form" id="form-cambios">
+    <form class="form-horizontal" role="form">
       <div class="contanier">
         <div class="row">
           <div class="col-md-5 personal-info">

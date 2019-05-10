@@ -9,10 +9,10 @@
     $avatar = $session->getSession('avatar');
     $nombre = $session->getSession('nombre');
 
-    if($session->getSession('id_modulo') !== $id)
+   /* if($session->getSession('id_modulo') !== $id)
     {
      header("Location: participante_index.php"); 
-    }
+    }*/
 
   }
   else 
@@ -179,6 +179,53 @@
                                     <a href="examen_python.php" target="_blank">Evaluación</a>
                                   </div>
                                
+                                </div>
+                              </div> 
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header bg-white" role="tab" id="headingFive">
+                          <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                              Material extra 
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion" >
+                          <div class="card-body bg-light">
+                              <div class="contanier">
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <h3>Nombre</h3><hr style="background-color: black">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                      <a href="#">Link del artículo</a><hr style="background-color: black">
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <h3>Nombre</h3><hr style="background-color: black">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                      <a href="#">Link del artículo</a><hr style="background-color: black">
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <h3>Nombre</h3><hr style="background-color: black">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                      <a href="#">Link del artículo</a><hr style="background-color: black">
+                                  </div>
                                 </div>
                               </div> 
                           </div>
