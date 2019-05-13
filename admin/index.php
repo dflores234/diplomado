@@ -104,7 +104,7 @@
               <label class="col-lg-5 control-label">Modulo a impartir:</label>
               <div class="col-lg-9">
                 <div class="ui-select">
-                    <select id="modulos" class="form-control">
+                    <select id="modulosM" class="form-control">
                     </select>
                 </div>
               </div>
@@ -219,9 +219,7 @@
                   <label class="col-lg-3 control-label">Modulos:</label>
                   <div class="col-lg-10">
                     <div class="ui-select">
-                      <select id="modulos" name="modulos" class="form-control">
-                      
-                      </select>
+                      <select id="modulos" class="form-control"></select>
                     </div>
                   </div>
                 </div>
@@ -362,6 +360,7 @@
   {
       mostrarFechaActual();
       listarCuentas();
+      listarNombreModulo();
       listarModulos();
       listarMaestros();
     

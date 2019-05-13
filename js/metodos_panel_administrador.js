@@ -22,10 +22,22 @@ function listarModulos()
     {
       $.each(result, function(i, field) 
       {
-      		$('#modulos').append('<option value="'+field.id_modulo+'">'+field.nombre_modulo+'</option>');
-          $('#tblModulos').append('<tr class="text-center"><td>'+field.nombre_modulo+'</td><td>'+field.fecha_inicio+'</td><td>'+field.fecha_fin+'</td></tr>');
+      	$('#modulos').append('<option value="'+field.id_modulo+'">'+field.nombre_modulo+'</option>');
+        $('#tblModulos').append('<tr class="text-center"><td>'+field.nombre_modulo+'</td><td>'+field.fecha_inicio+'</td><td>'+field.fecha_fin+'</td></tr>');
       });
+  });
+}
 
+
+function listarNombreModulo()
+{
+
+  $.getJSON("../php/listarModuloNombre.php", function(result)
+    {
+      $.each(result, function(i, field) 
+      {
+        $('#modulosM').append('<option value="'+field.id_modulo+'">'+field.nombre_modulo+'</option>');
+      });
   });
 }
 
@@ -44,14 +56,6 @@ function listarMaestros()
 
   });
 }
-
-
-
-
-
-
-
-
 
 
 function modificarFechasModulos()
@@ -79,9 +83,6 @@ function modificarFechasModulos()
     $('#txtFechaFin').removeClass('border border-danger');
     errores--;
   }
-
-  
-
   if(errores <= 0)
   {
 

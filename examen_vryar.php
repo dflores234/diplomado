@@ -1,5 +1,19 @@
 <?php 
+  include 'php/sesion.class.php';
+  $id = '4';
+  $session = new Session();
 
+  if ($session->getSession('id')) 
+  {
+    if($session->getSession('id_modulo') != $id)
+    {
+      header("Location: participante_index.php"); 
+    }
+  }
+  else 
+  {
+    header("Location: index.php");
+  }
  ?>
 
   <!DOCTYPE html>
