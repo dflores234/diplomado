@@ -77,25 +77,25 @@
             <div class="form-group">
               <label class="col-lg-3 control-label">Nombre(s):</label>
               <div class="col-lg-9">
-              <input class="form-control" type="text" placeholder="Teclee su nombre" id="txtnombre" required="required">
+              <input class="form-control" type="text" placeholder="Teclee su nombre" id="txtnombreMaestro" required="required">
               </div>
             </div>
             <div class="form-group">
               <label class="col-lg-3 control-label">Apellidos</label>
               <div class="col-lg-9">
-              <input class="form-control"  id="txtapellido" type="text" value="" placeholder="Apellido Paterno / Apellido Materno" required="">
+              <input class="form-control"  id="txtapellidoMaestro" type="text" value="" placeholder="Apellido Paterno / Apellido Materno" required="">
               </div>
             </div>
             <div class="form-group">
               <label class="col-lg-3 control-label">Correo:</label>
               <div class="col-lg-9">
-              <input class="form-control" type="email" placeholder="example2@mail.com" id="txtcorreo" required="">
+              <input class="form-control" type="email" placeholder="example2@mail.com" id="txtcorreoMaestro" required="">
               </div>
             </div>
             <div class="form-group">
               <label class="col-lg-5 control-label">Número de contacto:</label>
               <div class="col-lg-9">
-              <input class="form-control" id="txttelefono" type="tel" placeholder="(867)136754" maxlength="10" minlength="10" required="">
+              <input class="form-control" id="txttelefonoMaestro" type="tel" placeholder="(867)136754" maxlength="10" minlength="10" required="">
               </div>
             </div>
           </div>
@@ -104,13 +104,7 @@
               <label class="col-lg-5 control-label">Modulo a impartir:</label>
               <div class="col-lg-9">
                 <div class="ui-select">
-                    <select id="semestre" name="modulos" class="form-control">
-                        <option value="1">Python</option>
-                        <option value="2">Sensibilización y capacitación en I4.0 e IoT</option>
-                        <option value="3">Ciberseguridad</option>
-                        <option value="4">Sistemas interactivos basados en visión para ayuda al operador (VR Y AR)</option>
-                        <option value="5"> Visión Artificial Inteligente</option>
-                        <option value="6"> Big Data, IoT</option>
+                    <select id="modulos" class="form-control">
                     </select>
                 </div>
               </div>
@@ -118,21 +112,21 @@
             <div class="form-group">
                 <label class="col-md-3 control-label">Contraseña:</label>
                 <div class="col-md-9">
-                  <input class="form-control" id="txtcontraseña" type="password" placeholder="*******" required="">
+                  <input class="form-control" id="txtcontraseñaMaestro" type="password" placeholder="*******" required="">
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-md-5 control-label">Confirmar contraseña:</label>
                 <div class="col-md-9">
-                  <input class="form-control" id="txtccontraseña" type="password" placeholder="*******" required="">
+                  <input class="form-control" id="txtccontraseñaMaestro" type="password" placeholder="*******" required="">
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-md-2 control-label"></label>
                 <div class="col-md-9">
-                  <button type="button" class="btn btn-info float-right" id="registrar"> 
+                  <button type="button" class="btn btn-info float-right" id="btnGuardarMaestro"> 
                     <i class="fa fa-check-circle"></i>
-                      Registrar
+                     Guardar
                   </button>
                 </div>
             </div>
@@ -366,9 +360,10 @@
 <script>
   $(function()
   {
-      mostrarFechaActual()
+      mostrarFechaActual();
       listarCuentas();
       listarModulos();
+      listarMaestros();
     
 
       $('#btnActivar').click(function(event) 
@@ -412,12 +407,48 @@
       });
 
 
+            
+      $('#btnGuardarMaestro').click(function(event)
+      {
+        
+        var datos_maestro =
+        {
+                nombre: $('#txtnombreMaestro').val(),
+                apellido: $('#txtapellidoMaestro').val(),
+                correo: $('#txtcorreoMaestro').val(),
+                contacto: $('#txttelefonoMaestro').val(),
+                contrasena: $('#txtccontraseñaMaestro').val(),
+                modulo: $('#modulos').val()
+        };
+            $.ajax({
+                        type: 'POST',
+                        data:{ datos:JSON.stringify(datos_maestro), opcion:'registrar'},
+                        url:'../php/maestro.controller.php',
+                        dataType: 'json',
+                        beforeSend: function(data)
+                        {
+
+                            //Loader de registro
+                            /*$('#registrar').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');*/
+                        },
+                        success:function(data)
+                        {
+                            //Alerta de retroalimentacion
+                           /* $('#mdlBody').append(data.msg+"<br>Se ha enviado un correo electrónico");
+                            $('#modalRetro').modal({show: true});*/
+                            console.log(data);
+                        },
+                        error:function(error)
+                        {
+                            //Alerta de error
+                            console.log(error);
+                        }
+                });
+      });
 
 
 
-
-
-    });
+  });
 
     
 </script>               

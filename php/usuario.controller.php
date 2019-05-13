@@ -1,6 +1,7 @@
 <?php 
 	include_once 'usuario.class.php';
 	include_once 'sesion.class.php';
+	include_once 'funcs.php';
 
 	$response = array();
 
@@ -16,11 +17,11 @@
 
 
 							/**/
-							$nombre = $usuario->filtrar_entrada($datos_registro->nombre,FILTER_SANITIZE_STRING);
-							$apellido = $usuario->filtrar_entrada($datos_registro->apellido,FILTER_SANITIZE_STRING);
-							$correo = $usuario->filtrar_entrada($datos_registro->correo,FILTER_SANITIZE_EMAIL);
-							$semestre = $usuario->filtrar_entrada($datos_registro->semestre,FILTER_VALIDATE_INT);
-							$carrera = $usuario->filtrar_entrada($datos_registro->carrera,FILTER_VALIDATE_INT);
+							$nombre = filtrar_entrada($datos_registro->nombre,FILTER_SANITIZE_STRING);
+							$apellido = filtrar_entrada($datos_registro->apellido,FILTER_SANITIZE_STRING);
+							$correo = filtrar_entrada($datos_registro->correo,FILTER_SANITIZE_EMAIL);
+							$semestre = filtrar_entrada($datos_registro->semestre,FILTER_VALIDATE_INT);
+							$carrera = filtrar_entrada($datos_registro->carrera,FILTER_VALIDATE_INT);
 							$nombre_usuario = $nombre.' '.$apellido;
 
 							$resultado = $usuario->registrarUsuario(
@@ -70,7 +71,7 @@
 								break;
 							case 1:
 								$response['status'] = 'error';
-								$response['msg'] = 'La cuenta no se encuentra activa. Espere correo electrónico o algo asi';
+								$response['msg'] = 'La cuenta no se encuentra activa. Espere correo electrónico confirmando que ya puede acceder a la plataforma.';
 								break;
 							case 2:
 								$response['status'] = 'error';
@@ -97,22 +98,21 @@
 								}
 			break;
 
-			case 'enviar':
-				if($usuario->existeUsuario($_REQUEST['correo']))
-				{
-					
-					$response['status']='ok';
-					$response['msg'] = 'Se ha enviado un correo electrónico con los pasos para recuperar tu contraseña';
-					$response['otro'] = $usuario->enviarCorreo($_REQUEST['correo'],'../plantillas/recuperarcontrasena.tpl','Recuperación de contraseña',$_REQUEST['correo']);
-				}else
-				{
-					$response['status'] = 'error';
-					$response['msg'] = 'El correo electrónico ingresado no se encuentra registrado y/o esta mal escrito.';
-				}
-			break;
-
 			case 'recuperar':
-				$usuario->cambiarContrasena($_REQUEST['id'],$_REQUEST['contrasena']);
+				$res = $usuario->cambiarContrasena($_REQUEST['correo']);
+				switch ($res['opcion']) 
+				{
+					case 1:
+						$response['status']='ok';
+						$response['msg'] = 'Accede a tu correo electrónico para recuperar la contraseña.';
+						$response['otro'] = $usuario->enviarCorreoContrasena($_REQUEST['correo'],'../plantillas/recuperarcontrasena.tpl','Recuperación de contraseña',$_REQUEST['correo'],$res['pass']);
+						break;
+					
+					case 2:
+						$response['status']='error';
+						$response['msg'] = 'Ha ocurrido un error al realizar la operación. Intente nuevamente más tarde.';
+						break;
+				}
 			break;
 
 			case 'cambiar_status':
@@ -127,6 +127,7 @@
 					$response['status'] = 'error';
 					$response['msg'] = 'Ha ocurrido un error al activar la cuenta';
 				}
+
 			break;	
 		}
 	} else 

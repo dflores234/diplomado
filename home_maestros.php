@@ -1,3 +1,24 @@
+<?php 
+  include 'php/sesion.class.php';
+  
+    $session = new Session();
+
+    if ($session->getSession('id')) 
+    {
+        $id_modulo = $session->getSession('id_modulo');
+        $nombre = $session->getSession('nombre');
+    }
+    else 
+    {
+      header("Location: index.php");
+    }
+
+
+
+ ?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +44,7 @@
 	            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	              	<div class="navbar-nav ml-auto">
 		                <div>
-		                  	<p class="font-weight-bold text-light" style="margin-top: 5px;">Bienvenido:"Nombre del maestro"</p>
+		                  	<p class="font-weight-bold text-light" style="margin-top: 5px;">Bienvenido: <?php echo $nombre; ?></p>
 		                </div>
 		                <div>
 		                	<div class="btn-group" style="">
@@ -31,7 +52,7 @@
 								    <span class="sr-only">Toggle Dropdown</span>
 								  	</button>
 								  	<div class="dropdown-menu">
-								    	<a class="dropdown-item" href="#" class="btn btn-outline-dark" >Salir</a>
+								    	<a class="dropdown-item" href="php/destroysession.php" class="btn btn-outline-dark" >Salir</a>
 								  	</div>
 							</div>
 		                  

@@ -9,6 +9,6 @@
 			<div class='spinner-grow spinner-border-sm text-info' role='status'></div>
 			<div class='spinner-grow spinner-border-sm text-info' role='status'></div>
 		</div>";
-	header('Refresh:3; URL=..\index.php');
+	header('Refresh:1; URL=..\login.php');
 
  ?>

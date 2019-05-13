@@ -29,6 +29,29 @@ function listarModulos()
   });
 }
 
+function listarMaestros()
+{
+
+  $('#maestro').html('');
+
+  $.getJSON("../php/listarMaestros.php", function(result)
+    {
+      $.each(result, function(i, field) 
+      {
+          $('#maestro').append('<tr class="text-center"><td>'+field.nombre_completo+'</td><td>'+
+            field.correo_electronico+'</td><td>'+field.numero_contacto+'</td><td>'+field.nombre_modulo+'</td></tr>');
+      });
+
+  });
+}
+
+
+
+
+
+
+
+
 
 
 function modificarFechasModulos()

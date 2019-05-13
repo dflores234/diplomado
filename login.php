@@ -75,7 +75,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalTitle"></h5>
+        <h5 class="modal-title" id="modalTitle">Diplomado Nuevo Laredo 4.0</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -94,7 +94,7 @@
               <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                              <p style="color: white;" id="msg">Si olvidaste tu contraseña, puedes restablecerla aquí.</p>
+                              <p style="color: white;" id="msg" class="text-center">Si olvidaste tu contraseña, puedes restablecerla aquí.</p>
                                 <div class="panel-body">
                                         <div class="form-group">
                                             <label for="rpemail" style="color: white;">Ingrese correo electrónico:</label>
@@ -121,7 +121,7 @@
   </div>
 
            <!-- Footer -->
-<?php include("footer.php") ?>
+    <?php include("footer.php") ?>
 
 
 
@@ -144,9 +144,9 @@
         });
 
           
-        $('#customSwitches').change(function(event) 
-        {
-          $('#customSwitches').prop('checked'); 
-        });
+        
+      
+        
+      });
     </script>
 

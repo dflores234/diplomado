@@ -121,17 +121,12 @@ $('#registrar').click(function()
                         {
                             //Loader de registro
                             $('#registrar').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
-
-                            console.log(data);
-
                         },
                         success:function(data)
                         {
                             //Alerta de retroalimentacion
-                            console.log(data);
-                            alert(data.msg);
-                            alert(data.otro);
-
+                            $('#mdlBody').append(data.msg+"<br>Se ha enviado un correo electrónico");
+                            $('#modalRetro').modal({show: true});
                         },
                         error:function(error)
                         {
@@ -143,7 +138,7 @@ $('#registrar').click(function()
         setTimeout(function() 
         { 
             $('#registrar').html('').append('Registrar');
-        }, 1000);
+        }, 5000);
 
         }else
         {
@@ -175,39 +170,75 @@ $('#btnLogin').click(function()
         cuenta_errores--;
     }
 
-    console.log(cuenta_errores);
     if(cuenta_errores < 0)
     {
-        $.ajax
-        ({
-            url: 'php/usuario.controller.php',
-            type: 'POST',
-            dataType: 'JSON',
-            data: {opcion: 'iniciar',correo: $('#correo').val(),contrasena: $('#contraseña').val()},
-            beforeSend: function()
+        if($('#customSwitches').prop('checked'))
             {
-                $('#btnLogin').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
-            },
-            success: function(data)
-            {
-                if(data.status == 'ok')
-                {
-                    var url = 'participante_index.php';
-                    $(location).attr('href',url);
-                }else
-                {
-                    $('#modalTitle').html('').append('ATENCION!').css('color','white');
-                    $('#mdlBody').html('').append(data.msg).css('color','white');
-                    $('#modalRetro').modal({show: true});
-                    $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
-                }
-            },
-            error: function(error)
-            {
-                $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
-            }
+                $.ajax
+                ({
+                    url: 'php/maestro.controller.php',
+                    type: 'POST',
+                    dataType: 'JSON',
+                    data: {opcion: 'iniciar',correo: $('#correo').val(),contrasena: $('#contraseña').val()},
+                    beforeSend: function()
+                    {
+                        $('#btnLogin').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
+                    },
+                    success: function(data)
+                    {
 
-        });
+                        if(data.status == 'ok')
+                        {
+                            var url = 'home_maestros.php';
+                            $(location).attr('href',url);
+                        }else
+                        {
+                            $('#modalTitle').css('color','white');
+                            $('#mdlBody').html('').append(data.msg).css('color','white');
+                            $('#modalRetro').modal({show: true});
+                            $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
+                        }
+                    },
+                    error: function(error)
+                    {
+                        $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
+                    }
+
+                });
+
+            }else
+            {
+                $.ajax
+                ({
+                    url: 'php/usuario.controller.php',
+                    type: 'POST',
+                    dataType: 'JSON',
+                    data: {opcion: 'iniciar',correo: $('#correo').val(),contrasena: $('#contraseña').val()},
+                    beforeSend: function()
+                    {
+                        $('#btnLogin').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
+                    },
+                    success: function(data)
+                    {
+                        if(data.status == 'ok')
+                        {
+                            var url = 'participante_index.php';
+                            $(location).attr('href',url);
+                        }else
+                        {
+                            $('#modalTitle').css('color','white');
+                            $('#mdlBody').html('').append(data.msg).css('color','white');
+                            $('#modalRetro').modal({show: true});
+                            $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
+                        }
+                    },
+                    error: function(error)
+                    {
+                        $('#btnLogin').html('').append('<i class="fas fa-sign-out-alt"></i>Ingresar');
+                    }
+
+                });
+            }
     }
 });
 

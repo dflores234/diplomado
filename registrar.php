@@ -38,7 +38,7 @@
                 	<h3>
                   		Crea tu cuenta <img src="img/regis.svg" width="30" height="30">
                 	</h3>
-        		<div class="form-horizontal" role="form" >
+        		<div class="form-horizontal" role="form" id="registro">
         			<div id="form-registrar">
 			        	<div class="form-group">
 				            <label class="col-lg-3 control-label">Nombre(s):</label>
@@ -70,6 +70,8 @@
 			            ">
 			              <div class="ui-select">
 			                <select id="carreras" class="form-control">
+			                	<option value="0" disabled>Seleccione una carrera</option>}
+			                	option
 			                </select>
 			              </div>
 			            </div>
@@ -193,6 +195,25 @@
 			</div>
 		</div>
     </div>
+
+
+	<!-- Modal Retroalimentación-->
+  <div class="modal fade" id="modalRetro" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h5 class="modal-title text-center" id="modalTitle" style="color: white;">Diplomado Nuevo Laredo 4.0</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="mdlBody">
+      </div>
+    </div>
+  </div>
+</div>
+
+
 			<!--Contenido fuera del formulario-->
 			
 			<!-- Footer -->

@@ -16,13 +16,11 @@
 	<tr>
 		<td style="background-color: #ecf0f1">
 			<div style="color: #34495e; margin: 4% 10% 2%; text-align: justify;font-family: sans-serif">
-				<h2 style="color: #e67e22; margin: 0 0 7px">Hola {usuario},</h2>
+				<h2 style="color: #e67e22; margin: 0 0 7px">Estimado {usuario},</h2>
 				<p style="margin: 2px; font-size: 15px">
-					Se ha solicitado la recuperación de tu contraseña<br>
-					Para restaurarla, haz clic en el siguiente vínculo.<br>
-					<div style="width: 100%; text-align: center">
-						<a style="text-decoration: none; border-radius: 5px; padding: 11px 23px; color: white; background-color: #3498db" href="{url}">Ir a la página</a>
-					</div>
+					Se ha solicitado la recuperación de tu contraseña. Tu contraseña temporal es: {tmp}<br>
+					Recuerda iniciar sesión en la plataforma y actualizarla en la sección Editar Perfil<br>
+					
 					</p>
 					<h4>¿Tienes dudas? ¿Preguntas?</h4>
 					<h5>Escríbenos a contacto@centroist.org y estaremos encantados de ayudarte</h5>

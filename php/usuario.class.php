@@ -212,49 +212,112 @@
 			
 	    }
 
-		public function filtrar_entrada($dato,$filtro) 
-		{
-			$dato = strip_tags($dato);
-		 	return filter_var($dato,$filtro);
-		}
-
-		public function cambiarContrasena($user_id,$contrasena)
-		{
+	    function enviarCorreoContrasena($email,$tpl,$subject,$nombre_usuario,$contrasena)
+	    {
 			
-			$contraseña = $this->password->encriptar($contrasena);
-			$this->conexion->beginTransaction();
+			require 'PHPMailer/PHPMailer.php';
+			require 'PHPMailer/Exception.php';
+			require 'PHPMailer/SMTP.php';
+
+			include 'class.TemplatePower.inc.php';
+
+			$tpl = new TemplatePower($tpl);
+			$tpl->prepare();
+			$tpl->assign('usuario', $nombre_usuario);
+			$tpl->assign('tmp',$contrasena);
+
+			//Creamos la instancia de la clase PHPMAiler
+				$mail = new PHPMailer(TRUE);
+			
 			try
 			{
-				$stmt = $this->conexion->prepare('UPDATE alumno SET contrasena = :contrasena FROM alumno WHERE id_alumno = :id');
-				$stmt->bindParam(':contrasena',$contraseña);
-				$stmt->bindParam(':id', $user_id);
-		    	
-			    if($stmt->execute())
-			    {
-			    	return true;
-			    	$conexion->commit();
-			    }else
-			    {
-			    	return false;
-			    	$conexion->rollBack();
-			    }
+
+				//El método que usaremos es por SMTP
+					//$mail->SMTPDebug = 2;
+					$mail->isSMTP();
+				// Los datos necesarios para enviar mediante SMTP
+					$mail->Host = 'smtp.gmail.com';
+					$mail->SMTPAuth = true;
+					$mail->Username = 'codecampapp@gmail.com';
+					$mail->Password = '@Sefuerte365';
+					$mail->SMTPSecure = 'tls';
+					$mail->Port = 587;
+
+
+				// Asignamos el From y el FromName para que el destinatario sepa quien envía el correo
+				
+					$mail->setFrom('contacto@centroist.org', 'Centro IST');
+	    			$mail->addAddress($email, $nombre_usuario);     // Add a recipient
+	    			//$mail->addAddress('ellen@example.com');
+
+				//Asignamos el subject, el cuerpo del mensaje y el correo alternativo
+	    			$mail->isHTML(true);
+	    			$mail->CharSet = 'UTF-8';
+					$mail->Subject = $subject;
+					$mail->Body = $tpl->getOutputContent();
+					if($mail->send())
+					{
+						return "El mensaje ha sido enviado";
+					}else
+					{
+						return "El mensaje no fue enviado";
+					}
+			}catch(Exception $e)
+			{
+				return "El mensaje no ha sido enviado. Codigo de error: {$mail->ErrorInfo}";
 			}
-		    catch(Exception $e)
-		    {
-		    	return false;
-		    	$conexion->rollBack();
-		    }
+			
+	    }
+
+		
+
+		public function cambiarContrasena($correo)
+		{
+			$better_token = null;
+			if($this->existeUsuario($correo))
+			{
+				$better_token = md5(uniqid(mt_rand(),true));
+	    		$better_token = substr($better_token,0,8);
+			
+				$contraseña = $this->password->encriptar($better_token);
+				$this->conexion->beginTransaction();
+
+				try
+				{
+					$stmt = $this->conexion->prepare('UPDATE alumno SET contrasena = :contrasena WHERE correo_electronico = :correo');
+					$stmt->bindParam(':contrasena',$contraseña);
+					$stmt->bindParam(':correo', $correo);
+			    	
+				    if($stmt->execute())
+				    {
+				    	$op = 1;
+				    	$this->conexion->commit();
+				    }else
+				    {
+				    	$op = 2;
+				    	$this->conexion->rollBack();
+				    }
+				}
+			    catch(Exception $e)
+			    {
+			    	$op = 2;
+			    	$this->conexion->rollBack();
+			    }
+			
+			}else
+			{
+				$op = 3;
+			}
+			return $resultado = array('opcion' => $op, 'pass' => $better_token);
 		}
 
 
 		public function cambiarStatus($id_usuario)
 		{
-			$status = '1';
 			$this->conexion->beginTransaction();
 			try
 			{
-				$stmt = $this->conexion->prepare("UPDATE alumno SET status = :status WHERE id_alumno = :id_alumno");
-				$stmt->bindParam(':status',$status);
+				$stmt = $this->conexion->prepare("UPDATE alumno SET status = '1' WHERE id_alumno = :id_alumno");
 				$stmt->bindParam(':id_alumno',$id_usuario);
 				$stmt->execute();
 
@@ -272,6 +335,8 @@
 				return false;
 				$conexion->rollBack();
 			}
+
+			return $stmt->errorInfo();
 
 		}
 

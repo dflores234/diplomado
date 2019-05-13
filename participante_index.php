@@ -1,6 +1,5 @@
 <?php 
   include 'php/sesion.class.php';
-  include 'php/funcs.php';
   
     $session = new Session();
 

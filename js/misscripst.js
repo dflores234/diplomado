@@ -57,7 +57,7 @@ function recuperarContrasena()
                     url: 'php/usuario.controller.php',
                     type: 'POST',
                     dataType: 'JSON',
-                    data: {opcion: 'enviar',correo: $('#rpemail').val()},
+                    data: {opcion: 'recuperar',correo: $('#rpemail').val()},
                     beforeSend: function(data)
                     {
                         $('#btnRecuperarContrasena').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
@@ -72,6 +72,7 @@ function recuperarContrasena()
 
                       }else
                       {
+                        console.log(data.msg);
                         $('#msg').html('').append(data.msg);
                       }
                     },
