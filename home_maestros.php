@@ -180,25 +180,25 @@
        						 <div class="form-group">
 					              <label class="col-lg-3 control-label">Nombre del articulo:</label>
 					              <div class="col-lg-6">
-					              <input class="form-control" type="text" placeholder="Introduzca aquí el nombre del artículo" id="txtnombreart" required="required">
+					              <input class="form-control" type="text" placeholder="Introduzca aquí el nombre del artículo" id="txtNombreArt" required="required">
 					              </div>
             				</div>
             				<div class="form-group">
 							    <label class="col-lg-3 control-label" for="Descripcion">Descripción:</label>
 							    <div class="col-lg-6">
-							    	<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+							    	<textarea class="form-control" id="txtDescArt" rows="3"></textarea>
 							    </div>  
   							</div>
   							<div class="form-group">
 					              <label class="col-lg-3 control-label">Link del artículo:</label>
 					              <div class="col-lg-6">
-					              <input class="form-control" type="text" placeholder="Introduzca aquí el link" id="txtlink" required="required">
+					              <input class="form-control" type="text" placeholder="Introduzca aquí el link" id="txtLink" required="required">
 					              </div>
             				</div>
             				<div class="form-group">
 					                <label class="col-md-2 control-label"></label>
 					                <div class="col-md-6">
-					                  <button type="button" class="btn btn-info float-right" id="guardar"> 
+					                  <button type="button" class="btn btn-info float-right" id="guardarArt"> 
 					                    <i class="fa fa-check-circle"></i>
 					                      Guardar
 					                  </button>
@@ -220,3 +220,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(function() 
+  {
+      $('#guardarArt').click(function(event) 
+      {    
+          $.ajax
+          ({
+              type: 'POST',
+              data:{ nombre:$('#txtNombreArt').val(),descripcion:$('#txtDescArt').val(), link:$('#txtLink').val() ,id_modulo:<?php echo $id_modulo; ?> },
+              url:'php/altaRecurso.php',
+              dataType: 'JSON',
+              beforeSend: function(data)
+              {
+                $('#guardarArt').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');  
+              },
+              success:function(data)
+              {
+                if(data.status == 'ok')
+                {
+                    alert(data.msg);
+                    $('#guardarArt').html('').append('Guardar');
+                }else
+                {
+                  console.log(data.msg);
+                }
+              },
+              error:function(error)
+              {       
+                console.log(error);
+              }
+          });
+      });
+  });
+
+</script>

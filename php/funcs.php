@@ -20,8 +20,8 @@
 
  	function filtrar_entrada($dato,$filtro) 
 	{
-			$dato = strip_tags($dato);
-		 	return filter_var($dato,$filtro);
+		$datoL = strip_tags($dato);
+		return filter_var($datoL,$filtro);
 	}
 
  ?>
