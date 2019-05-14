@@ -7,6 +7,7 @@
 		private $conexion;
 		private $password;
 		private $defaultStatus = '0';
+		private $activoStatus = '1';
 		private $avatarDefault = 'img/avatar.jpg';
 		
 		function __construct()
@@ -269,8 +270,6 @@
 			
 	    }
 
-		
-
 		public function cambiarContrasena($correo)
 		{
 			$better_token = null;
@@ -317,28 +316,36 @@
 			$this->conexion->beginTransaction();
 			try
 			{
-				$stmt = $this->conexion->prepare("UPDATE alumno SET status = '1' WHERE id_alumno = :id_alumno");
-				$stmt->bindParam(':id_alumno',$id_usuario);
-				$stmt->execute();
+				$stmt = $this->conexion->prepare("UPDATE alumno SET status = :status WHERE id_alumno = :id");
+				$stmt->execute(array(':status' => $this->activoStatus, ':id' =>$id_usuario));
 
-				if($stmt->rowCount() > 1)
+				if($stmt->rowCount() > 0)
 				{
+					$this->conexion->commit();
 					return true;
-					$conexion->commit();
 				} else 
 				{
+					$this->conexion->rollBack();
 					return false;
-					$conexion->rollBack();
 				}
 			}catch(Exception $e)
 			{
+				$this->conexion->rollBack();
 				return false;
-				$conexion->rollBack();
 			}
-
-			return $stmt->errorInfo();
-
 		}
+
+		public function obtenerNombreCorreo($id)
+		{
+			$stmt = $this->conexion->prepare("SELECT nombre_completo, correo_electronico FROM alumno WHERE id_alumno = :id");
+			$stmt->bindParam(':id', $email);
+	    	$stmt->execute();
+	    	$res = $stmt->fetch(PDO::FETCH_ASSOC);
+	    	return $res;
+		}
+
+
+
 
 		public function insertarAlumnoClase()
 		{
@@ -346,5 +353,6 @@
 			//instructores
 			
 		}
+
 	}
  ?>

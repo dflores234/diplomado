@@ -53,6 +53,9 @@
   <li class="nav-item">
     <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home">Altas Maestros</a>
   </li>
+   <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#settings" role="tab" aria-controls="settings">Modulos</a>
+  </li>
   <li>
     <a class="nav-link " data-toggle="tab" href="#maestrolis" role="tab" aria-controls="home">Maestro inscritos</a>
   </li>
@@ -60,10 +63,7 @@
     <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Cuentas inactivas</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#messages" role="tab" aria-controls="messages">Alumnos</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#settings" role="tab" aria-controls="settings">Modulos</a>
+    <a class="nav-link" data-toggle="tab" href="#messages" role="tab" aria-controls="messages">Lista Asistencia</a>
   </li>
 </ul>
 
@@ -153,7 +153,7 @@
     </div>
     <div class="tab-pane" id="profile" role="tabpanel">
 
-      <table class="table table-striped text-center" id="tblCuentas">
+      <table class="table table-striped text-center">
                         <thead class="bg-info">
                           <tr>
                             <th>#</th>
@@ -202,8 +202,10 @@
                         <thead>
                           <tr class="bg-info">
                             <th style="width: 50px">#</th>
+                            <th style="width: 50px">Clase</th>
                             <th style="width: 50px;">Alumno</th>
                             <th style="width: 50px">Fecha</th>
+                            <th style="width: 50px">Asistencia</th>
                           </tr>
                         </thead>
                         <tbody id="lista2">
@@ -363,20 +365,21 @@
       listarNombreModulo();
       listarModulos();
       listarMaestros();
+      listarAlumnos();
     
 
       $('#btnActivar').click(function(event) 
       {
         if (confirm("¿Seguro que desea activar las cuentas seleccionadas?")) 
         {
-            $("#tblCuentas input[type=checkbox]:checked").each(function() 
-            {      
+            $("input[type=checkbox]:checked").each(function() 
+            {  
                 $.ajax
                 ({
                   url: '../php/usuario.controller.php',
                   type: 'POST',
                   dataType: 'JSON',
-                  data: {opcion: 'cambiar_status', id_alumno:$(this).data('id')},
+                  data: {opcion: 'cambiar_status', id_alumno:$(this).val()},
                   beforeSend: function(data)
                   {
                     $('#btnActivar').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
@@ -385,7 +388,8 @@
                   {
                     if(data.status == 'ok')
                     {
-                      console.log(data.msg);
+                      alert(data.msg);
+                      listarCuentas();
                     }else
                     {
                       console.log(data.msg);

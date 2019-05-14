@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>Confirmación</title>
+	<title>Activación de cuenta</title>
 </head>
 <body style="margin:0px;">
 <table style="max-width: 600px; padding: 10px; margin:0 auto; border-collapse: collapse;">

@@ -5,7 +5,7 @@ function listarCuentas()
   {
       $.each(result, function(i, field) 
       {
-        $('#cuentas').append('<tr><td>'+(i+1)+'</td><td>'+field.nombre_completo+'</td><td>'+field.correo_electronico+'</td><td>'+field.numero_contacto+'</td><td>'+field.nombre_carrera+'</td><td><input type="checkbox" name="cuenta_'+i+'" style="margin-left: 5px;" data-id="'+field.id_alumno+'"></td></tr>');
+        $('#cuentas').append('<tr><td>'+(i+1)+'</td><td>'+field.nombre_completo+'</td><td>'+field.correo_electronico+'</td><td>'+field.numero_contacto+'</td><td>'+field.nombre_carrera+'</td><td><input type="checkbox" name="cuenta_'+i+'" style="margin-left: 5px;" value='+field.id_alumno+'></td></tr>');
       });
   });
 }
@@ -43,7 +43,6 @@ function listarNombreModulo()
 
 function listarMaestros()
 {
-
   $('#maestro').html('');
 
   $.getJSON("../php/listarMaestros.php", function(result)
@@ -55,6 +54,18 @@ function listarMaestros()
       });
 
   });
+}
+
+function listarAlumnos()
+{
+  $('#lista').html('');
+    $.getJSON("../php/listarAlumnos.php", function(result)
+    {
+      $.each(result, function(i, field) 
+      {
+            $('#lista').append('<tr class="text-center"><td>'+(i+1)+'</td><td>'+field.nombre_completo+'</td><td><input type="checkbox" style="margin-left: 5px;" value='+field.id_alumno+' checked></td></td></tr>');
+      });
+    });
 }
 
 
@@ -117,7 +128,6 @@ function modificarFechasModulos()
       //setTimeout(function(){ $('#btnModificarFecha').html('').append('Cambiar fecha');}, 500);
 
   }
-
 }
 
 
