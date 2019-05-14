@@ -39,8 +39,8 @@
 								{
 									case 0: 
 										$response['status'] = 'ok';
-										$response['msg'] = 'El usuario ha sido registrado correctamente.';
-										$response['otro'] = $usuario->enviarCorreo($correo,'../plantillas/confirmacion.tpl',$response['msg'],$nombre_usuario);
+										$response['msg'] = 'El usuario ha sido registrado correctamente. Se ha enviado un correo electronico confirmando su registro';
+										$usuario->enviarCorreo($correo,'../plantillas/confirmacion.tpl',$response['msg'],$nombre_usuario);
 										break;
 									
 									case 1:
@@ -119,15 +119,17 @@
 				$resultado = $usuario->cambiarStatus($_REQUEST['id_alumno']);
 				if ($resultado) 
 				{
+					$datos = $usuario->obtenerNombreCorreo($_REQUEST['id_alumno']);
 					$response['status'] = 'ok';
 					$response['msg'] = "Se ha activado la cuenta";
 					//Enviar correo de cuenta activa
+					$usuario->enviarCorreo($datos['correo_electronico'],'../plantillas/activacion.tpl',$response['msg'],$datos['nombre_completo']);
+					//Insertar en clase
 				} else 
 				{
 					$response['status'] = 'error';
 					$response['msg'] = 'Ha ocurrido un error al activar la cuenta';
 				}
-
 			break;	
 		}
 	} else 
