@@ -122,35 +122,37 @@
                                     <h3>
                                       Informacion personal
                                     </h3>
-                            <form class="form-horizontal" role="form" id="form-cambios">
+                            <form class="form-horizontal" role="form" method="post" onsubmit="return validar()"
+                            name="form">
                               <div class="form-group">
                                 <label class="col-lg-4 control-label">Numero de contacto:</label>
                                 <div class="col-lg-8">
-                                  <input class="form-control" type="text" value="" placeholder="Celular o Fijo">
+                                  <input class="form-control" type="tel" value="" placeholder="Celular o Fijo" maxlength="10" id="edittel">
+                                  
                                 </div>
                               </div>
                               <div class="form-group">
                                 <label class="col-lg-3 control-label">Correo:</label>
                                 <div class="col-lg-8">
-                                  <input class="form-control" type="text" placeholder="Ejemplo: Juan2@mail.com">
+                                  <input class="form-control" type="email" placeholder="Ejemplo: Juan2@mail.com" id="mailedit">
                                 </div>
                               </div>
                               <div class="form-group">
                                 <label class="col-md-3 control-label">Contraseña:</label>
                                 <div class="col-md-8">
-                                  <input class="form-control" type="password" placeholder="*******" required="" id="contraseña">
+                                  <input class="form-control" type="password" placeholder="*******" id="editcontraseña" >
                                 </div>
                               </div>
                               <div class="form-group">
                                 <label class="col-md-4 control-label">Confirmar contraseña:</label>
                                 <div class="col-md-8">
-                                  <input class="form-control" type="password" placeholder="*******" required="" id="ccontraseña">
+                                  <input class="form-control" type="password" placeholder="*******"id="editccontraseña">
                                 </div>
                               </div>
                               <div class="form-group">
                                 <label class="col-md-3 control-label"></label>
                                 <div class="col-md-8">
-                                  <input type="submit" class="btn btn-primary"  id="cambios" value="Guardar cambios">
+                                  <input type="submit" class="btn btn-primary"  id="cambios" value="Guardar cambios"> 
                                   <span></span>
                                 </div>
                               </div>
@@ -174,10 +176,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <!--Script para deslisar el chat-->
-    <script type="text/javascript" src="js/Chat.js">
-    </script>
+     <script type="text/javascript">
+       function validar(){
+        if (form.editcontraseña.value==''|| form.editccontraseña.value=='') 
+        {
+          $(editcontraseña).css("border","1px solid red");$(editccontraseña).css("border","1px solid red");return false
+        }
+        if (form.editcontraseña.value!=form.editccontraseña.value) {alert('La contraseñas no coinciden');
+        $(editcontraseña).css("border","1px solid lightgray");$(editccontraseña).css("border","1px solid lightgray");return false}
+        else
+          return true;
+       }
 
+       $('#cambios').click(function()
+       {
+        if(isNaN($("#edittel").val())) 
+            {  
+                $(edittel).val("");
+                $(edittel).attr("placeholder","El teléfono solo debe contener números");
+                
+            }
+
+       });
+     </script>
+    <!--Script para deslisar el chat-->
+    <script type="text/javascript" src="js/Chat.js"></script>
     <!--chat de jona-->
     <script type="text/javascript">
     $(function() 
@@ -210,16 +233,9 @@
         $('ol').append(control).scrollTop($('ol').prop('scrollHeight'));
         $('#txtMsg').val('');
     }
-
-    
-    <script type="text/javascript" src="js/validar_registro.js"></script>
-    <script type="text/javascript" src="js/validar.js"></script>
-    
-
-    
-
+  </script>    
 <script type="text/javascript">
-  $(function() 
+    $(function() 
   {
       
     $('#avatar1').click(function()
@@ -260,9 +276,7 @@
     });
 
   });  
-
 </script>
-
 
 
 
