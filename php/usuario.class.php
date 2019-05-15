@@ -88,7 +88,7 @@
 				$stmt = $this->conexion->prepare('SELECT contrasena,status FROM alumno WHERE correo_electronico = :correo');
 				$stmt->bindParam(':correo', $email);
 	    		$stmt->execute();
-	    		$res = $stmt->fetch();
+	    		$res = $stmt->fetch(PDO::FETCH_ASSOC);
 	    		if($this->password->verify($contrasena,$res['contrasena']))
 	    		{
 	    			if($res['status'] == 1)

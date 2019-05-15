@@ -70,10 +70,19 @@
                                <div class="row">
                                 <!-- columna izquierda -->
                                   <div class="col-md-5">
-                                    <div class="text-center">
-                                      <img src='<?php echo $avatar; ?>'width="100" height="100" class="avatar rounded-circle" alt="avatar" id="imgPerfil"><br><br>
-                                      <input type="file" name="" accept="image/jpeg">
-                                    </div>
+                                    <form method="post" action="#" enctype="multipart/form-data">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top" src="<?php echo $avatar; ?>" id="imgPerfil">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Cambiar foto de perfil</h5>
+                                                <div class="form-group">
+                                                    <label for="image">Seleccionar nueva imagen:</label>
+                                                    <input type="file" class="form-control-file" name="image" id="image">
+                                                </div>
+                                                <button class="btn btn-primary upload float-right" disabled="disabled">Subir <i class="fas fa-upload"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
                                     <div>
                                        <table class="table">
                                         <br>
@@ -200,82 +209,86 @@
        });
      </script>
     <!--Script para deslisar el chat-->
-    <script type="text/javascript" src="js/Chat.js"></script>
-    <!--chat de jona-->
+    <script type="text/javascript" src="js/Chat.js"></script>  
     <script type="text/javascript">
     $(function() 
-    {
-        $('#enviar').click(function(event)
+      {
+
+        $("#image").change(function()
         {
-            if(!$('#txtMsg').val() == '')
-            {
-                insertarChat($('#txtMsg').val())
-            }
+          $(".upload").prop("disabled", this.files.length == 0);
         });
 
-        $('#txtMsg').keydown(function(event) {
-            /* Act on the event */
-            if(event.which == 13)
-            {
-                if(!$('#txtMsg').val() == '')
+          
+        $(".upload").on('click', function()
+        {
+          var formData = new FormData();
+          var files = $('#image')[0].files[0];
+          formData.append('file',files);
+         
+            $.ajax
+            ({
+                url: 'php/subirFoto.php',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function(data) 
                 {
-                    insertarChat($('#txtMsg').val())
-                }    
-            }
+                  console.log(data);
+                    if (data.status == 'ok') 
+                    {
+                        $(".card-img-top").attr("src", data.src);
+                        alert("Se ha actualizado correctamente la imagen de perfil.");
+                    } 
+                    else 
+                    {
+                        alert("Ha ocurrido un error al actualizar la imagen de perfil.");
+                    }
+                }
+            });
+          
+        return false;
+    });
+
+        $('#avatar1').click(function()
+        {
+            var avatar = $('#avatar1').attr('src');
+            $('#imgPerfil').attr('src',avatar);
         });
-    });
-
-    function insertarChat(texto)
-    {
-        var date = '2019-01-28 16:26:07'
-        var control = '<li style="width:100%;">'+'<div class="msj-rta macro">'+'<div class="text text-r">'+'<p>'+texto+'</p>'+'<p><small>'+date+'</small></p>'+'</div>' +'</li>';
-
-        $('ol').append(control).scrollTop($('ol').prop('scrollHeight'));
-        $('#txtMsg').val('');
-    }
-  </script>    
-<script type="text/javascript">
-    $(function() 
-  {
-      
-    $('#avatar1').click(function()
-    {
-        var avatar = $('#avatar1').attr('src');
-        $('#imgPerfil').attr('src',avatar);
-    });
 
 
-    $('#avatar2').click(function()
-    {
-        var avatar = $('#avatar2').attr('src');
-        $('#imgPerfil').attr('src',avatar);
-    });
+        $('#avatar2').click(function()
+        {
+            var avatar = $('#avatar2').attr('src');
+            $('#imgPerfil').attr('src',avatar);
+        });
 
-    $('#avatar3').click(function()
-    {
-        var avatar = $('#avatar3').attr('src');
-        $('#imgPerfil').attr('src',avatar);
-    });
+        $('#avatar3').click(function()
+        {
+            var avatar = $('#avatar3').attr('src');
+            $('#imgPerfil').attr('src',avatar);
+        });
 
-    $('#avatar4').click(function()
-    {
-        var avatar = $('#avatar4').attr('src');
-        $('#imgPerfil').attr('src',avatar);
-    });
+        $('#avatar4').click(function()
+        {
+            var avatar = $('#avatar4').attr('src');
+            $('#imgPerfil').attr('src',avatar);
+        });
 
-    $('#avatar5').click(function()
-    {
-        var avatar = $('#avatar5').attr('src');
-        $('#imgPerfil').attr('src',avatar);
-    });
+        $('#avatar5').click(function()
+        {
+            var avatar = $('#avatar5').attr('src');
+            $('#imgPerfil').attr('src',avatar);
+        });
 
-    $('#avatar6').click(function()
-    {
-        var avatar = $('#avatar6').attr('src');
-        $('#imgPerfil').attr('src',avatar);
-    });
+        $('#avatar6').click(function()
+        {
+            var avatar = $('#avatar6').attr('src');
+            $('#imgPerfil').attr('src',avatar);
+        });
 
-  });  
+      });  
 </script>
 
 
