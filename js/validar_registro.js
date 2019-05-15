@@ -125,7 +125,7 @@ $('#registrar').click(function()
                         success:function(data)
                         {
                             //Alerta de retroalimentacion
-                            $('#mdlBody').append(data.msg+"<br>Se ha enviado un correo electrónico");
+                            $('#mdlBody').html('').append(data.msg);
                             $('#modalRetro').modal({show: true});
                         },
                         error:function(error)
