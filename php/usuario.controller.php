@@ -67,7 +67,9 @@
 								$session = new Session();
 								$session->setSession('id',$usr['id_alumno']);
 								$session->setSession('nombre',$usr['nombre_completo']);
-								$session->setSession('avatar',$usr['avatar']);	
+								$session->setSession('avatar',$usr['avatar']);
+								$session->setSession('correo',$usr['correo_electronico']);
+								$session->setSession('telefono',$usr['numero_contacto']);		
 								break;
 							case 1:
 								$response['status'] = 'error';

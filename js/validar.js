@@ -15,7 +15,8 @@ function validar(e){
     }
 }
 function validar(s){
-  if ($('#contraseña').val()!=$('#ccontraseña').val()) {
+  if ($('#contraseña').val()!=$('#ccontraseña').val())
+  {
       swal({
         title: "La contraseñas no coinciden",
           text: "por favor vuelva a introducir las contraseñas",

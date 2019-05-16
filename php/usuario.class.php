@@ -115,7 +115,7 @@
 
 		public function obtenerDatosUsuario($email)
 		{
-			$stmt = $this->conexion->prepare("SELECT id_alumno, nombre_completo,avatar FROM alumno WHERE correo_electronico = :correo");
+			$stmt = $this->conexion->prepare("SELECT id_alumno, nombre_completo, avatar, correo_electronico, numero_contacto FROM alumno WHERE correo_electronico = :correo");
 			$stmt->bindParam(':correo', $email);
 	    	$stmt->execute();
 	    	$res = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -343,9 +343,6 @@
 	    	$res = $stmt->fetch(PDO::FETCH_ASSOC);
 	    	return $res;
 		}
-
-
-
 
 		public function insertarAlumnoClase()
 		{
