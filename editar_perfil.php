@@ -70,10 +70,19 @@
                                <div class="row">
                                 <!-- columna izquierda -->
                                   <div class="col-md-5">
-                                    <div class="text-center">
-                                      <img src='<?php echo $avatar; ?>'width="100" height="100" class="avatar rounded-circle" alt="avatar" id="imgPerfil"><br><br>
-                                      <input type="file" name="" accept="image/jpeg">
-                                    </div>
+                                    <form method="post" action="#" enctype="multipart/form-data">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top" src="<?php echo $avatar; ?>" id="imgPerfil">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Cambiar foto de perfil</h5>
+                                                <div class="form-group">
+                                                    <label for="image">Seleccionar nueva imagen:</label>
+                                                    <input type="file" class="form-control-file" name="image" id="image">
+                                                </div>
+                                                <button class="btn btn-primary upload float-right" disabled="disabled">Subir <i class="fas fa-upload"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
                                     <div>
                                        <table class="table">
                                         <br>
@@ -119,36 +128,43 @@
                                   </div>
                                 <!-- columna para formulario de editar -->
                                   <div class="col-md-7 personal-info">
+
                               
-                            <form class="form-horizontal" role="form" id="form-cambios">
+                                                              
+                            <form class="form-horizontal" role="form" method="post" onsubmit="return validar()"
+                            name="form">
+
                               <div class="form-group">
                                 <label class="col-lg-4 control-label">Número de contacto:</label>
                                 <div class="col-lg-8">
-                                  <input class="form-control" type="text" value="" placeholder="Celular o Fijo">
+                                  <input class="form-control" type="tel" value="" placeholder="Celular o Fijo" maxlength="10" id="edittel">
+                                  
                                 </div>
                               </div>
                               <div class="form-group">
                                 <label class="col-lg-3 control-label">Correo:</label>
                                 <div class="col-lg-8">
-                                  <input class="form-control" type="text" placeholder="Ejemplo: Juan2@mail.com">
+                                  <input class="form-control" type="email" placeholder="Ejemplo: Juan2@mail.com" id="mailedit">
                                 </div>
                               </div>
                               <div class="form-group">
                                 <label class="col-md-3 control-label">Contraseña:</label>
                                 <div class="col-md-8">
-                                  <input class="form-control" type="password" placeholder="*******" required="" id="contraseña">
+                                  <input class="form-control" type="password" placeholder="*******" id="editcontraseña" >
                                 </div>
                               </div>
                               <div class="form-group">
                                 <label class="col-md-4 control-label">Confirmar contraseña:</label>
                                 <div class="col-md-8">
-                                  <input class="form-control" type="password" placeholder="*******" required="" id="ccontraseña">
+                                  <input class="form-control" type="password" placeholder="*******"id="editccontraseña">
                                 </div>
                               </div>
                               <div class="form-group">
                                 <label class="col-md-3 control-label"></label>
                                 <div class="col-md-8">
-                                  <input type="button" class="btn btn-primary pull-right"  id="cambios" value="Guardar cambios">
+                                  <button type="button" class="btn btn-primary float-right" id="cambios"><i class="far fa-save"></i>
+                                    Guardar
+                                  </button>
                                   <span></span>
                                 </div>
                               </div>
@@ -178,18 +194,43 @@
     <script type="text/javascript" src="js/validar.js"></script>
     </script>
 
-    <!--chat de jona-->
-    <script type="text/javascript">
-    /*$(function() 
+     <script type="text/javascript">
+       function validar()
+       {
+        if (form.editcontraseña.value==''|| form.editccontraseña.value=='') 
+        {
+          $(editcontraseña).css("border","1px solid red");$(editccontraseña).css("border","1px solid red");return false
+        }
+        if (form.editcontraseña.value!=form.editccontraseña.value) {alert('La contraseñas no coinciden');
+        $(editcontraseña).css("border","1px solid lightgray");$(editccontraseña).css("border","1px solid lightgray");return false}
+        else
+          return true;
+       }
+
+       $('#cambios').click(function()
+       {
+        if(isNaN($("#edittel").val())) 
+            {  
+                $(edittel).val("");
+                $(edittel).attr("placeholder","El teléfono solo debe contener números");
+                
+            }
+
+       });
+         /*$(function() 
     {
         $('#enviar').click(function(event)
+=======
+    $(function() 
+      {
+
+        $("#image").change(function()
+>>>>>>> cb1b8ebb4af918054cbfe484fdab510e4873a576
         {
-            if(!$('#txtMsg').val() == '')
-            {
-                insertarChat($('#txtMsg').val())
-            }
+          $(".upload").prop("disabled", this.files.length == 0);
         });
 
+<<<<<<< HEAD
         $('#txtMsg').keydown(function(event) {
             
             if(event.which == 13)
@@ -213,48 +254,82 @@
 
   $(function() 
   {
-      
-    $('#avatar1').click(function()
-    {
-        var avatar = $('#avatar1').attr('src');
-        $('#imgPerfil').attr('src',avatar);
-    });
+      $("#image").change(function()
+      {
+        $(".upload").prop("disabled", this.files.length == 0);
+      });
+  
+        $(".upload").on('click', function()
+        {
+          var formData = new FormData();
+          var files = $('#image')[0].files[0];
+          formData.append('file',files);
+         
+            $.ajax
+            ({
+                url: 'php/subirFoto.php',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function(data) 
+                {
+                  console.log(data);
+                    if (data.status == 'ok') 
+                    {
+                        $(".card-img-top").attr("src", data.src);
+                        alert("Se ha actualizado correctamente la imagen de perfil.");
+                    } 
+                    else 
+                    {
+                        alert("Ha ocurrido un error al actualizar la imagen de perfil.");
+                    }
+                }
+            });
+          
+        return false;
+
+        });
+
+        $('#avatar1').click(function()
+        {
+            var avatar = $('#avatar1').attr('src');
+            $('#imgPerfil').attr('src',avatar);
+        });
 
 
-    $('#avatar2').click(function()
-    {
-        var avatar = $('#avatar2').attr('src');
-        $('#imgPerfil').attr('src',avatar);
-    });
+        $('#avatar2').click(function()
+        {
+            var avatar = $('#avatar2').attr('src');
+            $('#imgPerfil').attr('src',avatar);
+        });
 
-    $('#avatar3').click(function()
-    {
-        var avatar = $('#avatar3').attr('src');
-        $('#imgPerfil').attr('src',avatar);
-    });
+        $('#avatar3').click(function()
+        {
+            var avatar = $('#avatar3').attr('src');
+            $('#imgPerfil').attr('src',avatar);
+        });
 
-    $('#avatar4').click(function()
-    {
-        var avatar = $('#avatar4').attr('src');
-        $('#imgPerfil').attr('src',avatar);
-    });
+        $('#avatar4').click(function()
+        {
+            var avatar = $('#avatar4').attr('src');
+            $('#imgPerfil').attr('src',avatar);
+        });
 
-    $('#avatar5').click(function()
-    {
-        var avatar = $('#avatar5').attr('src');
-        $('#imgPerfil').attr('src',avatar);
-    });
+        $('#avatar5').click(function()
+        {
+            var avatar = $('#avatar5').attr('src');
+            $('#imgPerfil').attr('src',avatar);
+        });
 
-    $('#avatar6').click(function()
-    {
-        var avatar = $('#avatar6').attr('src');
-        $('#imgPerfil').attr('src',avatar);
-    });
+        $('#avatar6').click(function()
+        {
+            var avatar = $('#avatar6').attr('src');
+            $('#imgPerfil').attr('src',avatar);
+        });
 
-  });  
-
+      });  
 </script>
-
 
 
 
