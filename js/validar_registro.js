@@ -241,27 +241,3 @@ $('#btnLogin').click(function()
             }
     }
 });
-
-$('#cambios').click(function()
-{
-    if ($('#contraseña').val()=='')
-    {
-        $(contraseña).css("border","1px solid red");
-        $(contraseña).attr("placeholder","Escriba su contraseña");
-    }
-    else
-    {
-        $(contraseña).css("border","1px solid lightgray");
-    }
-     
-    if ($('#ccontraseña').val()=='')
-    {
-        $(ccontraseña).css("border","1px solid red");
-        $(ccontraseña).attr("placeholder","Escriba su contraseña");
-    }
-    else
-    {
-        $(ccontraseña).css("border","1px solid lightgray");
-    }
-
-});

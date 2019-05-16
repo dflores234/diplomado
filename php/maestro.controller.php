@@ -55,7 +55,7 @@
 			break;
 
 			case 'iniciar':
-							$resultado = $maestro->iniciarSesion($_REQUEST['correo'],$_REQUEST['contrasena']);
+							$resultado = $maestro->iniciarSesionMaestros($_REQUEST['correo'],$_REQUEST['contrasena']);
 							switch ($resultado) 
 							{
 								case 0:

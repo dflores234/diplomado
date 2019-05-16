@@ -77,7 +77,7 @@
 			return $stmt->rowCount() > 0;
 	    }
 
-	    public function iniciarSesion($email,$contrasena)
+	    public function iniciarSesionMaestros($email,$contrasena)
 		{
 			if ($this->existeMaestro($email)) 
 			{

@@ -36,6 +36,7 @@
 							<img src="img/Avatar.png">
 						</div>
             <div>
+              <form>
                 <div class="col-12">
                   <div class="form-group " id="user-group">
                     <input type="text" placeholder="Correo electrónico" class="form-control" id="correo" required="">
@@ -52,6 +53,7 @@
                     <label class="custom-control-label" for="customSwitches" style="color: white;">Alumno/Maestro</label>
                   </div>
                 </div>
+              </form>
             </div>
 					
 						<div class="col-12 cuenta">
@@ -77,7 +79,7 @@
       <div class="modal-header">
         <h5 class="modal-title" id="modalTitle">Diplomado Nuevo Laredo 4.0</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true" style="margin-left: 200px">&times;</span>
         </button>
       </div>
       <div class="modal-body" id="mdlBody">
