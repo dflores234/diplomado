@@ -23,7 +23,7 @@
 	<tr>
 		<td style="background-color: #ecf0f1">
 			<div style="color: #34495e; margin: 4% 10% 2%; text-align: justify;font-family: sans-serif">
-				<h2 style="color: #e67e22; margin: 0 0 7px">Hola, {usuario},</h2>
+				<h2 style="color: #e67e22; margin: 0 0 7px">Hola,{usuario},</h2>
 				<p style="margin: 2px; font-size: 15px">
 					Bienvenido y gracias por registrarte en el Diplomado 4.0 Nuevo Laredo<br>
 					Tu registro fue realizado con éxito.<br>

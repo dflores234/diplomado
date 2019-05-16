@@ -64,7 +64,7 @@
                 <!--Fin menu-->
                         <div>
                            <div class="container">
-                              <h1 class="text-left">
+                              <h1 class="text-center">
                                 Editar Perfil
                               </h1><hr>
                                <div class="row">
@@ -119,12 +119,10 @@
                                   </div>
                                 <!-- columna para formulario de editar -->
                                   <div class="col-md-7 personal-info">
-                                    <h3>
-                                      Informacion personal
-                                    </h3>
+                              
                             <form class="form-horizontal" role="form" id="form-cambios">
                               <div class="form-group">
-                                <label class="col-lg-4 control-label">Numero de contacto:</label>
+                                <label class="col-lg-4 control-label">Número de contacto:</label>
                                 <div class="col-lg-8">
                                   <input class="form-control" type="text" value="" placeholder="Celular o Fijo">
                                 </div>
@@ -150,7 +148,7 @@
                               <div class="form-group">
                                 <label class="col-md-3 control-label"></label>
                                 <div class="col-md-8">
-                                  <input type="submit" class="btn btn-primary"  id="cambios" value="Guardar cambios">
+                                  <input type="button" class="btn btn-primary pull-right"  id="cambios" value="Guardar cambios">
                                   <span></span>
                                 </div>
                               </div>
@@ -175,12 +173,14 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <!--Script para deslisar el chat-->
-    <script type="text/javascript" src="js/Chat.js">
+    <script type="text/javascript" src="js/Chat.js"></script>
+    <script type="text/javascript" src="js/validar_registro.js"></script>
+    <script type="text/javascript" src="js/validar.js"></script>
     </script>
 
     <!--chat de jona-->
     <script type="text/javascript">
-    $(function() 
+    /*$(function() 
     {
         $('#enviar').click(function(event)
         {
@@ -191,7 +191,7 @@
         });
 
         $('#txtMsg').keydown(function(event) {
-            /* Act on the event */
+            
             if(event.which == 13)
             {
                 if(!$('#txtMsg').val() == '')
@@ -199,26 +199,18 @@
                     insertarChat($('#txtMsg').val())
                 }    
             }
-        });
-    });
+     //   });
+   // });
 
-    function insertarChat(texto)
+   /* function insertarChat(texto)
     {
         var date = '2019-01-28 16:26:07'
         var control = '<li style="width:100%;">'+'<div class="msj-rta macro">'+'<div class="text text-r">'+'<p>'+texto+'</p>'+'<p><small>'+date+'</small></p>'+'</div>' +'</li>';
 
         $('ol').append(control).scrollTop($('ol').prop('scrollHeight'));
         $('#txtMsg').val('');
-    }
+    }*/
 
-    
-    <script type="text/javascript" src="js/validar_registro.js"></script>
-    <script type="text/javascript" src="js/validar.js"></script>
-    
-
-    
-
-<script type="text/javascript">
   $(function() 
   {
       

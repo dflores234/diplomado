@@ -46,42 +46,47 @@ $('#carreras').change(function(event)
 function recuperarContrasena()
 {
 	if($('#rpemail').val() == "")
-            {
+  {
                 $('#rpemail').addClass('border border-danger');
                 $('#repemail').attr('placeholder', 'Escriba su correo electrónico...');
-            }else
+  }
+  else
+  {
+     $('#rpemail').removeClass('border border-danger');
+              
+        $.ajax
+        ({
+           
+          url: 'php/usuario.controller.php',
+          type: 'POST',
+          dataType: 'JSON',
+          data: {opcion: 'recuperar',correo: $('#rpemail').val()},
+          beforeSend: function(data)
+          {
+            $('#btnRecuperarContrasena').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
+          },
+          success: function(data)
+          {
+          
+            if(data.status == 'ok')
             {
-              $('#rpemail').removeClass('border border-danger');
-               $.ajax
-                  ({
-                    url: 'php/usuario.controller.php',
-                    type: 'POST',
-                    dataType: 'JSON',
-                    data: {opcion: 'recuperar',correo: $('#rpemail').val()},
-                    beforeSend: function(data)
-                    {
-                        $('#btnRecuperarContrasena').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');
-                    },
-                    success: function(data)
-                    {
-                      if(data.status == 'ok')
-                      {
-                        console.log(data.otro);
-                        $('#msg').html('').append(data.msg);
-                        $('#rpemail').val('');
+              console.log(data.otro);
+              $('#msg').html('').append(data.msg);
+              $('#rpemail').val('');
 
-                      }else
-                      {
-                        console.log(data.msg);
-                        $('#msg').html('').append(data.msg);
-                      }
-                    },
-                    error: function(error)
-                    {
-                      console.log(error);
-                    }
-                  });
             }
+            else
+            {
+              console.log(data.msg);
+              $('#msg').html('').append(data.msg);
+            }
+          },
+          error: function(error)
+          {
+            console.log(error);
+          }
+        });
+  }
 
 
             setTimeout(function()

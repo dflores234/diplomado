@@ -123,8 +123,7 @@
 					$response['status'] = 'ok';
 					$response['msg'] = "Se ha activado la cuenta";
 					//Enviar correo de cuenta activa
-					$usuario->enviarCorreo($datos['correo_electronico'],'../plantillas/activacion.tpl',$response['msg'],$datos['nombre_completo']);
-					//Insertar en clase
+					$response['otro'] = $usuario->enviarCorreo($datos['correo_electronico'],'../plantillas/activacion.tpl',$response['msg'],$datos['nombre_completo']);
 				} else 
 				{
 					$response['status'] = 'error';
