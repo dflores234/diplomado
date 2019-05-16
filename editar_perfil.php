@@ -64,7 +64,7 @@
                 <!--Fin menu-->
                         <div>
                            <div class="container">
-                              <h1 class="text-left">
+                              <h1 class="text-center">
                                 Editar Perfil
                               </h1><hr>
                                <div class="row">
@@ -128,13 +128,14 @@
                                   </div>
                                 <!-- columna para formulario de editar -->
                                   <div class="col-md-7 personal-info">
-                                    <h3>
-                                      Informacion personal
-                                    </h3>
+
+                              
+                                                              
                             <form class="form-horizontal" role="form" method="post" onsubmit="return validar()"
                             name="form">
+
                               <div class="form-group">
-                                <label class="col-lg-4 control-label">Numero de contacto:</label>
+                                <label class="col-lg-4 control-label">Número de contacto:</label>
                                 <div class="col-lg-8">
                                   <input class="form-control" type="tel" value="" placeholder="Celular o Fijo" maxlength="10" id="edittel">
                                   
@@ -161,7 +162,9 @@
                               <div class="form-group">
                                 <label class="col-md-3 control-label"></label>
                                 <div class="col-md-8">
-                                  <input type="submit" class="btn btn-primary"  id="cambios" value="Guardar cambios"> 
+                                  <button type="button" class="btn btn-primary float-right" id="cambios"><i class="far fa-save"></i>
+                                    Guardar
+                                  </button>
                                   <span></span>
                                 </div>
                               </div>
@@ -185,8 +188,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
+    <!--Script para deslisar el chat-->
+    <script type="text/javascript" src="js/Chat.js"></script>
+    <script type="text/javascript" src="js/validar_registro.js"></script>
+    <script type="text/javascript" src="js/validar.js"></script>
+    </script>
+
      <script type="text/javascript">
-       function validar(){
+       function validar()
+       {
         if (form.editcontraseña.value==''|| form.editccontraseña.value=='') 
         {
           $(editcontraseña).css("border","1px solid red");$(editccontraseña).css("border","1px solid red");return false
@@ -207,19 +217,48 @@
             }
 
        });
-     </script>
-    <!--Script para deslisar el chat-->
-    <script type="text/javascript" src="js/Chat.js"></script>  
-    <script type="text/javascript">
+         /*$(function() 
+    {
+        $('#enviar').click(function(event)
+=======
     $(function() 
       {
 
         $("#image").change(function()
+>>>>>>> cb1b8ebb4af918054cbfe484fdab510e4873a576
         {
           $(".upload").prop("disabled", this.files.length == 0);
         });
 
-          
+<<<<<<< HEAD
+        $('#txtMsg').keydown(function(event) {
+            
+            if(event.which == 13)
+            {
+                if(!$('#txtMsg').val() == '')
+                {
+                    insertarChat($('#txtMsg').val())
+                }    
+            }
+     //   });
+   // });
+
+   /* function insertarChat(texto)
+    {
+        var date = '2019-01-28 16:26:07'
+        var control = '<li style="width:100%;">'+'<div class="msj-rta macro">'+'<div class="text text-r">'+'<p>'+texto+'</p>'+'<p><small>'+date+'</small></p>'+'</div>' +'</li>';
+
+        $('ol').append(control).scrollTop($('ol').prop('scrollHeight'));
+        $('#txtMsg').val('');
+    }*/
+
+  $(function() 
+  {
+      $("#image").change(function()
+      {
+        $(".upload").prop("disabled", this.files.length == 0);
+      });
+  
         $(".upload").on('click', function()
         {
           var formData = new FormData();
@@ -249,7 +288,8 @@
             });
           
         return false;
-    });
+
+        });
 
         $('#avatar1').click(function()
         {

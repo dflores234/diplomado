@@ -389,6 +389,7 @@
                     if(data.status == 'ok')
                     {
                       alert(data.msg);
+                      console.log(data.otro);
                       listarCuentas();
                     }else
                     {

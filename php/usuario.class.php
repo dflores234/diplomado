@@ -338,7 +338,7 @@
 		public function obtenerNombreCorreo($id)
 		{
 			$stmt = $this->conexion->prepare("SELECT nombre_completo, correo_electronico FROM alumno WHERE id_alumno = :id");
-			$stmt->bindParam(':id', $email);
+			$stmt->bindParam(':id', $id);
 	    	$stmt->execute();
 	    	$res = $stmt->fetch(PDO::FETCH_ASSOC);
 	    	return $res;
