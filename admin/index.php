@@ -189,32 +189,29 @@
                           
                         </tbody>
                       </table>
-<div class="form-group">
-    <input type="button" class="btn btn-success float-right"  id="" value="Guardar asistencia"><span></span>
-</div>
-
-
-<div class="table-responsive">
-  <br>
-  <br>
-  <br>
-      <table class="table table-striped text-center table-sm ">
-                        <thead>
-                          <tr class="bg-info">
-                            <th style="width: 50px">#</th>
-                            <th style="width: 50px">Clase</th>
-                            <th style="width: 50px;">Alumno</th>
-                            <th style="width: 50px">Fecha</th>
-                            <th style="width: 50px">Asistencia</th>
-                          </tr>
-                        </thead>
-                        <tbody id="lista2">
-                          
-                        </tbody>
-      </table>
-</div>
-                    
+      <div class="form-group">
+          <input type="button" class="btn btn-success float-right"  id="btnGuardarAsistencia" value="Guardar asistencia"><span></span>
+      </div>
+    <div class="table-responsive">
+      <br>
+      <br>
+      <br>
+          <table class="table table-striped text-center table-sm ">
+            <thead>
+              <tr class="bg-info">
+                <th style="width: 50px">#</th>
+                <th style="width: 50px">Clase</th>
+                <th style="width: 50px;">Alumno</th>
+                <th style="width: 50px">Fecha</th>
+                <th style="width: 50px">Asistencia</th>
+              </tr>
+            </thead>
+            <tbody id="lista2"></tbody>
+          </table>
+    </div>              
   </div>
+ 
+
   <div class="tab-pane" id="settings" role="tabpanel">
     <br>
                 <div class="form-group" style="display: inline-block;width: 200px">
@@ -414,41 +411,40 @@
             
       $('#btnGuardarMaestro').click(function(event)
       {
-        
-        var datos_maestro =
-        {
-                nombre: $('#txtnombreMaestro').val(),
-                apellido: $('#txtapellidoMaestro').val(),
-                correo: $('#txtcorreoMaestro').val(),
-                contacto: $('#txttelefonoMaestro').val(),
-                contrasena: $('#txtccontraseñaMaestro').val(),
-                modulo: $('#modulos').val()
-        };
-            $.ajax({
-                        type: 'POST',
-                        data:{ datos:JSON.stringify(datos_maestro), opcion:'registrar'},
-                        url:'../php/maestro.controller.php',
-                        dataType: 'json',
-                        beforeSend: function(data)
-                        {
-
-                            //Loader de registro
-                            /*$('#registrar').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');*/
-                        },
-                        success:function(data)
-                        {
-                            //Alerta de retroalimentacion
-                           /* $('#mdlBody').append(data.msg+"<br>Se ha enviado un correo electrónico");
-                            $('#modalRetro').modal({show: true});*/
-                            console.log(data);
-                        },
-                        error:function(error)
-                        {
-                            //Alerta de error
-                            console.log(error);
-                        }
-                });
-      });
+          var datos_maestro =
+          {
+                  nombre: $('#txtnombreMaestro').val(),
+                  apellido: $('#txtapellidoMaestro').val(),
+                  correo: $('#txtcorreoMaestro').val(),
+                  contacto: $('#txttelefonoMaestro').val(),
+                  contrasena: $('#txtccontraseñaMaestro').val(),
+                  modulo: $('#modulos').val()
+          };
+        $.ajax
+        ({
+            type: 'POST',
+            data:{ datos:JSON.stringify(datos_maestro), opcion:'registrar'},
+            url:'../php/maestro.controller.php',
+            dataType: 'json',
+            beforeSend: function(data)
+            {
+              //Loader de registro
+              /*$('#registrar').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');*/
+            },
+            success:function(data)
+            {
+              //Alerta de retroalimentacion
+              /* $('#mdlBody').append(data.msg+"<br>Se ha enviado un correo electrónico");
+              $('#modalRetro').modal({show: true});*/
+              console.log(data);
+            },
+            error:function(error)
+            {
+              //Alerta de error
+               console.log(error);
+            }
+        });
+    });
 
 
 

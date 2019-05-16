@@ -8,6 +8,8 @@
   {
     $avatar = $session->getSession('avatar');
     $nombre = $session->getSession('nombre');
+    $tel = $session->getSession('telefono');
+    $correo = $session->getSession('correo');
   }
   else 
   {
@@ -131,20 +133,18 @@
 
                               
                                                               
-                            <form class="form-horizontal" role="form" method="post" onsubmit="return validar()"
-                            name="form">
-
+                            <div class="form-horizontal" role="form" method="post" name="form">
                               <div class="form-group">
                                 <label class="col-lg-4 control-label">Número de contacto:</label>
                                 <div class="col-lg-8">
-                                  <input class="form-control" type="tel" value="" placeholder="Celular o Fijo" maxlength="10" id="edittel">
+                                  <input class="form-control" type="tel" value="<?php echo $tel; ?>" placeholder="Celular o Fijo" maxlength="10" id="edittel">
                                   
                                 </div>
                               </div>
                               <div class="form-group">
                                 <label class="col-lg-3 control-label">Correo:</label>
                                 <div class="col-lg-8">
-                                  <input class="form-control" type="email" placeholder="Ejemplo: Juan2@mail.com" id="mailedit">
+                                  <input class="form-control" type="email" placeholder="Ejemplo: Juan2@mail.com" id="mailedit" value="<?php echo $correo; ?>">
                                 </div>
                               </div>
                               <div class="form-group">
@@ -156,7 +156,7 @@
                               <div class="form-group">
                                 <label class="col-md-4 control-label">Confirmar contraseña:</label>
                                 <div class="col-md-8">
-                                  <input class="form-control" type="password" placeholder="*******"id="editccontraseña">
+                                  <input class="form-control" type="password" placeholder="*******" id="editccontraseña">
                                 </div>
                               </div>
                               <div class="form-group">
@@ -168,7 +168,7 @@
                                   <span></span>
                                 </div>
                               </div>
-                            </form>
+                            </div>
                           </div>
                       </div>
                     </div>
@@ -195,68 +195,43 @@
     </script>
 
      <script type="text/javascript">
-       function validar()
-       {
-        if (form.editcontraseña.value==''|| form.editccontraseña.value=='') 
-        {
-          $(editcontraseña).css("border","1px solid red");$(editccontraseña).css("border","1px solid red");return false
-        }
-        if (form.editcontraseña.value!=form.editccontraseña.value) {alert('La contraseñas no coinciden');
-        $(editcontraseña).css("border","1px solid lightgray");$(editccontraseña).css("border","1px solid lightgray");return false}
-        else
-          return true;
-       }
+     $(function() 
+    { 
+         function validar()
+         {
+            if ($('#editcontraseña').val()==''|| $('#editccontraseña').val()=='') 
+            {
+              $(editcontraseña).css("border","1px solid red");$(editccontraseña).css("border","1px solid red");return false
+            }
+            
+            if ($('#editcontraseña').val() != $('#editccontraseña').value()) 
+            { 
+              alert('La contraseñas no coinciden');
+              $(editcontraseña).css("border","1px solid lightgray");
+              $(editccontraseña).css("border","1px solid lightgray");
+                return false
+            }
+            else
+            {
+              return true;
+            }
+         }
 
-       $('#cambios').click(function()
-       {
-        if(isNaN($("#edittel").val())) 
+         $('#cambios').click(function()
+         {
+            validar();
+            if(isNaN($("#edittel").val())) 
             {  
                 $(edittel).val("");
-                $(edittel).attr("placeholder","El teléfono solo debe contener números");
-                
+                $(edittel).attr("placeholder","El teléfono solo debe contener números");  
             }
+         });
+         
 
-       });
-         /*$(function() 
-    {
-        $('#enviar').click(function(event)
-=======
-    $(function() 
-      {
-
-        $("#image").change(function()
->>>>>>> cb1b8ebb4af918054cbfe484fdab510e4873a576
-        {
-          $(".upload").prop("disabled", this.files.length == 0);
-        });
-
-<<<<<<< HEAD
-        $('#txtMsg').keydown(function(event) {
-            
-            if(event.which == 13)
-            {
-                if(!$('#txtMsg').val() == '')
-                {
-                    insertarChat($('#txtMsg').val())
-                }    
-            }
-     //   });
-   // });
-
-   /* function insertarChat(texto)
-    {
-        var date = '2019-01-28 16:26:07'
-        var control = '<li style="width:100%;">'+'<div class="msj-rta macro">'+'<div class="text text-r">'+'<p>'+texto+'</p>'+'<p><small>'+date+'</small></p>'+'</div>' +'</li>';
-
-        $('ol').append(control).scrollTop($('ol').prop('scrollHeight'));
-        $('#txtMsg').val('');
-    }*/
-
-  $(function() 
-  {
+  
       $("#image").change(function()
       {
-        $(".upload").prop("disabled", this.files.length == 0);
+          $(".upload").prop("disabled", this.files.length == 0);
       });
   
         $(".upload").on('click', function()
@@ -287,9 +262,9 @@
                 }
             });
           
-        return false;
-
+          return false;
         });
+
 
         $('#avatar1').click(function()
         {
@@ -330,6 +305,3 @@
 
       });  
 </script>
-
-
-
