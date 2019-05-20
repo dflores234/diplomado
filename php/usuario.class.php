@@ -180,12 +180,12 @@
 					//$mail->SMTPDebug = 2;
 					$mail->isSMTP();
 				// Los datos necesarios para enviar mediante SMTP
-					$mail->Host = 'smtp.gmail.com';
+					$mail->Host = 'mail.centroist.org';
 					$mail->SMTPAuth = true;
-					$mail->Username = 'codecampapp@gmail.com';
-					$mail->Password = '@Sefuerte365';
+					$mail->Username = 'contacto@centroist.org';
+					$mail->Password = 'C3ntro0.O2020';
 					$mail->SMTPSecure = 'tls';
-					$mail->Port = 587;
+					$mail->Port = 465;
 
 
 				// Asignamos el From y el FromName para que el destinatario sepa quien envía el correo
@@ -237,12 +237,12 @@
 					//$mail->SMTPDebug = 2;
 					$mail->isSMTP();
 				// Los datos necesarios para enviar mediante SMTP
-					$mail->Host = 'smtp.gmail.com';
+					$mail->Host = 'mail.centroist.org';
 					$mail->SMTPAuth = true;
-					$mail->Username = 'codecampapp@gmail.com';
-					$mail->Password = '@Sefuerte365';
+					$mail->Username = 'contacto@centroist.org';
+					$mail->Password = 'C3ntro0.O2020';
 					$mail->SMTPSecure = 'tls';
-					$mail->Port = 587;
+					$mail->Port = 465;
 
 
 				// Asignamos el From y el FromName para que el destinatario sepa quien envía el correo
