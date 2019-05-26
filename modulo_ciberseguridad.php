@@ -8,10 +8,10 @@
   {
     $avatar = $session->getSession('avatar');
     $nombre = $session->getSession('nombre');
-    if($session->getSession('id_modulo') !== $id)
+    /*if($session->getSession('id_modulo') !== $id)
     {
      header("Location: participante_index.php"); 
-    }
+    }*/
   }
   else 
   {
@@ -32,45 +32,17 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body>
-      <div id="wrapper" class="toggled">
-        <div id="sidebar-wrapper" class="">
-            <div class="col-sm-12 col-sm-offset-4 frame">
-            <ol id="chat">
-                <li style="width:90%">
-                    <div class="msj macro">
-                            <div class="text text-l">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                <p><small>2019-01-28 16:26:07</small></p>
-                            </div>
-                        </div>
-                    </li>
-            </ol>
-            <div>
-                <div class="msj-rta macro">                        
-                    <div class="text text-r" style="background:whitesmoke !important">
-                        <input class="mytext" placeholder="Escribe un mensaje..." id="txtMsg" />
-                    </div> 
+          <!--Menu-->
+             <?php include "header2.php" ?>
+          <!--Fin menu-->
+            <section class="main-section">
+        	      <div style="width: 500px;margin: 0 auto;">
+                      <h1>
+                        <img src="img/hacker_cyber_crime-512.png" width="70">CIBERSEGURIDAD 
+                      </h1>
                 </div>
-                <div style="padding:10px;">
-                    <span class="glyphicon glyphicon-share-alt" id="enviar"></span>
-                </div>              
-            </div>
-        </div>  
-        </div>
-        <div id="page-content-wrapper">
-            <div class="">
-              <div class="row">
-                <div class="col-lg-12">
-                  <!--Menu-->
-                    <?php include "header2.php" ?>
-                <!--Fin menu-->
-                <section class="main-section">
-    	             <div style="width: 500px;margin: 0 auto;">
-    		              <h1><img src="img/hacker_cyber_crime-512.png" width="70">CIBERSEGURIDAD </h1>
-    	             </div>
-                     <div id="accordion" role="tablist">
-                        <div class="card">
+                <div id="accordion" role="tablist">
+                    <div class="card">
                         <div class="card-header bg-white" role="tab" id="headingOne">
                           <h5 class="mb-0">
                             <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -102,7 +74,7 @@
                               </div> 
                           </div>
                         </div>
-                      </div>
+                      </div> 
                       <div class="card">
                         <div class="card-header bg-white" role="tab" id="headingTwo">
                           <h5 class="mb-0">
@@ -157,57 +129,14 @@
                               </div> 
                           </div>
                         </div>
-                    </div>
-
-                    </div>
-                  
-                </section>
-     </div>
-       </div>
-     </div>
-   </div>
-  </div>
-  <!-- Footer -->
-       <?php include 'footer.php'; ?>-
-</body>
-</html>
+                    </div>   
+                </div>     
+            </section>
+          <!-- Footer -->
+           <?php include 'footer.php'; ?>-
+    </body>
+  </html>
 
     <script src="js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-
-    <!--Script para el sidebar-->
-     <script type="text/javascript" src="js/Chat.js"></script>
-      <!--chat de jona-->
-    <script type="text/javascript">
-    $(function() 
-    {
-        $('#enviar').click(function(event)
-        {
-            if(!$('#txtMsg').val() == '')
-            {
-                insertarChat($('#txtMsg').val())
-            }
-        });
-
-        $('#txtMsg').keydown(function(event) {
-            /* Act on the event */
-            if(event.which == 13)
-            {
-                if(!$('#txtMsg').val() == '')
-                {
-                    insertarChat($('#txtMsg').val())
-                }    
-            }
-        });
-    });
-
-    function insertarChat(texto)
-    {
-        var date = '2019-01-28 16:26:07'
-        var control = '<li style="width:100%;">'+'<div class="msj-rta macro">'+'<div class="text text-r">'+'<p>'+texto+'</p>'+'<p><small>'+date+'</small></p>'+'</div>' +'</li>';
-
-        $('ol').append(control).scrollTop($('ol').prop('scrollHeight'));
-        $('#txtMsg').val('');
-    }
-</script>

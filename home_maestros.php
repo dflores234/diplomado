@@ -176,24 +176,24 @@
        				</div>
        				<div class="tab-pane" id="contenidoadd" role="tabpanel">
        					<br>
-       					<form class="form-horizontal" role="form">
-       						 <div class="form-group">
-					              <label class="col-lg-3 control-label">Nombre del articulo:</label>
-					              <div class="col-lg-6">
-					              <input class="form-control" type="text" placeholder="Introduzca aquí el nombre del artículo" id="txtNombreArt" required="required">
-					              </div>
+       					<form class="form-horizontal" role="form" onsubmit="return Validar()" name="form" method="POST">
+       						   <div class="form-group">
+  					              <label class="col-lg-3 control-label">Nombre del articulo:</label>
+  					              <div class="col-lg-6">
+  					              <input class="form-control" type="text" placeholder="Introduzca aquí el nombre del artículo" id="txtNombreArt" required="required">
+  					              </div>
             				</div>
-            				<div class="form-group">
-							    <label class="col-lg-3 control-label" for="Descripcion">Descripción:</label>
-							    <div class="col-lg-6">
-							    	<textarea class="form-control" id="txtDescArt" rows="3"></textarea>
-							    </div>  
-  							</div>
-  							<div class="form-group">
-					              <label class="col-lg-3 control-label">Link del artículo:</label>
-					              <div class="col-lg-6">
-					              <input class="form-control" type="text" placeholder="Introduzca aquí el link" id="txtLink" required="required">
-					              </div>
+            				  <div class="form-group">
+        							    <label class="col-lg-3 control-label" for="Descripcion">Descripción:</label>
+        							    <div class="col-lg-6">
+        							    	<textarea class="form-control" id="txtDescArt" rows="3"></textarea>
+        							    </div>  
+  							       </div>
+  							       <div class="form-group">
+  					              <label class="col-lg-3 control-label">Link del artículo:</label>
+  					              <div class="col-lg-6">
+  					              <input class="form-control" type="text" placeholder="Introduzca aquí el link" id="txtLink" required="required">
+					             </div>
             				</div>
             				<div class="form-group">
 					                <label class="col-md-2 control-label"></label>
@@ -221,7 +221,16 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-  $(function() 
+    function Validar(){
+        if (form.txtNombreArt.value=="" || form.txtDescArt.value=="" || form.txtLink.value=="") 
+        {
+          $(txtNombreArt).css("border","1px solid red");$(txtDescArt).css("border","1px solid red");return false
+        }
+        
+       }
+</script>
+<script type="text/javascript">
+  /*$(function() 
   {
       $('#guardarArt').click(function(event) 
       {    
@@ -252,6 +261,6 @@
               }
           });
       });
-  });
+  });*/
 
 </script>
