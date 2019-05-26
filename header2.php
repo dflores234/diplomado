@@ -11,11 +11,7 @@
                           </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                               <div class="navbar-nav ml-auto">
-                                <div>
-                                  <a href="#menu-toggle" class="btn btn-default chatb" id="menu-toggle"> 
-                                  <img src="img/group.svg" width="25" height="25" class="d-inline-block align-top" alt="">
-                                </a>
-                                </div>
+                            
                                 <div class="dropdown pmd-dropdown pmd-user-info ml-auto">
                                   <a href="javascript:void(0);" class="btn-user dropdown-toggle media align-items-center" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">
                                     <img class="mr-2 rounded-circle" src='<?php echo $avatar; ?>' width="40" height="40" alt="avatar">
