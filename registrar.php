@@ -143,20 +143,21 @@
 					<a href="login.php" style="text-decoration: none">
 						Inicia sesión <img src="img/users.svg" width="20" align="center">
 					</a>	
-						<br><br>
-						<h6>Bienvenido al Diplomado Nuevo Laredo 4.0 </h6>
-					<p align="left"> 
-						Al registrarte en el diplomado tendras acceso a los distintos modulos, tales como: 
+						
+					<p> 
+						Tendrás acceso a los distintos módulos de Capacitación Nuevo Laredo 4.0 de acuerdo a la inscripción al listado de cursos siguiente:
 						<ul style="text-align: left;">
-							<li>Ciberseguirdad</li>
+							<li>Sensibilización en Industria 4.0</li>
+							<li>Ciberseguridad</li>
 							<li>Big Data</li>
 							<li>IoT</li>
 							<li>Visión Artificial Inteligente</li>
 							<li>Sistemas interactivos basados en visión para ayuda al operador (VR Y AR)</li>
+							
 						</ul>
 						
-						Requisitos para registrarte <img src="img/tips.svg" width="20"><br>
-						<img src="img/checked.svg" width="20"> Ser egresado o apunto de egresar de las carreras:
+						Requisitos para realizar registro <img src="img/tips.svg" width="20"><br>
+						<img src="img/checked.svg" width="20">Ser egresado de las siguientes carreras o tener experiencia en las siguientes ramas de ingeniería:
 						<ul style="text-align: left;">
 							<li>
 								Sistemas computacionales
@@ -177,9 +178,7 @@
 								Mantenimiento industrial
 							</li>
 						</ul>
-						<img src="img/checked.svg" width="20"> Disponibilidad de horario viernes y sábados en horarios de 9AM a 6PM <br>
-						<img src="img/checked.svg" width="20"> Tener conocimientos básicos de programción en alguno
-						de los siguientes lenguajes:
+						<img src="img/checked.svg" width="20"> Tener conocimientos básicos de programación en alguno de los siguientes lenguajes:
 						<ul style="text-align: left;">
 							<li>
 								C++
@@ -191,6 +190,8 @@
 								Java
 							</li>
 						</ul>
+						<img src="img/checked.svg" width="20"> Disponibilidad de horario durante la realización del curso <br>
+						<img src="img/checked.svg" width="20"> Tener cubierto el 50% del costo de la capacitación antes del inicio del curso <br>
 					</p>
 					
               	</div>

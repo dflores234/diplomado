@@ -10,7 +10,7 @@
       <!-- Los iconos tipo Solid de Fontawesome-->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-      <title> Diplomado Nuevo Laredo 4.0</title>
+      <title>Capacitaciones Nuevo Laredo 4.0 </title>
     </head>
     <body>
       <!--Menu-->
@@ -86,24 +86,19 @@
       </div>
       <!--Fin del CARRUSEL-->
       <!--Main-->
+      <br>
       <div class="container" id="maind">
     	   <h3>
-          Acerca del Diplomado 4.0 <img src="">
+          Acerca de Capacitaciones Nuevo Laredo 4.0  <img src=""><br>
           </h3>
     	   <p class="lead">
-            El diplomado surgio como consecuencia del Programa Nuevo Laredo 4.0 en donde
-            el Centro IST y el Gobierno de Nuevo Laredo impulsaron la capacitación de la
-            industria, academia y comunidad en tecnologías referentes a I4.0. 
+            El programa Capacitaciones Nuevo Laredo 4.0 surgió como consecuencia de la iniciativa Nuevo Laredo 4.0 en donde el Centro IST y el Gobierno de Nuevo Laredo impulsaron la capacitación de la industria, academia y comunidad en tecnologías referentes a I4.0 mediante la creación de un Diplomado de 206 horas destinado a los mismo.
         </p >
     	   <p id="pcon">
-           El 50% de la duración del Diplomado será impartido por maestros del ITNL, impulsando
-           de esta manera el fortalecimiento el conocimiento local, el 50% restante será impartido
-           por Tecnalia (Centro de innovación e investigación del país Vasco, España) mediante MOOC´s o educación a distancia.
+           El Programa Nuevo Laredo 4.0 en las temáticas referentes a Industria 4.0 será impartido por maestros del Instituto Tecnológico de Nuevo Laredo (ITNL) con soporte de diversos materiales audiovisuales generados por expertos en los temas de Tecnalia (Centro de innovación e investigación del país Vasco, España).
         </p>
     	   <p id="pcon">
-            El diplomado constara de 5 módulos de 20 horas de trabajo en donde los asistentes 
-            aprenderán conocimientos básicos en las siguientes disciplinas básicas en las 
-            nuevas tecnologías correspondientes a Industria 4.0:
+           El programa de capacitación en Industria 4.0 constara de 5 módulos de 20 horas de trabajo en donde los asistentes aprenderán conocimientos básicos en las nuevas tecnologías correspondientes a la I4.0:
             <ul id="colors">
               <li> 
                 <h6>
@@ -149,26 +144,36 @@
             </ul>
         </p>
     	   <p id="pcon">
-            Los objetivos del Diplomado Nuevo Laredo 4.0 serán los siguientes:
+            Las Capacitaciones Nuevo Laredo 4.0 serán destinadas a los diversos sectores productivos de Nuevo Laredo:
             <ul id="colors">
               <li>
-                100 horas de capacitación para alumnos y maestros.
+                Industria de Manufactura  
               </li>
               <li>
-                30 alumnos beneficiados del ITNL
+                Logística y Transporte 
               </li>
-              <li>
-                20 alumnos beneficiados de la UTNL
-              </li>
-              <li>
-                10 maestros beneficiados de la UTNL
-              </li>
+              <br>
+               Buscando responder a las necesidades detectadas en capacitación entorno a nuevas tecnologías.
             </ul>
+
         </p>
         <p id="pcon">
-          El Diplomado será destinado a alumnos de las siguientes carreras afines a los conceptos de Industria 4.0:<br>
-          <img src="img/itnl.gif" width="25">ITNL: Mecatrónica, Electrónica, Industrial, Sistemas Computacionales y Eléctrica <br>
-          <img src="img/ut.png" width="25"> UTNL: Mecatrónica y Mantenimiento Industrial
+          Se brindará apertura de capacitación a las diversas universidades locales, como un impulso a la preparación de los futuros ingenieros de la ciudad.<br>
+          <ul id="colors">
+              <li>
+               Universidad Tecnológica de Nuevo Laredo   
+              </li>
+              <li>
+                Instituto Tecnológico de Nuevo Laredo 
+              </li>
+              <li>
+                Universidad Autónoma de Tamaulipas Campus Nuevo Laredo 
+              </li>
+              <li>
+                Universidad Tecmilenio Campus Nuevo Laredo
+              </li>
+            </ul>
+          
         </p> <br><br>
         <p class="lead">
           "Este diplomado es un esfuerzo del Gobierno de Nuevo Laredo por impulsar la innovación, capacitación y nuevas tecnologías en las universidades de la ciudad por medio del Centro IST de la Secretaria de Desarrollo Económico"

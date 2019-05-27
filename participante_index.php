@@ -46,12 +46,10 @@
 		                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
 		                          <div class="card-body bg-info" style="background:url(img/fondo2.jpg); background-size: cover; background-position: center;">
 			                            <h5 style="color:white">
-			                              ¿Qué es Python?:
+			                              ¿Qué es Python?
 			                            </h5>
 			                            <p style="color:white">
-			                              Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en una sintaxis que favorezca un código legible.
-
-										Se trata de un lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, usa tipado dinámico y es multiplataforma.
+			                             Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en una sintaxis que favorezca un código legible. Se trata de un lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, usa tipado dinámico y es multiplataforma
 			                            </p>
 			                            <a href="modulo_python.php" class="btn disabled" data-id="1">
 			                              <img src="img/ir.png" width="50" >
