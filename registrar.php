@@ -19,10 +19,10 @@
     		<div class="container-fluid banner d-flex justify-content-right item align-items-center banner">
     			<div class="text-left " style="color: #23AAE1">
     				<h3>
-    					¡Bienvenido!
+    					<b>¡Bienvenido!</b>
     				</h3>
     				<h3>
-    				Antes de registrarte <br>verifica los requisitos para unirte
+    				<b>Antes de registrarte <br>verifica los requisitos para unirte</b>
     				</h3>
     			</div>
     		</div>
@@ -36,30 +36,38 @@
               	<div class="col-md-6 personal-info">
                 		<h3>
                   			Crea tu cuenta <img src="img/regis.svg" width="30" height="30">
+
                 		</h3>
+                		Los campos con * son obligatorios<br>
                 		<form class="form-horizontal" role="form" id="form-registrar" name="formulario" onsubmit="return limpiar()">
 	        			<div class="form-group">
-				            <label class="col-lg-3 control-label">Nombre(s):</label>
+				            <label class="col-lg-3 control-label">Nombre(s)*:</label>
 				            <div class="col-lg-9">
 				              <input class="form-control" type="text" placeholder="Teclee su nombre" id="txtnombre" required="required">
 				            </div>
 				        </div>
 				        <div class="form-group">
-			            	<label class="col-lg-3 control-label">Apellidos</label>
+			            	<label class="col-lg-3 control-label">Apellidos*</label>
 				            <div class="col-lg-9">
 				              <input class="form-control"  id="txtapellido" type="text" value="" placeholder="Apellido Paterno / Apellido Materno" required="">
 				            </div>
 			          	</div>
 			          	<div class="form-group">
-				            <label class="col-lg-3 control-label">Correo:</label>
+				            <label class="col-lg-3 control-label">Correo*:</label>
 				            <div class="col-lg-9">
 				              <input class="form-control" type="email" placeholder="example2@mail.com" id="txtcorreo" required="">
 				            </div>
 			          	</div>
 			          	<div class="form-group">
-			            	<label class="col-lg-5 control-label">Número de contacto:</label>
+			            	<label class="col-lg-5 control-label">Número de contacto*:</label>
 			            	<div class="col-lg-9">
 			              		<input class="form-control" id="txttelefono" type="tel" placeholder="(867)136754" maxlength="10" minlength="10" required="">
+			            	</div>
+			          	</div>
+			          	<div class="form-group">
+			            	<label class="col-lg-5 control-label">Nombre de la empresa:</label>
+			            	<div class="col-lg-9">
+			              		<input class="form-control" id="txtempresa" type="txt" placeholder="Centro IST">
 			            	</div>
 			          	</div>
 			          	<div class="form-group">
@@ -98,18 +106,19 @@
 											<option value="13">13</option>
 											<option value="14">14</option>
 											<option value="15">15</option>
+											<option value="15">No aplica</option>
 						                </select>
 					              	</div>
 				            </div>
 			          	</div>
 			          	<div class="form-group">
-			            	<label class="col-md-3 control-label">Contraseña:</label>
+			            	<label class="col-md-3 control-label">Contraseña*:</label>
 				            <div class="col-md-9">
 				              <input class="form-control" id="txtcontraseña" type="password" placeholder="*******" required="">
 				            </div>
 			          	</div>
 			          	<div class="form-group">
-				            <label class="col-md-5 control-label">Confirmar contraseña:</label>
+				            <label class="col-md-5 control-label">Confirmar contraseña*:</label>
 				            <div class="col-md-9">
 				              <input class="form-control" id="txtccontraseña" type="password" placeholder="*******" required>
 				            </div>
@@ -147,7 +156,7 @@
 						</ul>
 						
 						Requisitos para registrarte <img src="img/tips.svg" width="20"><br>
-						<img src="img/checked.svg" width="20"> Ser egresado de últimos semestres de las carreras:
+						<img src="img/checked.svg" width="20"> Ser egresado o apunto de egresar de las carreras:
 						<ul style="text-align: left;">
 							<li>
 								Sistemas computacionales
