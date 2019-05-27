@@ -87,9 +87,9 @@
       <!--Fin del CARRUSEL-->
       <!--Main-->
       <br>
-      <div class="container" id="maind">
-    	   <h3>
-          Acerca de Capacitaciones Nuevo Laredo 4.0  <img src=""><br>
+      <div class="container" id="maind"><br>
+    	   <h3 style="text-align: center;">
+          Acerca de Capacitaciones Nuevo Laredo 4.0  <img src=""><br><br>
           </h3>
     	   <p class="lead">
             El programa Capacitaciones Nuevo Laredo 4.0 surgió como consecuencia de la iniciativa Nuevo Laredo 4.0 en donde el Centro IST y el Gobierno de Nuevo Laredo impulsaron la capacitación de la industria, academia y comunidad en tecnologías referentes a I4.0 mediante la creación de un Diplomado de 206 horas destinado a los mismo.
@@ -175,7 +175,7 @@
             </ul>
           
         </p> <br><br>
-        <p class="lead">
+        <p class="lead" style="text-align: center;">
           "Este diplomado es un esfuerzo del Gobierno de Nuevo Laredo por impulsar la innovación, capacitación y nuevas tecnologías en las universidades de la ciudad por medio del Centro IST de la Secretaria de Desarrollo Económico"
         </p>
       </div>
