@@ -13,13 +13,14 @@
 			case 'registrar':
 							$datos_registro = json_decode($_REQUEST['datos']);
 
-							$nombre = $apellido = $correo = $contrasena = $semestre = $carrera = "";
+							$nombre = $apellido = $correo = $empresa = $contrasena = $semestre = $carrera = "";
 
 
 							/**/
 							$nombre = filtrar_entrada($datos_registro->nombre,FILTER_SANITIZE_STRING);
 							$apellido = filtrar_entrada($datos_registro->apellido,FILTER_SANITIZE_STRING);
 							$correo = filtrar_entrada($datos_registro->correo,FILTER_SANITIZE_EMAIL);
+							$empresa = filtrar_entrada($datos_registro->empresa, FILTER_SANITIZE_STRING);
 							$semestre = filtrar_entrada($datos_registro->semestre,FILTER_VALIDATE_INT);
 							$carrera = filtrar_entrada($datos_registro->carrera,FILTER_VALIDATE_INT);
 							$nombre_usuario = $nombre.' '.$apellido;
@@ -30,6 +31,7 @@
 																		'',
 																		$correo,
 																		$datos_registro->contacto,
+																		$empresa,
 																		$datos_registro->ccontrasena,
 																		$semestre,
 																		$carrera

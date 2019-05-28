@@ -67,7 +67,7 @@
 			          	<div class="form-group">
 			            	<label class="col-lg-5 control-label">Nombre de la empresa:</label>
 			            	<div class="col-lg-9">
-			              		<input class="form-control" id="txtempresa" type="txt" placeholder="Centro IST">
+			              		<input class="form-control" id="txtempresa" type="text" placeholder="Centro IST">
 			            	</div>
 			          	</div>
 			          	<div class="form-group">
@@ -106,7 +106,7 @@
 											<option value="13">13</option>
 											<option value="14">14</option>
 											<option value="15">15</option>
-											<option value="15">No aplica</option>
+											<option value="0">No aplica</option>
 						                </select>
 					              	</div>
 				            </div>
@@ -207,7 +207,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header bg-dark">
-        <h5 class="modal-title text-center" id="modalTitle" style="color: white;">Diplomado Nuevo Laredo 4.0</h5>
+        <h5 class="modal-title text-center" id="modalTitle" style="color: white;">Capacitaciones Nuevo Laredo 4.0</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

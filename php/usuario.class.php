@@ -19,7 +19,7 @@
 		}
 
 
-		public function registrarUsuario($nombre,$apP,$apM,$correo,$numero_contacto,$contrasena,$semestre,$id_carrera)
+		public function registrarUsuario($nombre,$apP,$apM,$correo,$numero_contacto,$empresa,$contrasena,$semestre,$id_carrera)
 		{
 			if (!$this->existeUsuario($correo)) 
 			{
@@ -29,6 +29,7 @@
 																	apellido_materno,
 																	correo_electronico,
 																	numero_contacto,
+																	empresa,
 																	contrasena,
 																	semestre,
 																	status,
@@ -41,6 +42,7 @@
 																	:apellidom,
 																	:correo,
 																	:contacto,
+																	:empresa,
 																	:contrasena,
 																	:semestre,
 																	:status,
@@ -55,6 +57,7 @@
 				$stmt->bindParam(':apellidom',$apM);
 				$stmt->bindParam(':correo',$correo);
 				$stmt->bindParam(':contacto',$numero_contacto);
+				$stmt->bindParam(':empresa',$empresa);
 				$stmt->bindParam(':contrasena', $contraseña);
 				$stmt->bindParam(':semestre',$semestre);
 				$stmt->bindParam(':status', $this->defaultStatus);
@@ -180,10 +183,10 @@
 					//$mail->SMTPDebug = 2;
 					$mail->isSMTP();
 				// Los datos necesarios para enviar mediante SMTP
-					$mail->Host = 'mail.centroist.org';
+					$mail->Host = 'smtp.gmail.com';
 					$mail->SMTPAuth = true;
-					$mail->Username = 'contacto@centroist.org';
-					$mail->Password = 'C3ntro0.O2020';
+					$mail->Username = 'codecampapp@gmail.com';
+					$mail->Password = '@Sefuerte365!';
 					$mail->SMTPSecure = 'tls';
 					$mail->Port = 465;
 
@@ -237,10 +240,10 @@
 					//$mail->SMTPDebug = 2;
 					$mail->isSMTP();
 				// Los datos necesarios para enviar mediante SMTP
-					$mail->Host = 'mail.centroist.org';
+					$mail->Host = 'smtp.gmail.com';
 					$mail->SMTPAuth = true;
-					$mail->Username = 'contacto@centroist.org';
-					$mail->Password = 'C3ntro0.O2020';
+					$mail->Username = 'codecampapp@gmail.com';
+					$mail->Password = '@Sefuerte365!';
 					$mail->SMTPSecure = 'tls';
 					$mail->Port = 465;
 

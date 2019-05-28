@@ -108,6 +108,7 @@ $('#registrar').click(function()
                 apellido: $('#txtapellido').val(),
                 correo: $('#txtcorreo').val(),
                 contacto: $('#txttelefono').val(),
+                empresa: $('#txtempresa').val(),
                 carrera: $('#carreras').val(),
                 semestre: $('#semestre').val(),
                 ccontrasena: $('#txtccontraseña').val()
@@ -132,6 +133,7 @@ $('#registrar').click(function()
                         {
                             //Alerta de error
                             alert(error);
+                            console.log(error);
                         }
                 });
                 
