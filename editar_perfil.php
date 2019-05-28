@@ -35,6 +35,7 @@
         <?php include 'header2.php'; ?>
       <!--Fin menu-->
       <div class="container">
+        <br>
           <h1 class="text-center">
             Editar Perfil
           </h1><hr>

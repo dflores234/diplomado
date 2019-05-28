@@ -57,7 +57,7 @@
                                 <div class="contanier">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                          <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21116&amp;authkey=ADddGjuHiXXNY8w&amp;em=2&amp;wdAr=1.3333333333333333" width="500" height="400" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                                          <iframe src="https://onedrive.live.com/embed?resid=B58A0C42EAF6FEE8%21116&amp;authkey=%21ADddGjuHiXXNY8w&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="460" height="385" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
                                         </div>
                                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                             <h3>Introducción a Python</h3><hr style="background-color: black">
@@ -90,23 +90,23 @@
                               <div class="contanier">
                                 <div class="row">
                                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                    <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21117&amp;authkey=AMEzBstc55hAcco&amp;em=2&amp;wdAr=1.7777777777777777" width="500" height="320" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                                  <iframe src="https://onedrive.live.com/embed?resid=B58A0C42EAF6FEE8%21117&amp;authkey=%21AMEzBstc55hAcco&amp;em=2&amp;wdAr=1.7777777777777777&amp;wdEaa=1" width="490" height="300" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
                                   </div>
                                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                       <h3>Sentencias en python</h3><hr style="background-color: black">
                                           <ul align="left" style="font-size: 14px;">
-                                <li>Sentencia 'if'</li>
-                                <li>Operadores condicionales </li>
-                                <li>Errores comunes</li>
-                                <li>Sentencia 'elif'</li>
-                                <li>Misceláneo</li>
-                                <li>Conteo</li>
-                                <li>Suma</li>
-                                <li>Intercambio</li>
-                                <li>Banderas</li>
-                                <li>Máximos y mínimos</li>
-                                <li>Comentarios</li>
-                              </ul>
+                                              <li>Sentencia 'if'</li>
+                                              <li>Operadores condicionales </li>
+                                              <li>Errores comunes</li>
+                                              <li>Sentencia 'elif'</li>
+                                              <li>Misceláneo</li>
+                                              <li>Conteo</li>
+                                              <li>Suma</li>
+                                              <li>Intercambio</li>
+                                              <li>Banderas</li>
+                                              <li>Máximos y mínimos</li>
+                                              <li>Comentarios</li>
+                                          </ul>
                                   </div>
                                 </div>
                               </div> 
@@ -135,27 +135,6 @@
                         </div>
                     </div>  
                     <div class="card">
-                        <div class="card-header bg-white" role="tab" id="headingFour">
-                          <h5 class="mb-0">
-                            <a data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                              Evaluación de python
-                            </a>
-                          </h5>
-                        </div>
-                        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion" >
-                          <div class="card-body bg-light">
-                              <div class="contanier">
-                                <div class="row">
-                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                    <a href="examen_python.php" target="_blank">Evaluación</a>
-                                  </div>
-                               
-                                </div>
-                              </div> 
-                          </div>
-                        </div>
-                    </div>
-                    <div class="card">
                         <div class="card-header bg-white" role="tab" id="headingFive">
                           <h5 class="mb-0">
                             <a data-toggle="collapse" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
@@ -177,26 +156,7 @@
                                       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                       <a href="#">Link del artículo</a><hr style="background-color: black">
                                   </div>
-                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                      <h3>Nombre</h3><hr style="background-color: black">
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                      <a href="#">Link del artículo</a><hr style="background-color: black">
-                                  </div>
-                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                      <h3>Nombre</h3><hr style="background-color: black">
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                      <a href="#">Link del artículo</a><hr style="background-color: black">
-                                  </div>
+                                
                                 </div>
                               </div> 
                           </div>
