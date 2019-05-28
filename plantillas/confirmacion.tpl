@@ -9,14 +9,14 @@
 	<tr>
 		<td style="background-color:#23AAE1; text-align: left; padding: 0">
 			<a href="#">
-				<img width="20%" style="display:block; margin: 1.5% 3%" src="https://burlier-mistakes.000webhostapp.com/img/Diplomado3%20-%20copia.png">
+				<img width="20%" style="display:block; margin: 1.5% 3%" src="https://capacitaciones4.000webhostapp.com/img/Diplomado2.png">
 			</a>
 		</td>
 	</tr>
 
 	<tr>
 		<td style="padding: 0">
-			<img style="padding: 0; display: block" src="https://burlier-mistakes.000webhostapp.com/img/curso5.jpg" width="100%">
+			<img style="padding: 0; display: block" src="https://capacitaciones4.000webhostapp.com/img/curso5.jpg" width="100%">
 		</td>
 	</tr>
 	
@@ -33,11 +33,11 @@
 					<h4>¿Tienes dudas? ¿Preguntas?</h4>
 					<h5>Escríbenos a contacto@centroist.org y estaremos encantados de ayudarte</h5>
 				<div style="width: 100%;margin:20px 0; display: inline-block;text-align: center">
-					<img style="padding: 0; width: 200px; margin: 5px; background: #A0A0A0" src="https://burlier-mistakes.000webhostapp.com/img/Logo%20CENTRO%20IST%20BLANCO-05%5b1393%5d.png">
-					<img style="padding: 0; width: 200px; margin: 5px" src="https://burlier-mistakes.000webhostapp.com/img/logo2.png">
-					<img style="padding: 0; width: 180px; margin: 5px" src="https://burlier-mistakes.000webhostapp.com/img/logo3.png">
-					<img style="padding: 0; width: 150px; margin: 5px" src="https://burlier-mistakes.000webhostapp.com/img/logo4.png">
-					<img style="padding: 0; width: 100px; margin: 5px" src="https://burlier-mistakes.000webhostapp.com/img/itnl.gif">
+					<img style="padding: 0; width: 200px; margin: 5px; background: #A0A0A0" src="https://capacitaciones4.000webhostapp.com/img/Logo%20CENTRO%20IST%20BLANCO-05%5b1393%5d.png">
+					<img style="padding: 0; width: 200px; margin: 5px" src="https://capacitaciones4.000webhostapp.com/img/logo2.png">
+					<img style="padding: 0; width: 180px; margin: 5px" src="https://capacitaciones4.000webhostapp.com/img/logo3.png">
+					<img style="padding: 0; width: 150px; margin: 5px" src="https://capacitaciones4.000webhostapp.com/img/logo4.png">
+					<img style="padding: 0; width: 100px; margin: 5px" src="https://capacitaciones4.000webhostapp.com/img/itnl.gif">
 				</div>
 				<!--div style="width: 100%; text-align: center">
 					<a style="text-decoration: none; border-radius: 5px; padding: 11px 23px; color: white; background-color: #3498db" href="#">Ir a la página</a
