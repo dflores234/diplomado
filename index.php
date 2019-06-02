@@ -91,14 +91,14 @@
     	   <h3 style="text-align: center;">
           Acerca de Capacitaciones Nuevo Laredo 4.0  <img src=""><br><br>
           </h3>
-    	   <p class="lead">
+    	   <p class="lead" style="text-align: justify;">
             El programa Capacitaciones Nuevo Laredo 4.0 surgió como consecuencia de la iniciativa Nuevo Laredo 4.0 en donde el Centro IST y el Gobierno de Nuevo Laredo impulsaron la capacitación de la industria, academia y comunidad en tecnologías referentes a I4.0 mediante la creación de un Diplomado de 206 horas destinado a los mismo.
         </p >
-    	   <p id="pcon">
+    	   <p id="pcon" style="text-align: justify;">
            El Programa Nuevo Laredo 4.0 en las temáticas referentes a Industria 4.0 será impartido por maestros del Instituto Tecnológico de Nuevo Laredo (ITNL) con soporte de diversos materiales audiovisuales generados por expertos en los temas de Tecnalia (Centro de innovación e investigación del país Vasco, España).
         </p>
     	   <p id="pcon">
-           El programa de capacitación en Industria 4.0 constara de 5 módulos de 20 horas de trabajo en donde los asistentes aprenderán conocimientos básicos en las nuevas tecnologías correspondientes a la I4.0:
+         Los asistentes aprenderán conocimientos básicos en las nuevas tecnologías correspondientes a la I4.0:
             <ul id="colors">
               <li> 
                 <h6>
@@ -107,7 +107,8 @@
               </li>
               <li>
                 <h6>
-                  Capacitación en ciberseguridad 
+                  Sensibilización y capacitación en I4.0 e IoT:
+
                 </h6>
                 
               </li>
@@ -131,15 +132,9 @@
               </li>
               <li>
                 <h6>
-                  Sensibilización y capacitación en I4.0 e IoT:
+                    Capacitación en ciberseguridad 
                 </h6>
                 
-              </li>
-              <li>
-                <h6>
-                  Big Data y Celda de Manufactura: 
-                </h6>
-              
               </li>
             </ul>
         </p>
@@ -157,14 +152,15 @@
             </ul>
 
         </p>
-        <p id="pcon">
+        <p id="pcon" style="text-align: justify;">
           Se brindará apertura de capacitación a las diversas universidades locales, como un impulso a la preparación de los futuros ingenieros de la ciudad.<br>
           <ul id="colors">
               <li>
-               Universidad Tecnológica de Nuevo Laredo   
+               Instituto Tecnológico de Nuevo Laredo
+
               </li>
               <li>
-                Instituto Tecnológico de Nuevo Laredo 
+                 Universidad Tecnológica de Nuevo Laredo
               </li>
               <li>
                 Universidad Autónoma de Tamaulipas Campus Nuevo Laredo 
@@ -175,9 +171,6 @@
             </ul>
           
         </p> <br><br>
-        <p class="lead" style="text-align: center;">
-          "Este diplomado es un esfuerzo del Gobierno de Nuevo Laredo por impulsar la innovación, capacitación y nuevas tecnologías en las universidades de la ciudad por medio del Centro IST de la Secretaria de Desarrollo Económico"
-        </p>
       </div>
       <!--Fin del main-->
        <!-- Footer -->

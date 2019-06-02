@@ -213,7 +213,7 @@
 				                        </div>
 			                      </div>
                     		</div>
-                    		<div class="card">
+                    		<!--div class="card">
 			                      <div class="card-header bg-white" role="tab" id="headingSeven">
 				                        <h5 class="mb-0">
 				                          <img src="img/manufacturing.svg" width="40">
@@ -234,10 +234,11 @@
 					                          </a>
 				                        </div>
 			                      </div>
-                    		</div>
+                    		</div-->
 
 	                  </div>
                 </section>
+                <br><br>
                 <!--Fin del acordion--> 
                  <!-- Footer -->
               <?php include "footer.php" ?>

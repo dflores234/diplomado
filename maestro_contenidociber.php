@@ -1,42 +1,4 @@
-<?php 
-  include 'php/sesion.class.php';
-  $id = '3';
-
-  $session = new Session();
-
-  if ($session->getSession('id')) 
-  {
-    $avatar = $session->getSession('avatar');
-    $nombre = $session->getSession('nombre');
-    /*if($session->getSession('id_modulo') !== $id)
-    {
-     header("Location: participante_index.php"); 
-    }*/
-  }
-  else 
-  {
-    header("Location: index.html");
-  }
-
- ?>
- <!DOCTYPE html>
-  <html>
-    <head>
-	     <title>Ciberseguridad</title>
-	       <meta charset="utf-8">
-         <link rel="shortcut icon" href="img/istblanco.png">
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-          <link rel="stylesheet" type="text/css" href="css/participante2.css">
-          <link rel="stylesheet" href="css/bootstrap.min.css">
-          <!-- Los iconos tipo Solid de Fontawesome-->
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    </head>
-    <body>
-          <!--Menu-->
-             <?php include "header2.php" ?>
-          <!--Fin menu-->
-            <section class="main-section">
-        	      <div style="width: 500px;margin: 0 auto;">
+                <div style="width: 400px;margin: 0 auto;">
                       <h1>
                         <img src="img/hacker_cyber_crime-512.png" width="70">CIBERSEGURIDAD 
                       </h1>
@@ -604,44 +566,5 @@
                         </div>
                     </div>
                     <!--Aqui va el material extra-->
-                    <div class="card">
-                          <div class="card-header bg-white" role="tab" id="headingThree">
-                            <h5 class="mb-0">
-                              <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                Material extra 
-                              </a>
-                            </h5>
-                          </div>
-                          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" >
-                            <div class="card-body bg-light">
-                                <div class="contanier">
-                                  <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <h3>Nombre</h3><hr style="background-color: black">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <a href="#">Link del artículo</a><hr style="background-color: black">
-                                    </div>
-                                  
-                                  </div>
-                                </div> 
-                            </div>
-                          </div>
-                      </div>
+                    
                   </div>
-            </section>
-          <!-- Footer -->
-           <?php include 'footer.php'; ?>-
-    </body>
-  </html>
-
-    <script src="js/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type='text/javascript'>
-  document.oncontextmenu = function(){return false}
-</script>

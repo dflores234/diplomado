@@ -77,7 +77,7 @@
        				<div class="tab-pane active" id="contenido" role="tabpanel">
        					<br>
                    <!--Aqui van el contenido de cada curso-->
-    	             	<?php include "maestro_contenidovryar.php" ?>
+    	             	<?php include "maestro_contenidociber.php" ?>
        				</div>
        				<div class="tab-pane" id="contenidoadd" role="tabpanel">
        					<br>

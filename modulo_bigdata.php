@@ -42,251 +42,279 @@
                         <img src="img/data.svg" width="70">Big Data e IoT
                       </h1>
               </div>
+              <!--Aqui van las presentaciones-->
               <div id="accordion" role="tablist">
-                <div class="card">
+                  <div class="card">
                         <div class="card-header bg-white" role="tab" id="headingOne">
-                            <h5 class="mb-0">
-                                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                  Introducción
-                                </a>
-                            </h5>
+                          <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Presentaciones
+                            </a>
+                          </h5>
                         </div>
-                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
-                            <div class="card-body bg-light">
-                                <div class="contanier">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                          <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21131&amp;authkey=AEpXu-mou5n-Lw4&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="490px" height="406px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne"     data-parent="#accordion" >
+                            <div class="card-body ">
+                                <div id="accordion2" role="tablist">
+                                  <div class="card">
+                                        <div class="card-header bg-white" role="tab" id="headingOne1">
+                                            <h5 class="mb-0">
+                                                <a data-toggle="collapse" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                                  Introducción
+                                                </a>
+                                            </h5>
                                         </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                            <h3>Introducción</h3><hr style="background-color: black">
-                                                <ul align="left" style="font-size: 14px;">
-                                                    <li>¿Por qué un bloque de GP?</li>
-                                                    <li>Objetivos</li>
-                                                    <li>Organización</li>                             
-                                                </ul>
+                                        <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordion2" >
+                                            <div class="card-body bg-light">
+                                                <div class="contanier">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
+                                                          <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21131&amp;authkey=AEpXu-mou5n-Lw4&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="480px" height="396px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                            <h3>Introducción</h3><hr style="background-color: black">
+                                                                <ul align="left" style="font-size: 14px;">
+                                                                    <li>¿Por qué un bloque de GP?</li>
+                                                                    <li>Objetivos</li>
+                                                                    <li>Organización</li>                             
+                                                                </ul>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                  </div>
+                                  <div class="card">
+                                      <div class="card-header bg-white" role="tab" id="headingTwo2">
+                                          <h5 class="mb-0">
+                                              <a data-toggle="collapse" href="#collapseTwo2" aria-expanded="true" aria-controls="collapseTwo2">
+                                                Tipos de proyectos 
+                                              </a>
+                                          </h5>
+                                      </div>
+                                      <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordion2" >
+                                          <div class="card-body bg-light">
+                                              <div class="contanier">
+                                                  <div class="row">
+                                                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
+                                                        <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21132&amp;authkey=AALpZxESKvyeChc&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="480px" height="396px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                                                      </div>
+                                                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                          <h3>Bloque I</h3><hr style="background-color: black">
+                                                              <ul align="left" style="font-size: 14px;">
+                                                                  <li>Objetivos</li>
+                                                                  <li>Tipos</li>
+                                                                  <li>Resumen</li> 
+                                                                  <li>Motivaciones</li>
+                                                                  <li>Alcance y fases</li>
+                                                              </ul>
+                                                      </div>
+                                                  </div>
+                                              </div> 
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="card">
+                                      <div class="card-header bg-white" role="tab" id="headingThree3">
+                                          <h5 class="mb-0">
+                                              <a data-toggle="collapse" href="#collapseThree3" aria-expanded="true" aria-controls="collapseThree3">
+                                                Metodología 
+                                              </a>
+                                          </h5>
+                                      </div>
+                                      <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3" data-parent="#accordion2" >
+                                          <div class="card-body bg-light">
+                                              <div class="contanier">
+                                                  <div class="row">
+                                                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
+                                                        <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21138&amp;authkey=ANDtWVo9-ikikO4&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="480px" height="396px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                                                      </div>
+                                                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                          <h3>Bloque II</h3><hr style="background-color: black">
+                                                              <ul align="left" style="font-size: 14px;">
+                                                                  <li>Alcance y fases</li>
+                                                                  <li>Metodología</li>
+                                                                  <li>Objetivos</li> 
+                                                                  <li>El rol del Project Manager</li>
+                                                                  <li>Resumen</li>
+                                                              </ul>
+                                                      </div>
+                                                  </div>
+                                              </div> 
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="card">
+                                      <div class="card-header bg-white" role="tab" id="headingFour">
+                                          <h5 class="mb-0">
+                                              <a data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                               CRISP-DM 
+                                              </a>
+                                          </h5>
+                                      </div>
+                                      <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion2" >
+                                          <div class="card-body bg-light">
+                                              <div class="contanier">
+                                                  <div class="row">
+                                                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
+                                                        <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21133&amp;authkey=ADzC2OdatUKAQdY&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="480px" height="396px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                                                      </div>
+                                                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                          <h3>Bloque III</h3><hr style="background-color: black">
+                                                              <ul align="left" style="font-size: 14px;">
+                                                                  <li>Fases de un proyecto</li>
+                                                                  <li>CRISP-DM</li>
+                                                              </ul>
+                                                      </div>
+                                                  </div>
+                                              </div> 
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="card">
+                                    <div class="card-header bg-white" role="tab" id="headingFive">
+                                        <h5 class="mb-0">
+                                            <a data-toggle="collapse" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                              Skills 
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion2" >
+                                        <div class="card-body bg-light">
+                                            <div class="contanier">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
+                                                     <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21134&amp;authkey=AEiuSYGwJm7Qj-o&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="480px" height="396px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                        <h3>Bloque IV</h3><hr style="background-color: black">
+                                                            <ul align="left" style="font-size: 14px;">
+                                                                <li>Skills</li>
+                                                                <li>Objetivos</li> 
+                                                                <li>Buenas practicasr</li>
+                                                            </ul>
+                                                    </div>
+                                                </div>
+                                            </div> 
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
+                                <div class="card">
+                                    <div class="card-header bg-white" role="tab" id="headingSix">
+                                        <h5 class="mb-0">
+                                            <a data-toggle="collapse" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                              Big Data
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion2" >
+                                        <div class="card-body bg-light">
+                                            <div class="contanier">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
+                                                     <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21137&amp;authkey=APOvgzVbGERNti0&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="480px" height="396px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                        <h3>Big Data</h3><hr style="background-color: black">
+                                                            <ul align="left" style="font-size: 14px;">
+                                                                <li>Introducción</li>
+                                                                <li>Definición de Big data</li> 
+                                                                <li>Fuentes de datos</li>
+                                                                <li>Naturaleza Fuentes de datos</li>
+                                                            </ul>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header bg-white" role="tab" id="headingSeven">
+                                      <h5 class="mb-0">
+                                          <a data-toggle="collapse" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                            Sistemas de adquisición de datos y aplicaciones prácticas
+                                          </a>
+                                      </h5>
+                                  </div>
+                                  <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion2" >
+                                      <div class="card-body bg-light">
+                                          <div class="contanier">
+                                              <div class="row">
+                                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
+                                                   <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21135&amp;authkey=ANW-hmO4U02F6FU&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="480px" height="396px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                                                  </div>
+                                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                      <h3>Monitorizaciones</h3><hr style="background-color: black">
+                                                          <ul align="left" style="font-size: 14px;">
+                                                              <li>Metodología de trabajo</li>
+                                                              <li>Monitorizaciones permanentes</li> 
+                                                              <li>Tipos de Motorizaciones</li>
+                                                              <li>Sistema DAS</li>
+                                                              <li>Ensayos</li>
+                                                              <li>Precauciones técnicas</li>
+                                                              <li>Monitorizaciones desatendidas</li>
+                                                          </ul>
+                                                  </div>
+                                              </div>
+                                          </div> 
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="card">
+                                  <div class="card-header bg-white" role="tab" id="headingOcho">
+                                      <h5 class="mb-0">
+                                          <a data-toggle="collapse" href="#collapseOcho" aria-expanded="true" aria-controls="collapseOcho">
+                                            IoT & Smart Sensors 4.0
+                                          </a>
+                                      </h5>
+                                  </div>
+                                  <div id="collapseOcho" class="collapse" role="tabpanel" aria-labelledby="headingOcho" data-parent="#accordion2" >
+                                      <div class="card-body bg-light">
+                                          <div class="contanier">
+                                              <div class="row">
+                                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
+                                                  <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21136&amp;authkey=AMra7kzWDPaVJc8&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="480px" height="396px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+                                                  </div>
+                                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                      <h3>IoT & Smart Sensors 4.0</h3><hr style="background-color: black">
+                                                          <ul align="left" style="font-size: 14px;">
+                                                              
+                                                          </ul>
+                                                  </div>
+                                              </div>
+                                          </div> 
+                                      </div>
+                                  </div>
+                              </div>
+                                </div>
                             </div>
-                        </div>
+                        </div> 
                   </div>
+                  <!--Aqui van los videos-->
                   <div class="card">
                         <div class="card-header bg-white" role="tab" id="headingTwo">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                  Tipos de proyectos 
+                                  Vídeos
                                 </a>
                             </h5>
                         </div>
-                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" >
-                            <div class="card-body bg-light">
-                                <div class="contanier">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                          <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21132&amp;authkey=AALpZxESKvyeChc&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="490px" height="406px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                            <h3>Bloque I</h3><hr style="background-color: black">
-                                                <ul align="left" style="font-size: 14px;">
-                                                    <li>Objetivos</li>
-                                                    <li>Tipos</li>
-                                                    <li>Resumen</li> 
-                                                    <li>Motivaciones</li>
-                                                    <li>Alcance y fases</li>
-                                                </ul>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                  </div>
-                  <div class="card">
-                        <div class="card-header bg-white" role="tab" id="headingThree">
-                            <h5 class="mb-0">
-                                <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                  Metodología 
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" >
-                            <div class="card-body bg-light">
-                                <div class="contanier">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                          <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21138&amp;authkey=ANDtWVo9-ikikO4&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="490px" height="406px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                            <h3>Bloque II</h3><hr style="background-color: black">
-                                                <ul align="left" style="font-size: 14px;">
-                                                    <li>Alcance y fases</li>
-                                                    <li>Metodología</li>
-                                                    <li>Objetivos</li> 
-                                                    <li>El rol del Project Manager</li>
-                                                    <li>Resumen</li>
-                                                </ul>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                  </div>
-                  <div class="card">
-                        <div class="card-header bg-white" role="tab" id="headingFour">
-                            <h5 class="mb-0">
-                                <a data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                 CRISP-DM 
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion" >
-                            <div class="card-body bg-light">
-                                <div class="contanier">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                          <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21133&amp;authkey=ADzC2OdatUKAQdY&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="490px" height="406px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                            <h3>Bloque III</h3><hr style="background-color: black">
-                                                <ul align="left" style="font-size: 14px;">
-                                                    <li>Fases de un proyecto</li>
-                                                    <li>CRISP-DM</li>
-                                                </ul>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                  </div>
-                  <div class="card">
-                        <div class="card-header bg-white" role="tab" id="headingFive">
-                            <h5 class="mb-0">
-                                <a data-toggle="collapse" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                                  Skills 
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion" >
-                            <div class="card-body bg-light">
-                                <div class="contanier">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                         <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21134&amp;authkey=AEiuSYGwJm7Qj-o&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="490px" height="406px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                            <h3>Bloque IV</h3><hr style="background-color: black">
-                                                <ul align="left" style="font-size: 14px;">
-                                                    <li>Skills</li>
-                                                    <li>Objetivos</li> 
-                                                    <li>Buenas practicasr</li>
-                                                </ul>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                  </div>
-                  <div class="card">
-                        <div class="card-header bg-white" role="tab" id="headingSix">
-                            <h5 class="mb-0">
-                                <a data-toggle="collapse" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                                  Big Data
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion" >
-                            <div class="card-body bg-light">
-                                <div class="contanier">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                         <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21137&amp;authkey=APOvgzVbGERNti0&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="490px" height="406px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                            <h3>Big Data</h3><hr style="background-color: black">
-                                                <ul align="left" style="font-size: 14px;">
-                                                    <li>Introducción</li>
-                                                    <li>Definición de Big data</li> 
-                                                    <li>Fuentes de datos</li>
-                                                    <li>Naturaleza Fuentes de datos</li>
-                                                </ul>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                  </div>
-                  <div class="card">
-                        <div class="card-header bg-white" role="tab" id="headingSeven">
-                            <h5 class="mb-0">
-                                <a data-toggle="collapse" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
-                                  Sistemas de adquisición de datos y aplicaciones prácticas
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion" >
-                            <div class="card-body bg-light">
-                                <div class="contanier">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                         <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21135&amp;authkey=ANW-hmO4U02F6FU&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="490px" height="406px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                            <h3>Monitorizaciones</h3><hr style="background-color: black">
-                                                <ul align="left" style="font-size: 14px;">
-                                                    <li>Metodología de trabajo</li>
-                                                    <li>Monitorizaciones permanentes</li> 
-                                                    <li>Tipos de Motorizaciones</li>
-                                                    <li>Sistema DAS</li>
-                                                    <li>Ensayos</li>
-                                                    <li>Precauciones técnicas</li>
-                                                    <li>Monitorizaciones desatendidas</li>
-                                                </ul>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                  </div>
-                  <div class="card">
-                        <div class="card-header bg-white" role="tab" id="headingOcho">
-                            <h5 class="mb-0">
-                                <a data-toggle="collapse" href="#collapseOcho" aria-expanded="true" aria-controls="collapseOcho">
-                                  IoT & Smart Sensors 4.0
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseOcho" class="collapse" role="tabpanel" aria-labelledby="headingOcho" data-parent="#accordion" >
-                            <div class="card-body bg-light">
-                                <div class="contanier">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                        <iframe src="https://onedrive.live.com/embed?cid=B58A0C42EAF6FEE8&amp;resid=B58A0C42EAF6FEE8%21136&amp;authkey=AMra7kzWDPaVJc8&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1" width="490px" height="406px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                            <h3>IoT & Smart Sensors 4.0</h3><hr style="background-color: black">
-                                                <ul align="left" style="font-size: 14px;">
-                                                    
-                                                </ul>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                  </div>
-                  <div class="card">
+                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"     data-parent="#accordion" >
+                            <div class="card-body ">
+                                <div id="accordion3" role="tablist">
+                                                    <div class="card">
                         <div class="card-header bg-white" role="tab" id="headingNine">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
-                                  Big data(Video)
+                                  Big data
                                 </a>
                             </h5>
                         </div>
-                        <div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingNine" data-parent="#accordion" >
+                        <div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingNine" data-parent="#accordion3" >
                             <div class="card-body bg-light">
                                 <div class="contanier">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                        <video controls controlsList="nodownload" width="450" height="auto" style="margin-left: 30px;">
+                                        <video controls controlsList="nodownload" width="440" height="auto" style="margin-left: 30px;">
                                                 <source src="https://www.dropbox.com/s/4o8k9dntyun6bpl/bigdata.mp4?raw=1" type="video/mp4"></source>
                                         </video>
                                         </div>
@@ -308,16 +336,16 @@
                         <div class="card-header bg-white" role="tab" id="headingTen">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
-                                  Sistemas de adquisición de datos y aplicaciones prácticas(Video)
+                                  Sistemas de adquisición de datos y aplicaciones prácticas
                                 </a>
                             </h5>
                         </div>
-                        <div id="collapseTen" class="collapse" role="tabpanel" aria-labelledby="headingTen" data-parent="#accordion" >
+                        <div id="collapseTen" class="collapse" role="tabpanel" aria-labelledby="headingTen" data-parent="#accordion3" >
                             <div class="card-body bg-light">
                                 <div class="contanier">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                        <video controls controlsList="nodownload" width="450" height="auto" style="margin-left: 30px;">
+                                        <video controls controlsList="nodownload" width="440" height="auto" style="margin-left: 30px;">
                                                 <source src="https://www.dropbox.com/s/5tspuawwq3itswg/adquisicion.mp4?raw=1" type="video/mp4"></source>
                                         </video>
                                         </div>
@@ -339,16 +367,16 @@
                         <div class="card-header bg-white" role="tab" id="heading11">
                             <h5 class="mb-0">
                                 <a data-toggle="collapse" href="#collapse11" aria-expanded="true" aria-controls="collapse11">
-                                  IoT & Smart Sensors 4.0(Video)
+                                  IoT & Smart Sensors 4.0
                                 </a>
                             </h5>
                         </div>
-                        <div id="collapse11" class="collapse" role="tabpanel" aria-labelledby="heading11" data-parent="#accordion" >
+                        <div id="collapse11" class="collapse" role="tabpanel" aria-labelledby="heading11" data-parent="#accordion3" >
                             <div class="card-body bg-light">
                                 <div class="contanier">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                        <video controls controlsList="nodownload" width="450" height="auto" style="margin-left: 30px;">
+                                        <video controls controlsList="nodownload" width="440" height="auto" style="margin-left: 30px;">
                                                 <source src="https://www.dropbox.com/s/ygtqu98wdzutfb9/iot.mp4?raw=1" type="video/mp4"></source>
                                         </video>
                                         </div>
@@ -374,12 +402,12 @@
                                 </a>
                             </h5>
                         </div>
-                        <div id="collapse12" class="collapse" role="tabpanel" aria-labelledby="heading12" data-parent="#accordion" >
+                        <div id="collapse12" class="collapse" role="tabpanel" aria-labelledby="heading12" data-parent="#accordion3" >
                             <div class="card-body bg-light">
                                 <div class="contanier">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                        <video controls controlsList="nodownload" width="450" height="auto" style="margin-left: 30px;">
+                                        <video controls controlsList="nodownload" width="440" height="auto" style="margin-left: 30px;">
                                                 <source src="https://www.dropbox.com/s/145ikhs43hya34w/5_gestion.mp4?raw=1" type="video/mp4"></source>
                                         </video>
                                         </div>
@@ -405,12 +433,12 @@
                                 </a>
                             </h5>
                         </div>
-                        <div id="collapse13" class="collapse" role="tabpanel" aria-labelledby="heading13" data-parent="#accordion" >
+                        <div id="collapse13" class="collapse" role="tabpanel" aria-labelledby="heading13" data-parent="#accordion3" >
                             <div class="card-body bg-light">
                                 <div class="contanier">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                        <video controls controlsList="nodownload" width="450" height="auto" style="margin-left: 30px;">
+                                        <video controls controlsList="nodownload" width="440" height="auto" style="margin-left: 30px;">
                                                 <source src="https://www.dropbox.com/s/9ysy0hg3m6m244c/6_respuesta.mp4?raw=1" type="video/mp4"></source>
                                         </video>
                                         </div>
@@ -436,12 +464,12 @@
                                 </a>
                             </h5>
                         </div>
-                        <div id="collapse14" class="collapse" role="tabpanel" aria-labelledby="heading14" data-parent="#accordion" >
+                        <div id="collapse14" class="collapse" role="tabpanel" aria-labelledby="heading14" data-parent="#accordion3" >
                             <div class="card-body bg-light">
                                 <div class="contanier">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                        <video controls controlsList="nodownload" width="450" height="auto" style="margin-left: 30px;">
+                                        <video controls controlsList="nodownload" width="440" height="auto" style="margin-left: 30px;">
                                                 <source src="https://www.dropbox.com/s/4w31ijrj41i0ehf/machine_learning_1.mp4?raw=1" type="video/mp4"></source>
                                         </video>
                                         </div>
@@ -467,12 +495,12 @@
                                 </a>
                             </h5>
                         </div>
-                        <div id="collapse15" class="collapse" role="tabpanel" aria-labelledby="heading15" data-parent="#accordion" >
+                        <div id="collapse15" class="collapse" role="tabpanel" aria-labelledby="heading15" data-parent="#accordion3" >
                             <div class="card-body bg-light">
                                 <div class="contanier">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                        <video controls controlsList="nodownload" width="450" height="auto" style="margin-left: 30px;">
+                                        <video controls controlsList="nodownload" width="440" height="auto" style="margin-left: 30px;">
                                                 <source src="https://www.dropbox.com/s/mom446ldxoym2k1/machine_learning_2.mp4?raw=1" type="video/mp4"></source>
                                         </video>
                                         </div>
@@ -498,12 +526,12 @@
                                 </a>
                             </h5>
                         </div>
-                        <div id="collapse16" class="collapse" role="tabpanel" aria-labelledby="heading16" data-parent="#accordion" >
+                        <div id="collapse16" class="collapse" role="tabpanel" aria-labelledby="heading16" data-parent="#accordion3" >
                             <div class="card-body bg-light">
                                 <div class="contanier">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                        <video controls controlsList="nodownload" width="450" height="auto" style="margin-left: 30px;">
+                                        <video controls controlsList="nodownload" width="440" height="auto" style="margin-left: 30px;">
                                                 <source src="https://www.dropbox.com/s/i29xi6h50ihflx3/machine_learning_3.mp4?raw=1" type="video/mp4"></source>
                                         </video>
                                         </div>
@@ -529,12 +557,12 @@
                                 </a>
                             </h5>
                         </div>
-                        <div id="collapse17" class="collapse" role="tabpanel" aria-labelledby="heading17" data-parent="#accordion" >
+                        <div id="collapse17" class="collapse" role="tabpanel" aria-labelledby="heading17" data-parent="#accordion3" >
                             <div class="card-body bg-light">
                                 <div class="contanier">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                        <video controls controlsList="nodownload" width="450" height="auto" style="margin-left: 30px;">
+                                        <video controls controlsList="nodownload" width="440" height="auto" style="margin-left: 30px;">
                                                 <source src="https://www.dropbox.com/s/2aayvt2rpi9bs53/machine_learning_4.mp4?raw=1" type="video/mp4"></source>
                                         </video>
                                         </div>
@@ -560,12 +588,12 @@
                                 </a>
                             </h5>
                         </div>
-                        <div id="collapse18" class="collapse" role="tabpanel" aria-labelledby="heading18" data-parent="#accordion" >
+                        <div id="collapse18" class="collapse" role="tabpanel" aria-labelledby="heading18" data-parent="#accordion3" >
                             <div class="card-body bg-light">
                                 <div class="contanier">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><br> 
-                                        <video controls controlsList="nodownload" width="450" height="auto" style="margin-left: 30px;">
+                                        <video controls controlsList="nodownload" width="440" height="auto" style="margin-left: 30px;">
                                                 <source src="https://www.dropbox.com/s/gxokbdorvakzrem/machine_learning5.mp4?raw=1" type="video/mp4"></source>
                                         </video>
                                         </div>
@@ -583,15 +611,20 @@
                             </div>
                         </div>
                   </div>
-                  <div class="card">
-                        <div class="card-header bg-white" role="tab" id="heading19">
+              </div>
+          </div>
+        </div>
+    </div>
+                  <!--Aqui va el material extra-->
+                 <div class="card">
+                        <div class="card-header bg-white" role="tab" id="headingThree">
                           <h5 class="mb-0">
-                            <a data-toggle="collapse" href="#collapse19" aria-expanded="true" aria-controls="collapse19">
+                            <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                               Material extra 
                             </a>
                           </h5>
                         </div>
-                        <div id="collapse19" class="collapse" role="tabpanel" aria-labelledby="heading19" data-parent="#accordion" >
+                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" >
                           <div class="card-body bg-light">
                               <div class="contanier">
                                 <div class="row">
@@ -612,7 +645,6 @@
                         </div>
                     </div>
 
-
               </div>    
           </section>
         <!-- Footer -->
@@ -622,3 +654,6 @@
     <script src="js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type='text/javascript'>
+  document.oncontextmenu = function(){return false}
+</script>
