@@ -12,7 +12,7 @@
 			<title>Iniciar Sesión</title>
 			<meta charset="utf-8">
       <link rel="shortcut icon" href="img/istblanco.png">
-			<!--FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+			<!--FRAMEWORK BOOTSTRAP para el estilo de la pagina-- #23AAE1-->
 			<link rel="stylesheet" href="css/bootstrap.min.css">
 			<link rel="stylesheet" type="text/css" href="css\login.css">
 			<!-- Los iconos tipo Solid de Fontawesome-->
@@ -20,10 +20,11 @@
 		</head>
 		<body>
 			<!--Menu-->
-    		<div class="container-fluid" style="background-color: #23AAE1" >
-    			<nav class="navbar navbar-expand-lg navbar-light container" style="background-color: #23AAE1">
+    		<div class="container-fluid" style="background-color: white" >
+    			<nav class="navbar navbar-expand-lg navbar-light container" style="background-color: white">
 	  				<a class="navbar-brand" href="index.php">
-	  					<img src="img/Diplomado2.png" width="160" height="63" class="d-inline-block align-top" alt="">
+	  					<img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="180" height="53" alt="">
+              <img src="img/Diplomado2-1.png" width="120" height="50">
 	  				</a> 
 				</nav>
     		</div>  
