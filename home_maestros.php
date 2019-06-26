@@ -56,11 +56,11 @@
 	            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	              	<div class="navbar-nav ml-auto">
 		                <div>
-		                  	<p class="font-weight-bold text-dark" style="margin-top: 5px;">Bienvenido: <?php echo $nombre; ?></p>
+		                  	<p class="font-weight-bold" style="margin-top: 5px;color: gray">Bienvenido: <?php echo $nombre; ?></p>
 		                </div>
 		                <div>
 		                	<div class="btn-group" style="">
-								  	<button style="color:black;margin-right: 20px" type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  	<button style="color:gray;margin-right: 20px" type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								    <span class="sr-only">Toggle Dropdown</span>
 								  	</button>
 								  	<div class="dropdown-menu">

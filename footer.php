@@ -1,6 +1,6 @@
   
 <!-- Footer -->
-<footer class="page-footer font-small blue pt-4 bg-dark">
+<footer class="page-footer font-small blue pt-4" style="background-color:  #3e4f66  ">
 
     <!-- Footer Links -->
     <div class="container-fluid text-center text-md-left">
@@ -70,11 +70,13 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3 bg-light">
-      <img src="img/logo5.png" width="170" id="logo">
-      <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="170" height="50" id="logo">
-      <img src="img/logo3.png" width="180" id="logo">
-      <img src="img/itnl.gif" width="70" id="logo" style="">
-      <img src="img/logo2.png" width="150" id="logo" style="margin-left: ">
+      <img src="img/logo7.png" width="140" id="logo">
+      <img src="img/logo5.png" width="150" id="logo">
+      <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="140" height="40" id="logo">
+      <img src="img/logo3.png" width="160" id="logo">
+      <img src="img/itnl.gif" width="60" id="logo">
+      <img src="img/logo2.png" width="140" id="logo" >
+      <img src="img/logo6.png" width="170" id="logo" >
       
     </div>
     <!-- Copyright -->

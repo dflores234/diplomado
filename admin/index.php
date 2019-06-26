@@ -36,12 +36,12 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <div class="navbar-nav ml-auto">
                 <div>
-                  <p class="font-weight-bold text-dark" style="margin-top: 5px;">Bienvenido administrador</p>
+                  <p class="font-weight-bold" style="margin-top: 5px;color: gray">Bienvenido administrador</p>
                 </div>
                 <div>
                 	<div class="btn-group" style="">
 						  
-						  <button style="color: black;margin-right: 20px" type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  <button style="color: gray;margin-right: 20px" type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						    <span class="sr-only">Toggle Dropdown</span>
 						  </button>
 						  <div class="dropdown-menu">
@@ -327,9 +327,9 @@
           </div>
           <!-- Cuadri column -->
 
-          <!-- Cuadri column -->
+          <!-- Cuadri column  AQUI IBA EL MAPA-->
           <div class="col-md-3 mb-md-0 mb-3">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3541.4031901302506!2d-99.50885468520613!3d27.425542682909526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866118b8bdd010a5%3A0x1bbdad4f53dc3ec1!2sCentro+Cultural+Nuevo+Laredo!5e0!3m2!1ses-419!2smx!4v1551718555256" width="500" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+          
           </div>
           <!-- Cuadri column -->
 
@@ -341,11 +341,13 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3 bg-light">
-      <img src="../img/logo4.png" width="110" id="logo">
-      <img src="../img/Logo CENTRO IST BLANCO-05[1393].png" width="180" height="50" id="logo">
-      <img src="../img/logo3.png" width="180" id="logo">
-      <img src="../img/itnl.gif" width="70" id="logo" style="">
-      <img src="../img/logo2.png" width="150" id="logo" style="margin-left: ">
+      <img src="../img/logo7.png" width="140" id="logo">
+      <img src="../img/logo5.png" width="150" id="logo">
+      <img src="../img/Logo CENTRO IST BLANCO-05[1393].png" width="140" height="40" id="logo">
+      <img src="../img/logo3.png" width="160" id="logo">
+      <img src="../img/itnl.gif" width="60" id="logo">
+      <img src="../img/logo2.png" width="140" id="logo" >
+      <img src="../img/logo6.png" width="170" id="logo" >
       
     </div>
     <!-- Copyright -->
