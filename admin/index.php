@@ -9,13 +9,25 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         
   <title>Panel de Administrador</title>
+  <style type="text/css">
+      hr{
+  border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         2vh;
+    width:          1px; 
+    display: inline-block;
+    margin:0px;
+  }
+    </style>
 </head>
 <body>
   <!--Navbar-->
   <div class="container-fluid fixed-top text-center"  style="background-color: white;border-bottom: 0.5px solid lightgray">
           <nav class="navbar navbar-expand-lg navbar-light container" style="background-color: white">
             <a class="navbar-brand" href="index.php">
-              <img src="../img/Logo CENTRO IST BLANCO-05[1393].png" width="180" height="53" alt=""><img src="../img/Diplomado2-1.png" width="120" height="50">
+             <img src="../img/Logo CENTRO IST BLANCO-05[1393].png" width="190" height="40" alt="">
+                              <hr >
+                            <img src="../img/Diplomado2-1.png" width="120" height="50"> 
             </a> 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon">
