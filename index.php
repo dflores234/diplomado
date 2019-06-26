@@ -43,27 +43,27 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="img/curso5.jpg" alt="First slide">
-              <div class="carousel-caption d-none d-md-block slider" id="mensaje" style="background-color: #23AAE1">
+            <img class="d-block w-100" src="img/curso3.jpg" alt="First slide">
+              <div class="carousel-caption d-none d-md-block slider" id="mensaje" style="background-color:white">
                 <p>
-                  <img src="img/Logo CENTRO IST BLANCO-04.png" width="500" height="100">
+                  <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="500" height="100">
                 </p>
                 
               </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="img/curso4.jpg" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block slider " id="mensaje" style="background-color: #23AAE1">
+            <div class="carousel-caption d-none d-md-block slider " id="mensaje" style="background-color: white">
               <p >
-                  <img src="img/Logo CENTRO IST BLANCO-04.png" width="500" height="100">
+                  <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="500" height="100">
                 </p>
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="img/curso2.jpg" alt="Third slide">
-            <div class="carousel-caption d-none d-md-block slider" id="mensaje" style="background-color: #23AAE1" >
+            <div class="carousel-caption d-none d-md-block slider" id="mensaje" style="background-color:white" >
               <p >
-                  <img src="img/Logo CENTRO IST BLANCO-04.png" width="500" height="100">
+                  <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="500" height="100">
                 </p>
                 
             </div>

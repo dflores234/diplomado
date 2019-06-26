@@ -23,8 +23,9 @@
     		<div class="container-fluid" style="background-color: white" >
     			<nav class="navbar navbar-expand-lg navbar-light container" style="background-color: white">
 	  				<a class="navbar-brand" href="index.php">
-	  					<img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="180" height="53" alt="">
-              <img src="img/Diplomado2-1.png" width="120" height="50">
+	  					<img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="190" height="40" alt="">
+              <hr >
+                <img src="img/Diplomado2-1.png" width="120" height="50">  
 	  				</a> 
 				</nav>
     		</div>  
