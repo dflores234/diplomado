@@ -36,7 +36,7 @@
 	  				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    				<div class="navbar-nav ml-auto">
 	      					<div id="boton1">
-	      						<a href="login.php" class="btn mr-md-4 ">
+	      						<a href="login.php" class="btn btn-link mr-md-4 ">
 	      							Iniciar Sesión
 	      						</a>
 	      					</div>
