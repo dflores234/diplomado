@@ -5,20 +5,15 @@
 
     if ($session->getSession('id')) 
     {
-        $id_modulo = $session->getSession('id_modulo');
         $nombre = $session->getSession('nombre');
+        $id_modulo = $session->getSession('id_modulo');  
     }
     else 
     {
       header("Location: index.php");
     }
 
-
-
  ?>
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -89,7 +84,31 @@
        				<div class="tab-pane active" id="contenido" role="tabpanel">
        					<br>
                    <!--Aqui van el contenido de cada curso-->
-    	             	<?php include "maestro_contenidociber.php" ?>
+    	             	<?php 
+                      switch ($id_modulo) {
+                        case '1':
+                          include 'maestro_contenidopython.php';
+                          break;
+                        case '2':
+                          include 'maestro_contenidosensibilidad.php';
+                          break;
+                        case '3':
+                            include 'maestro_contenidociber.php';
+                            break;
+                        case '4':
+                              include 'maestro_contenidoBigdata.php';
+                              break;
+                        case '5':
+                                include 'maestro_contenidovision.php';
+                                break;
+                        case '6':
+                                include 'maestro_contenidovryar.php';
+                                break;     
+                        default:
+                          # code...
+                          break;
+                      }
+                    ?>
        				</div>
        				<div class="tab-pane" id="contenidoadd" role="tabpanel">
        					<br>
