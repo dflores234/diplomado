@@ -18,6 +18,13 @@
             <p class="text-light">
               <i class="fas fa-phone"></i> +52 (867) 712-0327 <br>
               <i class="fas fa-envelope-open"></i> contacto@centroist.org
+				<br>
+			
+				
+				<a href="https://www.facebook.com/centroist/" style="color:white;">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				 Centro IST
             </p>
           </div>
             
@@ -42,16 +49,7 @@
             <!-- Links -->
             <!--<h5 class="text-uppercase text-light">Siguenos</h5>-->
 
-            <ul class="list-unstyled ">
-              <li>
-                <a href="https://www.facebook.com/centroist/"><img src="img/facebook.svg" width="35"></a>
-              </li>
-              <br>
-              <li>
-                <a href="http://centroist.org"><img src="img/istblanco.png" width="35" height="30"></a>
-              </li>
-              
-            </ul>
+           
 
           </div>
           <!-- Cuadri column -->
@@ -72,7 +70,7 @@
     <div class="footer-copyright text-center py-3 bg-light">
       <img src="img/logo7.png" width="140" id="logo">
       <img src="img/logo5.png" width="150" id="logo">
-      <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="140" height="40" id="logo">
+      <img src="img/LogoCist05.png" width="140" height="40" id="logo">
       <img src="img/logo3.png" width="160" id="logo">
       <img src="img/itnl.gif" width="60" id="logo">
       <img src="img/logo2.png" width="140" id="logo" >

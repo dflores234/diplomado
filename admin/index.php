@@ -25,7 +25,7 @@
   <div class="container-fluid fixed-top text-center"  style="background-color: white;border-bottom: 0.5px solid lightgray">
           <nav class="navbar navbar-expand-lg navbar-light container" style="background-color: white">
             <a class="navbar-brand" href="index.php">
-             <img src="../img/Logo CENTRO IST BLANCO-05[1393].png" width="190" height="40" alt="">
+             <img src="../img/Logo CENTRO IST BLANCO-05.png" width="190" height="40" alt="">
                               <hr >
                             <img src="../img/Diplomado2-1.png" width="120" height="50"> 
             </a> 
@@ -230,7 +230,8 @@
                   <label class="col-lg-3 control-label">Modulos:</label>
                   <div class="col-lg-10">
                     <div class="ui-select">
-                      <select id="modulos" class="form-control"></select>
+                      <select id="modulos" class="form-control">
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -343,7 +344,7 @@
     <div class="footer-copyright text-center py-3 bg-light">
       <img src="../img/logo7.png" width="140" id="logo">
       <img src="../img/logo5.png" width="150" id="logo">
-      <img src="../img/Logo CENTRO IST BLANCO-05[1393].png" width="140" height="40" id="logo">
+      <img src="../img/Logo CENTRO IST BLANCO-05.png" width="140" height="40" id="logo">
       <img src="../img/logo3.png" width="160" id="logo">
       <img src="../img/itnl.gif" width="60" id="logo">
       <img src="../img/logo2.png" width="140" id="logo" >
@@ -371,6 +372,8 @@
 <script>
   $(function()
   {
+    var modulo = $('#modulos option:selected');
+
       mostrarFechaActual();
       listarCuentas();
       listarNombreModulo();
@@ -416,12 +419,7 @@
         }
       });
 
-      $('#btnModificarFecha').click(function(event) 
-      {
-          modificarFechasModulos();
-      });
-
-
+     
             
       $('#btnGuardarMaestro').click(function(event)
       {
@@ -434,32 +432,41 @@
                   contrasena: $('#txtccontraseñaMaestro').val(),
                   modulo: $('#modulos').val()
           };
-        $.ajax
-        ({
-            type: 'POST',
-            data:{ datos:JSON.stringify(datos_maestro), opcion:'registrar'},
-            url:'../php/maestro.controller.php',
-            dataType: 'json',
-            beforeSend: function(data)
-            {
-              //Loader de registro
-              /*$('#registrar').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');*/
-            },
-            success:function(data)
-            {
-              //Alerta de retroalimentacion
-              /* $('#mdlBody').append(data.msg+"<br>Se ha enviado un correo electrónico");
-              $('#modalRetro').modal({show: true});*/
-              console.log(data);
-            },
-            error:function(error)
-            {
-              //Alerta de error
-               console.log(error);
-            }
-        });
-    });
+          $.ajax
+          ({
+              type: 'POST',
+              data:{ datos:JSON.stringify(datos_maestro), opcion:'registrar'},
+              url:'../php/maestro.controller.php',
+              dataType: 'json',
+              beforeSend: function(data)
+              {
+                //Loader de registro
+                /*$('#registrar').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');*/
+              },
+              success:function(data)
+              {
+                //Alerta de retroalimentacion
+                /* $('#mdlBody').append(data.msg+"<br>Se ha enviado un correo electrónico");
+                $('#modalRetro').modal({show: true});*/
+                console.log(data);
+              },
+              error:function(error)
+              {
+                //Alerta de error
+                 console.log(error);
+              }
+          });
+      });
 
+      $('#modulos').change(function(event) {
+        /* Act on the event */
+          modulo = $(this).val();
+      });
+
+       $('#btnModificarFecha').click(function(event) 
+      {
+          modificarFechasModulos(modulo);
+      });
 
 
   });

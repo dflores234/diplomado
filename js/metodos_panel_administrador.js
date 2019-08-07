@@ -20,6 +20,8 @@ function listarModulos()
 
 	$.getJSON("../php/listarModulos.php", function(result)
     {
+      $('<option selected disabled>--SELECCIONE MODULO--</option>').appendTo('#modulos');
+      
       $.each(result, function(i, field) 
       {
       	$('#modulos').append('<option value="'+field.id_modulo+'">'+field.nombre_modulo+'</option>');
@@ -69,7 +71,7 @@ function listarAlumnos()
 }
 
 
-function modificarFechasModulos()
+function modificarFechasModulos(id_modulo)
 {
 
   var errores = 0;
@@ -102,7 +104,7 @@ function modificarFechasModulos()
         url: '../php/modificarFechasModulos.php',
         type: 'POST',
         dataType: 'JSON',
-        data: {id_modulo: $('option:selected').attr('value'),fecha_inicio: $('#txtFechaInicio').val(), fecha_fin:$('#txtFechaFin').val() },
+        data: {id_modulo: id_modulo,fecha_inicio: $('#txtFechaInicio').val(), fecha_fin:$('#txtFechaFin').val() },
         beforeSend: function(data)
         {
             $('#btnModificarFecha').html('').append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Por favor espere...');

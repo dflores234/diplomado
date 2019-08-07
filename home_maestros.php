@@ -5,20 +5,15 @@
 
     if ($session->getSession('id')) 
     {
-        $id_modulo = $session->getSession('id_modulo');
         $nombre = $session->getSession('nombre');
+        $id_modulo = $session->getSession('id_modulo');  
     }
     else 
     {
       header("Location: index.php");
     }
 
-
-
  ?>
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,11 +39,13 @@
 <!--Navbar-->
   		<div class="container-fluid fixed-top text-center"  style="background-color: white;border-bottom: 0.5px solid lightgray">
           	<nav class="navbar navbar-expand-lg navbar-light container" style="background-color: white">
-	            <a class="navbar-brand" href="index.php">
-	             <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="190" height="40" alt="">
-                              <hr >
-                            <img src="img/Diplomado2-1.png" width="120" height="50"> 
-	            </a> 
+            <a class="navbar-brand" href="https://centroist.org/">
+						  <img src="img/LogoCist05.png" width="190" height="40" alt="">
+					<a/>
+					<hr >
+					<a class="navbar-brand" href="index.php">
+	  					<img src="img/Diplomado2-1.png" width="120" height="50">	  					
+	  				</a> 
 	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		              <span class="navbar-toggler-icon">
 		              </span>
@@ -89,7 +86,31 @@
        				<div class="tab-pane active" id="contenido" role="tabpanel">
        					<br>
                    <!--Aqui van el contenido de cada curso-->
-    	             	<?php include "maestro_contenidociber.php" ?>
+    	             	<?php 
+                      switch ($id_modulo) {
+                        case '1':
+                          include 'maestro_contenidopython.php';
+                          break;
+                        case '2':
+                          include 'maestro_contenidosensibilidad.php';
+                          break;
+                        case '3':
+                            include 'maestro_contenidociber.php';
+                            break;
+                        case '4':
+                              include 'maestro_contenidoBigdata.php';
+                              break;
+                        case '5':
+                                include 'maestro_contenidovision.php';
+                                break;
+                        case '6':
+                                include 'maestro_contenidovryar.php';
+                                break;     
+                        default:
+                          # code...
+                          break;
+                      }
+                    ?>
        				</div>
        				<div class="tab-pane" id="contenidoadd" role="tabpanel">
        					<br>
@@ -147,7 +168,7 @@
        }
 </script>
 <script type="text/javascript">
-  /*$(function() 
+  $(function() 
   {
       $('#guardarArt').click(function(event) 
       {    
@@ -178,6 +199,6 @@
               }
           });
       });
-  });*/
+  });
 
 </script>

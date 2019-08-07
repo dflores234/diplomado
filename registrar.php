@@ -29,8 +29,7 @@
 			<!--Fin del banner-->
 			<!--Formulario-->
 			<div class="main-section">
-    	<div>
-	     <div class="container">
+	     	<div class="container">
 	     	<div class="row">
             <!-- columna para formulario de editar -->
               	<div class="col-md-6 personal-info">
@@ -134,8 +133,8 @@
 			          </div>
 	        		</form> 
 	        	</div>
-      <div class="col-md-5">
-                <div class="text-center">
+				<div class="col-md-5">
+					<div class="text-center">
                 	<h3>
 						¿Ya estas registrado?
 					</h3>

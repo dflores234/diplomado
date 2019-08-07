@@ -11,11 +11,13 @@
                   <!--Menu--> 
                      <div class="container-fluid text-right" style="background-color: white;border-bottom: 0.5px solid lightgray" >
                       <nav class="navbar navbar-expand-lg navbar-light container" style="background-color: white">
-                          <a class="navbar-brand" href="index.php">
-                            <img src="img/Logo CENTRO IST BLANCO-05[1393].png" width="190" height="40" alt="">
-                              <hr >
-                            <img src="img/Diplomado2-1.png" width="120" height="50">  
-                          </a> 
+                      <a class="navbar-brand" href="https://centroist.org/">
+						  <img src="img/LogoCist05.png" width="190" height="40" alt="">
+					<a/>
+					<hr >
+					<a class="navbar-brand" href="index.php">
+	  					<img src="img/Diplomado2-1.png" width="120" height="50">	  					
+	  				</a> 
                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon">
                               </span>

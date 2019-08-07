@@ -8,10 +8,10 @@
   {
     $avatar = $session->getSession('avatar');
     $nombre = $session->getSession('nombre');
-    /*if($session->getSession('id_modulo') !== $id)
+    if($session->getSession('id_modulo') !== $id)
     {
      header("Location: participante_index.php"); 
-    }*/
+    }
   }
   else 
   {
@@ -54,7 +54,7 @@
                         <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne"   data-parent="#accordion" >
                           <div class="card-body bg-light">
                                <div id="accordion2" role="tablist">
-                                
+                                    <h4 class="text-center">No existen presentaciones asociadas al módulo.</h4>
                                </div>
                           </div>
                         </div>
@@ -89,13 +89,13 @@
                                                       </video>
                                                       </div>
                                                       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                          <h3>Esteganografía</h3><hr style="background-color: black">
+                                                   <!--       <h3>Esteganografía</h3><hr style="background-color: black">
                                                               <ul align="left" style="font-size: 14px;">
                                                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                   consequat.
-                                                              </ul>
+                                                              </ul>-->
                                                       </div>
                                                   </div>
                                               </div> 
@@ -119,14 +119,14 @@
                                                             <source src="https://www.dropbox.com/s/c99f71ozdsm61l1/2_criptografia.mp4?raw=1" type="video/mp4"></source>
                                                     </video>
                                                     </div>
-                                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                 <!--     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                                         <h3>Criptografía</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul>-->
                                                     </div>
                                                 </div>
                                             </div> 
@@ -151,13 +151,13 @@
                                                     </video>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <h3>Temas a ver:</h3><hr style="background-color: black">
+                                                     <!--    <h3>Temas a ver:</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul> -->
                                                     </div>
                                                 </div>
                                             </div> 
@@ -182,13 +182,13 @@
                                                     </video>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <h3>Temas</h3><hr style="background-color: black">
+                                                  <!--      <h3>Temas</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul> -->  
                                                     </div>
                                                 </div>
                                             </div> 
@@ -213,13 +213,13 @@
                                                     </video>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <h3>Temas</h3><hr style="background-color: black">
+                                                    <!--  <h3>Temas</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul> -->
                                                     </div>
                                                 </div>
                                             </div> 
@@ -244,13 +244,13 @@
                                                     </video>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <h3>Temas</h3><hr style="background-color: black">
+                                                     <!--   <h3>Temas</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul> -->
                                                     </div>
                                                 </div>
                                             </div> 
@@ -275,13 +275,13 @@
                                                     </video>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <h3>Temas</h3><hr style="background-color: black">
+                                                      <!--  <h3>Temas</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul> -->
                                                     </div>
                                                 </div>
                                             </div> 
@@ -306,13 +306,13 @@
                                                     </video>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <h3>Ejercicios</h3><hr style="background-color: black">
+                                                     <!--   <h3>Ejercicios</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul> -->
                                                     </div>
                                                 </div>
                                             </div> 
@@ -337,13 +337,13 @@
                                                     </video>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <h3>Temas</h3><hr style="background-color: black">
+                                                     <!--   <h3>Temas</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul> -->
                                                     </div>
                                                 </div>
                                             </div> 
@@ -368,13 +368,13 @@
                                                     </video>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <h3>Temas</h3><hr style="background-color: black">
+                                                      <!--  <h3>Temas</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul> -->
                                                     </div>
                                                 </div>
                                             </div> 
@@ -399,13 +399,13 @@
                                                     </video>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <h3>Intro-Instalación</h3><hr style="background-color: black">
+                                                     <!--   <h3>Intro-Instalación</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul> -->
                                                     </div>
                                                 </div>
                                             </div> 
@@ -430,13 +430,13 @@
                                                     </video>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <h3>Teoria</h3><hr style="background-color: black">
+                                                      <!--  <h3>Teoria</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul> -->
                                                     </div>
                                                 </div>
                                             </div> 
@@ -461,13 +461,13 @@
                                                     </video>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <h3>Fase de reconocimiento</h3><hr style="background-color: black">
+                                                      <!--  <h3>Fase de reconocimiento</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul> -->
                                                     </div>
                                                 </div>
                                             </div> 
@@ -492,13 +492,13 @@
                                                     </video>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <h3>Fase de Escaneo</h3><hr style="background-color: black">
+                                                     <!--   <h3>Fase de Escaneo</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul>-->
                                                     </div>
                                                 </div>
                                             </div> 
@@ -523,13 +523,13 @@
                                                     </video>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <h3>Fase Ataque parte 1</h3><hr style="background-color: black">
+                                                    <!--    <h3>Fase Ataque parte 1</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul> -->
                                                     </div>
                                                 </div>
                                             </div> 
@@ -554,13 +554,13 @@
                                                     </video>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <h3>Fase de ataque parte 2</h3><hr style="background-color: black">
+                                                    <!--    <h3>Fase de ataque parte 2</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul> -->
                                                     </div>
                                                 </div>
                                             </div> 
@@ -585,13 +585,13 @@
                                                     </video>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                        <h3>Fases finales</h3><hr style="background-color: black">
+                                                     <!--   <h3>Fases finales</h3><hr style="background-color: black">
                                                             <ul align="left" style="font-size: 14px;">
                                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                                 consequat.
-                                                            </ul>
+                                                            </ul> -->
                                                     </div>
                                                 </div>
                                             </div> 
@@ -616,17 +616,9 @@
                             <div class="card-body bg-light">
                                 <div class="contanier">
                                   <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <h3>Nombre</h3><hr style="background-color: black">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <a href="#">Link del artículo</a><hr style="background-color: black">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="card-mod-recurso">
+                                        <h5>No existe contenido extra asociado al módulo.</h5>
                                     </div>
-                                  
                                   </div>
                                 </div> 
                             </div>
@@ -639,9 +631,13 @@
     </body>
   </html>
 
+    <script src="js/misscripst.js"></script>
     <script src="js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type='text/javascript'>
-  document.oncontextmenu = function(){return false}
+    document.oncontextmenu = function(){return false}
+    $(function () {
+        listaRecurso(3);
+    });
 </script>
